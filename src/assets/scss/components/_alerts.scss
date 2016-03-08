@@ -1,0 +1,8 @@
+.alert-box {
+  :last-child, p { margin-bottom: 0; }
+  .text-link { font-size: 0.825rem; }
+
+  &.info { background: lighten($info-color, 25%)}
+  &.warning { background: lighten($warning-color, 20%)}
+  &.alert { background: lighten($alert-color, 20%)}
+}

@@ -1,0 +1,163 @@
+// .progress-bar-container {
+//   width: 100%;
+//   @media only screen and (max-width: 400px) {
+//     width: 100%;
+//   }
+//   @media only screen and (min-width: 400px) {
+//     width: 75%;
+//   }
+// }
+
+.progress-bar:not(.vertical),
+.progress-bar ul:not(.vertical) {
+  padding: 0;
+  
+  .step:before,
+  span.status:before {
+    content: '';
+    width: 200%;
+    border: none;
+    height: 1px;
+    border-bottom: dashed 1px $info-color;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    // @media #{$small-only} {
+    //   width: 266%;
+    // }
+  }
+  span.status.complete:after{
+    left: 0px;
+  }
+}
+
+
+
+.progress-bar, .progress-bar ul {
+  @include button-group-container();
+  & > li {
+    @include button-group-style($radius:false, $even:5 );
+    color: $info-color;
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+  }
+
+  span.status {
+    display: block;
+    width: rem-calc(30);
+    height: rem-calc(30);
+    border-radius: 50%;
+    margin: 0 auto .5rem;
+    border: 1px solid $info-color;
+    background: $secondary-color;
+    position: relative;
+    &.complete:after {
+      content: "";
+      background-image: url("../images/icons/check-black.svg"); 
+      background-size: 18px 18px;
+      background-repeat: no-repeat;
+      background-position: center; 
+      width: rem-calc(30);
+      height: rem-calc(30);
+      padding: 10px 10px 20px 20px;
+      position: absolute;
+      top: -1px;
+      left: -1px;
+
+    }
+  }
+  .step, span.status {
+    position: relative;
+    &.last:before, &.complete.last:before { border: none !important; }
+  }
+}
+
+.progress-bar.vertical {
+  margin-top: 2rem;
+  span.status.complete:after { 
+    padding-left: rem-calc(8); 
+  }
+  .step { 
+    position: relative;
+    &:before {
+      content: '';
+      height: 100%;
+      width: 1px;
+      border-bottom: none;
+      border-right: dashed 1px $info-color;
+      position: absolute;
+      top: rem-calc(14);
+      left: rem-calc(20);
+    }
+  }
+  span.status { 
+    position: absolute;
+    top: rem-calc(-8);
+    left: 0;
+  }
+  .content { 
+    padding-left: rem-calc(50);
+    width: 100%;
+  }
+  h5 { margin: -3px 0 6px !important; }
+}
+
+.progress-bar.vertical span.status,
+.progress-bar.not-centered span.status { margin: 0; }
+
+
+.progress-bar {
+  &.progress-group {
+    position: relative;
+    li {
+      width: 25%;
+      padding: 0 0.9375rem;
+      vertical-align: top;
+      text-align: center;
+      @media #{$small-only} {
+        width: 100%;
+        text-align: left;
+        padding-left: 2.5rem;
+      }
+    }
+    p {
+      text-transform: initial;     
+      letter-spacing: 0;
+      text-align: left;
+      @media #{$medium-up} {text-align: center;}
+    }
+    h5 {
+      margin-bottom: 5px;
+      text-align: left;
+      @media #{$medium-up} {text-align: center;}
+    }
+    .step:before,
+    span.status:before {
+      width: 800% !important;
+    }
+  }
+}
+.progress-bar ul span.progress-group-mark {
+  @media #{$small-only} {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    &::before {
+      display: none;
+    }
+  }
+}
+
+input[type='checkbox'].progress-group-input.checkbox-style:after{
+  left: 10046px;
+  top: 5px;
+}
+
+input[type='checkbox'].progress-group-input.checkbox-style + .checkbox-label {
+  margin-left: 1rem;
+}

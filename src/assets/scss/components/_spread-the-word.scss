@@ -1,0 +1,15 @@
+section.spread-the-word {
+  p.lead { margin-bottom: 1rem; }
+  ul.social-icons {
+   display: inline-block;
+  }
+  ul.instagram {
+  @include grid-row();
+    @include grid-column(12);
+    @include block-grid(3, $block-grid-default-spacing, true);
+    margin-top: 2rem; 
+    @media #{$medium-up}  {
+      @include block-grid(6, $block-grid-default-spacing, true);
+    }
+  }
+}

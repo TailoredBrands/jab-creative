@@ -1,0 +1,56 @@
+$how-chart-bubble-offset: 25;
+
+.how-chart {
+  @media #{$medium-up} { 
+    padding-top: rem-calc(50);
+    .row { margin-bottom: rem-calc(40); }
+  }
+  .button { margin-bottom: 0; }
+  .how-bubble {
+    display: table;
+    padding-bottom: rem-calc(50);
+    margin: 0 auto;
+    text-align: center;
+    &:not(.last):after {
+      content: ' ';
+      position: absolute;
+      top: 50%;
+      left:0;
+      margin-top: rem-calc(-$how-chart-bubble-offset);
+      padding-right: 50%;
+      height: 100%;
+      width: 50%;
+      border-right: dashed 2px #000;
+      z-index: -200;
+    }
+    span {
+      position: relative;
+      display: table-cell; 
+      vertical-align: middle;
+      top: rem-calc(-$how-chart-bubble-offset);
+      height: rem-calc(200);
+      width: rem-calc(200);
+      font-size: rem-calc(28);
+      line-height: 1.2;
+      color: $white;
+      text-align: center;
+      font-family: Didot, Times, serif; 
+      &:after {
+        content: ' ';
+        height: rem-calc(200);
+        width: rem-calc(200);
+        top: 0;
+        left: 0;
+        background: $primary-color;
+        position: absolute;
+        border-radius: 9999px;
+        z-index: -100;
+      }
+    }
+  }
+  h6 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+}

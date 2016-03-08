@@ -1,0 +1,17 @@
+.custom.look img { margin-bottom: 1rem; }
+
+.custom.look.item {
+  margin-bottom: 1rem;
+  @include clearfix;
+  .thumbnail {
+    width: 25%;
+    float: left;
+    margin-right: 5%;
+  }
+  .content {
+    float: left;
+    width: 70%;
+    p { margin-top: -3px; }
+  }
+  img { margin-bottom: 0; }
+}

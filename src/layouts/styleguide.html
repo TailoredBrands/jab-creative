@@ -1,0 +1,96 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Men’s Wearhouse | Rent</title>
+  <link rel="stylesheet" href="{{assets}}css/app_page_1.css" />
+  <link rel="stylesheet" href="{{assets}}css/app_page_2.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+    <script src="{{assets}}js/modernizr.js"></script>
+  </head>
+
+  <body>
+
+    {{>body}}
+    
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://itemslide.github.io/dist/itemslide.min.js"></script>
+    <script src="{{assets}}js/all.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>
+    // This function escapes the < and > characters in HTML for you,
+    // and strips extra whitespace from the start and end of the string.
+    (function() {
+      var codeBlocks = document.querySelectorAll("pre code");
+      if (codeBlocks.length) {
+        for (var i = 0, len = codeBlocks.length; i < len; i++) {
+          var dom = codeBlocks[i];
+          var html = dom.innerHTML;
+          html = html
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/^\n/, "")
+            .replace(/\n$/, "");
+          dom.innerHTML = html;
+          hljs.highlightBlock(codeBlocks[i]);
+        }
+
+        $('#style-guide-tabs').on('toggled', function(e, tab) {
+          console.log('tab toggled', tab);
+          $('.content.active').foundation('reflow');
+          // $(document).foundation('reflow');
+          var $lider = tab.find('.collage-slider');
+          // if($lider.length){
+            $lider.slick('unslick').slick({
+              arrows: true,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              autoplay: false,
+              dots: false,
+              useTransform: true
+            });
+          // }
+          var thing = $('.content.active').find('.slick-slider.responsive');
+          if(thing.length){
+            thing.slick('unslick').slick({
+                dots: true,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                useTransform: true,
+                responsive: [
+                  {
+                    breakpoint: 1024,
+                    settings: {
+                      slidesToShow: 3,
+                      slidesToScroll: 3,
+                      infinite: true,
+                      dots: true
+                    }
+                  },
+                  {
+                    breakpoint: 600,
+                    settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 2
+                    }
+                  },
+                  {
+                    breakpoint: 480,
+                    settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 2
+                    }
+                  }
+
+                ]
+              });
+          }
+        });
+      }
+    })();
+    </script>
+  </body>
+</html>

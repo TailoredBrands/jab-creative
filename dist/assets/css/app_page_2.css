@@ -1,3 +1,21 @@
+.account-members {
+  margin-bottom: 2rem;
+}
+
+.account-leadin p.lead {
+  margin-bottom: 1rem;
+}
+
+.account-modal h1 {
+  margin: 0;
+}
+
+.account-modal h4 {
+  margin-bottom: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
 .account-modal p.page-of {
   font-size: 0.75rem;
   color: #999999;
@@ -357,7 +375,7 @@
     padding: 0 0.9375rem;
     height: 0;
     display: block;
-    transition: all 0.5s ease;
+    transition: all .5s ease;
   }
 
   .accordion .accordion-navigation > .content.active {
@@ -1134,7 +1152,7 @@ hr.tight {
 .customizer-panel {
   background-color: #fff;
   transform: translateY -100%;
-  transition: all 0.25s ease;
+  transition: all .25s ease;
   z-index: 1005;
 }
 
@@ -2156,7 +2174,7 @@ div.flipster__item__content {
 }
 
 div.flipster__item__content p span {
-  padding: 0 0.1em;
+  padding: 0 .1em;
 }
 
 #scrolling {

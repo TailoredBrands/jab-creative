@@ -1,65 +1,43 @@
-# ZURB Template
+# ZURB Client Template
 
-[![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
+This is the template for front-end coding projects done for ZURB clients. It's based on the "juiced" Foundation libsass template, and works exactly like that one.
 
-**Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
+## Requirements
 
-This is the official ZURB Template for use with [Foundation for Sites](http://foundation.zurb.com/sites). We use this template at ZURB to deliver static code to our clients. It has a Gulp-powered build system with these features:
+You'll need to have the following items installed before continuing.
 
-- Handlebars HTML templates with Panini
-- Sass compilation and prefixing
-- JavaScript concatenation
-- Built-in BrowserSync server
-- For production builds:
-  - CSS compression
-  - JavaScript compression
-  - Image compression
+  * [Node.js](http://nodejs.org): Use the installer provided on the NodeJS website.
+  * [Grunt](http://gruntjs.com/): Run `sudo npm install -g grunt-cli`
+  * [Bower](http://bower.io): Run `sudo npm install -g bower`
 
-## Installation
+## Getting Started
 
-To use this template, your computer needs:
+**Download the repository here.** Don't clone the project directly unless you want to make changes to how it works.
 
-- [NodeJS](https://nodejs.org/en/) (0.12 or greater)
-- [Git](https://git-scm.com/)
+Once you've downloaded the files, you'll probably want to rename the folder to the name of your client.
 
-This template can be installed with the Foundation CLI, or downloaded and set up manually.
-
-### Using the CLI
-
-Install the Foundation CLI with this command:
-
-```bash
-npm install foundation-cli --global
+Next, navigate into the directory:
+```
+cd client
 ```
 
-Use this command to set up a blank Foundation for Sites project with this template:
-
-```bash
-foundation new --framework sites --template zurb
+Install all the dependincies (if `npm install` fails, you might need to run it as `sudo`):
 ```
-
-The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
-
-### Manual Setup
-
-To manually set up the template, first download it with Git:
-
-```bash
-git clone https://github.com/zurb/foundation-zurb-template projectname
-```
-
-Then open the folder in your command line, and install the needed dependencies:
-
-```bash
-cd projectname
 npm install
 bower install
 ```
 
-Finally, run `npm start` to run Gulp. Your finished site will be created in a folder called `dist`, viewable at this URL:
-
+While you're working on your project, run:
 ```
-http://localhost:8000
+grunt
 ```
 
-To create compressed, production-ready assets, run `npm run build`.
+This will assemble all the pages and compile the Sass. You're all set to start working!
+
+## Directory Structure
+
+* `dist`: Static pages are assembled here. This is where you should view the site in your browser. **Don't edit these files directly. They will be overwritten!**
+* `src`: This is the directory you'll work in. 
+* `src/assets`: All assets (scss, images, fonts, js, etc) go here.
+* `src/assets/scss/_settings.scss`: Foundation configuration settings go in here.
+* `src/assets/scss/app.scss`: Application styles go here.
