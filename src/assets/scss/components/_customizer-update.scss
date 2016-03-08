@@ -1,0 +1,163 @@
+.customizer-panel-container {
+  padding: 10px;
+}
+
+.customizer-panel {
+  background-color: #fff;
+  transform: translateY (-100%);
+  transition: all .25s ease;
+  z-index: 1005;
+
+  h6 {
+    margin-bottom: 12px;
+  }
+
+  &.is-active {
+    border: 1px solid $info-color;
+    position: fixed;
+    display: block;
+    transform: translateY (0);
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+    overflow-x: none;
+    height: 86%;
+    width: 100%;
+    padding: 1rem;
+
+    @media #{$medium-up} { 
+      position: absolute;
+      top:0;
+      height: 100%;
+    }
+  }
+}
+
+.customizer-panel-overlay{
+  background: #000000;
+  background: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1004;
+  left: 0;
+
+  &.is-active {
+    display: block; 
+
+    @media #{$medium-up} { 
+      display: none;
+    }
+  }
+}
+
+.customizer-neckwear-current,
+.customizer-neckwear-items,
+.customizer-filter,
+.customizer-coat {
+  padding: 0.5rem;
+}
+
+.customizer-thumbs {
+  li {
+    padding-bottom: 10px;
+  }
+}
+
+.customizer-thumbs-title {
+  margin-bottom: 0px;
+  padding-top: 5px;
+  font-size: 12px;
+}
+
+.customizer-thumbs-image {
+  position: relative;
+  height: 100%;
+
+  img {
+    border: 1px solid #000;
+    width: 100%;
+  }
+  &:hover {
+    &::after {
+      position: absolute;
+      bottom: 45px;
+      right: 20px;
+      width: 16px;
+      height: 16px;
+      content: "";
+      background-image: url("../images/icons/expand-black.svg"); 
+      background-repeat: no-repeat;
+      background-position: center; 
+      z-index: 1006;
+      opacity: 0.4;
+    }
+  }
+}
+
+.customizer-product-name {
+  margin-bottom: 0;
+}
+
+.customizer-product-id {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.customizer-thumbs-price {
+  float: right;
+  color: $info-color;
+}
+
+.customizer-current {
+  height: 100px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.customizer-current-image {
+  border: 1px solid #000;
+  height: 100px;
+  padding-top: 18px;
+  overflow: hidden;
+}
+
+.close-customizer {
+  position: absolute;
+  right: 0.9rem;
+  top: 0.2rem;
+}
+
+.color-choice {
+  padding-top: 40px;
+}
+
+.customizer-product-detail {
+  width: 100%;
+  border: 1px solid #000;
+  margin-bottom: 1rem;
+}
+
+
+// filter
+
+.customizer-filter {
+  position: relative;
+}
+
+.customizer-button-sticky {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  margin-bottom: 0;
+  z-index: 10000;
+}
+
+
+
+
+

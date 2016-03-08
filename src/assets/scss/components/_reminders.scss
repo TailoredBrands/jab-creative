@@ -1,0 +1,27 @@
+.account-reminders {
+  .reminder {
+    margin-bottom: 1rem;
+    @include clearfix;
+    .date {
+      width: 25%;
+      float: left;
+      padding: .75rem 0;
+      background-color: $primary-color;
+      color: #fff;
+      text-align: center;
+      margin-right: 5%;
+      font-size: .875rem;
+      text-transform: uppercase;
+    }
+    .date span {
+      display: block;
+      font-size: 2rem;
+      line-height: 1;
+    }
+    .content {
+      float: left;
+      width: 70%; 
+      h5 { margin: -1px 0 6px !important; }
+    }
+  }
+}

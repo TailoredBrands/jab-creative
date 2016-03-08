@@ -1,0 +1,86 @@
+@import "settings";
+// @import "foundation";
+// import Foundation components
+// Or selectively include components
+
+@import"foundation/components/accordion";
+@import"foundation/components/alert-boxes";
+@import"foundation/components/block-grid";
+// @import"foundation/components/breadcrumbs";
+@import"foundation/components/button-groups";
+@import"foundation/components/buttons";
+// @import"foundation/components/clearing";
+@import"foundation/components/dropdown";
+@import"foundation/components/dropdown-buttons";
+@import"foundation/components/flex-video";
+@import"foundation/components/forms";
+@import"foundation/components/grid";
+@import"foundation/components/inline-lists";
+// @import"foundation/components/joyride";
+// @import"foundation/components/keystrokes";
+@import"foundation/components/labels";
+// @import"foundation/components/magellan";
+@import"foundation/components/orbit";
+@import"foundation/components/pagination";
+@import"foundation/components/panels";
+// @import"foundation/components/pricing-tables";
+// @import"foundation/components/progress-bars";
+@import"foundation/components/reveal";
+// @import"foundation/components/side-nav";
+// @import"foundation/components/split-buttons";
+// @import"foundation/components/sub-nav";
+// @import"foundation/components/switch";
+@import"foundation/components/tables";
+@import"foundation/components/tabs";
+// @import"foundation/components/thumbs";
+@import"foundation/components/tooltips";
+// @import"foundation/components/top-bar";
+@import"foundation/components/type";
+@import"foundation/components/offcanvas";
+@import"foundation/components/visibility";
+
+
+@import "typography";
+
+@import "_foundation-icons";
+
+// Components
+@import "components/icons";
+@import "components/styleguide-extras";
+@import "components/buttons";
+@import "components/forms";
+@import "components/footer";
+@import "components/navigation";
+@import "components/collage";
+@import "components/help";
+@import "components/how-chart";
+@import "components/leaderboards";
+@import "components/spread-the-word";
+@import "components/customize";
+@import "components/alerts";
+@import "components/reminders";
+@import "components/event";
+@import "components/look-details";
+@import "components/product-card";
+@import "components/progress";
+@import "components/style-advice";
+@import "components/account";
+@import "components/page-section";
+@import "components/product-detail";
+@import "components/filter";
+@import "components/datepicker";
+@import "components/page-specific";
+@import "components/customizer-update";
+@import "components/package";
+@import "components/measurement";
+@import "components/account-main";
+@import "components/account-group";
+@import "components/flipster";
+@import "components/product-image";
+@import "components/millions-callout";
+
+
+// Slick Carousel
+@import "slick.scss";
+@import "components/slick";
+

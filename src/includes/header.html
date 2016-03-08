@@ -1,0 +1,86 @@
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+    <!-- wrap for off-canvas above -->
+
+    <nav class="tab-bar show-for-small-only mobile-tab-bar">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+      </section>
+      <section class="middle tab-bar-section">
+        <img class="logo" src="assets/images/tmw-logo-white.svg">
+        <span class="right">
+          <a href=""><img class="icon" src="assets/images/icons/cart-white.svg"></a>
+        </span>
+      </section>
+    </nav>
+
+    <aside class="left-off-canvas-menu">
+      <nav class="small-only">
+        {{>mobile-rent-nav}}
+      </nav>
+    </aside>
+
+    <nav class="global">
+      <section class="global-tabs">
+        <ul>
+          <li>
+            <a href="#">GO TO MENSWEARHOUSE.COM</a>
+          </li>
+        </ul>
+      </section>
+      <section class="links">
+        <ul>
+          <li><a href="">Help</a></li>
+          <li><a href="">My Store</a></li>
+          <li><a {{#is section "account"}} class="active"{{/is}} href="">My Account</a></li>
+          <li class="cart-lockup"><span class="cart-number">1</span></li>
+          <li class="cart-link"><a href="">Cart</a></li>
+        </ul>
+      </section>
+    </nav>  
+    <nav class="main">
+      <section class="logo-bar">
+        <img class="logo" src="assets/images/tmw-logo-black.svg"><span class="logo-subtext">Tuxedo Rental</span> 
+        <ul class="promo-bar right">
+          <li>
+            <div><a href="#" data-reveal-id="promo-details"><span class="emphasize">$30 off</span> every tux or suit rental</a></div>
+          </li>
+          <li> <a href="#" data-dropdown="menu-promos" data-options="is_hover:true;hover_timeout:500;"><img class="icon" src="assets/images/icons/plus-black.svg"></a> </li>
+        </ul>
+      </section>
+      <section class="main-menu">
+        <ul>
+          <li><a href="#">Find Your Style</a></li>
+          <li><a href="#" data-dropdown="mega-menu-occasions" data-options="is_hover:true;hover_timeout:500">Occasions</a>
+            <ul id="mega-menu-occasions" data-dropdown-content class="f-dropdown dropdown-regular">
+              <li><a href="">Wedding</a></li>
+              <li><a href="">Prom</a></li>
+              <li><a href="">Special Event</a></li>
+            </ul>
+          </li>
+          <li><a href="#">How it Works</a></li>
+        </ul>
+      </section>
+    </nav>
+
+    <!-- MEGA MENUS -->
+    <div class="row">
+      <div class="medium-5 columns medium-offset-7"><div id="menu-promos" data-dropdown-content class="f-dropdown mega">
+        <div class="mega-menu">
+          <div class="row">
+            <div class="small-12 columns">
+              <ul>
+                <li>Rent 5 Suits and get a free rental or suit to keep<a class="text-link" href="#" data-reveal-id="promo-details">Learn more&raquo;</a></li>
+                <li>Rent 5 Suits and get a free rental or suit to keep<a class="text-link" href="#" data-reveal-id="promo-details">Learn more&raquo;</a></li>
+                <li>Rent 5 Suits and get a free rental or suit to keep<a class="text-link" href="#" data-reveal-id="promo-details">Learn more&raquo;</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>   
+
+  <section class="main-section">
+    <!-- content goes here -->
+

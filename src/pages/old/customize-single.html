@@ -1,0 +1,114 @@
+---
+layout: src/layouts/modal.html
+---
+
+<div class="customize-module">
+	<div class="content">
+		<div class="product header">
+			<h1>Customize this look <span class="saving hide-for-small">saving</span><span class="saving show-for-small-only">2 of 4</span></h1>
+			<p class="product-desc">BLACK by Vera Wang
+				<a class="text-link" href="customize-summary.html">See Summary &raquo;</a>
+			</p>
+			<div class="toggle-wrapper show-for-small-only">
+				{{>customizer-toggle}}
+			</div>
+		</div>
+		<div class="product">
+			<div class="product-image-wrapper">
+				<img class="product-image" src="assets/images/model.png" alt="">
+			</div>
+		</div>
+		<div class="options">
+			<div class="calculate-height">
+				<ul class="customize-progress hide-for-small-only">
+					<li class="complete"><a href="">Coat &amp; Pants</a></li>
+					<li class="active"><a href="">Vest &amp; Neckwear</a></li>
+					<li class="complete"><a href="">Shirt</a></li>
+					<li class="complete"><a href="">Shoes &amp; Accessories</a></li>
+				</ul>
+				<section class="customize-toggle hide-for-small-only">
+					<h2 class="header-rule"><span class="header-rule-text">Pick vest &amp; neckwear</span></h2>
+					{{>customizer-toggle}}
+				</section>
+				<div class="customizer-options">
+					<div class="filter-options hide-for-small-only">
+						<div class="row collapse filter">
+							<div class="medium-3 columns">
+								<a href="#" class="filter-dropdown" data-dropdown="type-drop" data-options="is_hover:true;hover_timeout:500">Type</a><br>
+								<ul id="type-drop" data-dropdown-content class="f-dropdown" aria-autoclose="false">
+									<p> <a class="clear-all" id="clear-all-type">clear all</a> </p>
+									<li><a href="#">Bow</a></li>
+									<li><a href="#">Tie</a></li>
+									<li><a href="#">Ascot</a></li>
+								</ul>
+							</div>
+							<div class="medium-3 columns">
+								<a href="#" class="filter-dropdown" data-dropdown="color-drop" data-options="is_hover:true;hover_timeout:500">Color</a><br>
+								<ul id="color-drop" data-dropdown-content class="f-dropdown" aria-autoclose="false">
+									<a class="clear-all" id="clear-all-color">clear all</a>
+									<div class="row"></div> <!-- clearfix -->
+									{{>color}}
+								</ul>
+							</div>
+							<div class="medium-3 columns">
+								<a href="#" class="filter-dropdown" data-dropdown="pattern-drop" data-options="is_hover:true;hover_timeout:500">Pattern</a><br>
+								<ul id="pattern-drop" data-dropdown-content class="f-dropdown" aria-autoclose="false">
+									<a class="clear-all" id="clear-all-pattern">clear all</a>
+									<div class="row"></div> <!-- clearfix -->
+									{{>pattern}}
+								</ul>
+							</div>
+							<!-- <div class="search-bar medium-3 columns"> -->
+							<div class="search-bar medium-3 columns">
+								<a href="#" data-dropdown="search-drop" data-options="is_hover:true;hover_timeout:500"><img class="icon search-icon" src="assets/images/icons/search-black.svg"></a><br>
+								<div id="search-drop" data-dropdown-content class="f-dropdown" aria-autoclose="false">
+									<!-- <div style="padding:1rem;width:300px;"> -->
+										<input type="text" placeholder="navy blue, bowtie">
+									<!-- </div> -->
+									</div>
+							</div>
+						</div>
+					</div>
+
+
+					<a class="mobile-filter-trigger" href="customize-filter.html">filter &raquo;</a>
+				</div>
+			</div>
+
+			<ul class="option-select">
+				<li><img class="option-image image-zoom" src="assets/images/vest.png" data-zoom-image="assets/images/vest-large.png"><span class="swatch-title" data-details="customize-details.html?option=1">Venice Pewter</span></li>
+				<li><img class="option-image image-zoom" src="assets/images/vest.png" data-zoom-image="assets/images/vest-large.png"><span class="swatch-title" data-details="customize-details.html?option=2">Geometrics Silver</span></li>
+				<li><img class="option-image image-zoom" src="assets/images/vest.png" data-zoom-image="assets/images/vest-large.png"><span class="swatch-title" data-details="customize-details.html?option=3">Primetime Silver</span></li>
+				<li><img class="option-image image-zoom" src="assets/images/vest.png" data-zoom-image="assets/images/vest-large.png"><span class="swatch-title" data-details="customize-details.html?option=4">Geometrics Silver</span></li>
+				<li><img class="option-image image-zoom" src="assets/images/vest.png" data-zoom-image="assets/images/vest-large.png"><span class="swatch-title" data-details="customize-details.html?option=5">Venice Pewter</span></li>
+				<li><img class="option-image image-zoom" src="assets/images/vest.png" data-zoom-image="assets/images/vest-large.png"><span class="swatch-title" data-details="customize-details.html?option=6">Geometrics Silver</span></li>
+				<li><img class="option-image image-zoom" src="assets/images/vest.png" data-zoom-image="assets/images/vest-large.png"><span class="swatch-title" data-details="customize-details.html?option=7">Venice Pewter</span></li>
+				<li><img class="option-image image-zoom" src="assets/images/vest.png" data-zoom-image="assets/images/vest-large.png"><span class="swatch-title" data-details="customize-details.html?option=8">Primetime Silver</span></li>
+				<li><img class="option-image image-zoom" src="assets/images/vest.png" data-zoom-image="assets/images/vest-large.png"><span class="swatch-title" data-details="customize-details.html?option=9">Geometrics Silver</span></li>
+				<li><img class="option-image image-zoom" src="assets/images/vest.png" data-zoom-image="assets/images/vest-large.png"><span class="swatch-title" data-details="customize-details.html?option=1">Venice Pewter</span></li>
+			</ul>
+
+		</div>
+	</div>
+</div>
+
+<div class="sticky-footer-wrapper">
+	<div class="sticky-footer">
+		<div class="project-options">
+			<ul class="inline-list">
+				<li class="primary"> Coat: <a href="#">On/Off</a> </li>
+				<li> <a href="#" class=""><img class="icon" src="assets/images/icons/refresh-white.svg"></i> Start Over</a> </li>
+				<li> <a href="#" class=""><img class="icon" src="assets/images/icons/undo-white.svg"></i> Undo</a> </li>
+			</ul>
+		</div>
+		<div class="next-steps-wrapper">
+			<div class="next-steps">
+				<span class="price">$149.99</span>
+				<a class="button tiny primary-reverse" href="#"><span class="hide-for-medium-down">Save &amp;&nbsp;</span>Finish</a>
+				<a class="button tiny secondary-reverse" href="#">Next<span class="hide-for-medium-down">: Shirt</span></a>
+			</div>
+		</div>	
+	</div>
+</div>
+
+
