@@ -54,13 +54,125 @@ section: rent
     <div class="medium-5 columns">
       <div class="package-container">
         <div class="package about-demo">
+          
+          <section class="product-colors">
+            <h3 class="color-label">Color: </h3><p class="color-name">Charcoal Gray</p>
+            <ul class="product-colors-grid">
+              <li class="thumbnail active">
+              <a href="#">
+                <img class="product-color" src="{{assets}}/images/pdp/color-charcoal.jpg" alt="">
+              </a>
+              </li>
+              <li class="thumbnail">
+                <a href="#">
+                  <img class="product-color" src="{{assets}}/images/pdp/color-black.jpg" alt="">
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="product-size">
+            <div class="clearfix">
+              <h3 class="left section-label">Size:</h3>
+              <a class="right text-link big-and-tall-link" href="#">Switch to Big &amp; Tall Sizes</a>
+              <form>
+                <div class="row">
+                  <div class="large-12 columns">
+                    <select>
+                      <option value="husker">Select a Size</option>
+                      <option value="reg-32">32 Regular</option>
+                      <option value="long-32">32 Long</option>
+                      <option value="reg-34">34 Regular</option>
+                      <option value="long-34">34 Long</option>
+                      <option value="reg-36">36 Regular</option>
+                      <option value="long-36">36 Long</option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+              <h3 class="quantity-label">QTY:</h3>
+              <form>
+              <div class="clearfix">
+                <input type="number" class="left product-quantity" name="quantity" min="1" max="5">
+                  <p class="right product-total">
+                    <span class="product-total-label">Total: </span>
+                    <span class="product-price">$699.<sup>99</sup></span>
+                  </p>
+              </div>
+              </form>
+            </div>
+          </section>
+
+          <section class="product-info">
+            <ul class="accordion" data-accordion>
+              <li class="accordion-navigation product-info-accordion">
+                <a class="product-info-label" href="#about-product">Product Description</a>
+                <div id="about-product" class="content">
+                  <p>This 130s tux is fine quality you can see and feel. The higher the s number the better the quality of wool. Choose 130s if you’re looking for something really luxurious.</p>
+                  <p>Vera Wang presents BLACK, her first collection of men's formalwear fitted to the modern groom.</p>
+                  <hr>
+                  <p class="availability">Available for rent or <a href="" class="text-link">purchase</a>.<br>
+                  Available in <a href="" class="text-link">boy sizes</a>.</p>
+                </div>
+              </li>
+
+              <li class="accordion-navigation product-info-accordion">
+                <a class="product-info-label" href="#sizing-chart">Sizing Chart</a>
+                <div id="sizing-chart" class="content">
+                  <p>This 130s tux is fine quality you can see and feel. The higher the s number the better the quality of wool. Choose 130s if you’re looking for something really luxurious.</p>
+                  <p>Vera Wang presents BLACK, her first collection of men's formalwear fitted to the modern groom.</p>
+                  <hr>
+                  <p class="availability">Available for rent or <a href="" class="text-link">purchase</a>.<br>
+                  Available in <a href="" class="text-link">boy sizes</a>.</p>
+                </div>
+              </li>
+
+              <li class="accordion-navigation product-info-accordion">
+                <a class="product-info-label" href="#reviews">Reviews</a>
+                <div id="reviews" class="content">
+                  <p>This 130s tux is fine quality you can see and feel. The higher the s number the better the quality of wool. Choose 130s if you’re looking for something really luxurious.</p>
+                  <p>Vera Wang presents BLACK, her first collection of men's formalwear fitted to the modern groom.</p>
+                  <hr>
+                  <p class="availability">Available for rent or <a href="" class="text-link">purchase</a>.<br>
+                  Available in <a href="" class="text-link">boy sizes</a>.</p>
+                </div>
+              </li>
+
+              <li class="accordion-navigation product-info-accordion">
+                <a class="product-info-label" href="#q-n-a">Product Q &amp; A</a>
+                <div id="q-n-a" class="content">
+                  <p>This 130s tux is fine quality you can see and feel. The higher the s number the better the quality of wool. Choose 130s if you’re looking for something really luxurious.</p>
+                  <p>Vera Wang presents BLACK, her first collection of men's formalwear fitted to the modern groom.</p>
+                  <hr>
+                  <p class="availability">Available for rent or <a href="" class="text-link">purchase</a>.<br>
+                  Available in <a href="" class="text-link">boy sizes</a>.</p>
+                </div>
+              </li>
+
+              <li class="accordion-navigation product-info-accordion">
+                <a class="product-info-label" href="#reserve">Reserve in Store
+                <p class="product-info-label-caption">Select a size to search for availablility in stores.</p></a>
+
+                <div id="reserve" class="content">
+                  <p>This 130s tux is fine quality you can see and feel. The higher the s number the better the quality of wool. Choose 130s if you’re looking for something really luxurious.</p>
+                  <p>Vera Wang presents BLACK, her first collection of men's formalwear fitted to the modern groom.</p>
+                  <hr>
+                  <p class="availability">Available for rent or <a href="" class="text-link">purchase</a>.<br>
+                  Available in <a href="" class="text-link">boy sizes</a>.</p>
+                </div>
+              </li>
+
+            </ul>
+          </section>
+
           <hr class="tight">
+
           <div class="save-look">
             <a href="#" data-reveal-id="save-look" class="text-link"><img class="save-icon" src="{{assets}}/images/icons/heart-black.svg" alt=""> Save this look</a>
           </div>
           <hr class="tight">
-          <div class="product-info">
 
+          <!-- <div class="product-info">
             <ul class="accordion" data-accordion>
               <li class="accordion-navigation">
                 <a href="#about-product">About the coat and brand</a>
@@ -75,7 +187,7 @@ section: rent
             </ul>
             <hr class="tight">
             {{>social-icons}}
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
