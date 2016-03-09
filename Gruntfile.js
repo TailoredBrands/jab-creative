@@ -81,6 +81,19 @@ module.exports = function(grunt) {
 
     clean: ['dist/'],
 
+    browserSync: {
+        bsFiles: {
+            src : 'dist/**/*'
+        },
+        options: {
+
+            watchTask: true,
+            server: {
+                baseDir: "dist/"
+            }
+        }
+    },
+
     watch: {
       grunt: { 
         files: ['Gruntfile.js'],
@@ -89,7 +102,7 @@ module.exports = function(grunt) {
 
       sass: {
         files: 'src/assets/scss/**/*.scss',
-        tasks: ['sass']
+        tasks: ['sass', 'csssplit']
       },
 
       copy: {
@@ -127,8 +140,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-newer');
+  grunt.loadNpmTasks('grunt-browser-sync');
   
   
   grunt.registerTask('build', ['clean','sass','csssplit','uglify','assemble','copy']);
-  grunt.registerTask('default', ['build','watch']);
+  grunt.registerTask('default', ['build','browserSync','watch']);
 }
