@@ -439,6 +439,7 @@ input[type="text"].search-bar-input {
   font-size: rem-calc(12px);
   text-transform: uppercase;
   font-weight: 500;
+  font-color: $callout-color;
 }
 
 .accordion .accordion-navigation > .content {
