@@ -100,7 +100,20 @@ ul#color-drop, ul#pattern-drop {
   }
 }
 
+.right-off-canvas-menu {
+  border: 1px solid #efefef;
+
+  .right-off-canvas-toggle {
+    position: fixed;
+    right: 5px;
+    top: -5px;
+    font-size: rem-calc(30);
+    font-weight: 100;
+  }
+}
+
 .retail-off-canvas-nav {
+
   .filter-select-icon {
     height: 15px;
     width: auto;
