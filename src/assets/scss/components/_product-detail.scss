@@ -129,7 +129,7 @@
 }
 
 .product-color {
-  $color-thumbnail-size: 50px;
+  $color-thumbnail-size: 40px;
   width: $color-thumbnail-size;
   height: $color-thumbnail-size;
 }
@@ -156,7 +156,7 @@
 }
 
 .product-price {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .product-quantity {
@@ -182,9 +182,6 @@
   letter-spacing: 2px;
   font-weight: 500;
   position: relative;
-  padding-top: $product-info-label-padding !important;
-  padding-bottom: $product-info-label-padding !important;
-
 
 
   &::after {
@@ -192,7 +189,7 @@
     content: "";
     position: absolute;
     right: 0;
-    top: 17px;
+    top: 0;
     background: url(../images/icons/plus-black.svg);
     width: $x-size;
     height: $x-size;
@@ -214,3 +211,20 @@
   text-transform: none;
   letter-spacing: normal;
 }
+
+
+.product-info-accordion {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  .save-icon {
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+    display: inline-block;
+  }
+  .text-link.save-look {
+    display: inline-block;
+    font-size: 12px !important;
+  }
+}
+
