@@ -26,29 +26,40 @@
 }
 
 .product-info, .customize-modal {
-  h1 { margin-bottom: 6px; }
-  h4 { margin: 0 0 8px 0; }
+  h1 {
+    margin-bottom: 6px;
+  }
+
+  h4 {
+    margin: 0 0 8px 0;
+  }
+
   .price-starting {
     font-size: 1.25rem;
     font-weight: 500;
     margin: -7px 0 0 0;
   }
+
   .price-shown {
     font-size: 0.875rem;
     font-weight: 500;
     color: #999;
   }
+
   .package-details {
     list-style-type: none;
     margin-left: 0;
     line-height: 1.2rem;
     li { margin-bottom: 0.5rem; }
   }
-  .two-buttons a { width: 49%; padding: 0.875rem 0 0.75rem 0; }
+
+  .two-buttons a {
+    width: 49%;
+    padding: 0.875rem 0 0.75rem 0;
+  }
 }
 
 .product-info {
-  // @media #{$large} { padding-left: 20px; }
   p, li { font-size: 13px; }
   @media #{$small-only} {
     li {

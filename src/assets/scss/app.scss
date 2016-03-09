@@ -78,13 +78,10 @@
 @import "components/flipster";
 @import "components/product-image";
 @import "components/millions-callout";
+@import "components/promotion-callout";
+@import "components/rating";
 
 
 // Slick Carousel
 @import "slick.scss";
 @import "components/slick";
-
-.my-class {
-  color: green !important;
-}
-
