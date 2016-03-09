@@ -1,0 +1,16 @@
+.rating {
+  margin-bottom: 10px;
+}
+
+.rating-star {
+  $star-size: 16px;
+  height: $star-size;
+  width: $star-size;
+  display: inline-block;
+  margin-left: -2px;
+}
+
+.rating-star-dimmed {
+  @extend .rating-star;
+  opacity: 0.25;
+}

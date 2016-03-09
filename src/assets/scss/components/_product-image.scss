@@ -1,6 +1,3 @@
-#scrolling { /* Carousel Frame */
-    overflow: hidden;
-}
 .product-image-small {
   padding-bottom: 1rem;
   ul {
@@ -14,4 +11,16 @@
   li {
       float: left;
   }
+}
+
+.slick-dots {
+  bottom: -30px !important;
+  transform: translateX(-50%) !important;
+  left: 50% !important;
+  width: auto !important;
+}
+
+.slick-slide {
+  padding: 6px;
+  outline: none;
 }
