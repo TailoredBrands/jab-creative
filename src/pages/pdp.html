@@ -93,7 +93,7 @@ section: rent
               <h3 class="quantity-label">QTY:</h3>
               <form>
               <div class="clearfix">
-                <input type="number" class="left product-quantity" name="quantity" min="1" max="5">
+                <input type="number" class="left product-quantity" name="quantity" min="1" max="5" placeholder="1">
                   <p class="right product-total">
                     <span class="product-total-label">Total: </span>
                     <span class="product-price">$699.<sup>99</sup></span>
@@ -162,53 +162,18 @@ section: rent
                 </div>
               </li>
 
+              <li class="accordion-navigation product-info-accordion">
+                  <img class="save-icon" src="{{assets}}images/icons/heart-black.svg" alt="">
+                  <a href="#" data-reveal-id="save-look" class="text-link save-look"> Save this look</a>
+                </div>
+              </li>
+
             </ul>
           </section>
 
-          <hr class="tight">
+<br/>
 
-          <div class="save-look">
-            <a href="#" data-reveal-id="save-look" class="text-link"><img class="save-icon" src="{{assets}}images/icons/heart-black.svg" alt=""> Save this look</a>
-          </div>
-          <hr class="tight">
-
-          <!-- <div class="product-info">
-            <ul class="accordion" data-accordion>
-              <li class="accordion-navigation">
-                <a href="#about-product">About the coat and brand</a>
-                <div id="about-product" class="content">
-                  <p>This 130s tux is fine quality you can see and feel. The higher the s number the better the quality of wool. Choose 130s if you’re looking for something really luxurious.</p>
-                  <p>Vera Wang presents BLACK, her first collection of men's formalwear fitted to the modern groom.</p>
-                  <hr>
-                  <p class="availability">Available for rent or <a href="" class="text-link">purchase</a>.<br>
-                  Available in <a href="" class="text-link">boy sizes</a>.</p>
-                </div>
-              </li>
-            </ul>
-            <hr class="tight">
-            {{>social-icons}}
-          </div> -->
-        </div>
       </div>
     </div>
   </div>
 </section>
-
-<section class="page-section">
-  <div class="row">
-    <hr>
-  </div>
-  <div class="row">
-    <div class="small-12 columns">
-      {{>real-weddings-carousel}}
-      {{>product-card-carousel}}
-    </div>
-    <div class="row">
-      <div class="small-12 columns">
-        <p class="text-center"> <a href="" class="small secondary button flush-bottom">See more styles</a> </p>
-      </div>
-    </div>
-
-</section>
-
-<div class="customizer-panel-overlay"></div>
