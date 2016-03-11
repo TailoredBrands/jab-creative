@@ -183,6 +183,7 @@
 
 .product-info-accordion {
   border-bottom: 1px solid #DDDDDD;
+  list-style: none;
 }
 
 .product-info-label {
@@ -216,6 +217,13 @@
  }
 }
 
+.share-label {
+  list-style: none;
+  &::after {
+    background: none;
+  }
+}
+
 .product-info-label-caption {
   font-size: 12;
   text-transform: none;
@@ -244,6 +252,10 @@
 
 .sizing-chart {
   width: 100%;
+}
+
+.sizing-intro {
+  font-weight: 500;
 }
 
 .product-description-content {
