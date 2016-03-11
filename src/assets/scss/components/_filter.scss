@@ -100,6 +100,11 @@ ul#color-drop, ul#pattern-drop {
   }
 }
 
+.retail-off-canvas-nav .accordion.more-filters .accordion-navigation > .content.active {
+  border-bottom: 0px solid transparent !important;
+  margin: 0;
+}
+
 .right-off-canvas-menu {
   border: 1px solid #efefef;
 
@@ -131,9 +136,35 @@ ul#color-drop, ul#pattern-drop {
     }
   }
 
+  // More/Secondary Filters
+
   .accordion.more-filters {
-    padding-left: 15px;
+    border: transparent;
+    margin-top: -16px;
+
+    .accordion-navigation {
+      padding-left: 35px;
+      border-bottom: 1px solid #e4e4e4;
+
+      .product-info-label {
+        color: #222222;
+      }
+    }
+
+    .accordion-navigation a {
+      border-bottom: transparent;
+      color: #8A8A8A;
+      margin-left: -15px;
+    }
+
+    .accordion-navigation.active > a {
+      color: #222222;
+    }
   }
+}
+
+.retail-off-canvas-nav .accordion .accordion-navigation > .content.active li a {
+  color: #222222;
 }
 
 .retail-off-canvas-nav {
