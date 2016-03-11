@@ -459,6 +459,14 @@ input[type="text"].search-bar-input {
     }
   }
 
+  .nav-account-settings {
+    margin-top: rem-calc(50px);
+
+    .accordion-navigation:first-child {
+      border-top: 1px solid #efefef;
+    }
+  }
+
   .accordion .accordion-navigation.active > a, .accordion dd.active > a {
     background-color: transparent;
     border-bottom: transparent;
