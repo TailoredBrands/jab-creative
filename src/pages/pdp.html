@@ -59,9 +59,9 @@ section: rent
             <h3 class="color-label">Color: </h3><p class="color-name">Charcoal Gray</p>
             <ul class="product-colors-grid">
               <li class="thumbnail active">
-              <a href="#">
-                <img class="product-color" src="{{assets}}images/pdp/color-charcoal.jpg" alt="">
-              </a>
+                <a href="#">
+                  <img class="product-color" src="{{assets}}images/pdp/color-charcoal.jpg" alt="">
+                </a>
               </li>
               <li class="thumbnail">
                 <a href="#">
@@ -73,10 +73,10 @@ section: rent
 
           <section class="product-size">
             <div class="clearfix">
-              <h3 class="left section-label">Size:</h3>
+              <h3 class="left section-label size-label">Size:</h3>
               <a class="right text-link big-and-tall-link" href="#">Switch to Big &amp; Tall Sizes</a>
               <form>
-                <div class="row">
+                <!-- <div class="row">
                   <div class="large-12 columns">
                     <select>
                       <option value="husker">Select a Size</option>
@@ -88,17 +88,28 @@ section: rent
                       <option value="long-36">36 Long</option>
                     </select>
                   </div>
+                </div> -->
+                <div class="size-dropdown-wrapper">
+                  <span class="selected-item dropdown-placeholder">Regular Sizes</span>
+
+                  <ul class="custom-dropdown">
+                    <li class="dropdown-item">32 Regular</li>
+                    <li class="dropdown-item">32 Long</li>
+                    <li class="dropdown-item">34 Regular</li>
+                    <li class="dropdown-item">34 Long</li>
+
+                  </ul>
                 </div>
               </form>
               <h3 class="quantity-label">QTY:</h3>
               <form>
-              <div class="clearfix">
-                <input type="number" class="left product-quantity" name="quantity" min="1" max="5" placeholder="1">
+                <div class="clearfix">
+                  <input type="number" class="left product-quantity" name="quantity" min="1" max="5" placeholder="1">
                   <p class="right product-total">
-                    <span class="product-total-label">Total: </span>
+                    <!-- <span class="product-total-label">Total: </span> -->
                     <span class="product-price">$699.<sup>99</sup></span>
                   </p>
-              </div>
+                </div>
               </form>
             </div>
           </section>
@@ -107,73 +118,240 @@ section: rent
             <ul class="accordion" data-accordion>
               <li class="accordion-navigation product-info-accordion">
                 <a class="product-info-label" href="#about-product">Product Description</a>
-                <div id="about-product" class="content">
-                  <p>This 130s tux is fine quality you can see and feel. The higher the s number the better the quality of wool. Choose 130s if you’re looking for something really luxurious.</p>
-                  <p>Vera Wang presents BLACK, her first collection of men's formalwear fitted to the modern groom.</p>
-                  <hr>
-                  <p class="availability">Available for rent or <a href="" class="text-link">purchase</a>.<br>
-                  Available in <a href="" class="text-link">boy sizes</a>.</p>
+                <div id="about-product" class="content product-description-content">
+                  <p>Designed in versatile charcoal gray, this suit features a two-button jacket and flat-front slacks for a polished look.</p>
+                  <ul>
+                    <li>Imported</li>
+                    <li>Dry Clean Only</li>
+                  </ul>
                 </div>
               </li>
 
               <li class="accordion-navigation product-info-accordion">
                 <a class="product-info-label" href="#sizing-chart">Sizing Chart</a>
                 <div id="sizing-chart" class="content">
-                  <p>This 130s tux is fine quality you can see and feel. The higher the s number the better the quality of wool. Choose 130s if you’re looking for something really luxurious.</p>
-                  <p>Vera Wang presents BLACK, her first collection of men's formalwear fitted to the modern groom.</p>
+                  <p>Suits, Suit Separates, Sport Coats &amp; Outerwear Size Chart</p>
+                  <p>The suit or sportcoat size in the US is described as a number, referring to your chest measurement, and a letter, describing the jacket length. To find the corresponding pant size, see the pant conversion below. Don't know your size? Check out our Measuring Guide or come into a Men's Wearhouse Store.</p>
                   <hr>
-                  <p class="availability">Available for rent or <a href="" class="text-link">purchase</a>.<br>
-                  Available in <a href="" class="text-link">boy sizes</a>.</p>
+                  <p>Men's Suit Sizes</p>
+                  <table class="sizing-chart">
+                    <thead>
+                      <tr>
+                        <td>US</td>
+                        <td>EU</td>
+                        <td>UK</td>
+                        <td>AUS</td>
+                        <td>JPN</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>32</td>
+                        <td>42</td>
+                        <td>32</td>
+                        <td>32</td>
+                        <td>S</td>
+                      </tr>
+                      <tr>
+                        <td>34</td>
+                        <td>44</td>
+                        <td>34</td>
+                        <td>34</td>
+                        <td>S</td>
+                      </tr>
+                      <tr>
+                        <td>36</td>
+                        <td>46</td>
+                        <td>36</td>
+                        <td>36</td>
+                        <td>S</td>
+                      </tr>
+                      <tr>
+                        <td>38</td>
+                        <td>48</td>
+                        <td>38</td>
+                        <td>38</td>
+                        <td>M</td>
+                      </tr> 
+                      <tr>
+                        <td>40</td>
+                        <td>50</td>
+                        <td>40</td>
+                        <td>40</td>
+                        <td>L</td>
+                      </tr> 
+                      <tr>
+                        <td>42</td>
+                        <td>52</td>
+                        <td>42</td>
+                        <td>42</td>
+                        <td>L</td>
+                      </tr> 
+                      <tr>
+                        <td>44</td>
+                        <td>54</td>
+                        <td>44</td>
+                        <td>44</td>
+                        <td>LL</td>
+                      </tr> 
+                      <tr>
+                        <td>46</td>
+                        <td>56</td>
+                        <td>46</td>
+                        <td>46</td>
+                        <td>LL</td>
+                      </tr> 
+                      <tr>
+                        <td>48</td>
+                        <td>58</td>
+                        <td>48</td>
+                        <td>48</td>
+                        <td>LL</td>
+                      </tr>
+                      <tr>
+                        <td>50</td>
+                        <td>60</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>-</td>
+                      </tr> 
+                      <tr>
+                        <td>52</td>
+                        <td>62</td>
+                        <td>52</td>
+                        <td>52</td>
+                        <td>-</td>
+                      </tr> 
+                      <tr>
+                        <td>54</td>
+                        <td>64</td>
+                        <td>54</td>
+                        <td>54</td>
+                        <td>-</td>
+                      </tr> 
+                      <tr>
+                        <td>56</td>
+                        <td>66</td>
+                        <td>56</td>
+                        <td>56</td>
+                        <td>-</td>
+                      </tr> 
+                      <tr>
+                        <td>58</td>
+                        <td>68</td>
+                        <td>58</td>
+                        <td>58</td>
+                        <td>-</td>
+                      </tr> 
+                      <tr>
+                        <td>60</td>
+                        <td>70</td>
+                        <td>60</td>
+                        <td>60</td>
+                        <td>-</td>
+                      </tr> 
+                      <tr>
+                        <td>62</td>
+                        <td>72</td>
+                        <td>62</td>
+                        <td>62</td>
+                        <td>-</td>
+                      </tr> 
+                      <tr>
+                        <td>64</td>
+                        <td>74</td>
+                        <td>64</td>
+                        <td>64</td>
+                        <td>-</td>
+                      </tr> 
+                      <tr>
+                        <td>66</td>
+                        <td>76</td>
+                        <td>66</td>
+                        <td>66</td>
+                        <td>-</td>
+                      </tr> 
+                      <tr>
+                        <td>68</td>
+                        <td>78</td>
+                        <td>68</td>
+                        <td>68</td>
+                        <td>-</td>
+                      </tr> 
+                      <tr>
+                        <td>70</td>
+                        <td>80</td>
+                        <td>70</td>
+                        <td>70</td>
+                        <td>-</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                  <hr>
+
+                  <p>Suit Size to Pant Size Conversion Chart:</p>
+                  <select placeholder="Select Your Suit Size">
+                    <option value="1">35</option>
+                    <option value="2">36</option>
+                    <option value="3">37</option>
+                    <option value="4">38</option>
+                    <option value="5">39</option>
+                    <option value="6">40</option>
+                    <option value="7">41</option>
+                    <option value="8">42</option>
+                  </select>
+
+                  <a href="#" class="text-link">See Full Sizing Chart</a>
+
+
                 </div>
               </li>
 
               <li class="accordion-navigation product-info-accordion">
-                <a class="product-info-label" href="#reviews">Reviews</a>
+                <a class="product-info-label" href="#reviews">
+                <span class="label-rating">Reviews</span>
+                <span class="rating label-rating-stars">
+                  <img class="rating-star" src="{{assets}}images/icons/rating-star.svg" alt="star">
+                  <img class="rating-star" src="{{assets}}images/icons/rating-star.svg" alt="star">
+                  <img class="rating-star" src="{{assets}}images/icons/rating-star.svg" alt="star">
+                  <img class="rating-star" src="{{assets}}images/icons/rating-star.svg" alt="star">
+                  <img class="rating-star-dimmed" src="{{assets}}images/icons/rating-star.svg" alt="star">
+                </span>
+                </a>
                 <div id="reviews" class="content">
                   <p>This 130s tux is fine quality you can see and feel. The higher the s number the better the quality of wool. Choose 130s if you’re looking for something really luxurious.</p>
                   <p>Vera Wang presents BLACK, her first collection of men's formalwear fitted to the modern groom.</p>
                   <hr>
                   <p class="availability">Available for rent or <a href="" class="text-link">purchase</a>.<br>
-                  Available in <a href="" class="text-link">boy sizes</a>.</p>
-                </div>
-              </li>
+                    Available in <a href="" class="text-link">boy sizes</a>.</p>
+                  </div>
+                </li>
 
-              <li class="accordion-navigation product-info-accordion">
-                <a class="product-info-label" href="#q-n-a">Product Q &amp; A</a>
-                <div id="q-n-a" class="content">
-                  <p>This 130s tux is fine quality you can see and feel. The higher the s number the better the quality of wool. Choose 130s if you’re looking for something really luxurious.</p>
-                  <p>Vera Wang presents BLACK, her first collection of men's formalwear fitted to the modern groom.</p>
-                  <hr>
-                  <p class="availability">Available for rent or <a href="" class="text-link">purchase</a>.<br>
-                  Available in <a href="" class="text-link">boy sizes</a>.</p>
-                </div>
-              </li>
+                <li class="accordion-navigation product-info-accordion">
+                  <a class="product-info-label" href="#reserve">Reserve in Store</a>
 
-              <li class="accordion-navigation product-info-accordion">
-                <a class="product-info-label" href="#reserve">Reserve in Store
-                <p class="product-info-label-caption">Select a size to search for availablility in stores.</p></a>
+                  <div id="reserve" class="content">
+                    <p>This 130s tux is fine quality you can see and feel. The higher the s number the better the quality of wool. Choose 130s if you’re looking for something really luxurious.</p>
+                    <p>Vera Wang presents BLACK, her first collection of men's formalwear fitted to the modern groom.</p>
+                    <hr>
+                    <p class="availability">Available for rent or <a href="" class="text-link">purchase</a>.<br>
+                      Available in <a href="" class="text-link">boy sizes</a>.</p>
+                    </div>
+                  </li>
 
-                <div id="reserve" class="content">
-                  <p>This 130s tux is fine quality you can see and feel. The higher the s number the better the quality of wool. Choose 130s if you’re looking for something really luxurious.</p>
-                  <p>Vera Wang presents BLACK, her first collection of men's formalwear fitted to the modern groom.</p>
-                  <hr>
-                  <p class="availability">Available for rent or <a href="" class="text-link">purchase</a>.<br>
-                  Available in <a href="" class="text-link">boy sizes</a>.</p>
-                </div>
-              </li>
+                  <li class="accordion-navigation product-info-accordion">
+                    <img class="save-icon" src="{{assets}}images/icons/heart-black.svg" alt="">
+                    <a href="#" data-reveal-id="save-look" class="text-link save-look"> Save this look</a>
+                  </div>
+                </li>
 
-              <li class="accordion-navigation product-info-accordion">
-                  <img class="save-icon" src="{{assets}}images/icons/heart-black.svg" alt="">
-                  <a href="#" data-reveal-id="save-look" class="text-link save-look"> Save this look</a>
-                </div>
-              </li>
+              </ul>
+            </section>
 
-            </ul>
-          </section>
+            <br/>
 
-<br/>
-
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>

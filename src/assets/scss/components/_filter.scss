@@ -146,16 +146,6 @@ ul#color-drop, ul#pattern-drop {
     margin: 10px;
   }
 
-  .product-info-label {
-
-    &::after {
-      $x-size: 9px;
-      width: $x-size;
-      height: $x-size;
-      top: 15px;
-      right: 10px;
-    }
-  }
 
   .product-color {
     width: auto;
@@ -176,23 +166,23 @@ ul#color-drop, ul#pattern-drop {
     padding-bottom: 3px;
   }
 
-  .accordion .accordion-navigation > .content.active {
-    padding-top: 0 !important;
-    border-bottom: 1px solid #efefef;
-    margin: 0;
+  // .accordion .accordion-navigation > .content.active {
+  //   padding-top: 0 !important;
+  //   // border-bottom: 1px solid #efefef;
+  //   margin: 0;
 
-    ul {
-      margin: -5px;
-    }
+  //   ul {
+  //     margin: -5px;
+  //   }
 
-    li {
-      list-style-type: none;
-      padding-bottom: 5px;
-      margin-left: 20px;
+  //   li {
+  //     list-style-type: none;
+  //     padding-bottom: 5px;
+  //     margin-left: 20px;
 
-      a {
-        font-size: rem-calc(13);
-      }
-    }
-  }
+  //     a {
+  //       font-size: rem-calc(13);
+  //     }
+  //   }
+  // }
 }

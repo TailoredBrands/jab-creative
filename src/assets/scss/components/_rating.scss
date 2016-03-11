@@ -2,6 +2,19 @@
   margin-bottom: 10px;
 }
 
+.label-rating,
+.label-rating-stars {
+  display: inline-block;
+}
+
+.label-rating-stars {
+  margin-left: 10px;
+  position: relative;
+  top: -2px;
+  width: 100px;
+  margin-bottom: 0;
+}
+
 .rating-star {
   $star-size: 16px;
   height: $star-size;
