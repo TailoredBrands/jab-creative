@@ -110,10 +110,12 @@ ul#color-drop, ul#pattern-drop {
 
   .right-off-canvas-toggle {
     position: fixed;
+    color: #afafaf;
     right: 5px;
     top: -5px;
     font-size: rem-calc(30);
-    font-weight: 100;
+    font-weight: lighter;
+    z-index: 200;
   }
 
   .button {
@@ -137,7 +139,6 @@ ul#color-drop, ul#pattern-drop {
   }
 
   // More/Secondary Filters
-
   .accordion.more-filters {
     border: transparent;
     margin-top: -16px;
@@ -192,11 +193,21 @@ ul#color-drop, ul#pattern-drop {
     }
   }
 
-  .product-color {
-    width: auto;
-    height: 35px;
-    border: 1px solid #ccc;
-    padding: 2px;
+  .product-color-swatches {
+    margin: 5px auto 10px 20px;
+
+    .thumbnail {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .product-color {
+      width: 35px;
+      height: 35px;
+      border: 1px solid #ccc;
+      padding: 2px;
+      margin-bottom: 5px;
+    }
   }
 
   .thumbnail.active {
