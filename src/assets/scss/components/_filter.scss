@@ -313,3 +313,25 @@ ul#color-drop, ul#pattern-drop {
   text-align: center;
   border-bottom: 1px solid #efefef;
 }
+
+#search-tool {
+  opacity: 1.0;
+
+  &.is-active {
+    opacity: 0.25;
+  }
+}
+.search-tool {
+  display: none;
+  background-color: #000000;
+  padding: 10px 0px 0px 0px;
+
+  input {
+    font-size: rem-calc(12px);
+
+    &:focus {
+      background-color: #ffffff !important;
+      border-color: #ffffff;
+    }
+  }
+}
