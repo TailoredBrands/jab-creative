@@ -9,10 +9,23 @@
       <section class="middle tab-bar-section">
         <img class="logo" src="{{assets}}images/tmw-logo-white.svg">
         <span class="right">
-          <a href=""><img class="icon" src="{{assets}}images/icons/cart-white.svg"></a>
+          <a href="#" id="search-tool"><img class="icon" src="{{assets}}images/icons/search-icon.svg"></a>
+          <a href=""><img class="icon" src="{{assets}}images/icons/bag-icon.svg"></a>
         </span>
       </section>
     </nav>
+
+    <div class="test-wrapper">
+    <div class="search-tool is-hidden">
+      <div class="row">
+        <div class="small-12 columns">
+          <label>
+            <input type="text" placeholder="Search">
+          </label>
+        </div>
+      </div>
+    </div>
+    </div>
 
     <aside class="left-off-canvas-menu">
       <nav class="small-only">
@@ -23,7 +36,7 @@
     <aside class="right-off-canvas-menu">
       <nav class="small-only">
         <a class="right-off-canvas-toggle">&times;</a>
-        {{>product-filters}}
+        {{>product-filters-more}}
         <a href="#" class="button anchor-bottom">Apply to Results</a>
       </nav>
     </aside>
