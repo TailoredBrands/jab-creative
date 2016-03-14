@@ -424,6 +424,53 @@ input[type="text"].search-bar-input {
   li {
     list-style-type: none;
   }
+
+  .accordion .accordion-navigation > a {
+    padding: rem-calc(10px) !important;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #efefef;
+    font-size: rem-calc(12px);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-color: $callout-color;
+  }
+
+  .accordion .accordion-navigation > .content {
+    list-style-type: none;
+  }
+
+  .accordion .accordion-navigation > .content.active {
+    padding-top: 0 !important;
+    border-bottom: 1px solid #efefef;
+    margin: 0;
+
+    ul {
+      margin: -5px;
+    }
+
+    li {
+      list-style-type: none;
+      padding-bottom: 5px;
+      margin-left: 10px;
+
+      a {
+        font-size: rem-calc(13);
+      }
+    }
+  }
+
+  .nav-account-settings {
+    margin-top: rem-calc(50px);
+
+    .accordion-navigation:first-child {
+      border-top: 1px solid #efefef;
+    }
+  }
+
+  .accordion .accordion-navigation.active > a, .accordion dd.active > a {
+    background-color: transparent;
+    border-bottom: transparent;
+  }
 }
 
 .nav-icons {
@@ -432,41 +479,3 @@ input[type="text"].search-bar-input {
   margin-left: 10px;
   padding-bottom: 2px;
 }
-
-// .accordion .accordion-navigation > a {
-//   padding: rem-calc(10px) !important;
-//   border-bottom: 1px solid #efefef;
-//   font-size: rem-calc(12px);
-//   text-transform: uppercase;
-//   font-weight: 500;
-//   font-color: $callout-color;
-// }
-
-// .accordion .accordion-navigation > .content {
-//   list-style-type: none;
-// }
-
-// .accordion .accordion-navigation > .content.active {
-//   padding-top: 0 !important;
-//   border-bottom: 1px solid #efefef;
-//   margin: 0;
-
-//   ul {
-//     margin: -5px;
-//   }
-
-//   li {
-//     list-style-type: none;
-//     padding-bottom: 5px;
-//     margin-left: 10px;
-
-//     a {
-//       font-size: rem-calc(13);
-//     }
-//   }
-// }
-
-// .accordion .accordion-navigation.active > a, .accordion dd.active > a {
-//   background-color: transparent;
-//   border-bottom: transparent;
-// }

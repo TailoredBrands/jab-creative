@@ -12,6 +12,22 @@ $(document).foundation({
   }
 });
 
+// Show and hide more filters in product off canvas
+// $('.search-tool').hide(0);
+$('#search-tool').click(function() {
+  $(".search-tool").fadeToggle();
+  $('#search-tool').toggleClass("is-active");
+  // $('#search-tool').show(0);
+  // $(this).hide(0);
+});
+
+// Show and hide search bar
+$('.accordion.more-filters').hide(0);
+$('#add-more-filters').click(function() {
+  $('.accordion.more-filters').show(0);
+  $(this).hide(0);
+});
+
 // reinstatiate slick after dom update on styleguide
 $('#style-guide-tabs').on('toggled', function (event, tab) {
   $('.collage-slider').resize();

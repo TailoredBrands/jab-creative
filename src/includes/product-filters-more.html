@@ -127,11 +127,33 @@
       <div id="panel3a" class="content">
         <ul>
           <li><a href="#"><img class="filter-select-icon" src="{{assets}}images/checkmark-icon.svg"/>View All</a></li>
-          <li class="thumbnail active"><a href="#"><img class="product-color" src="{{assets}}images/pdp/color-charcoal.jpg" alt=""></a>
-          </li>
-          <li class="thumbnail">
-            <a href="#"><img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt=""></a>
-          </li>
+
+          <div class="product-color-swatches">
+            <li class="thumbnail"><a href="#"><img class="product-color" src="{{assets}}images/pdp/color-charcoal.jpg" alt=""></a>
+            </li>
+
+            <li class="thumbnail"><a href="#"><img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt=""></a>
+            </li>
+
+            <li class="thumbnail"><a href="#"><img class="product-color" src="{{assets}}images/pdp/color-charcoal.jpg" alt=""></a>
+            </li>
+
+            <li class="thumbnail"><a href="#"><img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt=""></a>
+            </li>
+
+            <li class="thumbnail"><a href="#"><img class="product-color" src="{{assets}}images/pdp/color-charcoal.jpg" alt=""></a>
+            </li>
+
+            <li class="thumbnail"><a href="#"><img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt=""></a>
+            </li>
+
+            <li class="thumbnail"><a href="#"><img class="product-color" src="{{assets}}images/pdp/color-charcoal.jpg" alt=""></a>
+            </li>
+
+            <li class="thumbnail"><a href="#"><img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt=""></a>
+            </li>
+          </div>
+
           <li><a href="#">Check</a></li>
           <li><a href="#">Geometric</a></li>
           <li><a href="#">Herringbone</a></li>
@@ -176,5 +198,40 @@
       </div>
     </li>
   </ul>
-  <a href="#" class="text-link">Add More Filters</a>
+
+  <a href="#" class="text-link" id="add-more-filters">Add More Filters</a>
+
+  <ul class="accordion more-filters" data-accordion>
+    <li class="accordion-navigation active">
+      <a class="product-info-label" href="#panel7a"><img class="filter-select-icon" src="{{assets}}images/checkmark-icon.svg"/>Fit</a>
+      <div id="panel7a" class="content">
+        <ul>
+          <li><a href="#"><img class="filter-select-icon" src="{{assets}}images/checkmark-icon.svg"/>View All</a></li>
+          <li><a href="#">Classic Fit</a></li>
+          <li><a href="#">Extreme Slim Fit</a></li>
+          <li><a href="#">Modern Fit</a></li>
+          <li><a href="#">Portly</a></li>
+          <li><a href="#">Slim Fit</a></li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="accordion-navigation">
+      <a href="#panel8a">Care</a>
+      <!-- <div id="panel8a" class="content">
+    </div> -->
+  </li>
+
+  <li class="accordion-navigation">
+    <a href="#panel9a">Material</a>
+    <!-- <div id="panel9a" class="content">
+  </div> -->
+</li>
+
+<li class="accordion-navigation">
+  <a href="#panel10a">Collar Style</a>
+  <!-- <div id="panel10a" class="content">
+</div> -->
+</li>
+</ul>
 </div>

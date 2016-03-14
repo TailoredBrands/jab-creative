@@ -8,8 +8,8 @@
 	left:0;
 	width: 100%;
 	height: 100%;
-	
-	@media #{$small-only} { 
+
+	@media #{$small-only} {
 		hr.tight { display: none; }
 		.options h4 { display: none; }
 		ul.tasks { display: none; }
@@ -52,7 +52,7 @@
 				background-color: #efefef;
 			}
 		}
-		li.active span { 
+		li.active span {
 			background-color: $primary-color;
 			color: $secondary-color;
 			border-color: $primary-color;
@@ -62,8 +62,8 @@
 
 	.content { @include grid-row(); }
 
-	.product { 
-		&.header { width: 100%; 
+	.product {
+		&.header { width: 100%;
 			@media only screen and (min-width: 830px) {
 				@include grid-column(6);
 				margin-bottom: 1rem;
@@ -81,7 +81,7 @@
 			display: inline;
 			margin: 0;
 			font-size: rem-calc(10);
-			color: #ccc; 
+			color: #ccc;
 		}
 		.product-desc {
 			color: $primary-color;
@@ -91,13 +91,13 @@
 				font-size: rem-calc(14);
 			}
 		}
-		@media #{$small-only} { 
+		@media #{$small-only} {
 			@include grid-column(9);
 			h1 { font-size: rem-calc(16); }
 		}
-		@media #{$medium-up} { 
+		@media #{$medium-up} {
 			@include grid-column(7);
-			a { 
+			a {
 				margin-left: rem-calc(10);
 				font-size: rem-calc(10) !important;
 			}
@@ -108,28 +108,28 @@
 		.product-image-wrapper {
 			@include grid-row(nest);
 			padding-top: 1rem;
-			@media #{$small-only} { 
-				img.product-image { 
-					@include grid-column(11, true, true ); 
-				} 
+			@media #{$small-only} {
+				img.product-image {
+					@include grid-column(11, true, true );
+				}
 			}
-			@media #{$medium-up} { 
-				img.product-image { 
-					@include grid-column(11, true, true ); 
-				} 
+			@media #{$medium-up} {
+				img.product-image {
+					@include grid-column(11, true, true );
+				}
 			}
 		}
 	}
 
-	.options { 
+	.options {
 		position: relative;
 		@media #{$small-only} {
 			@include grid-column(3);
 			padding-left: 0;
 		}
-		@media #{$medium-up} { 
-			@include grid-column(5); 
-			top: -6rem; 
+		@media #{$medium-up} {
+			@include grid-column(5);
+			top: -6rem;
 		}
 		.header-rule-text { font-size: rem-calc(16); }
 		.header-rule { margin: 0 0 .5rem; }
@@ -139,8 +139,8 @@
 			overflow-y: auto;
 			overflow-x: hidden;
 			color: $info-color;
-			li { 
-				position: relative; 
+			li {
+				position: relative;
 				text-align: center;
 			}
 			a.option-select-back {
@@ -170,11 +170,11 @@
 				opacity: 0;
 				transition : all 1.5s ease-out;
 				content: "";
-				background-image: url("../images/icons/check-white.svg"); 
+				background-image: url("../images/icons/check-white.svg");
 				background-size: 20px 20px;
 				background-repeat: no-repeat;
-				background-position: center; 
-				@media #{$small-only} { 
+				background-position: center;
+				@media #{$small-only} {
 					width: rem-calc(30);
 					height: rem-calc(30);
 				}
@@ -234,7 +234,7 @@ a.close-modal {
 	background-color: $primary-color;
 	bottom: 0;
 	width: 100%;
-	padding: rem-calc(16 0 0 0); 
+	padding: rem-calc(16 0 0 0);
 }
 
 .sticky-footer {
@@ -247,17 +247,17 @@ a.close-modal {
 		color: $secondary-color;
 	}
 
-	.save { 
-		margin-right: 10px; 
+	.save {
+		margin-right: 10px;
 		position: relative;
 	}
 
 	.price { margin-right: 10px; }
 
-	.project-options { 
-		@media #{$small-only} { 
-			@include grid-column(12); 
-    	margin-bottom: 1rem; 
+	.project-options {
+		@media #{$small-only} {
+			@include grid-column(12);
+    	margin-bottom: 1rem;
     }
     @media #{$medium-up} {
     	@include grid-column(5);
@@ -268,7 +268,6 @@ a.close-modal {
     	.icon {
     		width: 20px;
     		opacity: 0.6;
-    		margin-right: 5px;
     	}
     }
 
@@ -276,7 +275,7 @@ a.close-modal {
 .button, ul { margin-bottom: 0; }
 ul {
 	@extend .inline-list;
-	li a { 
+	li a {
 		margin-bottom: 0;
 		font-size: rem-calc(13);
 		display: inline;
@@ -284,23 +283,23 @@ ul {
 	li:first-child { margin-left: 0; }
 	li:last-child { margin-right: 0; }
 }
-.next-steps-wrapper { 
-	@include grid-column(12); 
+.next-steps-wrapper {
+	@include grid-column(12);
 	padding-bottom: 1rem;
-	@media #{$medium-up} { 
-		@include grid-column(7); 	
-		float: right;		
+	@media #{$medium-up} {
+		@include grid-column(7);
+		float: right;
 	}
 
 	.next-steps {
-		@media #{$medium-up} { 
-			float: right; 
+		@media #{$medium-up} {
+			float: right;
 			margin-right: 0;
 		}
 		.button { margin-right: 6px; }
 
-		
-		.price { 
+
+		.price {
 			font-size: rem-calc(20);
 			line-height: 1.5;
 			@media #{$medium-up} {
@@ -337,40 +336,40 @@ ul {
 		@include button-group-style($radius:false, $even:4 );
 		position: relative;
 
-		&.complete a::before { 
+		&.complete a::before {
 			content: "";
-			background-image: url("../images/icons/check-black.svg"); 
+			background-image: url("../images/icons/check-black.svg");
 			background-size: 20px 20px;
 			background-repeat: no-repeat;
-			background-position: center; 
+			background-position: center;
 		}
 
 		& a:hover::before {
 			background-color: $primary-color;
 			transition: background-color 300ms ease-out;
 			content: "";
-			background-image: url("../images/icons/edit-white.svg"); 
+			background-image: url("../images/icons/edit-white.svg");
 			background-size: 20px 20px;
 			background-repeat: no-repeat;
-			background-position: center; 
+			background-position: center;
 		}
 
-		&.active a::before { 
+		&.active a::before {
 			background-color: $primary-color;
 			border: solid 1px $primary-color;
 			content: "";
-			background-image: url("../images/icons/edit-white.svg"); 
+			background-image: url("../images/icons/edit-white.svg");
 			background-size: 20px 20px;
 			background-repeat: no-repeat;
-			background-position: center; 
+			background-position: center;
 		}
 
-		&.active { 
+		&.active {
 			background: #f00;
 			a { color: $primary-color; }
 		}
 
-		a { 
+		a {
 			display: block;
 			position: absolute;
 			top: rem-calc(48);
@@ -383,7 +382,7 @@ ul {
 			letter-spacing: 1px;
 			line-height: 1.3;
 			margin-left: -8px;
-			@media #{$small-only} { 
+			@media #{$small-only} {
 				margin-left: 0;
 			}
 			&:hover { color: $primary-color; }
@@ -441,7 +440,7 @@ a.modal-back {
 		}
 	}
 	hr.tight { margin: rem-calc(0 0 15 0); }
-	ul.type { 
+	ul.type {
 		@include grid-row();
 		list-style-type: none;
 		margin-left: 0;
@@ -500,6 +499,7 @@ a.modal-back {
 .icon {
 	width: 25px;
 	height: 25px;
+	margin-right: 5px;
 }
 .toggle-icon-container {
 	position: relative;
@@ -510,7 +510,7 @@ a.modal-back {
 	right: 0;
 	img {
 		opacity: 0.3;
-		margin-bottom: 6px; 
+		margin-bottom: 6px;
 	}
 	&.active {
 		opacity: 1.0;
@@ -528,12 +528,8 @@ ul.colors, ul.patterns {
 	& li:hover { background: none; }
 }
 
-ul.colors, ul.patterns, ul.f-dropdown.colors { 
-	padding: rem-calc(7); 
+ul.colors, ul.patterns, ul.f-dropdown.colors {
+	padding: rem-calc(7);
 	li { padding: 3px; }
 	img { padding: 1px; }
 }
-
-
-
-
