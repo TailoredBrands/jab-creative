@@ -116,6 +116,9 @@ ul#color-drop, ul#pattern-drop {
     font-size: rem-calc(30);
     font-weight: lighter;
     z-index: 200;
+    &.shopping-bag {
+      left: 10px;
+    }
   }
 
   .button {

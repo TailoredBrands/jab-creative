@@ -55,12 +55,14 @@
 
 // shopping bag header
 .shopping-bag-header {
-  
+  .shopping-bag-title {
+    display: inline-block;
+    margin-left: 24px;
+    margin-top: 8px;
+  }
 }
 
-.shopping-bag-title {
-  display: inline-block;
-}
+
 
 // type _style-advice.scss
 .item-count {
