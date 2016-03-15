@@ -182,7 +182,17 @@ ul#color-drop, ul#pattern-drop {
     margin: 10px;
   }
 
+  .product-info-label {
 
+    &::after {
+      $x-size: 9px;
+      width: $x-size;
+      height: $x-size;
+      top: 15px;
+      right: 10px;
+    }
+  }
+  
   .product-color-swatches {
     margin: 5px auto 10px 20px;
 

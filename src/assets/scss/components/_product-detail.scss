@@ -170,10 +170,8 @@
 }
 
 .product-quantity {
-  @media #{$small-only} {
-    width: 70px !important;
-    height: 30px;
-  }
+  width: 70px !important;
+  height: 30px;
 }
 
 .quantity-label {
