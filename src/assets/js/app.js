@@ -15,7 +15,7 @@ $(document).foundation({
 // Show and hide more filters in product off canvas
 // $('.search-tool').hide(0);
 $('#search-tool').click(function() {
-  $(".search-tool").fadeToggle();
+  $('.search-tool').slideToggle(500);
   $('#search-tool').toggleClass("is-active");
   // $('#search-tool').show(0);
   // $(this).hide(0);
