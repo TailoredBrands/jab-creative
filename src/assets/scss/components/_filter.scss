@@ -116,6 +116,9 @@ ul#color-drop, ul#pattern-drop {
     font-size: rem-calc(30);
     font-weight: lighter;
     z-index: 200;
+    &.shopping-bag {
+      left: 10px;
+    }
   }
 
   .button {
@@ -182,7 +185,17 @@ ul#color-drop, ul#pattern-drop {
     margin: 10px;
   }
 
+  .product-info-label {
 
+    &::after {
+      $x-size: 9px;
+      width: $x-size;
+      height: $x-size;
+      top: 15px;
+      right: 10px;
+    }
+  }
+  
   .product-color-swatches {
     margin: 5px auto 10px 20px;
 
