@@ -21,6 +21,19 @@
     border: 1px solid white;
     font-size: rem-calc(12);
   }
+  &.tabs-toggle {
+    font-size: 10px;
+    color: $primary-color;
+    background: $white;
+    border: 1px solid $primary-color;
+    padding: 0.6rem 1rem 0.5rem;
+    width: 100%;
+    &.active {
+      background-color: $primary-color;
+      color: $white;
+    }
+
+  }
 }
 .secondary.button {
   display: inline-block;
