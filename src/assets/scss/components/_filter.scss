@@ -274,6 +274,37 @@ ul#color-drop, ul#pattern-drop {
   padding: 0;
 }
 
+.browsepage-thumbnails {
+  position: relative;
+}
+
+.browsepage-thumbnails .made-in-the-usa {
+  z-index: 250;
+  background-color: rgba(120, 120, 120, .75);
+  position: absolute;
+  width: 100%;
+  color: white;
+  bottom: 0;
+  text-align: center;
+  padding: rem-calc(8px 5px 5px 5px);
+  margin: 0;
+
+  h1 {
+    padding: 0px;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: rem-calc(11px);
+    color: white;
+    font-weight: bold;
+  }
+
+  p {
+    padding: 0px;
+    margin: 0;
+    font-size: rem-calc(12px);
+  }
+}
+
 .product-results {
   color: #8A8A8A;
   font-size: rem-calc(13px);
