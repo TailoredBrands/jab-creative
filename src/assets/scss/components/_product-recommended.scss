@@ -1,0 +1,35 @@
+.recommended-item-link {
+  outline: none;
+}
+
+
+.recommended-title {
+  @extend .product-info-label;
+  margin-top: 0;
+  margin-bottom: 10px;
+  
+  &:after {
+    display:none;
+  }
+}
+
+.recommended-thumbnail-title {
+  font-weight: 400;
+  font-size: rem-calc(12);
+  letter-spacing: 0;
+  line-height: 1.5;
+  margin-top: rem-calc(10);
+  margin-bottom: 0;
+}
+
+.recommended-thumbnail-price {
+  .product-price-orig,
+  .product-price-discount {
+    font-size: rem-calc(11);
+    opacity: 0.5;
+  }
+}
+
+.slick-slide {
+  padding-left: 0;
+}

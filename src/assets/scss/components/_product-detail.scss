@@ -217,8 +217,15 @@
 
 .share-label {
   list-style: none;
+  display: inline-block !important;
   &::after {
     background: none;
+  }
+}
+
+.accordion .accordion-navigation {
+  .share-icon {
+    display: inline-block;
   }
 }
 
