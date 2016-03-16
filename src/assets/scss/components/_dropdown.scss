@@ -1,0 +1,113 @@
+//Wrapper of custom dropdown
+.size-dropdown-wrapper {
+  width: 100%;
+  display: block;
+  background: white; 
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid #9B9B9B;
+}
+
+//This is what is displayed in the dropdown as the selected item.
+.selected-item {
+  color: #222222;
+  position: relative;
+  top: 6px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  width: 100%;
+  display: block;
+
+  &::after {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #ADADAD;
+    content:"";
+    position: absolute;
+    right: 0;
+    top: 4px;
+  }
+}
+
+// .selected-item.triangle {
+//   &::after {
+//     width: 0; 
+//     height: 0; 
+//     border-left: 5px solid transparent;
+//     border-right: 5px solid transparent;
+//     border-top: 5px solid #ADADAD;
+//     content:"";
+//     position: absolute;
+//     right: 0;
+//     top: 4px;
+//   }
+// }
+
+// .selected-item.x {
+//   &::after {
+//     width: 0; 
+//     height: 0; 
+//     border-left: 5px solid transparent;
+//     border-right: 5px solid transparent;
+//     border-top: 5px solid red;
+//     content:"";
+//     position: absolute;
+//     right: 0;
+//     top: 4px;
+//   }
+// }
+
+.dropdown-item {
+  letter-spacing: 2px;
+  color: #8A8A8A;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+//This styles the selected-item to look like a placeholder.
+.dropdown-placeholder {
+  color: #8A8A8A;
+  font-weight: 400;
+}
+
+//The guts of the dropdown.
+//This is the <ul>
+.custom-dropdown {
+  position: relative;
+  display: block;
+  padding-top: 10px;
+  margin-bottom: 0;
+
+  //Each list item in the dropdown menu.
+  li {
+    padding: 16px;
+    display: none;
+    border-bottom: 1px solid $light-gray;
+    text-transform: uppercase;
+    //We don't need no stinkin border for the last element.
+    &:last-child {
+      border-bottom: none;
+    }
+    //On hover, make the item look nice.
+    &:hover {
+      background: #FBFBFB;
+    }
+  }
+}
+
+//When the custom-dropdown is active, open that sucker up
+.custom-dropdown.is-active {
+  height: auto;
+  max-height: 400px;
+  overflow: auto;
+  //Gotta show the list item elements as well!
+  li {
+    display: block;
+  }
+}

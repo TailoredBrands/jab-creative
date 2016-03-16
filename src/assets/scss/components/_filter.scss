@@ -116,6 +116,9 @@ ul#color-drop, ul#pattern-drop {
     font-size: rem-calc(30);
     font-weight: lighter;
     z-index: 200;
+    &.shopping-bag {
+      left: 10px;
+    }
   }
 
   .button {
@@ -192,7 +195,7 @@ ul#color-drop, ul#pattern-drop {
       right: 10px;
     }
   }
-
+  
   .product-color-swatches {
     margin: 5px auto 10px 20px;
 
@@ -222,25 +225,25 @@ ul#color-drop, ul#pattern-drop {
     padding-bottom: 3px;
   }
 
-  .accordion .accordion-navigation > .content.active {
-    padding-top: 0 !important;
-    border-bottom: 1px solid #efefef;
-    margin: 0;
+  // .accordion .accordion-navigation > .content.active {
+  //   padding-top: 0 !important;
+  //   // border-bottom: 1px solid #efefef;
+  //   margin: 0;
 
-    ul {
-      margin: -5px;
-    }
+  //   ul {
+  //     margin: -5px;
+  //   }
 
-    li {
-      list-style-type: none;
-      padding-bottom: 5px;
-      margin-left: 20px;
+  //   li {
+  //     list-style-type: none;
+  //     padding-bottom: 5px;
+  //     margin-left: 20px;
 
-      a {
-        font-size: rem-calc(13);
-      }
-    }
-  }
+  //     a {
+  //       font-size: rem-calc(13);
+  //     }
+  //   }
+  // }
 }
 
 .product-filters {
