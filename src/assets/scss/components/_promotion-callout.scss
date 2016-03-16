@@ -3,3 +3,83 @@
   font-weight: 500;
   font-size: rem-calc(12);
 }
+
+.promotion-callout-top, .promotion-callout-dismissible {
+  text-align: center;
+  color: white;
+
+  h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: rem-calc(16px);
+    color: white;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: rem-calc(14px);
+    color: white;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0;
+    font-size: rem-calc(12px);
+    font-weight: normal;
+
+    span {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}
+
+.promotion-callout-top {
+  position: relative;
+  width: 100%;
+  background-color: $callout-color;
+  color: white;
+  padding: rem-calc(8px);
+}
+
+.promotion-callout-dismissible {
+  position: fixed;
+  z-index: 300;
+  width: 100%;
+  background-color: $callout-color;
+  color: white;
+  padding: rem-calc(15px 0px 10px 0px);
+
+  h1 {
+    font-size: rem-calc(12px);
+    margin-bottom: rem-calc(5px);
+  }
+
+  p {
+    font-size: rem-calc(16px);
+  }
+}
+
+.promotion-callout-dismissible.alert-box {
+  margin-bottom: 0;
+
+  .close {
+    opacity: 1.0;
+    font-size: rem-calc(30px);
+    font-weight: 100;
+    position: absolute;
+    top: rem-calc(15px);
+    right: 0px;
+    color: white;
+  }
+}
+
+.promotion-callout-dismissible.bottom {
+  bottom: 0;
+}
+
+.promotion-callout-dismissible.top {
+  position: relative;
+}

@@ -13,12 +13,9 @@ $(document).foundation({
 });
 
 // Show and hide more filters in product off canvas
-// $('.search-tool').hide(0);
-$('#search-tool').click(function() {
+$('#search-icon').click(function() {
   $('.search-tool').slideToggle(500);
-  $('#search-tool').toggleClass("is-active");
-  // $('#search-tool').show(0);
-  // $(this).hide(0);
+  $('#search-icon').toggleClass("is-active");
 });
 
 // Show and hide search bar

@@ -1,7 +1,7 @@
 <div class="off-canvas-wrap" data-offcanvas>
   <div class="inner-wrap">
     <!-- wrap for off-canvas above -->
-
+    {{>promotion-callout-top}}
     <nav class="tab-bar show-for-small-only mobile-tab-bar">
       <section class="left-small">
         <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
@@ -9,7 +9,7 @@
       <section class="middle tab-bar-section">
         <img class="logo" src="{{assets}}images/tmw-logo-white.svg">
         <span class="right">
-          <a href="#" id="search-tool"><img class="icon" src="{{assets}}images/icons/search-icon.svg"></a>
+          <a href="#" id="search-icon"><img class="icon" src="{{assets}}images/icons/search-icon.svg"></a>
           <a class="right-off-canvas-toggle" href="#shopping-bag" aria-controls="shopping-bag"><img class="icon" src="{{assets}}images/icons/bag-icon.svg"></a>
 
         </span>
@@ -17,15 +17,15 @@
     </nav>
 
     <div class="test-wrapper">
-    <div class="search-tool">
-      <div class="row">
-        <div class="small-12 columns">
-          <label>
-            <input type="text" placeholder="Search">
-          </label>
+      <div class="search-tool">
+        <div class="row">
+          <div class="small-12 columns">
+            <label>
+              <input type="text" placeholder="Search">
+            </label>
+          </div>
         </div>
       </div>
-    </div>
     </div>
 
     <aside class="left-off-canvas-menu">
@@ -45,7 +45,7 @@
     <aside id="shopping-bag" class="right-off-canvas-menu">
       <nav class="small-only">
         <a class="right-off-canvas-toggle shopping-bag">&lsaquo;</a>
-        {{>shopping-bag}}
+        {{>product-filters-more}}
         <a href="#" class="button anchor-bottom">Apply to Results</a>
       </nav>
     </aside>

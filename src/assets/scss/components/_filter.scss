@@ -195,9 +195,9 @@ ul#color-drop, ul#pattern-drop {
       right: 10px;
     }
   }
-  
+
   .product-color-swatches {
-    margin: 5px auto 10px 20px;
+    margin: 5px auto 10px 10px;
 
     .thumbnail {
       margin: 0 !important;
@@ -270,6 +270,9 @@ ul#color-drop, ul#pattern-drop {
 }
 
 // Browse
+.browse-header .slick-slide  {
+  padding: 0;
+}
 
 .product-results {
   color: #8A8A8A;
@@ -317,7 +320,7 @@ ul#color-drop, ul#pattern-drop {
   border-bottom: 1px solid #efefef;
 }
 
-#search-tool {
+#search-icon {
   opacity: 1.0;
 
   &.is-active {
