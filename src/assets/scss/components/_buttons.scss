@@ -35,14 +35,19 @@
 
 .tabs-toggle {
   font-size: 10px;
+  text-transform: uppercase;  
+  text-align: center;
+  letter-spacing: 2px;
   color: $primary-color;
   background: $white;
   border: 1px solid $primary-color;
   padding: 0.6rem 1rem 0.5rem;
-  width: 50%;
+  width: 33.334%;
   &.active {
-    background-color: $primary-color;
-    color: $white;
+    background-color: black;
+    a {
+      color: white;
+    }
   }
 }
 

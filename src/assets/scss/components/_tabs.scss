@@ -1,0 +1,48 @@
+// .checkout-tabs {
+//   .tabs {
+//     a {
+//       background: #efefef;
+//     }
+//   }
+//   .tab-title {
+//     width: 33%;
+//     text-align: center;
+//   }
+// }
+
+
+.tabs.checkout-tabs {
+  a {
+    font-size: 14px;
+    font-weight: 300;
+    background: #efefef;
+    padding: 20px 0;
+  }
+  .tab-title {
+    width: 33%;
+    text-align: center;
+    a {
+      text-transform: none;
+    }
+  }
+}
+
+
+.tabs.checkout-toggle{
+  a {
+    font-size: 10px;
+    background: white;
+    border: 1px solid black;
+    letter-spacing: 2px;
+  }
+  .tab-title {
+    width: 50%;
+    text-align: center;
+    &.active {
+      a {
+        background: black;
+        color: white;
+      }
+    }
+  }
+}
