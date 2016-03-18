@@ -21,20 +21,36 @@
     border: 1px solid white;
     font-size: rem-calc(12);
   }
-  &.tabs-toggle {
-    font-size: 10px;
-    color: $primary-color;
+  // for tmw retail
+  &.primary {
+    background: $callout-color;
+  }
+  &.reverse {
     background: $white;
-    border: 1px solid $primary-color;
-    padding: 0.6rem 1rem 0.5rem;
-    width: 100%;
-    &.active {
-      background-color: $primary-color;
-      color: $white;
-    }
-
+    border: 1px solid $callout-color;
+    font-size: rem-calc(12);
+    color: $callout-color;
   }
 }
+
+.tabs-toggle {
+  font-size: 10px;
+  text-transform: uppercase;  
+  text-align: center;
+  letter-spacing: 2px;
+  color: $primary-color;
+  background: $white;
+  border: 1px solid $primary-color;
+  padding: 0.6rem 1rem 0.5rem;
+  width: 33.334%;
+  &.active {
+    background-color: black;
+    a {
+      color: white;
+    }
+  }
+}
+
 .secondary.button {
   display: inline-block;
 }
@@ -53,6 +69,8 @@
   }
 }
 
-
+.button-smalltext {
+  font-size: 10px;
+}
 
 
