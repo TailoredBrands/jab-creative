@@ -19,7 +19,7 @@ section: rent
   </div>
 </section>
 
-<section>
+<section class="product-details-page">
   <div class="row">
     <div class="medium-7 columns">
       <!-- Small carousel -->
@@ -68,7 +68,7 @@ section: rent
       </div>
     </div>
 
-      <div class="package-container">
+      <div class="product-container">
         <div class="package about-demo">
 
           <section class="product-colors">
@@ -178,10 +178,10 @@ section: rent
               <h3 class="left section-label size-label">Size:</h3>
               <a class="right text-link big-and-tall-link" href="#">Switch to Big &amp; Tall Sizes</a>
               <form>
-                <div class="size-dropdown-wrapper">
+                <div id="sizeDropdown" class="size-dropdown-wrapper">
                   <span class="selected-item dropdown-placeholder">Regular Sizes</span>
 
-                  <ul class="custom-dropdown">
+                  <ul id="sizeDropdownList" class="custom-dropdown">
                     <li class="dropdown-item">36 Short</li>
                     <li class="dropdown-item">36 Regular</li>
 
@@ -223,6 +223,8 @@ section: rent
                 </div>
               </form>
             </div>
+          <a class="add-to-bag-cta hide-for-small-only" href="#">Add to Shopping Bag</a>
+
           </section>
 
           <section class="product-info">
@@ -466,11 +468,11 @@ section: rent
                 </a>
               </li>
 
-              <li class="accordion-navigation product-info-accordion">
+              <li class="accordion-navigation product-info-accordion hide-for-medium-up">
                 {{>recently-viewed}}
               </li>
 
-              <li class="accordion-navigation product-info-accordion">
+              <li class="accordion-navigation product-info-accordion hide-for-medium-up">
                 {{>product-recommendations}}
               </li>
 
@@ -481,10 +483,20 @@ section: rent
           
 
 
-          </div>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="row">
+      <div class="small-12 columns show-for-medium-up">
+        {{>recently-viewed-large}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 columns show-for-medium-up">
+        {{>product-recommendations-large}}
+      </div>
+    </div>
+  </section>
 
-    <a class="add-to-bag-cta" href="#">Add to Shopping Bag</a>
+    <a class="add-to-bag-cta hide-for-medium-up" href="#">Add to Shopping Bag</a>
 

@@ -1,3 +1,10 @@
+.product-details-page {
+  @media #{$medium-up} {
+    margin-top: 2rem;
+  }
+}
+
+
 .pdp-header {
   &.back-link {
     a {
@@ -22,7 +29,12 @@
 }
 
 .product-name {
-  margin: 0.5rem 0 0 0;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.product-container {
+  padding: 10px 0;
 }
 
 .product-info, .customize-modal {
@@ -320,6 +332,12 @@ a.add-to-bag-cta {
     -webkit-transition: background 0.3s ease;
     color: white;
     background: darken($callout-color, 10%);
+  }
+
+  @media #{$medium-up} {
+    position: relative;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
   }
 }
 

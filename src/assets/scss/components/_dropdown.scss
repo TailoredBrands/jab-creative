@@ -12,6 +12,7 @@
 
   .out-of-stock {
     opacity: 0.5;
+    cursor: not-allowed;
   }
 }
 
@@ -110,6 +111,8 @@
   height: auto;
   max-height: 400px;
   overflow: auto;
+  margin-top: 1rem;
+  padding-top:  0;
   //Gotta show the list item elements as well!
   li {
     display: block;

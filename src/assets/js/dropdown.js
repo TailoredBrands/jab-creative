@@ -1,6 +1,6 @@
 //When clicking the PDP dropdown, add the class ".is-active" to open it up.
-$('.size-dropdown-wrapper').on('click', function() {
-  $(this).toggleClass('is-active');
+$('#sizeDropdown').on('click', function() {
+  $('#sizeDropdownList').toggleClass('is-active');
 });
 
 //When clicking an item within the custom PDP dropdown, 
