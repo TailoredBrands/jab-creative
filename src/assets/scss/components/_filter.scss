@@ -128,7 +128,6 @@ ul#color-drop, ul#pattern-drop {
   .button {
     margin-top: 45px;
     font-size: 12px;
-    // background-color: $callout-color;
     position: absolute;
     width: 100%;
     border: 1px solid #4A90E2;
@@ -329,12 +328,18 @@ ul#color-drop, ul#pattern-drop {
 
   .product-price {
     margin-bottom: 0;
-    font-size: rem-calc(13px);
     color: #747474;
+  }
 
-    .product-price-discount {
-      color: #747474;
-    }
+  .product-price-orig {
+    font-size: rem-calc(11px);
+    color: #747474;
+    font-weight: normal;
+  }
+
+  .product-price-discount {
+    color: #747474;
+    font-size: rem-calc(14px);
   }
 
   .rating {
