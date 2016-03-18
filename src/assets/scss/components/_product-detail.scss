@@ -228,6 +228,10 @@
   list-style: none;
 }
 
+.product-info-accordion:last-child {
+  border-bottom: none;
+}
+
 .product-info-label {
   $product-info-label-padding: 20px;
   font-size: 12px !important;
