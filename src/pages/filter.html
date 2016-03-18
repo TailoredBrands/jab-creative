@@ -77,9 +77,9 @@ section: rent
           <p class="product-price"><span class="product-price-discount">$699.<sup>99</sup> </span></p>
           <a class="text-link" href="#">More Colors</a>
         </div>
-      <!-- </div>
+        <!-- </div>
 
-      <div class="row"> -->
+        <div class="row"> -->
         <div class="browse-header small-6 medium-4 large-3 columns">
           <div class="browsepage-thumbnails">
             <ul>
@@ -118,9 +118,9 @@ section: rent
           <a class="text-link" href="#">More Colors</a>
           <p class="promotion-callout">Buy 1 Get 1 FREE Suits and Sport Coats and get 50% Off additional items.</p>
         </div>
-      <!-- </div>
+        <!-- </div>
 
-      <div class="row"> -->
+        <div class="row"> -->
         <div class="browse-header small-6 medium-4 large-3 columns">
           <div class="browsepage-thumbnails">
             <ul>
@@ -162,9 +162,9 @@ section: rent
           <p class="product-price"><span class="product-price-discount">$699.<sup>99</sup> </span></p>
           <a class="text-link" href="#">More Colors</a>
         </div>
-      <!-- </div>
+        <!-- </div>
 
-      <div class="row"> -->
+        <div class="row"> -->
         <div class="browse-header small-6 medium-4 large-3 columns">
           <div class="browsepage-thumbnails">
             <ul>
@@ -206,11 +206,22 @@ section: rent
       </div>
     </div>
   </div>
-</div>
+<!-- </div> -->
 </section>
 
-<div class="browse-page-product-recommendations">
+<div class="browse-page-product-recommendations hide-for-medium-up">
   {{>recently-viewed}}
+</div>
+
+<div class="row">
+  <div class="small-12 columns show-for-medium-up">
+    {{>recently-viewed-large}}
+  </div>
+</div>
+<div class="row">
+  <div class="small-12 columns show-for-medium-up">
+    {{>product-recommendations-large}}
+  </div>
 </div>
 
 <!-- {{>promotion-callout-bottom}} -->

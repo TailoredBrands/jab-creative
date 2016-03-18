@@ -278,7 +278,7 @@ ul#color-drop, ul#pattern-drop {
 }
 
 .browse-header .slick-slider {
-  margin-bottom: 0;
+  margin-bottom: rem-calc(10px);
 }
 
 .browsepage-thumbnails {
@@ -319,7 +319,7 @@ ul#color-drop, ul#pattern-drop {
 }
 
 .browse-header {
-  margin-bottom: 0;
+  margin-bottom: rem-calc(25px);
 
   .product-name {
     font-size: rem-calc(14px);

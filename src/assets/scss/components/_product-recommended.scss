@@ -2,7 +2,6 @@
   outline: none;
 }
 
-
 .recommended-title {
   @extend .product-info-label;
   margin-top: 0;
@@ -33,4 +32,19 @@
 
 .slick-slide {
   padding-left: 0;
+}
+
+@media #{$medium-up} {
+  .recommended-thumbnail {
+    width: 130px;
+  }
+
+  .recommended-items {
+    list-style-type: none;
+  }
+
+  .recommended-item {
+    display: inline-block;
+    margin-right: 10px;
+  }
 }

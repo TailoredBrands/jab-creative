@@ -2,6 +2,9 @@
   color: $callout-color;
   font-weight: 500;
   font-size: rem-calc(12);
+  @media #{$medium-up} {
+    margin-bottom: 0;
+  }
 }
 
 .promotion-callout-top, .promotion-callout-dismissible {
