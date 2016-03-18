@@ -390,6 +390,11 @@ $('#shop-nav-search-trigger').on({
   },
 });
 
+$('#pdpSeeMore').on('click', function() {
+  $('.secondary-colors').toggleClass('is-hidden');
+  $('.less').toggleClass('is-hidden');
+  $('.more').toggleClass('is-active');
+});
 
 // input fields
 

@@ -95,3 +95,66 @@ section.help {
   min-height: rem-calc(200);
   background: $white;
 }
+
+//new footer
+footer {
+  ul li ul {
+    margin-left: 0;
+  }
+  .accordion {
+    .footer-nav-label {
+      color: white;
+      background: transparent;
+      text-transform: uppercase;
+      border-bottom: none;
+      &:hover,
+      &:active,
+      &:focus,
+      &:visited {
+        background: transparent !important;
+        color: white !important;
+      }
+    }
+    .accordion-navigation {
+      border-bottom: none;
+    }
+    .footer-nav-content {
+      background: transparent !important;
+      color: white !important;
+    }
+  }
+  .accordion .accordion-navigation.active > a,
+  .accordion dd.active > a {
+    background: transparent !important;
+    color: white !important;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+
+  }
+
+  .logo {
+    width: 400px;
+    height: auto;
+    display: block !important;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  @media #{$small-only} {
+    padding-bottom: 100px;
+  }
+}
+
+footer ul li a {
+  width: 100%;
+  text-align: center;
+}

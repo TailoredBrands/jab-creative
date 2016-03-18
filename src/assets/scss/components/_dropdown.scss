@@ -4,11 +4,15 @@
   display: block;
   background: white; 
   position: relative;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 25px;
   padding: 5px 10px;
   cursor: pointer;
   border: 1px solid #9B9B9B;
+
+  .out-of-stock {
+    opacity: 0.5;
+  }
 }
 
 //This is what is displayed in the dropdown as the selected item.
