@@ -355,6 +355,15 @@ ul#color-drop, ul#pattern-drop {
   border-bottom: 1px solid #efefef;
 }
 
+.browse-page-product-recommendations {
+  border-top: 1px solid #efefef;
+  padding: rem-calc(35px 20px 0px 20px);
+
+  .recommended-items, .recommended-thumbnail-price {
+    margin-bottom: 0;
+  }
+}
+
 #search-icon {
   opacity: 1.0;
 
