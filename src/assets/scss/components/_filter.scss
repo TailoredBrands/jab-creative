@@ -374,6 +374,35 @@ ul#color-drop, ul#pattern-drop {
   border-bottom: 1px solid #efefef;
 }
 
+.browse-page-breadcrumbs li {
+  display: inline;
+  float: left;
+
+  &:after {
+    color: #AAAAAA;
+    content: "/";
+    margin: 0.66667rem;
+    position: relative;
+    font-weight: bold;
+  }
+
+  a {
+    letter-spacing: 1px;
+    color: #AAAAAA;
+    font-weight: bold;
+  }
+}
+
+.browsepage-thumbnails li {
+  list-style-type: none;
+}
+
+.browse-page-breadcrumbs li:last-child {
+  &:after {
+    content: "";
+  }
+}
+
 .browse-page-product-recommendations {
   border-top: 1px solid #efefef;
   padding: rem-calc(35px 20px 0px 20px);
