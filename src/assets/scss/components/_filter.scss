@@ -121,6 +121,10 @@ ul#color-drop, ul#pattern-drop {
     }
   }
 
+  .apply-filters {
+    background-color: $callout-color;
+  }
+
   .button {
     margin-top: 45px;
     font-size: 12px;
@@ -272,6 +276,10 @@ ul#color-drop, ul#pattern-drop {
 // Browse
 .browse-header .slick-slide  {
   padding: 0;
+}
+
+.browse-header .slick-slider {
+  margin-bottom: 0;
 }
 
 .browsepage-thumbnails {
