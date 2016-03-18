@@ -1,6 +1,10 @@
 //When clicking the PDP dropdown, add the class ".is-active" to open it up.
-$('.size-dropdown-wrapper').on('click', function() {
-  $('.custom-dropdown').toggleClass('is-active');
+$('#dropdown-ship-address-1').on('click', function() {
+  $('#dropdown-ship-address-dropdown-1').toggleClass('is-active');
+});
+
+$('#dropdown-ship-address-2').on('click', function() {
+  $('#dropdown-ship-address-dropdown-2').toggleClass('is-active');
 });
 
 //When clicking an item within the custom PDP dropdown, 
