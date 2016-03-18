@@ -1,5 +1,5 @@
 .rating {
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .label-rating,
@@ -26,4 +26,11 @@
 .rating-star-dimmed {
   @extend .rating-star;
   opacity: 0.25;
+}
+
+.rating-number {
+  font-size: rem-calc(10);
+  letter-spacing: 0;
+  text-transform: none;
+  opacity: 0.5;
 }
