@@ -332,7 +332,7 @@ ul#color-drop, ul#pattern-drop {
   }
 
   .product-price-orig {
-    font-size: rem-calc(11px);
+    font-size: rem-calc(12px);
     color: #747474;
     font-weight: normal;
   }
@@ -344,6 +344,12 @@ ul#color-drop, ul#pattern-drop {
 
   .rating {
     margin-bottom: 0;
+    margin-left: 2px;
+
+    .rating-star {
+      width: 14px;
+      height: 14px;
+    }
   }
 
   .text-link {
