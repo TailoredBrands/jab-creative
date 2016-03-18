@@ -300,5 +300,26 @@
   }
 }
 
+a.add-to-bag-cta {
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 20px 10px;
+  background: $callout-color;
+  color: white;
+  text-align: center;
+  z-index: 9999;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: rem-calc(14);
 
+  &:hover{
+    -webkit-transition: background 0.3s ease;
+    color: white;
+    background: darken($callout-color, 10%);
+  }
+}
 

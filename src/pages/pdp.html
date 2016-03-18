@@ -122,7 +122,7 @@ section: rent
 
 
               <li class="see-more-colors" >
-                <a id="pdpSeeMore" class="small-text-link" href="#">See <span class="more is-active">More</span> <span class="less is-hidden">Less</span></a>
+                <a id="pdpSeeMore" class="small-text-link">See <span class="more is-active">More</span> <span class="less is-hidden">Less</span></a>
               </li>
             </ul>
           </section>
@@ -371,6 +371,22 @@ section: rent
               </li>
 
               <li class="accordion-navigation product-info-accordion">
+                <a class="product-info-label" href="#reviews">
+                <span class="label-rating">Reviews</span>
+                <span class="rating label-rating-stars">
+                  <img class="rating-star" src="{{assets}}images/icons/rating-star.svg" alt="star">
+                  <img class="rating-star" src="{{assets}}images/icons/rating-star.svg" alt="star">
+                  <img class="rating-star" src="{{assets}}images/icons/rating-star.svg" alt="star">
+                  <img class="rating-star" src="{{assets}}images/icons/rating-star.svg" alt="star">
+                  <img class="rating-star-dimmed" src="{{assets}}images/icons/rating-star.svg" alt="star">
+                </span>
+                </a>
+                <div id="reviews" class="content">
+                  <p>This placeholder copy, not production copy. This will be updated.</p>
+                </div>
+              </li>
+
+              <li class="accordion-navigation product-info-accordion">
                 <img class="save-icon" src="{{assets}}images/icons/heart-black.svg" alt="">
                 <a href="#"class="text-link save-look"> Save this look</a>
               </li>
@@ -395,19 +411,7 @@ section: rent
               </li>
 
               <li class="accordion-navigation product-info-accordion">
-                <a class="product-info-label" href="#reviews">
-                <span class="label-rating">Reviews</span>
-                <span class="rating label-rating-stars">
-                  <img class="rating-star" src="{{assets}}images/icons/rating-star.svg" alt="star">
-                  <img class="rating-star" src="{{assets}}images/icons/rating-star.svg" alt="star">
-                  <img class="rating-star" src="{{assets}}images/icons/rating-star.svg" alt="star">
-                  <img class="rating-star" src="{{assets}}images/icons/rating-star.svg" alt="star">
-                  <img class="rating-star-dimmed" src="{{assets}}images/icons/rating-star.svg" alt="star">
-                </span>
-                </a>
-                <div id="reviews" class="content">
-                  <p>This placeholder copy, not production copy. This will be updated.</p>
-                </div>
+                {{>recently-viewed}}
               </li>
 
               <li class="accordion-navigation product-info-accordion">
@@ -418,8 +422,13 @@ section: rent
           </section>
 
           <br/>
-              
+          
+
+
           </div>
         </div>
       </div>
     </section>
+
+    <a class="add-to-bag-cta" href="#">Add to Shopping Bag</a>
+
