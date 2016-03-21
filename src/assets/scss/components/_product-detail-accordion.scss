@@ -1,0 +1,103 @@
+//each accordion related to the pdp needs to have a right margin
+.product-info-accordion {
+  margin-right: 10px;
+  border-bottom: 1px solid #DDDDDD;
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+//label for the accordions on the PDP
+.product-info-label {
+  $product-info-label-padding: 20px;
+  font-size: 12px !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  position: relative;
+
+  //this is the fancy x that follows the accordion labels 
+  &::after {
+    $x-size: 15px;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url(../images/icons/plus-black.svg);
+    width: $x-size;
+    height: $x-size;
+    transition: all 0.3s ease-out;
+    transform: rotate(0deg);
+  }
+}
+
+//Overriding the accordion styling for f5
+.product-info-label[aria-expanded="true"] {
+  background: white !important;
+
+  &::after {
+    transition: all 0.3s ease-out;
+    transform: rotate(45deg);
+  }
+}
+
+//Accordion styles for the product info section of PDP
+.accordion .product-info-accordion  > a,
+.accordion dd > a {
+    padding: 0;
+    margin: 0;
+    &:hover {
+      background-color: #fff;
+    }
+    &:active {
+      background-color: #fff;
+    }
+}
+
+.accordion .product-info-accordion  > .content,
+.accordion dd > .content {
+  padding: 10px 0;
+}
+
+@media #{$small-only} {
+  .accordion .product-info-accordion {
+    a {
+      position:relative;
+      z-index: 10;
+    }
+
+    .content {
+      overflow: hidden;
+      padding:0 0.9375rem;
+      height:0; display:block;
+      transition: all 0.3s ease;
+
+      &.active {
+        height: auto;
+        padding: 0.9375rem;}
+    }
+  }
+}
+
+.accordion .product-info-accordion > .product-info-label {
+  border-bottom: none;
+}
+
+.product-info-accordion {
+  .save-icon {
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+    display: inline-block;
+  }
+
+  .text-link.save-look {
+    display: inline-block;
+    font-size: 12px !important;
+  }
+}
+//End PDP accordion styles
