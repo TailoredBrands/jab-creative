@@ -33,10 +33,10 @@ section: rent
           </ul>
           <div class="tabs-content">
             <div class="content active" id="panel1-a">
-              {{>checkout-shipping}}
+              {{>checkout-ship-address}}
             </div>
             <div class="content" id="panel2-a">
-              <p>aoedtnseu</p>
+              {{>checkout-ship-store}}
             </div>
           </div>
         </div>
@@ -45,6 +45,20 @@ section: rent
     <!-- payment -->
     <div class="content" id="panel2">
       {{>checkout-payment}}
+      <ul class="tabs checkout-toggle" data-tab>
+        <li class="tab-title active"><a href="#panel1-a">Credit Card</a></li>
+        <li class="tab-title"><a href="#panel2-a">PayPal</a></li>
+      </ul>
+      <div class="tabs-content">
+        <div class="content active" id="panel1-a">
+          {{>checkout-payment-cc}}
+        </div>
+        <div class="content" id="panel2-a">
+          {{>checkout-payment-paypal}}
+        </div>
+      </div>
+
+
     </div>
 
     <!-- review -->
