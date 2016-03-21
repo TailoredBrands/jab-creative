@@ -1,140 +1,61 @@
+
+//Content for the pdp
 .product-details-page {
   @media #{$medium-up} {
     margin-top: 2rem;
   }
 }
 
-
-.pdp-header {
-  &.back-link {
-    a {
-      margin-bottom: 20px;
-    }
-  }
-}
-
-.pdp-thumbs {
-  padding-top: 1.2rem;
-  margin-left: 0.05rem;
-  display: none;
-  @media #{$medium-up} {
-    display: block;
-    img { 
-      width: 75px; 
-    }
-  }
-  .active {
-  	border: 3px solid $primary-color;
-  }
-}
-
+//The product name/title on pdp
 .product-name {
   margin: 0;
   padding-bottom: 0;
 }
 
+//Container for all details proceding the image and title
 .product-container {
   padding: 10px 0;
 }
 
-.product-info, .customize-modal {
-  h1 {
-    margin-bottom: 6px;
+//All information relating to the product
+.product-info {
+  //Sets the base font-size
+  p,
+  li {
+    font-size: 13px;
   }
 
-  h4 {
-    margin: 0 0 8px 0;
+  ul {
+    margin: 0;
   }
 
+  //initial price with the strikethrough
   .price-starting {
     font-size: 1.25rem;
     font-weight: 500;
     margin: -7px 0 0 0;
   }
 
+  //new price of the product
   .price-shown {
     font-size: 0.875rem;
     font-weight: 500;
     color: #999;
   }
-
-  .package-details {
-    list-style-type: none;
-    margin-left: 0;
-    line-height: 1.2rem;
-    li { margin-bottom: 0.5rem; }
-  }
-
-  .two-buttons a {
-    width: 49%;
-    padding: 0.875rem 0 0.75rem 0;
-  }
 }
 
-.product-info {
-  p, li { font-size: 13px; }
-  @media #{$small-only} {
-    li {
-      margin-right: 10px;
-    }
-  }
-}
-
-.accordion .accordion-navigation > a, .accordion dd > a {
-    padding: 0;
-    margin: 0;
-    &:hover {
-      background-color: #fff;
-    }
-    &:active {
-      background-color: #fff;
-    }
-}
-
-.accordion .accordion-navigation > .content, .accordion dd > .content {
-  padding: 10px 0;
-}
-
-@media #{$small-only} {
-  .accordion .accordion-navigation > {
-    a { position:relative; z-index: 10;}
-    .content {
-      overflow: hidden;
-      padding:0 0.9375rem;
-      height:0; display:block;
-      transition: all .5s ease;
-      &.active { height: auto; padding: 0.9375rem;}
-    }
-  }
-}
-
-.product-info {
-  ul {
-    margin: 0;
-  }
-}
-
-.custom.look.item {
-  .thumbnail {
-    padding: 10px;
-    border: 1px solid #eee;
-  }
-}
-
-.flush-bottom {
-  margin-bottom: 0;
-}
-
-//generic labels for all sections.
+//generic labels for all sections within PDP.
 .section-label {
   margin-right: 4px;
   margin-bottom: 12px;
 }
 
+//Custom massaging for the "Size:" label on PDP
 .size-label {
   margin-top: 2px;
 }
 
+//Link for big and tall on pdp
 .big-and-tall-link {
   margin-bottom: 5px;
   font-weight: 300;
@@ -142,80 +63,9 @@
   top: 0;
 }
 
-.color-label {
-  @extend .section-label;
-  display: inline-block;
-}
-
-.color-name {
-  display: inline-block;
-}
-
-.product-color {
-  $color-thumbnail-size: 40px;
-  width: $color-thumbnail-size;
-  height: $color-thumbnail-size;
-}
-
-.thumbnail {
-  //overriding default block grid 
-  padding: 3px;
-  display: inline-block;
-
-  &.active {
-    border: 1px solid black;
-  }
-}
-
-.secondary-colors.is-hidden {
-  display: none;
-}
-
-
-.see-more-colors {
-  display: inline-block;
-  margin-left: 5px;
-}
-
-.less {
-  display: inline;
-  &.is-hidden {
-    display: none;
-  }
-}
-
-.more {
-  display: none; 
-
-  &.is-active {
-    display: inline;
-  }
-}
-
-.small-text-link {
-  @extend .text-link;
-  font-size: rem-calc(10);
-  font-weight: 400;
-  opacity: 0.5;
-}
-
-.product-total-label {
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 2px;
-}
-
+//Total price for the product. Should be shown only if B&T is selected
 .product-total {
   padding-top: 5px;
-}
-
-.product-price {
-  font-weight: 400;
-}
-
-.product-quantity {
-  width: 70px !important;
-  height: 30px;
 }
 
 .quantity-label {
@@ -223,85 +73,30 @@
   margin-top: 6px;
 }
 
-.product-info-accordion {
-  border-bottom: 1px solid #DDDDDD;
-  list-style: none;
+.product-quantity {
+  //overriding the crazy specific quantitiy input rule of f5
+  width: 70px !important;
+  height: 30px;
 }
 
-.product-info-accordion:last-child {
-  border-bottom: none;
-}
-
-.product-info-label {
-  $product-info-label-padding: 20px;
-  font-size: 12px !important;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 500;
-  position: relative;
-
-
-  &::after {
-    $x-size: 15px;
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: url(../images/icons/plus-black.svg);
-    width: $x-size;
-    height: $x-size;
-    transition: all 0.3s ease-out;
-    transform: rotate(0deg);
-  }
-}
-
-.product-info-label[aria-expanded="true"] {
-  background: white !important;
- &::after {
-  transition: all 0.3s ease-out;
-  transform: rotate(45deg);
- }
-}
-
+//Label for the accordion in PDP
 .share-label {
   list-style: none;
   display: inline-block !important;
+
   &::after {
-    background: none;
+    background: none !important;
   }
 }
 
-.accordion .accordion-navigation {
+//Needs some specific styling to override f5 styles
+.accordion .product-info-accordion {
   .share-icon {
     display: inline-block;
   }
 }
 
-.product-info-label-caption {
-  font-size: 12;
-  text-transform: none;
-  letter-spacing: normal;
-}
-
-.product-info-accordion {
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
-  .save-icon {
-    width: 17px;
-    height: 17px;
-    margin-right: 5px;
-    display: inline-block;
-  }
-  .text-link.save-look {
-    display: inline-block;
-    font-size: 12px !important;
-  }
-}
-
-.accordion .product-info-accordion > .product-info-label {
-  border-bottom: none;
-}
-
+//Sizing chart styles for PDP 
 .sizing-chart {
   width: 100%;
 }
@@ -316,7 +111,7 @@
   }
 }
 
-a.add-to-bag-cta {
+.add-to-bag-cta {
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
   width: 100%;
@@ -332,16 +127,36 @@ a.add-to-bag-cta {
   font-weight: 500;
   font-size: rem-calc(14);
 
-  &:hover{
+  &:hover,
+  &:active,
+  &:focus {
     -webkit-transition: background 0.3s ease;
     color: white;
     background: darken($callout-color, 10%);
   }
 
+  //On larger screens snap the add to bag cta back into the normal flow of the page
   @media #{$medium-up} {
     position: relative;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
+  }
+}
+
+
+//Thumbnails for the medium screen and up (clicakble carousel)
+.pdp-thumbs {
+  padding-top: 1.2rem;
+  margin-left: 0.05rem;
+  display: none;
+  @media #{$medium-up} {
+    display: block;
+    img { 
+      width: 75px; 
+    }
+  }
+  .active {
+    border: 3px solid $primary-color;
   }
 }
 

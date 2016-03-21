@@ -1,0 +1,64 @@
+//label for the color section
+.color-label {
+  @extend .section-label;
+  display: inline-block;
+}
+
+//the name of the color that appears inline
+.color-name {
+  display: inline-block;
+}
+
+//the small thumbnails for colors
+.product-color {
+  $color-thumbnail-size: 40px;
+  width: $color-thumbnail-size;
+  height: $color-thumbnail-size;
+}
+
+.thumbnail {
+  //overriding default block grid 
+  padding: 3px;
+  display: inline-block;
+
+  &.active {
+    border: 1px solid black;
+  }
+}
+
+//this hides the colors that aren't highlighted in the PDP.  This is prototyping code
+.secondary-colors.is-hidden {
+  display: none;
+}
+
+//Link to see more colors
+.see-more-colors {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+//This is prototyping code to toggle the more and less anchor.
+.less {
+  display: inline;
+
+  &.is-hidden {
+    display: none;
+  }
+}
+
+//This is prototyping code to toggle the more and less anchor.
+.more {
+  display: none; 
+
+  &.is-active {
+    display: inline;
+  }
+}
+
+//generic small text link. used here in the see more colors area.
+.small-text-link {
+  @extend .text-link;
+  font-size: rem-calc(10);
+  font-weight: 400;
+  opacity: 0.5;
+}
