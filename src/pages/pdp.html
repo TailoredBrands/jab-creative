@@ -84,9 +84,7 @@ section: rent
                   <img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt="">
                 </a>
               </li>
-
               {{> pdp-colors}}
-
               <li class="see-more-colors" >
                 <a id="pdpSeeMore" class="">See <span class="more is-active">20 More</span> <span class="less is-hidden">Less</span></a>
               </li>
@@ -109,8 +107,7 @@ section: rent
                 </div>
               </form>
             </div>
-          <a class="add-to-bag-cta hide-for-small-only" href="#">Add to Shopping Bag</a>
-
+            <a class="add-to-bag-cta hide-for-small-only" href="#">Add to Shopping Bag</a>
           </section>
 
           <section class="product-info">
@@ -162,21 +159,7 @@ section: rent
 
               <li class="accordion-navigation product-info-accordion">
                 <a href="#" class="product-info-label share-label"> Share:</a>
-                <a href="#" class="share-icon">
-                  <img class="save-icon" src="{{assets}}images/icons/pinterest-black.svg" alt="">
-                </a>
-                <a href="#" class="share-icon">
-                  <img class="save-icon" src="{{assets}}images/icons/facebook-black.svg" alt="">
-                </a>
-                <a href="#" class="share-icon">
-                  <img class="save-icon" src="{{assets}}images/icons/twitter-black.svg" alt="">
-                </a>
-                <a href="#" class="share-icon">
-                  <img class="save-icon" src="{{assets}}images/icons/instagram-black.svg" alt="">
-                </a>
-                <a href="#" class="share-icon">
-                  <img class="save-icon" src="{{assets}}images/icons/email-circle-black.svg" alt="">
-                </a>
+                {{> pdp-share}}
               </li>
 
               <li class="accordion-navigation product-info-accordion hide-for-medium-up">
