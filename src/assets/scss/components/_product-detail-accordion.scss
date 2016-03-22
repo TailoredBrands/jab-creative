@@ -124,6 +124,15 @@
 
     &:after {
       top: 15px;
+      background: url(../images/icons/info-black.svg);
+    }
+  }
+  .store[aria-expanded="true"] {
+    background: white !important;
+
+    &::after {
+      transition: all 0.3s ease-out;
+      transform: rotate(0deg);
     }
   }
 }
