@@ -121,6 +121,14 @@
     @extend .product-info-label;
     opacity: 0.5;
     letter-spacing: 0;
+    transition: all 0.1s ease-out;
+
+
+     &:hover {
+      background: white !important;
+      opacity: 1;
+      transition: all 0.1s ease-out;
+     }
 
     &:after {
       top: 15px;
@@ -135,6 +143,11 @@
       transform: rotate(0deg);
     }
   }
+}
+
+.edit-location {
+  margin-left: 5px;
+  outline: 0;
 }
 
 .hours-of-operation {

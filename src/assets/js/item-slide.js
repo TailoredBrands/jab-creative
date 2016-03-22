@@ -1,6 +1,6 @@
 
 //Interchange and slick playing nicely 
-$('#carouselInterchange').on('replace', function(){
+$('.carouselInterchange').on('replace', function(){
 
 
 
