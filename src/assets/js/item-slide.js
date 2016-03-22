@@ -1,3 +1,9 @@
+
+//Interchange and slick playing nicely 
+$('#carouselInterchange').on('replace', function(){
+
+
+
 $(function() {
   if (window.innerWidth <= 640) {
     var carousel = $('.product-image-small ul').slick({
@@ -145,4 +151,7 @@ var carousel = $('.browsepage-thumbnails ul').slick({
     // instead of a settings object
   ]
 });
+
+});
+
 
