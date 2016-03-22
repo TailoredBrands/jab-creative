@@ -1,5 +1,5 @@
 //When clicking the custom dropdown, add the class ".is-active" to open it up.
-$('#sizeDropdownList').on('click', function() {
+$('#sizeDropdown').on('click', function() {
   $('#sizeDropdownList').toggleClass('is-active');
 });
 
