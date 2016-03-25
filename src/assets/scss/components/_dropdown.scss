@@ -16,6 +16,10 @@
   }
 }
 
+.size-dropdown-shipping {
+  margin-top: 1rem;
+}
+
 //This is what is displayed in the dropdown as the selected item.
 .selected-item {
   color: #222222;
@@ -39,34 +43,6 @@
     top: 4px;
   }
 }
-
-// .selected-item.triangle {
-//   &::after {
-//     width: 0; 
-//     height: 0; 
-//     border-left: 5px solid transparent;
-//     border-right: 5px solid transparent;
-//     border-top: 5px solid #ADADAD;
-//     content:"";
-//     position: absolute;
-//     right: 0;
-//     top: 4px;
-//   }
-// }
-
-// .selected-item.x {
-//   &::after {
-//     width: 0; 
-//     height: 0; 
-//     border-left: 5px solid transparent;
-//     border-right: 5px solid transparent;
-//     border-top: 5px solid red;
-//     content:"";
-//     position: absolute;
-//     right: 0;
-//     top: 4px;
-//   }
-// }
 
 .dropdown-item {
   letter-spacing: 2px;

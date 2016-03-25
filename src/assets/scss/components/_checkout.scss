@@ -1,6 +1,61 @@
 .inline-header {
   display: inline;
 }
-.checkout-review-edit {
 
+
+.checkout-tabs-content {
+  border-top: 1px solid $light-gray;
+  padding-top: 30px;
+}
+
+
+.tabs.checkout-tabs {
+  position: relative;
+  top: 2px;
+
+  a {
+    font-size: 14px;
+    font-weight: 300;
+    background: #efefef;
+    padding: 5px 0;
+  }
+
+  .tab-title {
+    width: auto;
+    min-width: 220px;
+    a {
+      text-transform: none;
+      text-align: center;
+    }
+  }
+
+  .tab-title.active {
+    border: 1px solid $light-gray;
+    border-bottom: 1px solid white;
+  }
+}
+
+
+.tabs.checkout-toggle{
+  a {
+    font-size: 10px;
+    background: white;
+    border: 1px solid black;
+    letter-spacing: 2px;
+  }
+  .tab-title {
+    width: 50%;
+    text-align: center;
+    &.active {      
+      a {
+        background: black;
+        color: white;
+      }
+    }
+  }
+}
+
+.quantity-label.shipping-method-label {
+  margin-bottom: 0;
+  margin-top: 0;
 }

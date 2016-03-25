@@ -133,59 +133,6 @@ p.subtotal {
 
 .shopping-bag {
   padding-top: 1rem;
-
-  .order-summary {
-    border: 1px solid $light-gray;
-    padding: 10px 30px;
-    width: 80%;
-    position: absolute;
-    right: 0;
-
-  }
-
-  .order-summary-title {
-    font-size: 11px;
-    opacity: 0.5;
-  }
-
-  .order-summary-list {
-    list-style:none;
-
-    li {
-      text-align: right;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      font-size: 11px;
-    }
-
-    .total {
-       border-top: 1px solid $light-gray;
-       border-bottom: 1px solid $light-gray;
-    }
-
-    .list-title {
-      text-transform: uppercase;
-      opacity: 0.5;
-      float: left;
-    }
-
-    .value {
-      margin-left: 50px;
-      font-size: 11px;
-    }
-  }
-
-  .or {
-    text-align: center;
-    opacity: 0.5;
-    text-transform: uppercase;
-    margin-bottom: 0;
-  }
-
-  .checkout-cta {
-    width: 100%;
-    border: none;
-  }
 }
 
 .shopping-bag.accordion {

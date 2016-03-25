@@ -5,7 +5,7 @@ section: rent
 <section class="page-header">
   <div class="row">
     <div class="pdp-header medium-12 columns">
-      <h1 class="product-name">Secure Checkout</h1>
+      <!-- <h1 class="product-name">Secure Checkout</h1> -->
     </div>
   </div>
 </section>
@@ -13,7 +13,7 @@ section: rent
 
 
   <div class="row">
-    <div class="medium-5 medium-centered columns">
+    <div class="columns">
       <ul class="tabs checkout-tabs" data-tab>
         <li class="tab-title active"><a href="#panel1">Shipping</a></li>
         <li class="tab-title"><a href="#panel2">Payment</a></li>
@@ -24,9 +24,10 @@ section: rent
 
   <div class="tabs-content checkout-tabs-content">
     <!-- shipping -->
-    <div class="content active" id="panel1">
-      <div class="row">
-        <div class="medium-5 medium-centered columns">
+    <div class="row">
+      
+      <div class="medium-8 columns">
+        <div class="content active" id="panel1">
           <ul class="tabs checkout-toggle" data-tab>
             <li class="tab-title active"><a href="#panel1-a">Ship to Address</a></li>
             <li class="tab-title"><a href="#panel2-a">Ship to Store</a></li>
@@ -41,29 +42,54 @@ section: rent
           </div>
         </div>
       </div>
-    </div>
-    <!-- payment -->
-    <div class="content" id="panel2">
-      {{>checkout-payment}}
-      <ul class="tabs checkout-toggle" data-tab>
-        <li class="tab-title active"><a href="#panel1-a">Credit Card</a></li>
-        <li class="tab-title"><a href="#panel2-a">PayPal</a></li>
-      </ul>
-      <div class="tabs-content">
-        <div class="content active" id="panel1-a">
-          {{>checkout-payment-cc}}
-        </div>
-        <div class="content" id="panel2-a">
-          {{>checkout-payment-paypal}}
+
+      <div class="medium-4 columns">
+        <div class="order-summary">
+          <h1 class="order-summary-title">Order Summary</h1>
+          <ul class="order-summary-list">
+            <li>
+              <span class="list-title">Merchandise</span><span class="value product-price">$104.<sup>99</sup></span>
+            </li>
+            <li>
+              <span class="list-title">Merchandise</span><span class="value product-price">$104.<sup>99</sup></span>
+            </li>
+            <li>
+              <span class="list-title">Merchandise</span><span class="value product-price">$104.<sup>99</sup></span>
+            </li>
+            <li>
+              <span class="list-title">Merchandise</span><span class="value product-price">$104.<sup>99</sup></span>
+            </li>
+            <li class"sub-total">
+              <span class="list-title">Merchandise</span><span class="value product-price">$104.<sup>99</sup></span>
+            </li>
+            <li class="total">
+              <span class="list-title">Order Total</span><span class="value product-price">$104.<sup>99</sup></span>
+            </li>
+          </ul>
+          <a href="#" class="button primary checkout-cta">Checkout</a>
+          <p class="or">or</p>
+          <!-- promo code -->
+          <ul class="accordion shopping-bag" data-accordion>
+            <li class="accordion-navigation">
+              <a class="product-info-label" href="#panel1a">Promo Code</a>
+              <div id="panel1a" class="content">
+                <div class="row collapse">
+                  <div class="small-9 columns">
+                    <input type="text" placeholder="Promo Code" />
+                  </div>
+                  <div class="small-3 columns">
+                    <span class="postfix">Apply</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
         </div>
       </div>
 
 
-    </div>
 
-    <!-- review -->
-    <div class="content" id="panel3">
-      {{>checkout-review}}
     </div>
   </div>
 
