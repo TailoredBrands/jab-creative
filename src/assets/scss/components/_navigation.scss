@@ -1,7 +1,7 @@
 $mega-menu-link-padding: 4;
 $promo-menu-width: 400;
 
-@mixin tmw-menu($tmw-font-size:14, $tmw-font-weight:500, $tmw-letter-spacing:1px, $tmw-border-bottom-size:3px) {
+@mixin tmw-menu($tmw-font-size:10, $tmw-font-weight:500, $tmw-letter-spacing:1px, $tmw-border-bottom-size:3px) {
   @include button($button-tny, $white, false, true);
   display: block;
   margin-bottom: 0;
@@ -48,7 +48,8 @@ $promo-menu-width: 400;
 }
 
 .logo {
-  max-width: 280px;
+  // max-width: 280px;
+  height: 20px;
   @media #{$small-only} {
     max-width: 75%;
     margin-right: 10px;
@@ -162,7 +163,7 @@ nav.global {
       margin-bottom: 0 !important;
 
       & > li {
-        margin-left: rem-calc(50);
+        margin-left: 6px;
         @media only screen and (max-width: 48em) {
           margin-left: rem-calc(16);
         }
@@ -193,6 +194,7 @@ nav.global {
   min-height: 60px;
   padding-left: 0.45em;
   padding-right: 0.45em;
+  text-align: center;
 }
 
 nav.global section.links {
@@ -200,10 +202,12 @@ nav.global section.links {
     @include inline-list();
     float: right;
     margin-bottom: 0;
+
     li {
       margin-left: 0;
     }
   }
+
   ul a {
     color: #fff;
     font-weight: bold;
@@ -478,4 +482,12 @@ input[type="text"].search-bar-input {
   width: auto;
   margin-left: 10px;
   padding-bottom: 2px;
+}
+
+.main section.main-menu > ul > li > a {
+  padding-left: 0;
+}
+
+.main section.main-menu > ul {
+  margin-left: 0;
 }
