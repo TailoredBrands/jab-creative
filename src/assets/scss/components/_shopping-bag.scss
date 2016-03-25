@@ -1,11 +1,7 @@
-// shopping bag header
-.shopping-bag-header {
-  .shopping-bag-title {
-    display: inline-block;
-    margin-left: 24px;
-    margin-top: 8px;
-  }
-}
+.shopping-bag-title {
+  margin-bottom: 0;
+  border-bottom: 1px solid $light-gray;
+} 
 
 // type _style-advice.scss
 .item-count {
@@ -32,9 +28,35 @@ p.subtotal {
   }
 }
 
-
 .bag-item {
   padding: 12px;
+  border-bottom: 1px solid $light-gray;
+  &.last {
+    border-bottom: 0;
+  }
+}
+
+.bag-items {
+  min-height: 70vh;
+}
+
+.bag-promo {
+  text-align: right;
+}
+
+.bag-item .price-and-qty {
+  top: 0;
+  right: 0;
+  position: absolute;
+
+  .product-price,
+  input {
+    display: inline-block;
+  }
+
+  .product-price {
+    margin-left: 1rem;
+  }
 }
 
 .bag-item-detail {
@@ -62,6 +84,7 @@ p.subtotal {
     float: left;
   }
 }
+
 
 .promo-callout-container {
   padding: 0 12px 0 12px;
@@ -104,4 +127,81 @@ p.subtotal {
 
 .bag-edit-links {
   margin-left: 12px;
+  margin-right: 20px;
+  float: left;
 }
+
+.shopping-bag {
+  padding-top: 1rem;
+
+  .order-summary {
+    border: 1px solid $light-gray;
+    padding: 10px 30px;
+    width: 80%;
+    position: absolute;
+    right: 0;
+
+  }
+
+  .order-summary-title {
+    font-size: 11px;
+    opacity: 0.5;
+  }
+
+  .order-summary-list {
+    list-style:none;
+
+    li {
+      text-align: right;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 11px;
+    }
+
+    .total {
+       border-top: 1px solid $light-gray;
+       border-bottom: 1px solid $light-gray;
+    }
+
+    .list-title {
+      text-transform: uppercase;
+      opacity: 0.5;
+      float: left;
+    }
+
+    .value {
+      margin-left: 50px;
+      font-size: 11px;
+    }
+  }
+
+  .or {
+    text-align: center;
+    opacity: 0.5;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  .checkout-cta {
+    width: 100%;
+    border: none;
+  }
+}
+
+.shopping-bag.accordion {
+  padding-top: 5px;
+  a {
+    padding-left: 0;
+    padding-right: 0;
+
+    &::after {
+      top: 15px;
+    }
+  }
+
+  .content.active {
+    padding: 0;
+  }
+
+}
+

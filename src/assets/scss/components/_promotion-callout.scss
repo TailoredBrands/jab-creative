@@ -42,7 +42,7 @@
 .promotion-callout-top {
   position: relative;
   width: 100%;
-  background-color: $callout-color;
+  background-color: $callout-color-dark;
   color: white;
   padding: rem-calc(8px);
 }
@@ -51,7 +51,7 @@
   position: fixed;
   z-index: 300;
   width: 100%;
-  background-color: $callout-color;
+  background-color: $callout-color-dark;
   color: white;
   padding: rem-calc(15px 0px 10px 0px);
 
