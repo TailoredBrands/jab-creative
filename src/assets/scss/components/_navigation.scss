@@ -198,6 +198,7 @@ nav.global {
 }
 
 nav.global section.links {
+  position: relative;
   & ul {
     @include inline-list();
     float: right;

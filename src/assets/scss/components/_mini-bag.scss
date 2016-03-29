@@ -1,0 +1,107 @@
+.mini-bag {
+  position: absolute;
+  background: white;
+  border: 1px solid gray;
+  width: 400px;
+  max-height: 800px;
+  z-index: 100;
+  top: 40px;
+  right: 10px;
+  padding: 1rem;
+
+  .bag-items {
+    position: relative;
+    width: 100%;
+    overflow: auto;
+  }
+
+  .bag-item {
+    padding-left: 90px;
+
+    .thumbnail {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 80px;
+      padding: 10px;
+    }
+
+    .title {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 0;
+      text-transform: none;
+      margin-top: 2px;
+    }
+
+    .quantity {
+      margin-bottom: 0;
+    }
+
+    .total {
+      position: absolute;
+      top: 10px;
+      right: 0;
+    }
+  }
+}
+
+.mini-bag {
+  .sub-total-title {
+    float: left;
+  }
+
+  .sub-total {
+    float: right;
+  }
+
+  .ctas{
+    position: relative;
+    //TODO: change this
+    padding-top: 270px;
+  }
+  
+  .sub-total-title,
+  .sub-total {
+    padding-top: 1rem;
+    margin-bottom: 0;
+  }
+
+}
+
+nav.global section.links .mini-bag .text-link {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-bottom: 1px dashed black;
+  display: inline;
+  padding-bottom: 3px;
+  background: transparent;
+  color: black;
+  position: absolute;
+  left: 0; 
+  bottom: 0;
+  width: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+nav.global section.links .mini-bag .checkout {
+  position: absolute;
+  right: 0; 
+  bottom: 0;
+  width: auto;
+}
+
+nav.global section.links ul.bag-items {
+      max-height: 260px;
+    overflow: auto;
+}
+
+nav.global section.links ul > li.bag-item {
+  float: none;
+  min-height: 100px;
+  position: relative;
+}
