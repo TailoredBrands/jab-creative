@@ -2,12 +2,10 @@
   display: inline;
 }
 
-
 .checkout-tabs-content {
   border-top: 1px solid $light-gray;
   padding-top: 30px;
 }
-
 
 .tabs.checkout-tabs {
   position: relative;
@@ -23,6 +21,7 @@
   .tab-title {
     width: auto;
     min-width: 220px;
+
     a {
       text-transform: none;
       text-align: center;
@@ -35,7 +34,6 @@
   }
 }
 
-
 .tabs.checkout-toggle{
   a {
     font-size: 10px;
@@ -43,9 +41,11 @@
     border: 1px solid black;
     letter-spacing: 2px;
   }
+
   .tab-title {
     width: 50%;
     text-align: center;
+    
     &.active {      
       a {
         background: black;

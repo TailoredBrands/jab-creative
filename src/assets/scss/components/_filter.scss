@@ -20,61 +20,21 @@
 
   &:hover {
     background: $secondary-color;
-  };
+  }
 }
 
 .filter-tag {
   padding: rem-calc(5 10);
   border: solid 1px $info-color;
   display: inline-block;
-  font-size: .75rem;
-  & a.close {
+  font-size: 0.75rem;
+
+  a.close {
     margin-left: rem-calc(30);
   }
 }
 
-ul#type-drop, ul#color-drop, ul#pattern-drop, ul#price-drop, ul#fit-drop {
-  padding: rem-calc(10);
-  & a.clear-all {
-    padding-top: rem-calc(3);
-    float: right;
-    color: $info-color;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: rem-calc(10);
-  }
-}
-
-ul#type-drop, ul#fit-drop, ul#price-drop {
-  width: rem-calc(300);
-  & li.active {
-    border: solid 2px $info-color;
-    margin: -2px;
-  }
-}
-
-ul#color-drop, ul#pattern-drop {
-  width: rem-calc(400);
-  & label { font-size: rem-calc(10) !important; }
-}
-
-.filter select { margin-bottom: 0; }
-
-#search-drop.f-dropdown.open {
-  left: 0 !important;
-  max-width: 100% !important;
-  margin-top: -20px !important;
-  border: none;
-  padding: 0 $column-gutter / 2;
-  input {
-    border: 1px solid #000;
-    background: url(../images/icons/search-black.svg) no-repeat right 6px center;
-    background-size: 20px 20px;
-  }
-}
-
 .filter {
-
   .filter-dropdown::after{
     display: none;
   }
@@ -82,10 +42,14 @@ ul#color-drop, ul#pattern-drop {
   h4 {
     margin: rem-calc(30px 0 0px);
   }
+
+  select {
+    margin-bottom: 0;
+
+  }
 }
 
 .retail-off-canvas-nav {
-
   .nav-department {
     font-size: rem-calc(12px);
     text-transform: uppercase;
@@ -189,7 +153,6 @@ ul#color-drop, ul#pattern-drop {
   }
 
   .product-info-label {
-
     &::after {
       $x-size: 9px;
       width: $x-size;
@@ -227,26 +190,6 @@ ul#color-drop, ul#pattern-drop {
     margin-right: 5px;
     padding-bottom: 3px;
   }
-
-  // .accordion .accordion-navigation > .content.active {
-  //   padding-top: 0 !important;
-  //   // border-bottom: 1px solid #efefef;
-  //   margin: 0;
-
-  //   ul {
-  //     margin: -5px;
-  //   }
-
-  //   li {
-  //     list-style-type: none;
-  //     padding-bottom: 5px;
-  //     margin-left: 20px;
-
-  //     a {
-  //       font-size: rem-calc(13);
-  //     }
-  //   }
-  // }
 }
 
 .product-filters {
@@ -397,6 +340,7 @@ ul#color-drop, ul#pattern-drop {
   list-style-type: none;
 }
 
+//remove / for the last child
 .browse-page-breadcrumbs li:last-child {
   &:after {
     content: "";
@@ -412,13 +356,17 @@ ul#color-drop, ul#pattern-drop {
   }
 }
 
-#search-icon {
+//TODO: move this
+//Search icon in the nav
+.search-icon {
   opacity: 1.0;
 
   &.is-active {
     opacity: 0.25;
   }
 }
+
+//Area for the actual search input for nav 
 .search-tool {
   display: none;
   background-color: #000000;
