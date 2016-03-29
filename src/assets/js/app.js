@@ -27,43 +27,7 @@ $('#add-more-filters').click(function() {
 });
 
 // reinstatiate slick after dom update on styleguide
-$('#style-guide-tabs').on('toggled', function (event, tab) {
-  $('.collage-slider').resize();
-});
-$(document).on('opened.fndtn.reveal', '[data-reveal]', function () {
-  $('.collage-slider-modal').slick({
-    arrows: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    dots: false,
-    useTransform: true
-  });
-});
 
-$('.collage-slider').slick({
-  arrows: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: false,
-  dots: false,
-  useTransform: true
-});
-
-$('#slick-blog-slider').slick({
-  arrows: false,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  dots: true,
-  useTransform: true
-});
-
-// init date picker
-$('.fdatepicker').fdatepicker();
-
-// turn off jQuery animation
 jQuery.fx.off = true;
 
 // off canvas nav interaction
