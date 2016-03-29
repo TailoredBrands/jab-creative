@@ -12,6 +12,7 @@ $(document).foundation({
   }
 });
 
+
 // Show and hide more filters in product off canvas
 $('#search-icon').click(function() {
   $('.search-tool').slideToggle(500);
@@ -58,48 +59,6 @@ $('#slick-blog-slider').slick({
   dots: true,
   useTransform: true
 });
-
-// image-slide-plugin
-
-// var carousel;
-// $(document).ready(function () {
-//     carousel = $("ul");
-//     carousel.itemslide();
-// });
-
-//$('.product-feature').slick({
-////  centerMode: true,
-////  centerPadding: '60px',
-//  dots: true,
-//  swipe: true,
-//  touchMove: true,
-//  arrows: false,
-//  slidesToShow: 3,
-//  slidesToScroll: 1,
-//
-//  responsive: [
-//    {
-//      breakpoint: 768,
-//      settings: {
-//        arrows: false,
-////        centerMode: true,
-//        centerPadding: '40px',
-//        slidesToShow: 3,
-//        slidesToScroll: 1
-//      }
-//    },
-//    {
-//      breakpoint: 480,
-//      settings: {
-//        arrows: false,
-//        centerMode: true,
-//        centerPadding: '40px',
-//        slidesToShow: 1,
-//        slidesToScroll: 1
-//      }
-//    }
-//  ]
-//});
 
 // init date picker
 $('.fdatepicker').fdatepicker();
