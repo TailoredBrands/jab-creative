@@ -64,6 +64,7 @@ $promo-menu-width: 400;
 
 nav.small-only {
   ul.global-tabs {
+
     @include button-group-container();
     margin-bottom: 1rem;
      
@@ -106,12 +107,11 @@ nav.global {
   @extend .hide-for-small-only;
   
   section.global-tabs {
-
     @include grid-column(6);
     padding-left: 0 !important;
     background: $primary-color;
-    ul {
 
+    ul {
       @include button-group-container();
       li {
 
@@ -155,12 +155,13 @@ nav.global {
     left: -100%;
     top: 0;
   }
-  & .ship-dropdown-toggle {
+  .ship-dropdown-toggle {
     @include button(0, $white);
     @include dropdown-button(tiny, lighten($primary-color, 50%), true);
     margin: rem-calc(3 0 0 0);
     font-size: $paragraph-font-size;
     border: none !important;
+    
     &:hover {
       background: $white;
     }

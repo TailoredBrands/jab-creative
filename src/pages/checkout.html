@@ -27,22 +27,37 @@ section: rent
     <div class="row">
       
       <div class="medium-8 columns">
-        
-        <div class="content active" id="panel1">
-          <ul class="tabs checkout-toggle" data-tab>
-            <li class="tab-title active"><a href="#panel1-a">Ship to Address</a></li>
-            <li class="tab-title"><a href="#panel2-a">Ship to Store</a></li>
-          </ul>
-          <div class="tabs-content">
-            <div class="content active" id="panel1-a">
-              {{>checkout-ship-address}}
+        <div class="tabs-content">
+          <div class="content active" id="panel1">
+            <ul class="tabs checkout-toggle" data-tab>
+              <li class="tab-title active"><a href="#panel1-a">Ship to Address</a></li>
+              <li class="tab-title"><a href="#panel2-a">Ship to Store</a></li>
+            </ul>
+            <div class="tabs-content">
+              <div class="content active" id="panel1-a">
+                {{>checkout-ship-address}}
+              </div>
+              <div class="content" id="panel2-a">
+                {{>checkout-ship-store}}
+              </div>
             </div>
-            <div class="content" id="panel2-a">
-              {{>checkout-ship-store}}
+          </div>
+
+          <div class="content" id="panel2">
+            <ul class="tabs checkout-toggle" data-tab>
+              <li class="tab-title active"><a href="#panel1-a">Chip to Address</a></li>
+              <li class="tab-title"><a href="#panel2-a">Ship to Store</a></li>
+            </ul>
+            <div class="tabs-content">
+              <div class="content active" id="panel1-a">
+                {{>checkout-ship-address}}
+              </div>
+              <div class="content" id="panel2-a">
+                {{>checkout-ship-store}}
+              </div>
             </div>
           </div>
         </div>
-        
       </div>
 
       <div class="medium-4 columns">

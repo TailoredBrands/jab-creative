@@ -2,6 +2,7 @@
   display: inline;
 }
 
+
 .checkout-tabs-content {
   border-top: 1px solid $light-gray;
   padding-top: 30px;
@@ -16,6 +17,7 @@
     font-weight: 300;
     background: #efefef;
     padding: 5px 0;
+    outline: none;
   }
 
   .tab-title {
@@ -25,6 +27,7 @@
     a {
       text-transform: none;
       text-align: center;
+      outline: none;
     }
   }
 
@@ -40,6 +43,7 @@
     background: white;
     border: 1px solid black;
     letter-spacing: 2px;
+    outline: none;
   }
 
   .tab-title {
@@ -50,6 +54,7 @@
       a {
         background: black;
         color: white;
+        outline: none;
       }
     }
   }
