@@ -36,9 +36,6 @@ p.subtotal {
   }
 }
 
-.bag-items {
-  min-height: 70vh;
-}
 
 .bag-promo {
   text-align: right;
@@ -82,6 +79,10 @@ p.subtotal {
   }
   &.checkout-review {
     float: left;
+  }
+  .clearance {
+    font-weight: bold;
+    color: black;
   }
 }
 
@@ -152,3 +153,6 @@ p.subtotal {
 
 }
 
+.shopping-bag-recommendations {
+  margin-top: 4rem;
+}
