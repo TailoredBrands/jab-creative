@@ -12,9 +12,11 @@ $promo-menu-width: 400;
   border: none;
   border-bottom: $tmw-border-bottom-size solid white;
   transition: border 300ms ease-out;
+
   &.active, &:hover {
     border-bottom: $tmw-border-bottom-size solid $primary-color;
   }
+
   &:hover, &:focus { background: $white; }
   &::after {
     content:attr(title);
@@ -48,9 +50,9 @@ $promo-menu-width: 400;
 }
 
 .logo {
-  // max-width: 280px;
   height: 20px;
   @media #{$small-only} {
+
     max-width: 75%;
     margin-right: 10px;
   }
@@ -61,16 +63,22 @@ $promo-menu-width: 400;
 }
 
 nav.small-only {
-  & ul.global-tabs {
+  ul.global-tabs {
     @include button-group-container();
     margin-bottom: 1rem;
-    & > li {
+     
+     li {
       @include button-group-style(false, 3);
-      & a {
+      
+      a {
         @include button($button-tny, $primary-color, false, true);
         margin-bottom: 0;
         border: none;
-        &:hover { background: $primary-color; }
+        
+        &:hover {
+          background: $primary-color;
+        }
+        
         &.active {
           @include button($button-tny, $white, false, true, false);
           margin-bottom: 0;
@@ -80,11 +88,13 @@ nav.small-only {
       }
     }
   }
-  & .secondary-nav img {
+
+ .secondary-nav img {
     padding-top: rem-calc(20);
     padding-left: rem-calc(10);
     width: 90%;
-    &.mobile-promo-image {
+    
+    .mobile-promo-image {
       width: 40%;
       padding: 0;
     }
@@ -94,18 +104,19 @@ nav.small-only {
 nav.global {
   border-bottom: 1px solid #eee;
   @extend .hide-for-small-only;
-  & section.global-tabs {
+  
+  section.global-tabs {
 
     @include grid-column(6);
     padding-left: 0 !important;
     background: $primary-color;
-    & ul {
+    ul {
 
       @include button-group-container();
-      & > li {
+      li {
 
         @include button-group-style(false, 1);
-        & a {
+        a {
           height: 32px;
           letter-spacing: 0.2em;
           text-align: left !important;
@@ -116,10 +127,11 @@ nav.global {
       }
     }
   }
-  & section.links {
+  
+  section.links {
     @include grid-column(6);
     background: $primary-color;
-    & ul a {
+    ul a {
       height: 32px;
       @include button($button-tny, $primary-color, false, true);
       margin-bottom: 0;
@@ -154,15 +166,15 @@ nav.global {
     }
   }
 
-  & section.main-menu {
+  section.main-menu {
     @include grid-column(12);
     margin: 1rem 0 0;
 
-    & > ul {
+    ul {
       @include inline-list();
       margin-bottom: 0 !important;
 
-      & > li {
+      li {
         margin-left: 6px;
         @media only screen and (max-width: 48em) {
           margin-left: rem-calc(16);
@@ -172,7 +184,7 @@ nav.global {
           margin-left: 0 !important;
         }
 
-        & > a {
+        a {
           @include tmw-menu();
         }
       }
@@ -180,7 +192,7 @@ nav.global {
   }
 }
 
-.logo-subtext{
+.logo-subtext {
   border-left: 1px solid #bfbfbf;
   padding-left: 15px;
   margin-left: 15px;
@@ -199,7 +211,9 @@ nav.global {
 
 nav.global section.links {
   position: relative;
-  & ul {
+  
+
+  ul {
     @include inline-list();
     float: right;
     margin-bottom: 0;
@@ -222,11 +236,13 @@ nav.global section.links {
     color: #000;
   }
 }
+
 .cart-lockup {
   position: relative;
   padding: 0;
   width: 30px;
 }
+
 .cart-number {
   background: url(../images/icons/cart-white.svg) no-repeat center center;
   background-size: 25px;
@@ -237,26 +253,30 @@ nav.global section.links {
   text-align: center;
   font-weight: bold;
 }
-.cart-link a { padding-left: 0 !important; }
+
+.cart-link a {
+  padding-left: 0 !important;
+}
 
 ul.off-canvas-list {
   li {
     a {
       color: $primary-color;
       padding: 0.6rem 1rem;
+      text-transform: uppercase;
+      font-weight: 500;
+
       &:hover {
         background-color: white;
       }
     }
+    
     label {
       font-weight: 500;
       padding: 1rem;
     }
   }
-  > li a {
-    text-transform: uppercase;
-    font-weight: 500;
-  }
+
   &.secondary-nav {
     li {
       a {
@@ -265,6 +285,7 @@ ul.off-canvas-list {
       }
     }
   }
+
   .back-trigger {
     margin-left: rem-calc(10);
     font-size: rem-calc(12);
@@ -294,12 +315,14 @@ ul.off-canvas-list {
 .promo-bar {
   @include inline-list();
   margin-bottom: 0;
+  
   .emphasize {
     font-weight: 700;
     text-transform: uppercase;
     font-size: rem-calc(18);
     line-height: 1;
   }
+  
   .icon {
     margin-top:-5px;
     width: 16px;
@@ -353,35 +376,17 @@ ul.off-canvas-list {
 
 #menu-promos {
   padding-top: 1rem;
-  li { margin-bottom: 1rem; }
-  li:hover { background: transparent; }
+
+  li {
+    margin-bottom: 1rem;
+    &:hover {
+      background: transparent;
+    }
+  }
+
   a {
     padding: 0;
     display: inline-block;
-  }
-}
-
-input[type="text"].search-bar-input {
-  height: rem-calc(26);
-  margin: 0;
-  opacity: 1;
-  transition: opacity 300ms ease-out;
-  &.hide { opacity: 0; }
-}
-
-.mobile-promo {
-  background: $primary-color;
-  .mobile-promo-image {
-    width: 50px;
-    margin: 0;
-    padding: 0;
-  }
-  .menu-promo-text {
-    text-transform: uppercase;
-    display: inline-block;
-    padding-left: 0.5rem;
-    color: $secondary-color;
-    font-size: 20px;
   }
 }
 
@@ -392,15 +397,6 @@ input[type="text"].search-bar-input {
   #mega-menu-clothing-row, #mega-menu-shoes-row, #mega-menu-accessories-row {
     padding-left:0 !important;
   }
-}
-
-@media only screen and (min-width: 48em) and (max-width: 99999999em) {
-  .x-medium-offset-1 { margin-left:8.3333% !important; }
-  .x-medium-offset-2 { margin-left:16.6666% !important; }
-  .x-medium-offset-3 { margin-left:24.9999% !important; }
-  #mega-menu-clothing-row { padding-left:15px; }
-  #mega-menu-shoes-row { padding-left:217px; }
-  #mega-menu-accessories-row { padding-left:322px; }
 }
 
 .mobile-tab-bar {
@@ -414,6 +410,7 @@ input[type="text"].search-bar-input {
 .left-off-canvas-menu {
   border: 1px solid #efefef;
 }
+
 
 .retail-off-canvas-nav {
 
