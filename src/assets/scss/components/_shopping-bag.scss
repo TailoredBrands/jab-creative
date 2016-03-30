@@ -73,6 +73,10 @@ p.subtotal {
 
 .bag-promo {
   text-align: right;
+
+  .text-link {
+    font-size: 11px;
+  }
 }
 
 .bag-item .price-and-qty {
@@ -96,13 +100,20 @@ p.subtotal {
     text-align: right;
     margin-bottom: 0;
   }
-
 }
 
 .bag-item-detail {
   .product-name {
     font-size: rem-calc(15);
     padding-left: 10px;
+  }
+
+  .low-stock {
+    padding-left: 10px;
+    margin-bottom: 0;
+    color: $callout-color;
+    font-size: 12px;
+    font-weight: normal;
   }
 
   .product-quantity {
@@ -114,11 +125,13 @@ p.subtotal {
 .bag-item-selections {
   list-style-type: none;
   margin-bottom: 0.7rem;
+
   li {
-    padding-left: 12px; 
+    padding-left: 10px; 
     color: #8a8a8a;
     font-size: 12px;
   }
+
   &.checkout-review {
     float: left;
   }
@@ -198,5 +211,5 @@ p.subtotal {
 }
 
 .shopping-bag-recommendations {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
