@@ -4,8 +4,13 @@ section: rent
 <div class="row shopping-bag">
   <div class="medium-8 medium columns bag-items">
     <!-- header -->
-    <div class="shopping-bag-header">
-      <p class="shopping-bag-title">Shopping Bag <span class="item-count">2 items</span></p>
+    <div class="shopping-bag-header clearfix">
+      <p class="left shopping-bag-title">Shopping Bag <span class="item-count">2 items</span></p>
+      
+      <div class="right show-for-small-only">
+        <h3 class="shopping-bag-subtotal">Subtotal</h3>
+        <p class="shopping-bag-subtotal-price">729.<sup>99</sup></p>
+      </div>
     </div>
 
     <!-- shopping-bag-item -->
@@ -17,14 +22,14 @@ section: rent
         <div class="small-10 columns bag-item-detail">
         <div class="price-and-qty">
           <span class="product-price">$699.<sup>99</sup></span>
-          <input type="number" class="left product-quantity" name="quantity" min="1" max="5" placeholder="1">
+          <p class="quantity">QTY: 1</p>
+          <p class="clearance">Clearance</p>
          </div>
           <h1 class="product-name">Tommy Hilfigure Slim Fit Suit</h1>
           <ul class="bag-item-selections">
             <li>Color: Charcoal</li>
             <li>Size: 38 Regular</li>
             <li>#9348573</li>
-            <li class="clearance">Clearance</li>
           </ul>
           <form>
           <div class="bag-edit-links">
@@ -54,7 +59,7 @@ section: rent
         <div class="small-10 columns bag-item-detail">
         <div class="price-and-qty">
           <span class="product-price">$699.<sup>99</sup></span>
-          <input type="number" class="left product-quantity" name="quantity" min="1" max="5" placeholder="1">
+          <p class="quantity">QTY: 1</p>
          </div>
           <h1 class="product-name">Tommy Hilfigure Slim Fit Suit</h1>
           <ul class="bag-item-selections">
@@ -76,10 +81,10 @@ section: rent
         </div>
       </div>
     </div>
-  
 
   </div>
-  <div class="medium-4 columns">
+
+  <div class="medium-4 columns hide-for-small-only">
     <div class="order-summary">
       <h1 class="order-summary-title">Order Summary</h1>
       <ul class="order-summary-list">
@@ -87,7 +92,7 @@ section: rent
           <span class="list-title">Merchandise</span><span class="value product-price">$104.<sup>99</sup></span>
         </li>
         <li>
-          <span class="list-title">Est. Sales Tax</span><span class="value product-price">$104.<sup>99</sup></span>
+          <span class="list-title">Est. Shipping</span><span class="value product-price">FREE</span>
         </li>
         <li class="total">
           <span class="list-title">Total</span><span class="value product-price">$104.<sup>99</sup></span>
