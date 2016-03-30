@@ -6,7 +6,6 @@
     width: 80%;
     position: absolute;
     right: 0;
-
   }
 
   .order-summary-title {
@@ -25,11 +24,11 @@
     }
 
     .total {
-       border-top: 1px solid $light-gray;
+     border-top: 1px solid $light-gray;
        // border-bottom: 1px solid $light-gray;
-    }
+     }
 
-    .list-title {
+     .list-title {
       text-transform: uppercase;
       opacity: 0.5;
       float: left;
@@ -47,10 +46,32 @@
     text-transform: uppercase;
     margin-bottom: 0;
   }
+}
 
+.cta-title,
+.cta-subhead {
+  display: block;
+}
+
+.cta-subhead {
+  font-size: 10px;
+}
+
+.guest-cta,
+.checkout-cta {
+  width: 100%;
+}
+
+
+.order-summary {
   .checkout-cta {
-    width: 100%;
     border: none;
+  }
+  .guest-cta {
+    border: 1px solid $callout-color;
+    width: 100%;
+    background: white;
+    color: $callout-color;
   }
 }
 
