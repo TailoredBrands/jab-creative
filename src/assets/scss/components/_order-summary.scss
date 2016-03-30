@@ -65,8 +65,9 @@
 
 .order-summary {
   .checkout-cta {
-    border: none;
+    border: 1px solid $callout-color;
   }
+  
   .guest-cta {
     border: 1px solid $callout-color;
     width: 100%;

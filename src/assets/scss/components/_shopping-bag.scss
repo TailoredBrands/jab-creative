@@ -198,6 +198,43 @@ p.subtotal {
     padding-left: 12px;
     margin-top: 12px;
   }
+
+  .shopping-bag .order-summary {
+    border: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  .shopping-bag-ctas {
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+
+    .button {
+      float:left;
+      width: 50%;
+      margin-bottom: 0;
+      transition: all 0.3s ease;
+    }
+    
+    .checkout-cta {
+      &:hover {
+        opacity: 1;
+        background: darken($callout-color, 15%);
+        border-color: darken($callout-color, 15%);
+        transition: all 0.3s ease;
+      }
+    }
+    .guest-cta {
+      &:hover {
+        opacity: 1;
+        background: darken(white, 5%);
+        border-color: darken($callout-color, 15%);
+        transition: all 0.3s ease;
+      }
+    }
+  }
 }
 
 .shopping-bag.accordion {
@@ -224,6 +261,7 @@ p.subtotal {
   input {
     margin-bottom: 0;
   }
+
   .shopping-bag-upsell-label {
     margin-left: 0;
     font-size: 12px;
