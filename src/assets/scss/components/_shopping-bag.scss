@@ -7,8 +7,20 @@
 }
 
 .shopping-bag-title {
+  @extend .product-info-label;
   margin-bottom: 0;
+  &::after {
+    display: none;
+  }
 }
+
+.item-count {
+  text-transform: uppercase;
+  color: #8a8a8a;
+  font-size: 10px;
+  letter-spacing: 0;
+}
+
 
 @media #{$small-only} {
   .shopping-bag {
@@ -35,12 +47,6 @@
     text-align: center;
     margin-bottom: 4px;
   }
-}
-
-.item-count {
-  text-transform: uppercase;
-  color: #8a8a8a;
-  font-size: 10px;
 }
 
 p.subtotal {

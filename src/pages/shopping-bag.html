@@ -135,6 +135,29 @@ section: rent
 
 <div class="row shopping-bag-recommendations">
   <div class="medium-8 columns">
+    <h3 class="saved-items-label">Saved Items</h3>
+
+    <ul id="shoppingBagSaved" class="saved-items">
+      <li class="saved-item">
+        <a class="saved-item-link" href="#">
+          <img class="saved-thumbnail" src="{{assets}}images/retail/tie-1.jpg" alt="">
+          <div class="saved-thumbnail-description">
+            <h3 class="saved-thumbnail-title">Esquire Narrow Tie</h3>
+            <p class="saved-thumbnail-price">
+              <span class="product-price-orig">$49.<sup>59</sup></span>
+              <span class="product-price-discount">$16.<sup>99</sup></span>
+            </p>
+          </div>
+        </a>
+        <a href="#" class="button primary add-to-bag-cta">Add to Bag</a>
+        <a href="#" class="text-link remove-cta">Removed from Saved</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row shopping-bag-recommendations show-for-medium-up">
+  <div class="medium-8 columns">
     {{>product-recommendations-shopping-bag}}
   </div>
 </div>
