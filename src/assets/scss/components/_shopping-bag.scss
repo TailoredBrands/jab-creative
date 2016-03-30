@@ -267,3 +267,16 @@ p.subtotal {
     font-size: 12px;
   }
 }
+
+.promo-accordion {
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.paypal-small {
+  text-align: center;
+
+  .paypal-button {
+    margin-top: 10px;
+    width: 40%;
+  }
+}
