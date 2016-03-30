@@ -1,0 +1,103 @@
+.shopping-bag-edit-modal {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: #FFFFFF;
+  box-shadow: 0px -1px 11px 0px rgba(0,0,0,0.17);
+  z-index: 101;
+  padding: 5px;
+  overflow: auto;
+  padding-top: 40px;
+  //padding the bottom for cta
+  padding-bottom: 40px;
+}
+
+.edit-modal-close {
+  width: 20px;
+  height: 20px;
+  right: 5px;
+  position: fixed;
+  z-index: 2;
+  padding: 5px; 
+}
+
+.edit-modal-title {
+  padding-top: 15px;
+  padding-left: 10px;
+  margin-top: 0;
+  padding-bottom: 10px;
+  background: white;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.is-faded {
+  opacity: 0.4;
+}
+
+.is-scroll-locked {
+  overflow: hidden;
+}
+
+.edit-item {
+  padding: 12px;
+}
+
+.edit-item-detail {
+  .product-name {
+    font-size: rem-calc(15);
+    padding-left: 10px;
+  }
+}
+
+.shopping-edit.color-label {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.color-name.shopping-edit {
+  margin-bottom: 0;
+}
+
+.shopping-edit-update-cta {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 103;
+  margin-bottom: 0;
+  border: none;
+  padding: 15px;
+}
+
+
+//Styling the position here
+.shopping-bag-edit-modal {
+  height: 80vh;
+  top: 100%;
+  transition: all 0.3s ease-out;
+
+  &.is-active {
+    top: 20vh;
+    transition: all 0.3s ease-out;
+  }
+}
+
+.edit-modal-title,
+.edit-modal-close {
+  top: 100%;
+  transition: all 0.3s ease-out;
+
+  &.is-active {
+    top: 20vh;
+    transition: all 0.3s ease-out;
+  }
+}
+
+.shopping-edit-update-cta {
+  bottom: 100%;
+
+  &.is-active {
+    bottom: 0;
+  }
+}
