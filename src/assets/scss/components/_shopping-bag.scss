@@ -219,3 +219,13 @@ p.subtotal {
 .shopping-bag-recommendations {
   margin-top: 2rem;
 }
+
+.shopping-bag-upsell {
+  input {
+    margin-bottom: 0;
+  }
+  .shopping-bag-upsell-label {
+    margin-left: 0;
+    font-size: 12px;
+  }
+}
