@@ -175,3 +175,37 @@ form {
     transform: translateX(-50%);
   }
 }
+
+.bag-edit-links.review-edit {
+  opacity: 0.7;
+  margin-right: 0;
+  a {
+    opacity: 0.7;
+  }
+}
+
+//generic key value pairing
+.key-value {
+  list-style: none;
+
+  li {
+    @extend .clearfix;
+    margin-bottom: 10px;
+  }
+  .key,
+  .value {
+    float: left;
+  }
+
+  .key {
+    margin-right: 5px;
+    margin-bottom: 0;
+  }
+
+  .value {
+    opacity: 0.5;
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
