@@ -7,6 +7,12 @@
   padding-top: 30px;
 }
 
+@media #{$small-only} {
+  .checkout-tabs-content {
+    padding-top: 10px;
+  }
+}
+
 .tabs.checkout-tabs {
   position: relative;
   top: 2px;
@@ -102,5 +108,36 @@ form {
   
   &.is-active {
     display: block;
+  }
+}
+
+//adjusting padding in shhipping accordions
+.accordion .product-info-accordion .checkout-content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.learn-more-info { 
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  top: -2px;
+  position: relative;
+}
+
+.product-info-accordion.payment-accordion {
+  padding-top: 0;
+}
+
+.perfectfit-description {
+  margin-bottom: 5px;
+}
+
+@media #{$small-only} {
+  .norton-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
