@@ -115,10 +115,10 @@ form {
 
 .review-cta {
   width: 100%;
-  display: none;
+  display: none !important;
   
   &.is-active {
-    display: block;
+    display: block !important;
   }
 }
 
