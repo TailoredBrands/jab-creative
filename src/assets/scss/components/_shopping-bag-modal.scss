@@ -8,6 +8,12 @@
   overflow: hidden;
 }
 
+.error-message {
+  font-size: 10px;
+  color: red;
+}
+
+
 //Generic Shopping Bag Modals
 .bag-modal {
   background: white;
@@ -142,4 +148,9 @@
   &.is-active {
     bottom: 0;
   }
+}
+
+//edit bag dropdown
+.bag-dropdown {
+  margin-bottom: 5px;
 }
