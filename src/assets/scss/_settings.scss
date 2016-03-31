@@ -459,7 +459,7 @@ $button-border-width: 1px;
 // $button-border-style: none;
 $button-bg-color: $primary-color;
 // $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
-// $button-border-color: $button-bg-hover;
+$button-border-color: $callout-color;
 $secondary-button-bg-hover: #efefef;
 $secondary-button-border-color: $primary-color;
 // $success-button-bg-hover: scale-color($success-color, $lightness: $button-function-factor);
