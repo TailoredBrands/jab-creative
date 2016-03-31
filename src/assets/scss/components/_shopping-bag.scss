@@ -17,6 +17,9 @@
   letter-spacing: 0;
 }
 
+//TODO: move this
+$global-transition: all 0.3s ease;
+
 //Entire shopping bag section
 .shopping-bag {
   padding-top: 1rem;
@@ -34,34 +37,17 @@
   margin-bottom: 0;
 }
 
-
-p.subtotal {
-  text-transform: uppercase;
-  font-size: 10px;
-  letter-spacing: 1px;
-  margin-top: 0;
-}
-
-.bag-total {
-  margin-right: 10px; 
-  margin-top: 3px;
-
-  .product-price {
-    margin-top: 0px;
-    line-height: 0.7;
-    font-size: 15px;
-  }
-}
-
+//Each Shopping Bag Item
 .bag-item {
   padding: 12px;
   border-bottom: 1px solid $light-gray;
+
   &.last {
     border-bottom: 0;
   }
 }
 
-
+//In the shopping bag we align the promo to the right
 .bag-promo {
   text-align: right;
 
@@ -70,20 +56,18 @@ p.subtotal {
   }
 }
 
+//Price and quantity section of the shopping bag
 .bag-item .price-and-qty {
   top: 0;
   right: 0;
   position: absolute;
 
-  .product-price,
-  input {
+  //aligns these for price and quantity
+  .product-price {
     display: inline-block;
   }
 
-  .product-price {
-    margin-left: 1rem;
-  }
-
+  //clearance and quantity labels are aligned right.
   .clearance,
   .quantity {
     color: #8a8a8a;
@@ -93,170 +77,82 @@ p.subtotal {
   }
 }
 
+$bag-detail-padding-left: 10px;
+//All of the detail information about the bag item, not the thumbnail
 .bag-item-detail {
   .product-name {
     font-size: rem-calc(15);
-    padding-left: 10px;
+    padding-left: $bag-detail-padding-left;
   }
 
+  //Callout label for low stock
   .low-stock {
-    padding-left: 10px;
-    margin-bottom: 0;
     color: $callout-color;
     font-size: 12px;
     font-weight: normal;
-  }
-
-  .product-quantity {
-    margin-left: 12px;
-    margin-bottom: 10px;
+    padding-left: $bag-detail-padding-left;
+    margin-bottom: 0;
   }
 }
 
-.bag-item-selections {
+//Data like selected color, size, product number, etc...
+.bag-item-meta-data {
   list-style-type: none;
   margin-bottom: 0.7rem;
 
   li {
-    padding-left: 10px; 
+    padding-left: $bag-detail-padding-left; 
     color: #8a8a8a;
     font-size: 12px;
   }
-
-  &.checkout-review {
-    float: left;
-  }
 }
 
-.promo-callout-container {
-  padding: 0 12px 0 12px;
-  .promotion-callout {
-    margin-left: 0px;
-    font-size: rem-calc(12);
-  }
-  .text-link {
-    margin-left: 0px;
-  }
-}
-
-.bag-tag {
-  background-color: $primary-color;
-  text-transform: uppercase;
-  color: $white;
-  letter-spacing: 1px;
-  margin-top: 5px;
-  padding: 2px 0 2px 0;
-  p {
-    font-size: rem-calc(10);
-    margin: 0;
-    text-align: center;
-  }
-  .rental-name {
-    text-transform: none;
-    letter-spacing: 0;
-    margin-top: -3px;
-  }
-}
-
-.bag-qty-price {
-  .product-total {
-    margin-top: 0px;
-  }
-  .product-price {
-    font-size: 15px;
-  }
-}
-
+//Edit links for each bag item
 .bag-edit-links {
   margin-left: 12px;
   margin-right: 20px;
   float: left;
 }
 
-@media #{$small-only} {
-  .bag-edit-links {
-    float: none;
-  }
-
-  .promotion-callout {
-    text-align: left;
-    padding-left: 12px;
-    margin-top: 12px;
-  }
-
-  .shopping-bag .order-summary {
-    border: none;
-    width: 100%;
-    padding: 0;
-  }
-
-  .shopping-bag-ctas {
-    position: fixed;
-    bottom: 0;
-    z-index: 100;
-    width: 100%;
-
-    .button {
-      float:left;
-      width: 50%;
-      margin-bottom: 0;
-      transition: all 0.3s ease;
-    }
-    
-    .checkout-cta {
-      &:hover {
-        opacity: 1;
-        background: darken($callout-color, 15%);
-        border-color: darken($callout-color, 15%);
-        transition: all 0.3s ease;
-      }
-    }
-    .guest-cta {
-      &:hover {
-        opacity: 1;
-        background: darken(white, 5%);
-        border-color: darken($callout-color, 15%);
-        transition: all 0.3s ease;
-      }
-    }
-  }
-}
-
-.shopping-bag.accordion {
+//Accordions for the shopping bags
+.shopping-bag .accordion {
   padding-top: 5px;
-  a {
+
+  //clickable label area
+  .product-info-label {
     padding-left: 0;
     padding-right: 0;
 
+    //positioning the x
     &::after {
       top: 15px;
     }
   }
-
+  
+  //no padding needed!
   .content.active {
     padding: 0;
   }
 }
 
+//Recommendations area
 .shopping-bag-recommendations {
   margin-top: 2rem;
 }
 
+//Checkbox for an upsell
 .shopping-bag-upsell {
-  input {
+  .upsell-checkbox {
     margin-bottom: 0;
   }
 
-  .shopping-bag-upsell-label {
+  .upsell-label {
     margin-left: 0;
     font-size: 12px;
   }
 }
 
-.promo-accordion {
-  border-bottom: 1px solid #cbcbcb;
-}
-
+//Smaller Paypal Button for shopping bag
 .paypal-small {
   text-align: center;
 
@@ -292,5 +188,101 @@ p.subtotal {
     font-weight: 400;
     text-align: center;
     margin-bottom: 4px;
+  }
+
+  .bag-item-detail {
+    .product-name {
+      font-size: rem-calc(13);
+      padding-right: 70px;
+    }
+  }
+
+  .bag-item-meta-data {
+    margin-bottom: 4px;
+    li {
+      font-size: rem-calc(11);
+    }
+  }
+
+  .bag-item .price-and-qty {
+    .product-price,
+    .quantity,
+    .clearance {
+      top: -6px;
+      position: relative;
+    }
+
+    .product-price {
+      font-size: rem-calc(12);
+      right: -8px;
+    }
+
+    .quantity,
+    .clearance {
+      font-size: rem-calc(11);
+    }
+  }
+  
+  .bag-edit-links {
+    float: none;
+
+    .text-link {
+      font-size: rem-calc(11);
+    }
+  }
+
+  .promotion-callout {
+    text-align: left;
+    padding-left: 12px;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-size: rem-calc(11);
+  }
+  .bag-promo {
+    .text-link {
+      font-size: rem-calc(10);
+    }
+  }
+  .shopping-bag .order-summary {
+    border: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  .shopping-bag-ctas {
+    @include clearfix;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+
+    .button {
+      float:left;
+      width: 50%;
+      margin-bottom: 0;
+      transition: $global-transition;
+    }
+    
+    .checkout-cta {
+      &:hover {
+        opacity: 1;
+        background: darken($callout-color, 15%);
+        border-color: darken($callout-color, 15%);
+        transition: $global-transition;
+      }
+    }
+
+    .guest-cta {
+      &:hover {
+        opacity: 1;
+        background: darken(white, 5%);
+        border-color: darken($callout-color, 15%);
+        transition: $global-transition;
+      }
+    }
+  }
+
+  .promo-accordion {
+    border-bottom: 1px solid #cbcbcb;
   }
 }

@@ -26,7 +26,7 @@ section: rent
           <p class="clearance">Clearance</p>
          </div>
           <h1 class="product-name">Tommy Hilfigure Slim Fit Suit</h1>
-          <ul class="bag-item-selections">
+          <ul class="bag-item-meta-data">
             <li>Color: Charcoal</li>
             <li>Size: 38 Regular</li>
             <li>#9348573</li>
@@ -53,7 +53,6 @@ section: rent
       <div class="row small-collapse">
         <div class="small-2 columns bag-item-image">
           <img src="{{assets}}images/retail/product-thumbnail-shirt.jpg">
-
         </div>
         <div class="small-10 columns bag-item-detail">
         <div class="price-and-qty">
@@ -62,14 +61,14 @@ section: rent
          </div>
           <h1 class="product-name">Tommy Hilfigure Slim Fit Suit</h1>
           <p class="low-stock">Low Stock</p>
-          <ul class="bag-item-selections">
+          <ul class="bag-item-meta-data">
             <li>Color: Charcoal</li>
             <li>Size: 38 Regular</li>
             <li>#9348573</li>
             <li>
               <div class="shopping-bag-upsell">
-                <input id="shoppingBagUpsell" type="checkbox">
-                <label class="shopping-bag-upsell-label" for="shoppingBagUpsell">This is an upsell for $10</label>
+                <input class="upsell-checkbox" id="shoppingBagUpsell" type="checkbox">
+                <label class="upsell-label" for="shoppingBagUpsell">This is an upsell for $10</label>
               </div>
             </li>
           </ul>
@@ -81,14 +80,12 @@ section: rent
             <img class="text-link-icon remove-icon" src="{{assets}}images/icons/heart-black.svg" alt="">
             <a class="text-link" href="#">Save</a>
           </div>
-          
-
         </div>
       </div>
     </div>
 
     <!-- small promo -->
-    <ul class="accordion shopping-bag promo-accordion show-for-small-only" data-accordion>
+    <ul class="accordion promo-accordion show-for-small-only" data-accordion>
       <li class="accordion-navigation">
         <a class="product-info-label" href="#panel1a">Promo Code</a>
         <div id="panel1a" class="content">
@@ -112,7 +109,8 @@ section: rent
 
   <div class="small-12 medium-4 columns">
     <div class="order-summary">
-        <div class="hide-for-small-only">
+      <!-- Hide for Small -->
+      <div class="hide-for-small-only">
         <h1 class="order-summary-title">Order Summary</h1>
         <ul class="order-summary-list">
           <li>
@@ -141,26 +139,23 @@ section: rent
             </div>
           </li>
         </ul>
+        <!-- /promo code -->
       </div>
-      
-
-      <div class="shopping-bag-ctas clearfix">
+      <!-- /Hide for Small -->
+      <div class="shopping-bag-ctas">
         <a href="#" class="button primary guest-cta">
           <span class="cta-title">Checkout</span>
           <span class="cta-subhead">As Guest</span>
         </a>
-
         <a href="#" id="signIn"  class="button primary checkout-cta">
           <span class="cta-title">Sign In</span>
           <span class="cta-subhead">To Checkout</span>
         </a>
       </div>
-
       <div class="hide-for-small-only">
         <p class="or">or</p>
         <img class="paypal-button" src="{{assets}}images/paypal-ph.png">
       </div>
-
     </div>
   </div>
 </div>
@@ -171,8 +166,8 @@ section: rent
 
     <ul id="shoppingBagSaved" class="saved-items">
       <li class="saved-item">
-        <a class="saved-item-link" href="#">
-          <img class="saved-thumbnail" src="{{assets}}images/retail/tie-1.jpg" alt="">
+        <a href="#" class="saved-item-link">
+          <img class="saved-thumbnail" src="{{assets}}images/retail/tie-1.jpg">
           <div class="saved-thumbnail-description">
             <h3 class="saved-thumbnail-title">Esquire Narrow Tie</h3>
             <p class="saved-thumbnail-price">
@@ -197,9 +192,10 @@ section: rent
 <!-- Edit Shopping Bag Modal -->
 <div class="bag-modal bag-edit-modal show-for-small-only">
   <h3 class="bag-edit-title">Edit</h3>
-  <a id="shoppingBagEditModalClose" href="#" class="bag-close edit-close"><img src="{{assets}}images/icons/close-black.svg" alt=""></a>
+  <a href="#" id="shoppingBagEditModalClose" class="bag-close edit-close">
+    <img src="{{assets}}images/icons/close-black.svg" alt="">
+  </a>
   <div class="edit-item">
-    
     <div class="row small-collapse">
       <div class="small-3 columns">
         <img src="{{assets}}images/browse/product-thumbnail-suit-2.jpg">
@@ -216,13 +212,11 @@ section: rent
         </div>
       </div>
     </div>
-
     <div class="row small-collapse">
       <div class="columns">
         {{>shopping-edit-colors}}
       </div>
     </div>
-
     <div class="row small-collapse">
       <div class="columns">
         {{>shopping-edit-sizing-dropdown}}
@@ -231,7 +225,6 @@ section: rent
   </div>
 </div>
 <a href="#" class="button primary bag-cta bag-edit-cta show-for-small-only">update</a>
-
 <!-- End Edit Shopping Bag Modal -->
 
 
@@ -240,13 +233,12 @@ section: rent
   <h3 class=" title">Sign in to checkout</h3>
   <a id="sign-in-close" href="#" class="bag-close"><img src="{{assets}}images/icons/close-black.svg" alt=""></a>
   <p class="bag-modal-sub-title">No account? <a href="#" class="text-link">Create One</a></p>
-
   <input type="text" placeholder="Email">
   <input type="text" placeholder="Password">
   <a href="#" id="bagForgotPassword" class="form-helper text-link">Forgot Password?</a>
 </div>
 
-<a href="#" class="button primary bag-cta bag-sign-in-cta show-for-small-only">
+<a href="#" class="bag-cta bag-sign-in-cta button primary show-for-small-only">
   <span class="cta-title">Sign In</span>
   <span class="cta-subhead">To Checkout</span>
 </a>
