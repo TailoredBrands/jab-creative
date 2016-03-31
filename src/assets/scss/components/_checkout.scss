@@ -78,4 +78,20 @@
   margin-right: 10px;
 }
 
+.off-canvas-wrap {
+  .is-faded {
+    opacity: 0.1;
+  }
+}
 
+.shipping-label {
+  font-size: 12px;
+  margin-bottom: 3px !important;
+
+}
+
+form {
+  .checkout-dropdown {
+    margin-top: 3px;
+  }
+}

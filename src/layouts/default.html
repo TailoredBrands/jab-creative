@@ -12,11 +12,19 @@
 </head>
 <body>
 
+{{#is page.title "checkout"}}
+  {{>checkout-header}}
+{{else}}
   {{>header}}
+{{/is}}
 
   {{>body}}
 
-  {{>footer}}
+  {{#is page.title "checkout"}}
+    {{>checkout-footer}}
+  {{else}}
+    {{>footer}}
+  {{/is}}
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="{{assets}}js/all.js"></script>
