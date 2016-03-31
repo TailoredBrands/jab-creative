@@ -117,7 +117,8 @@
 }
 
 //Sign in modal height
-.bag-sign-in {
+.bag-sign-in,
+.bag-forgot {
     padding-bottom: 80px;
     bottom: -100%;
     transition: all 0.3s ease-out;
@@ -143,7 +144,8 @@
 
 //We want the cta's within each modal to appear on active too!
 .bag-edit-cta,
-.bag-sign-in-cta {
+.bag-sign-in-cta,
+.bag-forgot-cta {
   bottom: 100%;
   &.is-active {
     bottom: 0;

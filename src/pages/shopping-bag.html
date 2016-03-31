@@ -241,9 +241,9 @@ section: rent
   <a id="sign-in-close" href="#" class="bag-close"><img src="{{assets}}images/icons/close-black.svg" alt=""></a>
   <p class="bag-modal-sub-title">No account? <a href="#" class="text-link">Create One</a></p>
 
-  <input type="text" placholder="Email">
+  <input type="text" placeholder="Email">
   <input type="text" placeholder="Password">
-  <a href="#" class="form-helper text-link">Forgot Password?</a>
+  <a href="#" id="bagForgotPassword" class="form-helper text-link">Forgot Password?</a>
 </div>
 
 <a href="#" class="button primary bag-cta bag-sign-in-cta show-for-small-only">
@@ -252,7 +252,16 @@ section: rent
 </a>
 <!-- Sign in CTA Modal -->
 
+<!-- Forgot Modal -->
+<div class="bag-modal bag-forgot show-for-small-only">
+  <h3 class="title">Reset Password</h3>
+  <a href="#" id="forgotPasswordClose" class="bag-close forgot-close"><img src="{{assets}}images/icons/close-black.svg" alt=""></a>
+  <p class="bag-modal-sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, sa, suscipit neque.</p>
+  <input type="text" placeholder="Email">
+</div>
 
+<a href="#" class="button primary bag-cta bag-forgot-cta show-for-small-only">Reset Password</a>
+<!-- Sign in CTA Modal -->
 
 
 
