@@ -3,9 +3,29 @@ $(document).ready(function() {
     if( $('.panel3').hasClass('active') ) {
       $('.review-cta').addClass('is-active');
     }
-    else {
+    else {  
       $('.review-cta').removeClass('is-active');
     }
 
    });
+});
+
+
+$(window).scroll(function(){
+  if($('.order-summary').length > 0) {
+    var myScrollPosition = $(this).scrollTop();
+    var windowHeight = $(window).height();
+    var orderSummaryHeight = $('.order-summary').outerHeight();
+
+    var promoTop  = $('.promotion-callout-top').outerHeight();
+    var navMain = $('nav.main').outerHeight();
+
+    if (myScrollPosition > (promoTop + navMain)) {
+      $('.order-summary').addClass("order-summary-sticky");
+
+    }
+    else {
+      $('.order-summary').removeClass("order-summary-sticky");
+    }
+  }
 });

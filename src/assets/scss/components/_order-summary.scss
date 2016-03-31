@@ -83,3 +83,15 @@
     position: relative;
   }
 }
+
+.checkout-tabs-content {
+  .order-summary-sticky {
+    background: white;
+    z-index: 1;
+    width: 270px;
+    top: 75px;
+    right: auto;
+    position: fixed;
+    margin-left: 50px;
+  }
+}
