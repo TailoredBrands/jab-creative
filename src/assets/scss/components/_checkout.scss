@@ -209,3 +209,20 @@ form {
     }
   }
 }
+
+.reivew-section-header {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid gray;
+}
+
+.review-section-title {
+  margin-bottom: 0 !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 500;
+  top: 4px;
+  position: relative;
+}
