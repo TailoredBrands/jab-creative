@@ -95,3 +95,12 @@ form {
     margin-top: 3px;
   }
 }
+
+.review-cta {
+  width: 100%;
+  display: none;
+  
+  &.is-active {
+    display: block;
+  }
+}

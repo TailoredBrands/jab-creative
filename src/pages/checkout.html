@@ -17,46 +17,26 @@ title: checkout
       <ul class="tabs checkout-tabs" data-tab>
         <li class="tab-title active"><a href="#panel1">Shipping</a></li>
         <li class="tab-title"><a href="#panel2">Payment</a></li>
-        <li class="tab-title"><a href="#panel3">Review</a></li>
+        <li class="tab-title panel3"><a href="#panel3">Review</a></li>
       </ul>
     </div>
   </div>
 
   <div class="tabs-content checkout-tabs-content">
-    <!-- shipping -->
     <div class="row">
-      
       <div class="medium-8 columns">
         <div class="tabs-content">
-          <div class="content active" id="panel1">
-            <ul class="tabs checkout-toggle" data-tab>
-              <li class="tab-title active"><a href="#panel1-a">Ship to Address</a></li>
-              <li class="tab-title"><a href="#panel2-a">Ship to Store</a></li>
-            </ul>
-            <div class="tabs-content">
-              <div class="content active" id="panel1-a">
-                {{>checkout-ship-address}}
-              </div>
-              <div class="content" id="panel2-a">
-                {{>checkout-ship-store}}
-              </div>
-            </div>
-          </div>
+        <!-- Shipping Tab -->
+          {{>checkout-tab-1}}
+        <!-- /Shipping Tab -->
 
-          <div class="content" id="panel2">
-            <ul class="tabs checkout-toggle" data-tab>
-              <li class="tab-title active"><a href="#panel1-a">Chip to Address</a></li>
-              <li class="tab-title"><a href="#panel2-a">Ship to Store</a></li>
-            </ul>
-            <div class="tabs-content">
-              <div class="content active" id="panel1-a">
-                {{>checkout-ship-address}}
-              </div>
-              <div class="content" id="panel2-a">
-                {{>checkout-ship-store}}
-              </div>
-            </div>
-          </div>
+        <!-- Payment Tab -->
+          {{>checkout-tab-2}}
+        <!-- /Payment Tab -->
+
+        <!-- Review Tab -->
+          {{>checkout-tab-3}}
+        <!-- /Review Tab -->
         </div>
       </div>
 
@@ -83,6 +63,7 @@ title: checkout
               <span class="list-title">Order Total</span><span class="value product-price">$104.<sup>99</sup></span>
             </li>
           </ul>
+          <a href="#" id="" class="button primary review-cta">Continue</a>
         </div>
       </div>
 
