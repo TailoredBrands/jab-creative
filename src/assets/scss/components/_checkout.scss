@@ -1,3 +1,8 @@
+.collapse-for-small {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 .inline-header {
   display: inline;
 }
@@ -40,6 +45,12 @@
   .tab-title.active {
     border: 1px solid $light-gray;
     border-bottom: 1px solid white;
+  }
+}
+
+@media #{$small-only} {
+  .checkout-tabs {
+    margin-top: -2px;
   }
 }
 
