@@ -13,7 +13,7 @@ $(document).ready(function() {
 console.log(window.innerWidth);
 
 
-if($(window.innerWidth) > 640) {
+if(window.innerWidth > 640) {
   $(window).scroll(function(){
 
     if($('.order-summary').length > 0 ) {
