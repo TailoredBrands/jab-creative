@@ -134,6 +134,40 @@ form {
   margin-bottom: 5px;
 }
 
+.id-number-input {
+  margin-bottom: 4px !important;
+}
+
+.postfix.button {
+  margin-bottom: 0 !important;
+}
+
+.forgot-fit {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.checkout-paypal-section {
+  position: relative;
+
+  .center {
+    position: relative;
+  }
+}
+
+.continue-paypal-link {
+  text-align: center;
+}
+
+.paypal-image {
+  display: block;
+}
+
 @media #{$small-only} {
   .norton-logo {
     position: absolute;
