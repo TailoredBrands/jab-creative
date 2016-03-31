@@ -2,75 +2,66 @@
 title: checkout
 ---
 
-<section class="page-header">
+<div class="row">
+  <div class="medium-8 columns collapse-for-small">
+    <ul class="tabs checkout-tabs" data-tab>
+      <li class="tab-title active"><a href="#panel1">Shipping</a></li>
+      <li class="tab-title"><a href="#panel2">Payment</a></li>
+      <!-- Used .panel3 for prototype code to help identify the stick order summary-->
+      <li class="tab-title panel3"><a href="#panel3">Review</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="tabs-content checkout-tabs-content">
   <div class="row">
-    <div class="pdp-header medium-12 columns">
-      <!-- <h1 class="product-name">Secure Checkout</h1> -->
-    </div>
-  </div>
-</section>
+    <div class="medium-8 columns">
+      <div class="tabs-content">
+      <!-- Shipping Tab -->
+        {{>checkout-tab-1}}
+      <!-- /Shipping Tab -->
 
+      <!-- Payment Tab -->
+        {{>checkout-tab-2}}
+      <!-- /Payment Tab -->
 
-
-  <div class="row">
-    <div class="medium-8 columns collapse-for-small">
-      <ul class="tabs checkout-tabs" data-tab>
-        <li class="tab-title active"><a href="#panel1">Shipping</a></li>
-        <li class="tab-title"><a href="#panel2">Payment</a></li>
-        <li class="tab-title panel3"><a href="#panel3">Review</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="tabs-content checkout-tabs-content">
-    <div class="row">
-      <div class="medium-8 columns">
-        <div class="tabs-content">
-        <!-- Shipping Tab -->
-          {{>checkout-tab-1}}
-        <!-- /Shipping Tab -->
-
-        <!-- Payment Tab -->
-          {{>checkout-tab-2}}
-        <!-- /Payment Tab -->
-
-        <!-- Review Tab -->
-          {{>checkout-tab-3}}
-        <!-- /Review Tab -->
-        </div>
+      <!-- Review Tab -->
+        {{>checkout-tab-3}}
+      <!-- /Review Tab -->
       </div>
-
-      <div class="medium-4 columns hide-for-small-only">
-        <div class="order-summary">
-          <h1 class="order-summary-title">Order Summary</h1>
-          <ul class="order-summary-list">
-            <li>
-              <span class="list-title">Merchandise</span><span class="value product-price">$104.<sup>99</sup></span>
-            </li>
-            <li>
-              <span class="list-title">Merchandise</span><span class="value product-price">$104.<sup>99</sup></span>
-            </li>
-            <li>
-              <span class="list-title">Merchandise</span><span class="value product-price">$104.<sup>99</sup></span>
-            </li>
-            <li>
-              <span class="list-title">Merchandise</span><span class="value product-price">$104.<sup>99</sup></span>
-            </li>
-            <li class"sub-total">
-              <span class="list-title">Merchandise</span><span class="value product-price">$104.<sup>99</sup></span>
-            </li>
-            <li class="total">
-              <span class="list-title">Order Total</span><span class="value product-price">$104.<sup>99</sup></span>
-            </li>
-          </ul>
-          <a href="#" id="" class="button primary review-cta hide-for-small">Place Order</a>
-        </div>
-      </div>
-
-
-
     </div>
+
+    <div class="medium-4 columns hide-for-small-only">
+      <div class="order-summary">
+        <h1 class="order-summary-title">Order Summary</h1>
+        <ul class="order-summary-list">
+          <li>
+            <span class="list-title">Merchandise</span><span class="value product-price">$104.<sup>99</sup></span>
+          </li>
+          <li>
+            <span class="list-title">Merchandise</span><span class="value product-price">$104.<sup>99</sup></span>
+          </li>
+          <li>
+            <span class="list-title">Merchandise</span><span class="value product-price">$104.<sup>99</sup></span>
+          </li>
+          <li>
+            <span class="list-title">Merchandise</span><span class="value product-price">$104.<sup>99</sup></span>
+          </li>
+          <li class"sub-total">
+            <span class="list-title">Merchandise</span><span class="value product-price">$104.<sup>99</sup></span>
+          </li>
+          <li class="total">
+            <span class="list-title">Order Total</span><span class="value product-price">$104.<sup>99</sup></span>
+          </li>
+        </ul>
+        <a href="#" id="" class="button primary review-cta hide-for-small">Place Order</a>
+      </div>
+    </div>
+
+
+
   </div>
+</div>
 
 
 

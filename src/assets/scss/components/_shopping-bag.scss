@@ -1,60 +1,45 @@
-.shopping-bag {
-  padding-top: 1rem;
+//Generic seciton label typograpy
+//TODO: move to typography
+.section-label {
+  font-size: 12px !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  position: relative;
 }
 
-.shopping-bag-header {
-  border-bottom: 1px solid $light-gray;
-}
-
-.shopping-bag-title {
-  @extend .product-info-label;
-  margin-bottom: 0;
-  &::after {
-    display: none;
-  }
-}
-
-.item-count {
+//Generic alternate label
+//TODO: move
+.seciton-label-alt {
   text-transform: uppercase;
   color: #8a8a8a;
   font-size: 10px;
   letter-spacing: 0;
 }
 
-
-@media #{$small-only} {
-  .shopping-bag {
-    padding-top: 0;
-  }
-
-  .shopping-bag-title {
-    margin-left: 0;
-    padding: 1rem;
-    padding-left: 0;
-  }
-
-  .shopping-bag-subtotal {
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin-bottom: 0;
-    text-align: center;
-  }
-
-  .shopping-bag-subtotal-price {
-    letter-spacing: 0;
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 4px;
-  }
+//Entire shopping bag section
+.shopping-bag {
+  padding-top: 1rem;
 }
+
+//Shopping bag header area
+.shopping-bag-header {
+  @include clearfix;
+  border-bottom: 1px solid $light-gray;
+}
+
+//Each title area for the shopping bag
+.shopping-bag-title {
+  float: left;
+  margin-bottom: 0;
+}
+
 
 p.subtotal {
   text-transform: uppercase;
   font-size: 10px;
   letter-spacing: 1px;
   margin-top: 0;
-  
 }
 
 .bag-total {
@@ -278,5 +263,34 @@ p.subtotal {
   .paypal-button {
     margin-top: 10px;
     width: 40%;
+  }
+}
+
+
+//Mobile
+@media #{$small-only} {
+  .shopping-bag {
+    padding-top: 0;
+  }
+
+  .shopping-bag-title {
+    margin-left: 0;
+    padding: 1rem;
+    padding-left: 0;
+  }
+
+  .shopping-bag-subtotal {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .shopping-bag-subtotal-price {
+    letter-spacing: 0;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 4px;
   }
 }
