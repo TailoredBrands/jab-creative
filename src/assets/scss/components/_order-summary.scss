@@ -3,9 +3,7 @@
   .order-summary {
     border: 1px solid $light-gray;
     padding: 10px 30px;
-    width: 80%;
-    position: absolute;
-    right: 0;
+
   }
 
   .order-summary-title {
@@ -15,6 +13,7 @@
 
   .order-summary-list {
     list-style:none;
+    margin-bottom: 0;
 
     li {
       text-align: right;
@@ -63,18 +62,17 @@
 }
 
 
-.order-summary {
-  .checkout-cta {
-    border: 1px solid $callout-color;
-  }
-  
-  .guest-cta {
-    border: 1px solid $callout-color;
-    width: 100%;
-    background: white;
-    color: $callout-color;
-  }
+.button.checkout-cta {
+  border: 1px solid $callout-color;
 }
+
+.button.guest-cta {
+  border: 1px solid $callout-color;
+  width: 100%;
+  background: white;
+  color: $callout-color;
+}
+
 
 .order-summary {
   .paypal-button {
@@ -94,4 +92,28 @@
     position: fixed;
     margin-left: 50px;
   }
+}
+
+.shopping-bag {
+  .sub-checkout-ctas {
+    // width: 80%;
+    // position: absolute;
+    // right: 0;
+    // top: 300px;
+    margin-top: 40px;
+  }
+}
+
+@media #{$small-only} {
+  .shopping-bag {
+    .sub-checkout-ctas {
+      width: 100%;;
+    }
+  }
+}
+
+.order-summary-area {
+    width: 80%;
+    position: absolute;
+    right: 0;
 }

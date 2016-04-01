@@ -108,9 +108,9 @@ section: rent
   </div>
 
   <div class="small-12 medium-4 columns">
-    <div class="order-summary">
-      <!-- Hide for Small -->
-      <div class="hide-for-small-only">
+    <!-- Shopping Bag order summary -->
+    <div class="order-summary-area">
+      <div class="order-summary hide-for-small-only">
         <h1 class="order-summary-title">Order Summary</h1>
         <ul class="order-summary-list">
           <li>
@@ -123,7 +123,7 @@ section: rent
             <span class="list-title">Total</span><span class="value product-price">$104.<sup>99</sup></span>
           </li>
         </ul>
-        <!-- promo code -->
+        <!-- promo -->
         <ul class="accordion shopping-bag hide-for-small-only" data-accordion>
           <li class="accordion-navigation">
             <a class="product-info-label" href="#panel1a">Promo Code</a>
@@ -139,23 +139,31 @@ section: rent
             </div>
           </li>
         </ul>
-        <!-- /promo code -->
+        <!-- /promo -->
       </div>
-      <!-- /Hide for Small -->
-      <div class="shopping-bag-ctas">
-        <a href="#" class="button primary guest-cta">
-          <span class="cta-title">Checkout</span>
-          <span class="cta-subhead">As Guest</span>
-        </a>
-        <a href="#" id="signIn"  class="button primary checkout-cta">
-          <span class="cta-title">Sign In</span>
-          <span class="cta-subhead">To Checkout</span>
-        </a>
+      <!-- /Shopping Bag order summary -->
+
+      <!-- Checkout CTAs for shopping bag -->
+      <div class="sub-checkout-ctas">
+      <input class="hide-for-small-only" type="text" placeholder="Email">
+      <input class="hide-for-small-only" type="text" placeholder="Password">
+        <!-- ctas -->
+        <div class="shopping-bag-ctas">
+          <a href="#" id="signIn"  class="button primary checkout-cta">
+            <span class="cta-title">Sign In</span>
+            <span class="cta-subhead">To Checkout</span>
+          </a>
+          <a href="#" class="button primary guest-cta">
+            <span class="cta-title">Checkout</span>
+            <span class="cta-subhead">As Guest</span>
+          </a>
+        </div>
+        <div class="hide-for-small-only text-center">
+          <p class="or">or</p>
+          <img class="paypal-button" src="{{assets}}images/paypal-ph.png">
+        </div>
       </div>
-      <div class="hide-for-small-only">
-        <p class="or">or</p>
-        <img class="paypal-button" src="{{assets}}images/paypal-ph.png">
-      </div>
+    <!-- /ctas -->
     </div>
   </div>
 </div>
