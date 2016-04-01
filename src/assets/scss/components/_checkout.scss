@@ -243,3 +243,13 @@ form {
     margin-bottom: 5px;
   }
 }
+
+.bag-item-selections {
+  list-style: none;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  li {
+    font-size: 11px;
+    opacity: 0.5;
+  }
+}
