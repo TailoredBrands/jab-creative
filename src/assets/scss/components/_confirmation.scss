@@ -1,0 +1,31 @@
+.confirmation-message {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .title {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+
+  .sub-title {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+
+  @media #{$small} {
+    .title{
+      font-size: 18px;
+    }
+
+    .sub-title {
+      font-size: 14px;
+    }
+  }
+}
+
+
+
+.confirmation-recommended {
+  margin-top: 1rem;
+}
