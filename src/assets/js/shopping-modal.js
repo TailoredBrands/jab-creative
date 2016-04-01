@@ -38,3 +38,5 @@ $('#bagForgotPassword, #forgotPasswordClose').click(function() {
   $('.shopping-bag-recommendations').toggleClass("is-faded");
 });
 
+
+//Checkout flow, selecting flow.

@@ -82,6 +82,16 @@
   }
 }
 
+.order-summary li.promo {
+  text-align: left;
+  margin-bottom: 1rem;
+  span,
+  a {
+    display: inline-block;
+  }
+}
+
+
 .checkout-tabs-content {
   .order-summary-sticky {
     background: white;
@@ -96,17 +106,14 @@
 
 .shopping-bag {
   .sub-checkout-ctas {
-    // width: 80%;
-    // position: absolute;
-    // right: 0;
-    // top: 300px;
     margin-top: 40px;
   }
 }
 
 @media #{$small-only} {
   .shopping-bag {
-    .sub-checkout-ctas {
+    .sub-checkout-ctas,
+    .order-summary-area {
       width: 100%;;
     }
   }

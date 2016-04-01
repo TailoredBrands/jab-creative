@@ -1,0 +1,49 @@
+.store-saved {
+  display: none;
+  &.is-active {
+    display: block;
+  }
+}
+
+.store-new {
+  display: none;
+
+  .store-list {
+    max-height: 230px;
+    overflow: auto;
+    list-style: none;
+    background: #F5F5F5;
+    padding-left: 0;
+  }
+
+  .store {
+    a {
+      padding: 15px;
+      padding-left: 25px;
+      display: block;
+
+      &:hover {
+        background: #e1e1e1;
+      }
+    }
+  }
+
+  .store.is-active {
+    font-weight: bold;
+    position: relative;
+
+    &::after {
+      content:'';
+      background-image: url("../images/icons/check-black.svg");
+      position: absolute;
+      left: 5px;
+      top: 18px;
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
+
+.store-new.is-active {
+  display: block;
+}
