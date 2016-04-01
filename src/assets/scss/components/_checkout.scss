@@ -1,11 +1,5 @@
-.collapse-for-small {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-.inline-header {
-  display: inline;
-}
+//Tabs for the checkout section
+//TODO: make more generic.
 
 .checkout-tabs-content {
   border-top: 1px solid $light-gray;
@@ -244,10 +238,13 @@ form {
   }
 }
 
+//Bag items in the review section fixing the meta data.
+//TODO: combine with meta class in shopping bag
 .bag-item-selections {
   list-style: none;
   margin-bottom: 5px;
   padding-left: 10px;
+  
   li {
     font-size: 11px;
     opacity: 0.5;
