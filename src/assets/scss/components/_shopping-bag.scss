@@ -289,3 +289,32 @@ $bag-detail-padding-left: 10px;
     border-bottom: 1px solid #cbcbcb;
   }
 }
+
+//Toggling the shipping area change address
+.shipping-dropdown,
+.change-address-area{
+  display: none;
+  
+  &.is-active {
+    display: block;
+  }
+}
+
+.address-change-cta {
+  display: none;
+
+  &.is-active {
+    display: inline-block;
+  }
+}
+
+.address-save-address-area {
+  display: none;
+
+  &.is-active {
+    display: block;
+  }
+}
+
+
+
