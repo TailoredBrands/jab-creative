@@ -46,11 +46,14 @@ $global-transition: all 0.3s ease;
     border-bottom: 0;
   }
 }
+$bag-detail-padding-left: 10px;
 
 //In the shopping bag we align the promo to the right
 .bag-promo {
-  text-align: right;
-
+  padding-left: $bag-detail-padding-left;
+  width: 50%;
+  margin-top: 1rem;
+  
   .text-link {
     font-size: 11px;
   }
@@ -77,7 +80,6 @@ $global-transition: all 0.3s ease;
   }
 }
 
-$bag-detail-padding-left: 10px;
 //All of the detail information about the bag item, not the thumbnail
 .bag-item-detail {
   .product-name {
@@ -111,7 +113,6 @@ $bag-detail-padding-left: 10px;
 .bag-edit-links {
   margin-left: 12px;
   margin-right: 20px;
-  float: left;
 }
 
 //Accordions for the shopping bags
