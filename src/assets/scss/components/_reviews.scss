@@ -1,0 +1,83 @@
+.reviews {
+  list-style: none;
+}
+
+.review {
+  border: 1px solid #DDDDDD;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  .title {
+    margin-bottom: 5px;
+  }
+
+  .stars {
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .time-stamp {
+    display: block;
+    opacity: 0.4;
+    margin-bottom: 10px;
+  }
+
+  .author {
+    margin-bottom: 15px;
+    margin-top: 5px;
+  }
+
+  .fit {
+    width: 60%;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  .fit-chart {
+    position: absolute;
+  }
+
+  .attributes {
+    list-style: none;
+  }
+}
+
+.write-review-cta {
+  margin-top: 15px;
+}
+
+.filters-area {
+  .page,
+  .sort {
+    opacity: 0.4;
+  }
+
+  .sort {
+    padding-right: 15px;
+    position: relative;
+
+    &::after {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid #ADADAD;
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 4px;
+    }
+  }
+}
+
+.next-pages {
+  .next,
+  .prev {
+    opacity: 0.4;
+
+    &.is-active {
+      opacity: 1;
+      color: $callout-color;
+    }
+  }
+}
