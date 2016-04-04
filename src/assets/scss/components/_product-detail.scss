@@ -1,3 +1,8 @@
+//util 
+.is-hidden {
+  display: none;
+}
+
 
 //Content for the pdp
 .product-details-page {
@@ -176,5 +181,14 @@
     padding-left: 0;
     margin-top: 0;
   }
+}
+
+.pdp-label {
+  opacity: 0.3;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding-left: 3px;
 }
 
