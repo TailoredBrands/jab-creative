@@ -218,3 +218,39 @@ var carousel = $('#shoppingBagSaved').slick({
   ]
 });
 //End Shopping Bag Recommendation
+
+
+//QuickView Recommendation
+var carousel = $('#quickViewRecommendations').slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 6,
+  slidesToScroll: 6,
+  useTransform: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 6
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 3.25,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+//End QuickView Recommendation

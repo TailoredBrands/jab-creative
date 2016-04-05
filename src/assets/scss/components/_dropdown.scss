@@ -9,6 +9,7 @@
   padding: 5px 10px;
   cursor: pointer;
   border: 1px solid #9B9B9B;
+  height: 40px;
 
   .out-of-stock {
     opacity: 0.5;
@@ -84,11 +85,19 @@
 
 //When the custom-dropdown is active, open that sucker up
 .custom-dropdown.is-active {
-  height: auto;
-  max-height: 400px;
-  overflow: auto;
-  margin-top: 1rem;
-  padding-top:  0;
+    height: auto;
+    max-height: 400px;
+    overflow: auto;
+    margin-top: 1rem;
+    padding-top: 0;
+    position: absolute;
+    z-index: 10000;
+    width: calc(100% + 2px);
+    background: white;
+    margin-left: -11px;
+    border: 1px solid #9B9B9B;
+    border-top-color: white;
+    top: 11px;
   //Gotta show the list item elements as well!
   li {
     display: block;

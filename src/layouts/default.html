@@ -10,7 +10,13 @@
   <link rel="stylesheet" href="{{assets}}css/app_page_2.css" />
   <script src="{{assets}}js/modernizr.js"></script>
 </head>
-<body>
+
+{{#is page.title "quick-view"}}
+  <div class="modal-is-open"></div>
+  <body style="overflow: hidden;  ">
+{{else}}
+  <body>
+{{/is}}
 
 {{#is page.title "checkout"}}
   {{>checkout-header}}
