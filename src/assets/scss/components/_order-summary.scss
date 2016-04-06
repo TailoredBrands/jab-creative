@@ -2,7 +2,7 @@
 .checkout-tabs-content {
   .order-summary {
     border: 1px solid $light-gray;
-    padding: 10px 30px;
+    padding: 10px;
 
   }
 
@@ -43,7 +43,8 @@
     text-align: center;
     opacity: 0.5;
     text-transform: uppercase;
-    margin-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -82,12 +83,24 @@
   }
 }
 
-.order-summary li.promo {
+.promo {
   text-align: left;
   margin-bottom: 1rem;
+
   span,
   a {
     display: inline-block;
+    width: auto;
+  }
+
+  span {
+    font-size: 12px;
+    color: $callout-color;
+    font-weight: 500;
+  }
+
+  a {
+    font-size: 10px;  
   }
 }
 
@@ -120,7 +133,7 @@
 }
 
 .order-summary-area {
-    width: 80%;
-    position: absolute;
-    right: 0;
+  width: 80%;
+  position: absolute;
+  right: 15px;
 }

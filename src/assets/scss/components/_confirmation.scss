@@ -12,7 +12,14 @@
     margin-top: 10px;
   }
 
+  .message {
+    margin-bottom: 0;
+  }
 
+  .print {
+    margin-bottom: 30px;
+    display: inline-block;
+  }
 
   @media #{$small} {
     .title{
@@ -29,4 +36,10 @@
 
 .confirmation-recommended {
   margin-top: 1rem;
+}
+
+.confirmation-total-price {
+  position: relative;
+  top: -6px;
+  margin-left: 10px;
 }

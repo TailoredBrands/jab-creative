@@ -11,3 +11,7 @@ $('#changeAddress, #changeAddress2, #saveAddress').click(function(){
   $('#changeAddress').toggleClass('is-active');
   $('#saveAddress').toggleClass('is-active');
 });
+
+$('#checkoutGuest').click(function() {
+  $('#guestInputs').toggleClass('is-active');
+});

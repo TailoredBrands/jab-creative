@@ -22,13 +22,13 @@ section: rent
         <div class="small-10 columns bag-item-detail">
         <div class="price-and-qty">
           <span class="product-price">$699.<sup>99</sup></span>
-          <p class="quantity">QTY: 1</p>
           <p class="clearance">Clearance</p>
          </div>
           <h1 class="product-name">Tommy Hilfigure Slim Fit Suit</h1>
           <ul class="bag-item-meta-data">
             <li>Color: Charcoal</li>
             <li>Size: 38 Regular</li>
+            <li>QTY: 1</li>
             <li>#9348573</li>
           </ul>
           <div class="bag-edit-links">
@@ -43,12 +43,13 @@ section: rent
             <p class="promotion-callout">Buy 1 Get 1 FREE Suits and Sport Coats and get 50% Off additional items.</p>
             <a href="#" class="text-link add-another" id="add-more-filters">Add another</a>
           </div>
+          <p class="low-stock">Low Stock</p>
 
         </div>
       </div>
     </div>
 
-          <!-- shopping-bag-item -->
+    <!-- shopping-bag-item -->
     <div class="bag-item">
       <div class="row small-collapse">
         <div class="small-2 columns bag-item-image">
@@ -57,13 +58,12 @@ section: rent
         <div class="small-10 columns bag-item-detail">
         <div class="price-and-qty">
           <span class="product-price">$699.<sup>99</sup></span>
-          <p class="quantity">QTY: 1</p>
          </div>
           <h1 class="product-name">Tommy Hilfigure Slim Fit Suit</h1>
-          <p class="low-stock">Low Stock</p>
           <ul class="bag-item-meta-data">
             <li>Color: Charcoal</li>
             <li>Size: 38 Regular</li>
+            <li>QTY: 1</li>
             <li>#9348573</li>
           </ul>
           <div class="bag-edit-links">
@@ -103,18 +103,14 @@ section: rent
 
   <div class="small-12 medium-4 columns">
     <!-- Shopping Bag order summary -->
-    <div class="order-summary-area">
-      <div class="order-summary hide-for-small-only">
-        <h1 class="order-summary-title">Order Summary</h1>
+    <div class="order-summary-area hide-for-small-only">
+      <div class="order-summary">
         <ul class="order-summary-list">
+          <div class="promo">
+            <span>Your order qualifies for FREE Shipping Choose this option at checkout.</span>
+            <a href="#" class="text-link">Add Item</a>
+          </div>
           <li>
-            <span class="list-title">Merchandise</span><span class="value product-price">$104.<sup>99</sup></span>
-          </li>
-          <li class="promo">
-           <span>1 item away from Free Shipping!</span>
-           <a href="#" class="text-link small-text-link">Add Item</a>
-          </li>
-          <li class="total">
             <span class="list-title">Total</span><span class="value product-price">$104.<sup>99</sup></span>
           </li>
         </ul>
@@ -140,21 +136,32 @@ section: rent
 
       <!-- Checkout CTAs for shopping bag -->
       <div class="sub-checkout-ctas">
-      <input class="hide-for-small-only" type="text" placeholder="Email">
-      <input class="hide-for-small-only" type="text" placeholder="Password">
-        <!-- ctas -->
-        <div class="shopping-bag-ctas">
+
+        <div class="sign-in-checkout">
+          <input class="hide-for-small-only" type="text" placeholder="Email">
+          <input class="hide-for-small-only" type="text" placeholder="Password">
+
           <a href="#" id="signIn"  class="button primary checkout-cta">
             <span class="cta-title">Sign In</span>
             <span class="cta-subhead">To Checkout</span>
           </a>
-          <a href="#" class="button primary guest-cta">
+        </div>
+
+        <p class="or">or</p>
+
+
+          <div id="guestInputs" class="checkout-cta-inputs">
+            <input class="hide-for-small-only" type="text" placeholder="Email">
+            <input class="hide-for-small-only" type="text" placeholder="Password">
+          </div>
+
+          <a id="checkoutGuest" class="button primary guest-cta">
             <span class="cta-title">Checkout</span>
             <span class="cta-subhead">As Guest</span>
           </a>
+
         </div>
         <div class="hide-for-small-only text-center">
-          <p class="or">or</p>
           <img class="paypal-button" src="{{assets}}images/paypal-ph.png">
         </div>
       </div>
@@ -259,5 +266,14 @@ section: rent
 
 
 
-
+<div class="shopping-bag-cta-small show-for-small-only">
+  <a href="#" id=""  class="button primary checkout-cta">
+    <span class="cta-title">Sign In</span>
+    <span class="cta-subhead">To Checkout</span>
+  </a>
+  <a id="" class="button primary guest-cta">
+    <span class="cta-title">Checkout</span>
+    <span class="cta-subhead">As Guest</span>
+  </a>
+</div>
 
