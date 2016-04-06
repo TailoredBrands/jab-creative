@@ -249,3 +249,13 @@ p.lead {
   padding-left: 25px;
   color: $info-color;
 }
+
+.product-price-orig {
+  text-decoration: line-through;
+}
+
+.seciton-label-alt {
+  opacity: 0.3;
+  letter-spacing: 0;
+  font-size: 10px;
+}

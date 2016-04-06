@@ -5,12 +5,19 @@ section: rent
   <div class="bag-items medium-8 columns">
     <!-- header -->
     <div class="shopping-bag-header">
-      <p class="section-label shopping-bag-title">Shopping Bag <span class="seciton-label-alt">2 items</span></p>
-      
-      <div class="right show-for-small-only">
-        <h3 class="shopping-bag-subtotal">Subtotal</h3>
-        <p class="shopping-bag-subtotal-price">729.<sup>99</sup></p>
+      <div class="clearfix">
+        <p class="section-label shopping-bag-title">Shopping Bag <span class="seciton-label-alt">2 items</span></p>
+        
+        <div class="right show-for-small-only">
+          <h3 class="shopping-bag-subtotal">Subtotal</h3>
+          <p class="shopping-bag-subtotal-price">729.<sup>99</sup></p>
+        </div>
       </div>
+
+      <div class="espot-top text-center">
+        <p>This area is for an espot</p>
+      </div>
+
     </div>
 
     <!-- shopping-bag-item -->
@@ -33,7 +40,8 @@ section: rent
           </ul>
           <div class="bag-edit-links">
             <img class="text-link-icon edit-icon" src="{{assets}}images/icons/edit-black.svg" alt="">
-            <a class="text-link" href="#">Edit</a> | 
+            <a class="text-link medium-up" href="#" data-reveal-id="editModal">Edit</a>
+            <a class="text-link small-only" href="#" >Edit</a> | 
             <img class="text-link-icon remove-icon" src="{{assets}}images/icons/close-black.svg" alt="">
             <a class="text-link" href="#">Remove</a> |
             <img class="text-link-icon remove-icon" src="{{assets}}images/icons/heart-black.svg" alt="">
@@ -48,6 +56,8 @@ section: rent
         </div>
       </div>
     </div>
+
+    {{> shopping-bag-edit-modal}}
 
     <!-- shopping-bag-item -->
     <div class="bag-item">
@@ -147,7 +157,9 @@ section: rent
 
         <div class="sign-in-checkout">
           <input class="hide-for-small-only" type="text" placeholder="Email">
-          <input class="hide-for-small-only" type="text" placeholder="Password">
+          <input class="error hide-for-small-only" type="text" placeholder="Password">
+
+          <p class="error-message">This is an error message</p>
 
           <a href="#" id="signIn"  class="button primary checkout-cta">
             <span class="cta-title">Sign In</span>
@@ -160,7 +172,6 @@ section: rent
 
           <div id="guestInputs" class="checkout-cta-inputs">
             <input class="hide-for-small-only" type="text" placeholder="Email">
-            <input class="hide-for-small-only" type="text" placeholder="Password">
           </div>
 
           <a id="checkoutGuest" class="button primary guest-cta">

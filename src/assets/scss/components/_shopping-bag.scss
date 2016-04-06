@@ -41,6 +41,10 @@ $global-transition: all 0.3s ease;
   border: 1px solid #cbcbcb;
   padding: 15px;
 
+  & input.error {
+    margin-bottom: 2px;
+  }
+
 }
 
 //Each Shopping Bag Item
@@ -333,6 +337,33 @@ $bag-detail-padding-left: 10px;
 
   &.is-active {
     display: block;
+  }
+}
+
+.shopping-bag {
+  .espot-top {
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    background: #F1F1F1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    p {
+      margin-bottom: 0;
+      opacity: 0.5;
+    }
+  }
+}
+
+@media #{$small-only} {
+  .medium-up {
+    display: none;
+  }
+}
+
+@media #{$medium-up} {
+  .small-only {
+    display: none;
   }
 }
 
