@@ -11,6 +11,10 @@
 .error-message {
   font-size: 10px;
   color: red;
+
+  &.top {
+    margin-bottom: 2px;
+  }
 }
 
 
@@ -164,7 +168,9 @@
     position: absolute;
     right: 21px;
     top: 23px;
-    font-size: 1rem;
+    font-size: 30px;
+    color: black;
+    z-index: 10;
   }
 }
 

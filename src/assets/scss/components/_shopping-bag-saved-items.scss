@@ -26,7 +26,6 @@
   .product-price-orig,
   .product-price-discount {
     font-size: rem-calc(11);
-    opacity: 0.5;
   }
 }
 
@@ -67,8 +66,9 @@
 }
 
 .remove-cta {
-  font-size: 9px;
+  font-size: 14px;
   opacity: 0.5;
+  margin-left: 4px;
 }
 
 

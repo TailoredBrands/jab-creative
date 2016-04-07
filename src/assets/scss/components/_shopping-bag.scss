@@ -38,11 +38,13 @@ $global-transition: all 0.3s ease;
 }
 
 .sign-in-checkout {
-  border: 1px solid #cbcbcb;
-  padding: 15px;
+  border: 1px solid #CBCBCB;
+  padding: 15px 10px;
 
   & input.error {
-    margin-bottom: 2px;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    border-color: red;
   }
 
 }
@@ -64,6 +66,11 @@ $global-transition: all 0.3s ease;
     display: block;
   }
 }
+
+.checkout-cta {
+  margin-bottom: 0;
+}
+
 
 $bag-detail-padding-left: 10px;
 
@@ -113,9 +120,10 @@ $bag-detail-padding-left: 10px;
 
 //Callout label for low stock
 .low-stock {
-  color: #8a8a8a;
+  margin-top: 0.5rem;
+  color: $callout-color;
   font-size: 12px;
-  font-weight: normal;
+  font-weight: 500;
   padding-left: $bag-detail-padding-left;
   margin-bottom: 0;
 }
@@ -136,6 +144,18 @@ $bag-detail-padding-left: 10px;
 .bag-edit-links {
   margin-left: 12px;
   margin-right: 20px;
+}
+
+.add-another {
+  color: $callout-color;
+  font-weight: 500;
+  font-size: 0.75rem !important;
+  letter-spacing: 0;
+  text-transform: none;
+  
+  &:hover {
+    color: darken($callout-color, 35%);
+  }
 }
 
 //Accordions for the shopping bags

@@ -1,8 +1,8 @@
 .shopping-bag,
 .checkout-tabs-content {
   .order-summary {
-    border: 1px solid $light-gray;
-    padding: 10px;
+    // border: 1px solid $light-gray;
+    // padding: 10px;
 
   }
 
@@ -45,6 +45,15 @@
     text-transform: uppercase;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+}
+
+.order-summary {
+  .title {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+    margin-top: 4px;
   }
 }
 

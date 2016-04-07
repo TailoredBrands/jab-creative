@@ -2,6 +2,14 @@
 section: rent
 ---
 <div class="shopping-bag row">
+  <div class="columns">
+    <div class="espot-top text-center">
+      <p>This area is for an espot</p>
+    </div>
+  </div>
+</div>
+
+<div class="shopping-bag row">
   <div class="bag-items medium-8 columns">
     <!-- header -->
     <div class="shopping-bag-header">
@@ -28,6 +36,7 @@ section: rent
         </div>
         <div class="small-10 columns bag-item-detail">
         <div class="price-and-qty">
+        <span class="product-price-orig">$849.<sup>59</sup></span> 
           <span class="product-price">$699.<sup>99</sup></span>
           <p class="clearance">Clearance</p>
          </div>
@@ -115,20 +124,18 @@ section: rent
     <!-- Shopping Bag order summary -->
     <div class="order-summary-area hide-for-small-only">
       <div class="order-summary">
-      <div class="promo text-center">
-        <span>Add $10.00 to get free shipping today!</span>
-      </div>
+        <h3 class="title">Order Summary</h3>
         <ul class="order-summary-list">
           <li>
             <span class="list-title">Subtotal</span>
             <span class="value product-price">104.<sup>99</sup></span>
           </li>
           <li>
-            <span class="list-title">Shipping</span>
+            <span class="list-title">Est. Shipping</span>
             <span class="value product-price">$10.00</span>
           </li>
           <li class="total">
-            <span class="list-title">Total</span>
+            <span class="list-title">Est. Total</span>
             <span class="value product-price">$104.<sup>99</sup></span>
           </li>
         </ul>
@@ -157,9 +164,10 @@ section: rent
 
         <div class="sign-in-checkout">
           <input class="hide-for-small-only" type="text" placeholder="Email">
+
+          <p class="error-message top">This is an error message</p>
           <input class="error hide-for-small-only" type="text" placeholder="Password">
 
-          <p class="error-message">This is an error message</p>
 
           <a href="#" id="signIn"  class="button primary checkout-cta">
             <span class="cta-title">Sign In</span>
@@ -206,7 +214,7 @@ section: rent
           </div>
         </a>
         <a href="#" class="button primary add-to-bag-cta">Add to Bag</a>
-        <a href="#" class="text-link remove-cta">Removed from Saved</a>
+        <a href="#" class="remove-cta">&times;</a>
       </li>
     </ul>
   </div>
