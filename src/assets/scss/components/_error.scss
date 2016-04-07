@@ -1,0 +1,31 @@
+.error-message {
+  font-size: 10px;
+  color: red;
+
+  &.top {
+    margin-bottom: 2px;
+  }
+}
+
+.page-error-message {
+  padding: 20px 10px;
+  position: relative;
+  margin-top: 10px;
+  border: 1px solid #CBCBCB;
+  .message {
+    color: red;
+    margin-bottom: 0;
+  }
+
+  .close {
+    position: absolute;
+    right: 0;
+    top: -14px;
+  }
+}
+
+@media #{$small-only} {
+  .page-error-message {
+    width: 90%;
+  }
+}

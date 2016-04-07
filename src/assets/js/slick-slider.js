@@ -82,33 +82,6 @@ $('.carouselInterchange').on('replace', function(){
   });
   //End PDP recommendations
 
-  // Recently viewed
-  var carousel = $('#recentlyViewed').slick({
-    dots: false,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    useTransform: true,
-    responsive: [
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 3.25,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
-  //End recently viewed
-
 
   //Browse
   var carousel = $('.browsepage-thumbnails ul').slick({
@@ -204,15 +177,15 @@ var carousel = $('#shoppingBagSaved').slick({
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 4,
-        slidesToScroll: 4
+        slidesToShow: 3,
+        slidesToScroll: 3
       }
     },
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 3.25,
-        slidesToScroll: 1
+        slidesToShow: 3,
+        slidesToScroll: 3
       }
     }
   ]
@@ -254,3 +227,30 @@ var carousel = $('#quickViewRecommendations').slick({
   ]
 });
 //End QuickView Recommendation
+
+// Recently viewed
+var carousel = $('#recentlyViewed').slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  useTransform: true,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 3.25,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+//End recently viewed

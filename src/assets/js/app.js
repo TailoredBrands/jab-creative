@@ -12,6 +12,12 @@ $(document).foundation({
   }
 });
 
+//Toggle Sav
+$('.save-look').click(function() {
+  $('.save-icon.hollow').toggleClass('is-hidden');
+  $('.save-icon.fill').toggleClass('is-hidden');
+});
+
 
 // Show and hide more filters in product off canvas
 $('#search-icon').click(function() {

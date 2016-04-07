@@ -32,9 +32,5 @@ $('#bagForgotPassword, #forgotPasswordClose').click(function() {
   $('.bag-forgot').toggleClass("is-active");
   $('.bag-forgot-cta').toggleClass("is-active");
 
-  //Fading
-  $('body').toggleClass("is-scroll-locked");
-  $('.shopping-bag').toggleClass("is-faded");
-  $('.shopping-bag-recommendations').toggleClass("is-faded");
 });
 

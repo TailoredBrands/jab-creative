@@ -213,6 +213,13 @@ $bag-detail-padding-left: 10px;
 @media #{$small-only} {
   .shopping-bag {
     padding-top: 0;
+
+    .product-price-orig {
+      font-size: 0.7rem;
+      top: -6px;
+      right: -8px;
+      position: relative;
+    }
   }
 
   .shopping-bag-title {

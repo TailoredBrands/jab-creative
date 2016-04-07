@@ -1,6 +1,13 @@
 ---
 section: rent
 ---
+<div class="page-error-message text-center row">
+  <div class="columns">
+    <p class="message">This is an overall page error</p>
+    <a class="close">&times;</a>
+  </div>
+</div>
+
 <div class="shopping-bag row">
   <div class="columns">
     <div class="espot-top text-center">
@@ -132,7 +139,7 @@ section: rent
           </li>
           <li>
             <span class="list-title">Est. Shipping</span>
-            <span class="value product-price">$10.00</span>
+            <span class="value product-price">$10.<sup>00</sup></span>
           </li>
           <li class="total">
             <span class="list-title">Est. Total</span>
@@ -267,7 +274,7 @@ section: rent
 
 <!-- Sign in CTA Modal -->
 <div class="bag-modal bag-sign-in show-for-small-only">
-  <h3 class=" title">Sign in to checkout</h3>
+  <h3 class="title">Sign in to checkout</h3>
   <a id="sign-in-close" href="#" class="bag-close"><img src="{{assets}}images/icons/close-black.svg" alt=""></a>
   <input type="text" placeholder="Email">
   <input type="text" placeholder="Password">
@@ -294,7 +301,7 @@ section: rent
 
 
 <div class="shopping-bag-cta-small show-for-small-only">
-  <a href="#" id=""  class="button primary checkout-cta">
+  <a href="#" id="signIn"  class="button primary checkout-cta">
     <span class="cta-title">Sign In</span>
     <span class="cta-subhead">To Checkout</span>
   </a>

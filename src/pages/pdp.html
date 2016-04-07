@@ -163,8 +163,9 @@ section: rent
               </li>
 
               <li class="accordion-navigation product-info-accordion">
-                <img class="save-icon" src="{{assets}}images/icons/heart-black.svg" alt="">
-                <a href="#"class="text-link save-look"> Save this look</a>
+                <img class="save-icon hollow" src="{{assets}}images/icons/heart-black.svg" alt="">
+                <img class="save-icon fill is-hidden" src="{{assets}}images/icons/heart-black-fill.svg" alt="">
+                <a class="text-link save-look"> Save this look</a>
               </li>
 
               <li class="accordion-navigation product-info-accordion">
@@ -193,12 +194,12 @@ section: rent
     </div>
       <div class="row">
         <div class="small-12 columns show-for-medium-up">
-          {{>recently-viewed-large}}
+          {{>recently-viewed}}
         </div>
       </div>
       <div class="row">
         <div class="small-12 columns show-for-medium-up">
-          {{>product-recommendations-large}}
+          {{>product-recommendations}}
         </div>
       </div>
     </div>
