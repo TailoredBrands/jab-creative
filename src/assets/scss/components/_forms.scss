@@ -1,3 +1,28 @@
+input[type='text'] {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  height: auto;
+}
+
+::-webkit-input-placeholder {
+  text-transform: uppercase;
+  opacity: 0.8;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+::-moz-input-placeholder {
+  text-transform: uppercase;
+  opacity: 0.8;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.postfix.button {
+ height: 43px;
+ padding-top: 3px;
+}
+
 input[type='checkbox'].checkbox-style {
   position: absolute;   
   left: -9999px;

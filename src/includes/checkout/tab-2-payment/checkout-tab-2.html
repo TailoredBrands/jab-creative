@@ -2,9 +2,9 @@
   <ul class="accordion" data-accordion>
     <!-- Perfectfit Reward -->
     <li class="payment-accordion accordion-navigation product-info-accordion">
-      <a class="product-info-label" href="#gift-order">Perfectfit Rewards</a>
-      <div id="gift-order" class="content product-description-content">
-        <p class="perfectfit-description">Enter you ID to earn points on this order.</p>
+      <a class="product-info-label" href="#pfit">Perfectfit Rewards</a>
+      <div id="pfit" class="content payment-content">
+        <p class="payment-description">Enter your ID to earn points on this order.</p>
         <div class="row collapse">
           <div class="small-9 columns">
             <input class="id-number-input" type="text" placeholder="Account ID Number" />
@@ -14,6 +14,8 @@
           </div>
         </div>
        <a href="#" class="text-link small-text-link forgot-fit">Forgot Perfectfit number?</a>
+
+      <p class="payment-description">Redeem PerfectFit Rewards certificates to your order</p>
 
        <div class="row collapse">
          <div class="small-9 columns">
@@ -29,7 +31,7 @@
 
 
     <!-- gift card -->
-    <li class="accordion-navigation product-info-accordion">
+    <li class="accordion-navigation product-info-accordion gift-card">
       <a class="product-info-label" href="#ship-to-another-country">Gift Card</a>
       <div id="ship-to-another-country" class= "content product-description-content">
          <input class="id-number-input" type="text" placeholder="Gift Card Number" />
@@ -41,9 +43,16 @@
     <!-- Promo Code-->
     <li class="accordion-navigation product-info-accordion">
       <a class="product-info-label" href="#promo-code">Promo Code</a>
-      <div id="promo-code" class="content product-description-content">
+      <div id="promo-code" class="content payment-content">
         <p>Gift Message will be printed on the packing slip. Packing slips do not include price information.</p>
-          <textarea placeholder="Gift Message"></textarea>
+        <div class="row collapse">
+          <div class="small-9 columns">
+            <input class="id-number-input" type="text" placeholder="Promo Code" />
+          </div>
+          <div class="small-3 columns">
+            <a class="postfix button primary">Apply</a>
+          </div>
+        </div>
       </div>
     </li>
   </ul>

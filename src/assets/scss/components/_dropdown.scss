@@ -1,5 +1,6 @@
 //Wrapper of custom dropdown
-.size-dropdown-wrapper {
+.size-dropdown-wrapper,
+.dropdown {
   width: 100%;
   display: block;
   background: white; 
@@ -10,6 +11,8 @@
   cursor: pointer;
   border: 1px solid #9B9B9B;
   height: 40px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 
   .out-of-stock {
     opacity: 0.5;

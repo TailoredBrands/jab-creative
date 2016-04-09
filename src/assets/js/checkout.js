@@ -8,7 +8,7 @@ $('#differentStore, #reserveInStore').click(function(){
 $('#changeAddress, #changeAddress2, #saveAddress').click(function(){
   $('#dropdown-ship-address-1').toggleClass('is-active');
   $('#ChangeAddressInputs').toggleClass('is-active');
-  $('#changeAddress').toggleClass('is-active');
+  $('#changeAddress').toggleClass('is-hidden');
   $('#saveAddress').toggleClass('is-active');
 });
 

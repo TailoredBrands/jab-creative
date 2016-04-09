@@ -2,35 +2,39 @@
   <div class="row">
     <div class="columns">
       <!-- Shipping Dropdowns -->
-      <h3 class="section-label size-label shipping-label">Shipping Address</h3>
+      <h3 class="section-label shipping">Shipping Address</h3>
       <form>
-        <div id="dropdown-ship-address-1" class="shipping-dropdown is-active size-dropdown-wrapper checkout-dropdown">
+        <div class="dropdown shipping-dropdown is-active" id="dropdown-ship-address-1" >
           <span class="selected-item dropdown-placeholder">Choose from saved addresses</span>
-          <ul id="dropdown-ship-address-dropdown-1" class="custom-dropdown">
+          <ul class="custom-dropdown" id="dropdown-ship-address-dropdown-1" >
             <li class="dropdown-item">Bryan Zmijewski, 100 W. Rincon Ave, Campbell, CA 95008</li>
             <li class="dropdown-item">Bryan Zmijewski, 100 W. Rincon Ave, Campbell, CA 95008</li>
             <li class="dropdown-item">Bryan Zmijewski, 100 W. Rincon Ave, Campbell, CA 95008</li>
             <li class="dropdown-item">Bryan Zmijewski, 100 W. Rincon Ave, Campbell, CA 95008</li>
             <li class="dropdown-item">
-              <a href="#" id="changeAddress2" class="address-change-cta is-active text-link">Change Address</a>
+              <a href="#" id="changeAddress2" class="small-text-link">Change Address</a>
             </li>
 
           </ul>
         </div>
         <div id="ChangeAddressInputs" class="change-address-area">
-          <input type="text" placeholder="Address Line 1">
-          <input type="text" placeholder="Address Line 2">
+          <input type="text" placeholder="First Name">
+          <input type="text" placeholder="Last Name">
+          <input type="text" placeholder="Street Address">
+          <input type="text" placeholder="Street Address 2 (optional)">
           <input type="text" placeholder="City">
           <input type="text" placeholder="State">
           <input type="text" placeholder="Zip Code">
+          <input type="text" placeholder="Telephone">
         </div>
-        <a href="#" id="changeAddress" class="address-change-cta is-active text-link">Change Address</a>
+        <a href="#" id="changeAddress" class="small-text-link">Change Address</a>
         <div id="saveAddress" class="address-save-address-area">
           <a href="#" class="address-save-cta button primary">Save Address</a>
           <a href="#" class="address-save-cta text-link small-text-link">Cancel</a>
         </div>
       </form>
-      <h3 class="shipping-label">Choose Shipping Method</h3>
+
+      <h3 class="section-label shipping">Choose Shipping Method</h3>
       <form>
         <div id="dropdown-ship-address-2" class="size-dropdown-wrapper checkout-dropdown">
           <span class="selected-item dropdown-placeholder">Choose shipping method</span>

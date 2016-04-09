@@ -12,6 +12,10 @@
   }
 }
 
+.tabs-content {
+  margin-top: 0.5rem;
+}
+
 .tabs.checkout-tabs {
   position: relative;
   top: 2px;
@@ -33,12 +37,13 @@
       text-transform: none;
       text-align: center;
       outline: none;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
     }
   }
 
   .tab-title.active {
-    border: 1px solid $light-gray;
-    border-bottom: 1px solid white;
+    border: 1px solid white;
   }
 }
 
@@ -53,8 +58,13 @@
     font-size: 10px;
     background: white;
     border: 1px solid black;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     outline: none;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: black;
+
   }
 
   .tab-title {
@@ -96,10 +106,15 @@
   }
 }
 
-.shipping-label {
+.section-label.shipping {
   font-size: 12px;
-  margin-bottom: 3px !important;
+  margin-top: 0;
+  letter-spacing: 2px;
 
+  &:not(:first-of-type) {
+    margin-top: 40px;
+
+  }
 }
 
 form {
@@ -137,12 +152,24 @@ form {
   padding-top: 0;
 }
 
-.perfectfit-description {
+.payment-description {
   margin-bottom: 5px;
+  font-size: 12px;
 }
 
-.id-number-input {
-  margin-bottom: 4px !important;
+.payment-content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.gift-card.active {
+  input[type="text"] {
+    margin-bottom: 1rem;
+  }
+}
+
+input[type="text"].id-number-input {
+  margin-bottom: 4px;
 }
 
 .postfix.button {
@@ -218,7 +245,6 @@ form {
 }
 
 .reivew-section-header {
-  margin-top: 20px;
   margin-bottom: 10px;
   padding-bottom: 4px;
   border-bottom: 1px solid gray;
@@ -252,3 +278,38 @@ form {
     opacity: 0.5;
   }
 }
+
+.store-location {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  .title {
+    text-transform: none;
+    letter-spacing: 0;
+  }
+  p {
+    margin-bottom: 0;
+    opacity: 0.5;
+    font-size: 12px;
+  }
+}
+
+.paypal-image {
+  position: relative;
+}
+
+.checkout-paypal-section {
+  margin-top: 20px;
+}
+
+.checkout-review {
+  .product-price-orig {
+    font-size: 0.75rem;
+    top: -6px;
+    position: relative;
+  }
+  .product-price {
+    right: 0 !important;
+  }
+}
+
+
