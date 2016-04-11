@@ -226,9 +226,14 @@ input[type="text"].id-number-input {
     @extend .clearfix;
     margin-bottom: 10px;
   }
+
   .key,
   .value {
-    float: left;
+    display: inline;
+
+    p {
+      display: inline;
+    }
   }
 
   .key {
@@ -244,7 +249,7 @@ input[type="text"].id-number-input {
   }
 }
 
-.reivew-section-header {
+.review-section-header {
   margin-bottom: 10px;
   padding-bottom: 4px;
   border-bottom: 1px solid gray;
@@ -313,3 +318,93 @@ input[type="text"].id-number-input {
 }
 
 
+.norton-checkout { 
+  margin-bottom: 1rem;
+}
+
+.checkout-sub-ctas {
+  @include clearfix;
+  margin-top: 1rem;
+
+  .primary, 
+  .secondary  {
+    width: 48%;
+  }
+  
+  .primary {
+    float: right;
+  }
+
+  .secondary {
+    float: left;
+    border-color: $callout-color;
+    color: $callout-color;
+
+    &:hover {
+      color: $callout-color;
+    }
+  }
+}
+
+.shipping-checkbox {
+  label {
+    position: relative;
+    top: 2px;
+    margin-right: 0 !important;
+  }
+
+  label,
+  input {
+    display: inline !important;
+  }
+}
+
+.checkout-review {
+  ul.order-summary-list {
+    margin-bottom: 1rem;
+  }
+}
+
+.review-section-header {
+  .left.section-label {
+    margin-bottom: 0;
+    top: 2px;
+  }
+}
+
+.checkout-review-promo {
+  margin-bottom: 1rem !important;
+}
+
+.sub-section-label {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+
+  &.first {
+    margin-top: 0;
+  }
+}
+
+.checkout-review {
+  .bag-item-detail {
+    padding-right: 150px !important;
+  }
+}
+
+@media #{$small-only} {
+  .checkout-review {
+    .bag-item-detail {
+      padding-right: 100px !important;
+    }
+  }
+}
+
+.forgot-password-large {
+  margin-bottom: 0 !important;
+}
+
+.forgot-password-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
