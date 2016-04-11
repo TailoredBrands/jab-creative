@@ -351,11 +351,16 @@ input[type="text"].id-number-input {
     position: relative;
     top: 2px;
     margin-right: 0 !important;
+    font-size: 12px;
   }
 
   label,
   input {
     display: inline !important;
+  }
+
+  input {
+    margin-bottom: 0.5rem;
   }
 }
 
