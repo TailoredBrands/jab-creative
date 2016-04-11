@@ -192,3 +192,11 @@
   padding-left: 3px;
 }
 
+.reveal-modal.share-pal {
+  width: 500px;
+  z-index: 10000;
+
+  .description {
+    font-size: 12px;
+  }
+}

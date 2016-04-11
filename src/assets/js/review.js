@@ -14,7 +14,6 @@ $(document).ready(function() {
 });
 
 //If you're on larger screen sizes
-if(window.innerWidth > 640) {
   //and you scroll
   $(window).scroll(function(){
 

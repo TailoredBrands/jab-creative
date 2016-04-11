@@ -46,7 +46,6 @@ $global-transition: all 0.3s ease;
     margin-top: 0;
     border-color: red;
   }
-
 }
 
 //Each Shopping Bag Item
@@ -311,7 +310,7 @@ $bag-detail-padding-left: 10px;
     width: 100%;
 
     .button {
-      float:left;
+      float: left;
       width: 50%;
       margin-bottom: 0;
       transition: $global-transition;
@@ -367,18 +366,26 @@ $bag-detail-padding-left: 10px;
   }
 }
 
-.shopping-bag {
-  .espot-top {
-    padding-top: 50px; 
-    padding-bottom: 50px;
-    background: #F1F1F1;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.espot-placeholder {
+  background: #f3f3f3;
+  padding: 10px;
 
-    p {
-      margin-bottom: 0;
-      opacity: 0.5;
-    }
+  p {
+    opacity: 0.5;
+  }
+}
+
+.espot-top {
+  padding-top: 50px; 
+  padding-bottom: 50px;
+  background: #F1F1F1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  p {
+    margin-bottom: 0;
+    opacity: 0.5;
+    text-align: center;
   }
 }
 
@@ -394,5 +401,29 @@ $bag-detail-padding-left: 10px;
   }
 }
 
+//Checkout area for Shopping Bag
+.cta-title,
+.cta-subhead {
+  display: block;
+}
+
+//Smaller Checkout text
+.cta-subhead {
+  font-size: 10px;
+}
+
+.guest-cta,
+.checkout-cta {
+  width: 100%;
+}
 
 
+.button.checkout-cta,
+.button.guest-cta {
+  border: 1px solid $callout-color;
+}
+
+.button.guest-cta {
+  background: white;
+  color: $callout-color;
+}
