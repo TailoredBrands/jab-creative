@@ -404,3 +404,23 @@ input[type="text"].id-number-input {
   display: inline-block;
   margin-bottom: 1rem;
 }
+
+.text-label {
+  font-size: 12px;
+}
+
+.accordion .accordion-navigation > .text-me-cta {
+  padding: 0;
+}
+
+.accordion .accordion-navigation > .text-me-content.active{
+  padding-top: 0;
+}
+
+.accordion .accordion-navigation.active > a {
+  background: white;
+}
+
+.legal {
+  font-size: 10px;
+}

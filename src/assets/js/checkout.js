@@ -15,3 +15,8 @@ $('#changeAddress, #changeAddress2, #saveAddress').click(function(){
 $('#checkoutGuest').click(function() {
   $('#guestInputs').toggleClass('is-active');
 });
+
+//Text me cta for payment section
+$('.text-me-cta').click(function(){
+  $('.text-me-checkbox').attr('checked', 'checked');
+});

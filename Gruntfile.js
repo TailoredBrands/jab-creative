@@ -22,7 +22,7 @@ module.exports = function(grunt) {
         marked: {
           gfm: true,
           sanitize: false,
-          highlight: function(code, lang) {
+          highlight: function(code, lang) {''
             if (lang === undefined) lang = 'bash';
             if (lang === 'html') lang = 'xml';
             if (lang === 'js') lang = 'javascript';
