@@ -80,6 +80,10 @@
   margin-bottom: 0;
 }
 
+.color-name {
+  margin-bottom: 0;
+}
+
 //generic bag cta styling
 .bag-cta {
   width: 100%;
@@ -166,3 +170,13 @@
   }
 }
 
+.reveal-modal {
+  .section-label.title {
+    margin-top: 0;
+    margin-left: 16px;
+  }
+
+  .product-price {
+    margin-bottom: 0.5rem;
+  }
+}

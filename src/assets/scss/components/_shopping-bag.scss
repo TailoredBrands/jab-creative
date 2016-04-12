@@ -109,6 +109,12 @@ $bag-detail-padding-left: 10px;
   }
 }
 
+.edit-item-detail {
+  .price-and-qty {
+    margin-left: 10px;
+  }
+}
+
 //All of the detail information about the bag item, not the thumbnail
 .bag-item-detail {
   .product-name {
