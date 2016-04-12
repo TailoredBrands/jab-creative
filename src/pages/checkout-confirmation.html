@@ -32,51 +32,124 @@
     </div>
 
     <!-- header -->
-    <div class="shopping-bag-header clearfix">
-      <p class="left section-label">Items Ordered <span class="section-label-alt">2 items</span></p>
-      <div class="right product-price confirmation-total-price">$1299.<sup>99</sup></div>
-      <p class="right section-label-alt confirmation-total">Total:</p>
-    </div>
+    <div class="item-summary-info">
+      <div class="shopping-bag-header clearfix">
+        <p class="left section-label">Items Ordered <span class="section-label-alt">2 items</span></p>
+        <div class="right product-price confirmation-total-price">$1299.<sup>99</sup></div>
+        <p class="right section-label-alt confirmation-total">Total:</p>
+      </div>
 
-    <!-- shopping-bag-item -->
-    <div class="bag-item">
-      <div class="row small-collapse">
-        <div class="small-2 columns bag-item-image">
-          <img src="{{assets}}images/browse/product-thumbnail-suit-2.jpg">
-        </div>
-        <div class="small-10 columns bag-item-detail">
-          <div class="price-and-qty">
-            <span class="product-price">$699.<sup>99</sup></span>
+      <!-- shopping-bag-item -->
+      <div class="bag-item">
+        <div class="row small-collapse">
+          <div class="small-2 columns bag-item-image">
+            <img src="{{assets}}images/browse/product-thumbnail-suit-2.jpg">
           </div>
-          <h1 class="product-name">Tommy Hilfigure Slim Fit Suit</h1>
-          <ul class="bag-item-meta-data">
-            <li>Color: Charcoal</li>
-            <li>Size: 38 Regular</li>
-            <li>Qty: 1</li>
-          </ul>
+          <div class="small-10 columns bag-item-detail">
+            <div class="price-and-qty">
+              <span class="product-price">$699.<sup>99</sup></span>
+            </div>
+            <h1 class="product-name">Tommy Hilfigure Slim Fit Suit</h1>
+            <ul class="bag-item-meta-data">
+              <li>Color: Charcoal</li>
+              <li>Size: 38 Regular</li>
+              <li>Qty: 1</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- shopping-bag-item -->
+      <div class="bag-item">
+        <div class="row small-collapse">
+          <div class="small-2 columns bag-item-image">
+            <img src="{{assets}}images/retail/product-thumbnail-shirt.jpg">
+          </div>
+          <div class="small-10 columns bag-item-detail">
+            <div class="price-and-qty">
+              <span class="product-price">$699.<sup>99</sup></span>
+            </div>
+            <h1 class="product-name">Tommy Hilfigure Slim Fit Suit</h1>
+            <ul class="bag-item-meta-data">
+              <li>Color: Charcoal</li>
+              <li>Size: 38 Regular</li>
+              <li>Qty: 1</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- shopping-bag-item -->
-    <div class="bag-item">
-      <div class="row small-collapse">
-        <div class="small-2 columns bag-item-image">
-          <img src="{{assets}}images/retail/product-thumbnail-shirt.jpg">
-        </div>
-        <div class="small-10 columns bag-item-detail">
-          <div class="price-and-qty">
-            <span class="product-price">$699.<sup>99</sup></span>
-          </div>
-          <h1 class="product-name">Tommy Hilfigure Slim Fit Suit</h1>
-          <ul class="bag-item-meta-data">
-            <li>Color: Charcoal</li>
-            <li>Size: 38 Regular</li>
-            <li>Qty: 1</li>
+    <div class="shipping-info">
+       <div class="review-section-header clearfix">
+         <p class="left section-label">Shipping Info</p>
+       </div>
+       <div class="row">
+         <div class="medium-6 columns">
+           <ul class="key-value">
+           
+             <li>
+              <p class="key">Name</p>
+              <div class="value"><p>Mr. Bryan Zmjewski</p></div>  
+             </li>
+             
+             <li>
+               <p class="key">Address</p>
+               <div class="value">
+                 <p>123 street</p>
+                 <p>123 street</p>
+               </div>
+             </li>
+
+           </ul>
+         </div>
+
+         <div class="medium-6 columns">
+           <ul class="key-value">
+             <li>
+               <p class="key">Shipping Method</p>         
+               <div class="value">
+                 <p>Free ground shipping: 3-5 bus. days,. Get it by Fri. March 4th</p>
+               </div>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </div>
+     <!-- /Shipping Review Section -->
+
+     <!-- Payment Review Section -->
+    <div class="payment-info">
+       <div class="review-section-header clearfix">
+         <p class="left section-label">Payment Info</p>
+       </div>
+
+       <div class="row">
+         <div class="columns">
+           <ul class="key-value">
+             <li>
+              <p class="key">Billing Info</p>
+              <div class="value">VISA ending in 2423, Exp 6/16</div>
+            </li>
+            <li>
+              <p class="key">Billing Address</p>
+              <div class="value">
+                <p>Same as shipping</p>
+              </div>
+            </li>
+            <li>
+              <p class="key">Perfectfit Reward Certificate</p>
+              <div class="value">Applied</div>
+            </li>
+            <li>
+              <p class="key">Gift Card Applied</p>
+              <div class="value">$/ekf!@3</div>
+            </li>
           </ul>
         </div>
       </div>
     </div>
+    <!-- /Payment Review Section -->
 
     <div class="confirmation-recommended">
       {{>product-recommendations-shopping-bag}}

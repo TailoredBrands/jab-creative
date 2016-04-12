@@ -424,3 +424,18 @@ input[type="text"].id-number-input {
 .legal {
   font-size: 10px;
 }
+
+.payment-info,
+.shipping-info,
+.item-summary-info {
+  margin-top: 30px;
+
+  .section-label,
+  .section-label-alt {
+    margin-bottom: 0px;
+  }
+
+  .review-section-header {
+    border-bottom: 1px solid #CBCBCB;
+  }
+}
