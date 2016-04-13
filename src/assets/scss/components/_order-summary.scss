@@ -1,6 +1,7 @@
 .shopping-bag,
 .checkout,
-.checkout-review {
+.checkout-review,
+.confirmation {
   .order-summary-title {
     font-size: 11px;
     opacity: 0.5;
@@ -81,6 +82,7 @@
     right: auto;
     position: fixed;
     margin-left: 0;
+    margin-top: 0;
   }
 }
 
@@ -112,9 +114,23 @@
 }
 
 .order-summary {
+  margin-top: 25px; 
+
   .paypal-button {
     transform: translateX(-50%);
     left: 50%;
     position: relative;
+  }
+
+  .button.primary {
+    margin-top: 1rem;
+    width: auto;
+  }
+}
+
+.confirmation {
+  .order-summary .title {
+    border-bottom: 1px solid #CBCBCB;
+    padding-bottom: 4px;
   }
 }

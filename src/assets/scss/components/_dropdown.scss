@@ -122,3 +122,47 @@
     top: 5px;
   }
 }
+
+.size-dropdown-wrapper.two-line {
+  height: 50px;
+
+  span {
+    &:after {
+      top: 10px;
+    }
+  }
+
+  span:nth-child(2n) {
+    font-size: 10px;
+
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.size-dropdown-wrapper.two-line.alt {
+  span {
+    font-size: 10px;
+    color: #c7c7c7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    &:after {
+      top: 10px;
+    }
+  }
+
+  span:nth-child(2n) {
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+    opacity: 1;
+    text-transform: none;
+    letter-spacing: 0;
+
+    &:after {
+      display: none;
+    }
+  }
+}

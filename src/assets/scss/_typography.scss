@@ -260,3 +260,17 @@ p.lead {
   letter-spacing: 0;
   font-size: 10px;
 }
+
+.small-message {
+  font-size: 11px;
+  height: 4px;
+  margin-bottom: 0;
+  top: -10px;
+  position: relative;
+}
+
+@media #{$small-only} {
+  .small-message {
+    margin-bottom: 1rem;
+  }
+}

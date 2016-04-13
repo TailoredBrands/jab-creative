@@ -3,6 +3,7 @@
     <div class="columns">
       <!-- Shipping Dropdowns -->
       <h3 class="section-label shipping">Shipping Address</h3>
+      <p class="small-message">At this time we do not ship to P.O. Boxes</p>
       <form>
         <div class="dropdown shipping-dropdown is-active" id="dropdown-ship-address-1" >
           <span class="selected-item dropdown-placeholder">Choose from saved addresses</span>
@@ -29,20 +30,22 @@
         </div>
         <a href="#" id="changeAddress" class="small-text-link">Change Address</a>
         <div id="saveAddress" class="address-save-address-area">
-          <a href="#" class="address-save-cta button primary">Save Address</a>
-          <a href="#" class="address-save-cta text-link small-text-link">Cancel</a>
+          <div class="shipping-checkbox">
+          <input type="checkbox" class="checkbox-style" checked><label class="checkbox-label" >Save Address</label></input>
+          </div>
         </div>
       </form>
 
       <h3 class="section-label shipping">Choose Shipping Method</h3>
       <form>
-        <div id="dropdown-ship-address-2" class="size-dropdown-wrapper checkout-dropdown">
-          <span class="selected-item dropdown-placeholder">Choose shipping method</span>
-          <ul id="dropdown-ship-address-dropdown2" class="custom-dropdown">
-            <li class="dropdown-item">Free Ground Shipping: 3-5 Business Days</li>
-            <li class="dropdown-item">Free Ground Shipping: 3-5 Business Days</li>
-            <li class="dropdown-item">Free Ground Shipping: 3-5 Business Days</li>
-            <li class="dropdown-item">Free Ground Shipping: 3-5 Business Days</li>
+        <div class="size-dropdown-wrapper size-dropdown-shipping two-line">
+          <span class="selected-item">Free Ground Shipping: 3-5 bus. days</span>
+          <span class="selected-item dropdown-placeholder">Get it by Fri. March 4th</span>
+          <ul class="custom-dropdown">
+            <li class="dropdown-item">United States</li>
+            <li class="dropdown-item">United States</li>
+            <li class="dropdown-item">United States</li>
+            <li class="dropdown-item">United States</li>
           </ul>
         </div>
       </form>
@@ -68,11 +71,15 @@
         <li class="accordion-navigation product-info-accordion">
           <a class="product-info-label" href="#ship-to-another-country">Ship to another country?</a>
           <div id="ship-to-another-country" class= "content checkout-content product-description-content">
-            <p>International shipping to over 150 countries. <a href="#" class="learn-more-info"><img src="{{assets}}images/icons/info-black.svg" alt=""></a></p>
+            <a href="#">
+              <p class="learn-more-message">International shipping to over 150 countries.</p>
+              <img class="learn-more-info" src="{{assets}}images/icons/info-black.svg" alt="">
+            </a>
             <p class="promotion-callout">$20 USD FLAT-RATE SHIPPING on orders over $175 USD</p>
             <form>
-              <div class="size-dropdown-wrapper size-dropdown-shipping">
-                <span class="selected-item dropdown-placeholder">Select your shipping destination</span>
+              <div class="size-dropdown-wrapper size-dropdown-shipping two-line alt">
+                <span class="selected-item">Select your shipping destination</span>
+                <span class="selected-item dropdown-placeholder">United States</span>
                 <ul class="custom-dropdown">
                   <li class="dropdown-item">United States</li>
                   <li class="dropdown-item">United States</li>
@@ -82,13 +89,14 @@
               </div>
             </form>
             <form>
-              <div class="size-dropdown-wrapper">
-                <span class="selected-item dropdown-placeholder">Select your preferred currency</span>
+              <div class="size-dropdown-wrapper size-dropdown-shipping two-line alt">
+                <span class="selected-item">Select your preferred currency</span>
+                <span class="selected-item dropdown-placeholder">US Dollar</span>
                 <ul class="custom-dropdown">
-                  <li class="dropdown-item">US Dollar</li>
-                  <li class="dropdown-item">US Dollar</li>
-                  <li class="dropdown-item">US Dollar</li>
-                  <li class="dropdown-item">US Dollar</li>
+                  <li class="dropdown-item">United States</li>
+                  <li class="dropdown-item">United States</li>
+                  <li class="dropdown-item">United States</li>
+                  <li class="dropdown-item">United States</li>
                 </ul>
               </div>
             </form>

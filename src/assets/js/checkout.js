@@ -22,7 +22,6 @@ $('#signInLarge').click(function(){
   $('#signInCheckoutCTALarge').toggleClass("sign-in-emphasis");
   $('#guestCheckoutCTALarge').toggleClass('sign-in-emphasis');
   $('#guestInputs').toggleClass('is-active');
-  
 });
 
 $('#checkoutGuest').click(function() {

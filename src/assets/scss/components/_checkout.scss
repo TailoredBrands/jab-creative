@@ -112,7 +112,8 @@ form {
   display: none !important;
   
   &.is-active {
-    display: block !important;
+    display: inline-block !important;
+    width: auto;
   }
 }
 
@@ -122,8 +123,13 @@ form {
   padding-right: 0 !important;
 }
 
+.learn-more-info,
+.learn-more-message {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
 .learn-more-info { 
-  float: left;
   width: 20px;
   height: 20px;
   margin-right: 5px;
@@ -149,6 +155,10 @@ form {
   input[type="text"] {
     margin-bottom: 1rem;
   }
+}
+
+.gift-message {
+  margin-bottom: 0;
 }
 
 input[type="text"].id-number-input {
@@ -236,6 +246,10 @@ input[type="text"].id-number-input {
   margin-bottom: 10px;
   padding-bottom: 4px;
   border-bottom: 1px solid gray;
+}
+
+.no-border {
+  border: none;
 }
 
 .review-section-title {
