@@ -12,11 +12,21 @@ $('#changeAddress, #changeAddress2, #saveAddress').click(function(){
   $('#saveAddress').toggleClass('is-active');
 });
 
-$('#checkoutGuest').click(function() {
-  $('#guestInputs').toggleClass('is-active');
-});
-
 //Text me cta for payment section
 $('.text-me-cta').click(function(){
   $('.text-me-checkbox').attr('checked', 'checked');
+});
+
+//shoppin bag
+$('#signInLarge').click(function(){
+  $('#signInCheckoutCTALarge').toggleClass("sign-in-emphasis");
+  $('#guestCheckoutCTALarge').toggleClass('sign-in-emphasis');
+  $('#guestInputs').toggleClass('is-active');
+  
+});
+
+$('#checkoutGuest').click(function() {
+  $('#guestInputs').toggleClass('is-active');
+  $('#guestCheckoutCTALarge').toggleClass('sign-in-emphasis');
+  $('#signInCheckoutCTALarge').toggleClass('sign-in-emphasis');
 });

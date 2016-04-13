@@ -37,7 +37,7 @@ $global-transition: all 0.3s ease;
   margin-bottom: 0;
 }
 
-.sign-in-checkout {
+.sign-in-emphasis {
   border: 1px solid #CBCBCB;
   padding: 15px 10px;
 
@@ -45,6 +45,15 @@ $global-transition: all 0.3s ease;
     margin-bottom: 1rem;
     margin-top: 0;
     border-color: red;
+  }
+
+  .error-message,
+  .forgot-password-large,
+  .email {
+    display: block !important;
+  }
+  .forgot-password-link {
+    display: inline-block !important;
   }
 }
 

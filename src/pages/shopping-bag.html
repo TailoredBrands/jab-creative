@@ -176,31 +176,35 @@ section: rent
       <!-- Checkout CTAs for shopping bag -->
       <div class="sub-checkout-ctas">
 
-        <div class="sign-in-checkout">
-          <input class="hide-for-small-only" type="text" placeholder="Email">
+        <div id="signInCheckoutCTALarge" class="sign-in-emphasis">
+          <input class="email hide-for-small-only is-hidden" type="text" placeholder="Email">
 
-          <p class="error-message top">This is an error message</p>
-          <input class="error hide-for-small-only forgot-password-large" type="text" placeholder="Password">
-          <a href="#" class="forgot-password-link small-text-link">Forgot Password?</a>
+          <p class="error-message top is-hidden">This is an error message</p>
+          <input class="error hide-for-small-only forgot-password-large is-hidden" type="text" placeholder="Password">
+          <a href="#" class="forgot-password-link small-text-link is-hidden">Forgot Password?</a>
           
 
-          <a href="#" id="signIn"  class="button primary checkout-cta">
+          <a href="#" id="signIn"  class="button primary checkout-cta show-for-small-only">
+            <span class="cta-title">Sign In</span>
+            <span class="cta-subhead">To Checkout</span>
+          </a>
+          <a href="#" id="signInLarge"  class="button primary checkout-cta hide-for-small-only">
             <span class="cta-title">Sign In</span>
             <span class="cta-subhead">To Checkout</span>
           </a>
         </div>
 
         <p class="or">or</p>
+          <div id="guestCheckoutCTALarge">
+            <div id="guestInputs" class="checkout-cta-inputs">
+              <input class="hide-for-small-only" type="text" placeholder="Email">
+            </div>
 
-          <div id="guestInputs" class="checkout-cta-inputs">
-            <input class="hide-for-small-only" type="text" placeholder="Email">
+            <a id="checkoutGuest" class="button primary guest-cta">
+              <span class="cta-title">Checkout</span>
+              <span class="cta-subhead">As Guest</span>
+            </a>
           </div>
-
-          <a id="checkoutGuest" class="button primary guest-cta">
-            <span class="cta-title">Checkout</span>
-            <span class="cta-subhead">As Guest</span>
-          </a>
-
         </div>
         <div class="hide-for-small-only text-center">
           <img class="paypal-button" src="{{assets}}images/paypal-ph.png">
