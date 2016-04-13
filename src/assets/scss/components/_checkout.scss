@@ -17,7 +17,6 @@
 
 .tabs.checkout-tabs {
   position: relative;
-  top: 2px;
 
   a {
     font-size: 14px;
@@ -43,12 +42,6 @@
 
   .tab-title.active {
     border: 1px solid white;
-  }
-}
-
-@media #{$small-only} {
-  .checkout-tabs {
-    margin-top: -2px;
   }
 }
 
@@ -414,7 +407,7 @@ input[type="text"].id-number-input {
 }
 
 .accordion .accordion-navigation > .text-me-content.active{
-  padding-top: 0;
+  padding: 1rem;
 }
 
 .accordion .accordion-navigation.active > a {
@@ -438,4 +431,12 @@ input[type="text"].id-number-input {
   .review-section-header {
     border-bottom: 1px solid #CBCBCB;
   }
+}
+
+.checkout.logo-bar {
+  padding: 50px;
+}
+
+.shipping-checkbox {
+  padding-bottom: 10px;
 }

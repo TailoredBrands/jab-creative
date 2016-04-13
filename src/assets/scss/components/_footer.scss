@@ -1,167 +1,66 @@
-$footer-link-color: #ccc;
-
-footer {
-  padding: rem-calc(50 0 0 0);
-  margin: rem-calc(30 0 0 0);
-  background: $primary-color;
-  @media #{$medium-only} { img.logo { width: rem-calc(280*0.75); } } // ipad portrait fix
-  ul {
-    list-style-type: none;
-    list-style-position: outside;
-    margin-left: 0;
-  }
-  h6 {
-    font-size: rem-calc(12);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #fff; 
-    margin-bottom: 0;
-    font-weight: bold;
-    margin: 3px 0 6px;
-    a { color: white; }
-  }
-  .main-nav-links a { color: white; }
-  p { color: white; }
-  ul li a { 
-    font-size: rem-calc(12);
-    color: $footer-link-color;
-    padding: 3px 0;
-    display: inline-block;
-    font-weight: 500;
-    &:hover { color: $footer-link-color; opacity: .8; }
-  }
-  .inline-list { white-space: nowrap; }
-  p.tag {
-    padding: .5rem 0 1.5rem;
-    margin-bottom: 1.5rem;
-    border-bottom: 3px solid white;
-    font-weight: 500;
-    font-size: 1rem;
-  }
-  img.security-badge {
-    margin: 1rem 0;
-    width: 80%;
-  }
+.footer {
+  border-top: 1px solid #eee;
+  margin-top: 2rem;
 }
 
-.copyright-links {
-  p { margin: 1rem 0 0 0; }
-  & p, & a {
-    font-size: rem-calc(11) !important;
-    color: #666;
-    font-weight: normal;
-  }
-  ul { margin: 0; padding: 0 !important;}
-  & ul li {
-    border-right: solid 1px #666;
-    padding: rem-calc(0 5 0 5);
-    margin: 0 !important;
-    line-height: 1;
-    a { padding: 0; }
-    &:last-child { border: none; }
-    &:first-child { padding-left: 0; }
-  }
-}
-
-@media #{$small-only} {
-  .copyright-links, .copyright-links ul { padding-top: rem-calc(15); }
-  .help-toggle-wrapper { @include grid-row(collapse); }
-  footer { padding: rem-calc(30 30 0 30); }
-  .help-button { @include grid-column(10, true, false, 1); }
-}
-
-@media #{$medium-up} {
-  .copyright-links {
-    & ul {
-      margin-top: rem-calc(3);
-      padding-left: rem-calc(10);
-    }
-  }
-  .help-toggle-wrapper { @include grid-row(); }
-  .help-button {
-    float: right;
-    position: relative;
-    margin: rem-calc(-51 0 0 0);
-  }
-}
-
-.help-button {
-  @include button($button-med, $secondary-color);
-  border: none;
-  margin-bottom: 0;
-}
-
-section.help {
-  min-height: rem-calc(200);
-  background: $white;
-}
-
-//new footer
-footer {
-  ul li ul {
-    margin-left: 0;
-  }
-  .accordion {
-    .footer-nav-label {
-      color: white;
-      background: transparent;
-      text-transform: uppercase;
-      border-bottom: none;
-      &:hover,
-      &:active,
-      &:focus,
-      &:visited {
-        background: transparent !important;
-        color: white !important;
-      }
-    }
-    .accordion-navigation {
-      border-bottom: none;
-    }
-    .footer-nav-content {
-      background: transparent !important;
-      color: white !important;
-    }
-  }
-  .accordion .accordion-navigation.active > a,
-  .accordion dd.active > a {
-    background: transparent !important;
-    color: white !important;
-  }
-
-  .social-icons {
-    margin-top: 20px;
-    margin-bottom: 40px;
-    position: relative;
-    text-align: center;
-
-  }
-
-  .logo {
-    width: 400px;
-    height: auto;
-    display: block !important;
-    position: relative;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-
-  @media #{$small-only} {
-    padding-bottom: 100px;
-  }
-}
-
-footer ul li a {
-  width: 100%;
+.contact {
   text-align: center;
+  padding: 2rem;
 }
 
-.footer-navigation {
+.contact-method {
   display: inline-block;
-  position: relative;
-  top: 0;
-  padding: 10px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.footer-categories {
+  list-style-type: none;
+  float: left;
+  margin-right: 2rem;
+
+  .category .title {
+    font-weight: 500;
+  }
+}
+
+button.secondary.postfix {
+  background-color: black;
+  color: white;
+
+  &:hover,
+  &:focus,
+  &:active, {
+    background-color: lighten(black, 15%);
+    color: white;
+  }
+}
+
+.footer .sign-up.row {
+  margin-bottom: 2rem;
+
+  input {
+    margin-bottom: 0;
+  }
+
+  .legal {
+    margin-top: 3.5rem;
+  }
+}
+
+.footer-copyright {
+  width: 100%;
+  background-color: #eee;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  p {
+    margin-bottom: 0;
+    color: black;
+    opacity: 0.5;
+    font-size: 10px; 
+  }
 }
