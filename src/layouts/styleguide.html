@@ -59,8 +59,17 @@
           .sg-section.first {
             margin-top: 0;
           }
-          .sg-section  h2 {
+          .sg-section h2 {
             margin-bottom: 5px;
+          }
+          .sg-nav {
+            list-style-type: none;
+          }
+          .sg-nav li {
+            margin-bottom: 16px;
+          }
+          .sg-nav a {
+            border-bottom: 1px solid black;
           }
         </style>
       </head>
@@ -92,6 +101,32 @@
             }
           }
         })();
+
+        // Recently viewed
+        var carousel = $('#exampleSlider').slick({
+          dots: false,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          useTransform: true,
+          responsive: [
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 3.25,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        });
         </script>
       </body>
       </html>

@@ -39,13 +39,14 @@ layout: src/layouts/styleguide.html
 </div>
 <div class="row">
   <div class="medium-3 columns">
-    <ul>
+    <ul class="sg-nav">
       <li><a href="#grid">The Grid</a></li>
       <li><a href="#colors">Colors</a></li>
       <li><a href="#typography">Typography</a></li>
       <li><a href="#buttons">Buttons</a></li>
       <li><a href="#forms">Forms</a></li>
       <li><a href="#colors">Colors</a></li>
+      <li><a href="#bagItems">Bag Item</a></li>
       <li><a href="#accordions">Accordions</a></li>
       <li><a href="#reviews">Reviews</a></li>
       <li><a href="#sizeCharts">Size Chart</a></li>
@@ -57,7 +58,6 @@ layout: src/layouts/styleguide.html
       <li><a href="#espots">Espot</a></li>
       <li><a href="#alerts">Page Errors</a></li>
       <li><a href="#keyValues">Key Value</a></li>
-      <li><a href="#bagItems">Bag Item</a></li>
     </ul>
   </div>
   <div class="medium-9 columns">
@@ -75,6 +75,9 @@ layout: src/layouts/styleguide.html
     </div>
     <div class="sg-section">
     {{> sg-forms}}
+    </div>
+    <div class="sg-section">
+    {{> sg-bag-item}}
     </div>
     <div class="sg-section">
     {{> sg-accordions}}
@@ -108,9 +111,6 @@ layout: src/layouts/styleguide.html
     </div>
     <div class="sg-section">
     {{> sg-key-value}}
-    </div>
-    <div class="sg-section">
-    {{> sg-bag-item}}
     </div>
   </div>
 </div>
