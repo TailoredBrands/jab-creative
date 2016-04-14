@@ -1,6 +1,7 @@
 body { 
   -webkit-font-smoothing: antialiased; 
-  font-smoothing: antialiased; 
+  font-smoothing: antialiased;
+  font-weight: 300; 
 }
 
 h1 {
@@ -22,6 +23,11 @@ h6 {
 sup {
   position: relative;
   top: 0.16rem;
+}
+
+p,
+label {
+  font-weight: 300;
 }
 
 .header-rule {

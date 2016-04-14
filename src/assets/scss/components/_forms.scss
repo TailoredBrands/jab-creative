@@ -6,6 +6,7 @@ input[type='text'] {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   height: auto;
+  font-weight: 300;
 }
 
 ::-webkit-input-placeholder {
@@ -13,6 +14,8 @@ input[type='text'] {
   opacity: 0.8;
   font-size: 12px;
   letter-spacing: 1px;
+  font-weight: 300;
+
 }
 
 ::-moz-input-placeholder {
@@ -20,6 +23,8 @@ input[type='text'] {
   opacity: 0.8;
   font-size: 12px;
   letter-spacing: 1px;
+  font-weight: 300;
+
 }
 
 .postfix.button {
@@ -45,7 +50,7 @@ label.checkbox-style {
   padding-left: 8px;
 }
 
-input[type='checkbox'].checkbox-style:after {
+input[type='checkbox'].checkbox-style::after {
   left: 9998px;
   top: 6px;
   opacity: 1;

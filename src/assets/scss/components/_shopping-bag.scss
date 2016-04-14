@@ -58,7 +58,14 @@ $global-transition: all 0.3s ease;
 }
 
 .bag-items {
-  @include grid-column(12);
+  @include grid-column(8);
+}
+
+@media #{$small-only} {
+  .bag-items {
+    @include grid-column(12);
+    padding-right: 1rem;
+  }
 }
 
 
@@ -263,7 +270,7 @@ $bag-detail-padding-left: 10px;
     .product-price-orig {
       font-size: 0.7rem;
       top: -6px;
-      right: -8px;
+
       position: relative;
     }
   }
@@ -313,7 +320,6 @@ $bag-detail-padding-left: 10px;
 
     .product-price {
       font-size: rem-calc(12);
-      right: -8px;
     }
 
     .quantity,
