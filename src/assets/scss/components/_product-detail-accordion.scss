@@ -87,6 +87,15 @@
   border-bottom: none;
 }
 
+.share-icon {
+  .icon {
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+    display: inline-block;
+  }
+}
+
 .product-info-accordion {
   .save-icon {
     width: 17px;
