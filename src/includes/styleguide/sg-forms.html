@@ -1,11 +1,11 @@
 <section id="forms">
   <h2>Forms</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, maiores quibusdam ut asperiores, at perferendis neque suscipit consequuntur, eveniet, nihil labore odio minima officiis esse voluptates est id repellat.</p>
+  <p>Forms are used for user input fields. They include text inputs, number inputs, text areas, dropdowns,  and checkboxes.</p>
   
   <hr>
 
   <h3>Text Input</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sequi repellat reiciendis voluptatibus temporibus suscipit eaque dolor rem iste consequatur. At dignissimos, amet nemo rerum sed ipsam similique voluptatum temporibus!</p>
+  <p>Text inputs are simple input field that let user input one line of text. Basic HTML will do!</p>
 
   <pre><code class="html">
   <input type="text" placeholder="Please fill this out">  
@@ -22,7 +22,7 @@
   <p class="error-message">You need to select a size first</p>
 
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est et quia, del.</p>
+  <p>You can add errors by adding the class “has-error” to reduce the bottom margin of the text field.</p>
 
   <pre><code class="html">
     <div class="row collapse">
@@ -45,7 +45,7 @@
   </div>
 
   <h3>Number Input</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi eum aut recusandae mollitia vel quas. Debitis autem illo, natus dignissimos non optio iusto, repellendus voluptates nobis consequatur a animi suscipit.</p>
+  <p>Very similar to the text input,  the number input lets the user input items like quantity.</p>
 
   <pre><code class="html">
     <h3 class="section-label quantity-label">QTY:</h3>
@@ -63,7 +63,7 @@
 
 
   <h3>Dropdowns</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel excepturi molestiae, dicta, nulla dolor error veniam soluta rem, neque a temporibus omnis est molestias fugiat voluptate sed consequuntur sequi ipsum.</p>
+  <p>We use a custom dropdown to achieve the TMW-branded dropdowns.</p>
 
   <pre><code class="html">
     <form>
@@ -109,7 +109,8 @@
 </div>
 
   <h3>Dropdowns Two-Lines</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel excepturi molestiae, dicta, nulla dolor error veniam soluta rem, neque a temporibus omnis est molestias fugiat voluptate sed consequuntur sequi ipsum.</p>
+  <p>We can also created a two-lined dropdown by adding the class “two-line”.
+</p>
 
   <pre><code class="html">
     <div class="size-dropdown-wrapper size-dropdown-shipping two-line">
@@ -136,15 +137,24 @@
   </div>
 
   <h3>Checkboxes</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita beatae suscipit perferendis deserunt saepe, incidunt nihil iste, illo ad velit commodi in quis quas provident reprehenderit nam, et dolor architecto.</p>
+  <p>Checkboxes are super simple to code up! Just write the standard checkbox HTML.
+</p>
 
   <pre><code class="html">
-    <div class="shipping-checkbox" style="position: relative;">
-      <input type="checkbox" class="checkbox-style"><label class="checkbox-label">Email me about exclusive sales and promotions</label></input>
-    </div>
+    <input type="checkbox"><label>Email me about exclusive sales and promotions</label></input>
   </code></pre>
 
   <div class="shipping-checkbox" style="position: relative;">
-    <input type="checkbox" class="checkbox-style"><label class="checkbox-label">Email me about exclusive sales and promotions</label></input>
+    <input type="checkbox"><label>Email me about exclusive sales and promotions</label></input>
   </div>
+
+  <h3>Text Area</h3>
+  <p>Finally, text areas are another way the user can input information. Just code up the standard textarea markup!
+</p>
+
+  <pre><code class="html">
+    <textarea cols="30" rows="10" placeholder="put some txt in here"></textarea>
+  </code></pre>
+
+    <textarea cols="30" rows="10" placeholder="put some txt in here"></textarea>
 </section>
