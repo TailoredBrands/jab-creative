@@ -299,7 +299,7 @@ $bag-detail-padding-left: 10px;
   .bag-item-detail {
     .product-name {
       font-size: rem-calc(13);
-      padding-right: 70px;
+      padding-right: 100px;
     }
   }
 
@@ -495,3 +495,11 @@ $bag-detail-padding-left: 10px;
   background: white;
   color: $callout-color;
 }
+
+.order-summary {
+  .button.postfix {
+    height: 43px;
+    margin-top:0;
+  }
+}
+

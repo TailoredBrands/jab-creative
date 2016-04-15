@@ -9,13 +9,20 @@ input[type='text'] {
   font-weight: 300;
 }
 
+input[type='text']:-ms-input-placeholder {
+  text-transform: uppercase;
+  opacity: 0.8;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
 ::-webkit-input-placeholder {
   text-transform: uppercase;
   opacity: 0.8;
   font-size: 12px;
   letter-spacing: 1px;
   font-weight: 300;
-
 }
 
 ::-moz-input-placeholder {
@@ -24,7 +31,6 @@ input[type='text'] {
   font-size: 12px;
   letter-spacing: 1px;
   font-weight: 300;
-
 }
 
 .postfix.button {
@@ -33,63 +39,13 @@ input[type='text'] {
  left: -1px;
 }
 
-input[type='checkbox'].checkbox-style {
-  position: absolute;   
-  left: -9999px;
-}
-
-label.checkbox-style {
-  position: absolute;
-  left: rem-calc(10);
-  top: rem-calc(5);
-
-}
-
-.checkbox-label {
-  font-size: 12px;
-  padding-left: 8px;
-}
-
-input[type='checkbox'].checkbox-style::after {
-  left: 9998px;
-  top: 6px;
-  opacity: 1;
-  display: inline-block;
-  position: absolute;
-  bottom: 0;
-  content: '';
-  opacity: 1;
-  background: #fff;
-  border: solid 1px $light-gray;
-  display: inline-block;
-  vertical-align: middle;
-  width: 18px;
-  height: 18px;
-  padding: 2px;
-  margin-right: 10px;
-  text-align: center;
-  cursor: pointer;
-}
-
-input[type='checkbox'].checkbox-style:checked:after {
-  content: "";
-  background-image: url("../images/icons/check-white.svg"); 
-  background-size: 16px 16px;
-  background-repeat: no-repeat;
-  background-position: center; 
-  color: $primary-color;
-  background-color: $primary-color;
-  border: 1px solid $primary-color;
-  top: 6px;
-}
 
 label.form-options-label {
   margin-top: -10px;
 }
 
 input[type="checkbox"] + label{
-  vertical-align: middle;
-  margin-left: 20px;
+  top: 0;
 }
 
 input[type="text"]:focus {

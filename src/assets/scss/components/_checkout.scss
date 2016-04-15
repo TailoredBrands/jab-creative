@@ -11,6 +11,10 @@
   }
 }
 
+.slick-arrow {
+  top: 43%;
+}
+
 .tabs-content {
   margin-top: 0.5rem;
 }
@@ -177,6 +181,8 @@ input[type="text"].id-number-input {
 
 .center {
   left: 50%;
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 

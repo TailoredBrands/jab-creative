@@ -34,7 +34,8 @@
   }
 
   .fit-chart {
-    position: absolute;
+    position: relative;
+    display: inline-block;
   }
 
   .attributes {
