@@ -469,7 +469,8 @@ ul.off-canvas-list {
       display: block;
     }
 
-    a:hover {
+    a:hover,
+    a.is-active {
       -webkit-box-shadow: inset 0px -2px 0px 0px rgba(0,0,0,0.75);
       -moz-box-shadow: inset 0px -2px 0px 0px rgba(0,0,0,0.75);
       box-shadow: inset 0px -2px 0px 0px rgba(0,0,0,0.75);
@@ -489,7 +490,7 @@ ul.off-canvas-list {
     width: 100%;
     position: absolute;
     height: auto;
-    background: salmon;
+    background: white;
     left: 0;
     z-index: 10000;
     left: 50%;
@@ -499,6 +500,8 @@ ul.off-canvas-list {
     text-align: left;
     max-width: 1100px;
     padding: 20px;
+    border: 1px solid #eee;
+    border-top: none;
     @include clearfix;
 
     &.is-active {
@@ -526,8 +529,7 @@ ul.off-canvas-list {
       margin-bottom: 10px;
 
       a {
-      padding-bottom: 0;
-        
+        padding-bottom: 0;
       }
     }
 
@@ -540,7 +542,7 @@ ul.off-canvas-list {
     float: right;
     height: 230px;
     width: 350px;
-    background: #fefefe;
+    background: gray;
     display: block;
   }
 }

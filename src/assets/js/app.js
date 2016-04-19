@@ -140,6 +140,7 @@ $(function() {
         //small-screen
         if (window.innerWidth >= 640) {
           $('#suitMenu, #suitSubMenu').hover( function(){
+            $('#suitMenu').toggleClass('is-active');
             $('#suitSubMenu').toggleClass('is-active');
           });
         }
