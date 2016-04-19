@@ -477,13 +477,111 @@ ul.off-canvas-list {
   }
 }
 
-@media (max-width: 1060px) {
-  .main-menu {
-    li {
-      font-size: 9px;
-      padding-left: 6px;
-      padding-right: 6px;
-    }
+.main-menu {
+  .sub-menu {
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 400px;
+    background: salmon;
+    left: 0;
+    z-index: 10000;
+
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    margin-left: 0;
+
   }
 }
 
+@media #{$small-only} {
+  .main-menu {
+    height: 100vh;
+    position: absolute;
+    background-color: white;
+    left: -100%;
+    z-index: 1000;
+    padding-left: 10%;
+    transition: all 0.3s ease;
+    top: 0;
+    border-bottom: none;
+    font-size: 12px;
+
+    a {
+      font-weight: 400;
+      text-transform: capitalize;
+      letter-spacing: 0;
+    }
+
+    li {
+      display: block;
+      border-bottom: 1px solid #cbcbcb;
+      a {
+        padding-bottom: 10px;
+        font-size: 12px;
+      }
+
+      .section-label {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 12px;
+        padding-left: 0;
+        margin-left: -12px;
+      }
+    }
+
+
+    .menu-item {
+      display: block;
+      text-align: left;
+      padding: 20px 10px 20px 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 500;
+    }
+
+    .sub-menu {
+      display: none;
+      position: relative;
+      margin-left: 1.25rem;
+      background: none;
+    }
+  }
+
+  .inner-wrap {
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .inner-wrap.is-active {
+    left: 90%;
+    transition: all 0.3s ease;
+
+  }
+
+  .main-menu li a:hover {
+    box-shadow: none;
+  }
+
+  .sub-menu.is-active {
+    display: block;
+    text-align: left;
+  }
+
+  .sub-menu {
+    li {
+      border-bottom: none;
+    }
+  }
+
+  .sub-menu-section {
+    margin-left: 0;
+
+    a {
+      font-weight: 400;
+      text-transform: capitalize;
+      letter-spacing: 0;
+    }
+  }
+}

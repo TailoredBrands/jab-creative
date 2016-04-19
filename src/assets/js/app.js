@@ -124,3 +124,12 @@ $('#pdpSeeMore').on('click', function() {
   $('.more').toggleClass('is-active');
 });
 
+//Off-canvas
+$('#menuIcon').on('click', function(){
+  $('.inner-wrap').toggleClass('is-active');
+});
+
+$('#suitMenu').on('click', function(){
+  $('#suitSubMenu').toggleClass('is-active');
+});
+

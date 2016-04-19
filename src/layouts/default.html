@@ -29,7 +29,12 @@
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="{{assets}}js/all.js"></script>
 </section>
-    {{>footer}}
+
+    {{#is page.title "checkout"}}
+      {{>checkout-footer}}
+    {{else}}
+      {{>footer}}
+    {{/is}}
 
 </body>
 </html>

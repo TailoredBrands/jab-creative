@@ -4,7 +4,7 @@
     {{>promotion-callout-top}}
     <nav class="tab-bar show-for-small-only mobile-tab-bar">
       <section class="left-small">
-        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+        <a class="menu-icon" id="menuIcon" href="#"><span></span></a>
       </section>
       <section class="middle tab-bar-section">
         <img class="logo" src="{{assets}}images/tmw-logo-white.svg">
@@ -15,23 +15,16 @@
       </section>
     </nav>
 
-    <div class="test-wrapper">
-      <div class="search-tool">
-        <div class="row">
-          <div class="small-12 columns">
-            <label>
-              <input type="text" placeholder="Search">
-            </label>
-          </div>
+    <div class="search-tool">
+      <div class="row">
+        <div class="small-12 columns">
+          <label>
+            <input type="text" placeholder="Search">
+          </label>
         </div>
       </div>
     </div>
 
-    <aside class="left-off-canvas-menu">
-      <nav class="small-only">
-        {{>mobile-retail-nav}}
-      </nav>
-    </aside>
 
     <aside id="product-filters" class="right-off-canvas-menu">
       <nav class="small-only">
@@ -111,17 +104,36 @@
       </section>
     </nav>
 
-    <ul class="main-menu hide-for-small-only">
-      <li><a href="#">Suits</a></li><li>
-      <a href="#">Clothing</a></li><li>
-      <a href="">Dress Shirts</a></li><li>
-      <a href="">Blazers &amp; Sport Coats</a></li><li>
-      <a href="">Shoes</a></li><li>
-      <a href="">Big &amp; Tall</a></li><li>
-      <a href="">Sale</a></li><li>
-      <a href="">Outlet</a></li><li>
-      <a href="">Tuxedo Rental</a></li><li>
-      <a href="#">How it Works</a></li>
+    <ul class="main-menu" id="mainMenu">
+      <li><a class="menu-item" id="suitMenu"href="#">Suits</a>
+      <ul class="sub-menu" id="suitSubMenu">
+        <li><a href="#">View All Suits</a></li>
+        <ul class="sub-menu-section">
+          <li class="section-label">By Fit</li>
+          <li><a href="#">Modern Fit</a></li>
+          <li><a href="#">Slim Fit</a></li>
+          <li><a href="#">Classic Fit</a></li>
+          <li><a href="#">Extreme Slim Fit</a></li>
+          <li><a href="#">Portly</a></li>
+          <li><a href="#">Big &amp; Tall</a></li>
+        </ul>
+        <ul class="sub-menu-section">
+          <li class="section-label">By Style</li>
+          <li><a href="#">Vested Suits</a></li>
+          <li><a href="#">Tuxedos</a></li>
+          <li><a href="#">Suit Separates</a></li>
+        </ul>
+      </ul>
+      </li>
+      <li><a class="menu-item" href="#">Clothing</a></li>
+      <li><a class="menu-item" href="">Dress Shirts</a></li>
+      <li><a class="menu-item" href="">Blazers &amp; Sport Coats</a></li>
+      <li><a class="menu-item" href="">Shoes</a></li>
+      <li><a class="menu-item" href="">Big &amp; Tall</a></li>
+      <li><a class="menu-item" href="">Sale</a></li>
+      <li><a class="menu-item" href="">Outlet</a></li>
+      <li><a class="menu-item" href="">Tuxedo Rental</a></li>
+      <li><a class="menu-item" href="#">How it Works</a></li>
     </ul>
 
     <!-- MEGA MENUS -->
