@@ -143,7 +143,7 @@ section: rent
         <div class="row">
           <div class="browse-header small-6 medium-4 large-3 columns">
             <div class="browsepage-thumbnails" id="quickViewThumb" >
-            <a href="#" id="quickViewDemo" class="button quick-view-cta center">Quick View</a>
+            <a href="#" id="quickViewDemo" class="button quick-view-cta center" data-reveal-id="qvModal">Quick View</a>
 
               <ul>
                 <li><img src="{{assets}}images/browse/product-thumbnail-suit-4.jpg"></li>
@@ -317,6 +317,8 @@ section: rent
       {{>recently-viewed}}
     </div>
   </div>
+
+    {{> filter-quick-view-modal}}
 
 
 </div>
