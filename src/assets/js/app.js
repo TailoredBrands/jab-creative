@@ -123,3 +123,7 @@ $('#pdpSeeMore').on('click', function() {
   $('.less').toggleClass('is-hidden');
   $('.more').toggleClass('is-active');
 });
+
+$('#quickViewThumb').hover(function(){
+  $('#quickViewDemo').toggleClass('is-active');
+});
