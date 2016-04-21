@@ -281,6 +281,13 @@ p.lead {
   }
 }
 
+
+// helpers
+
+.flush-bottom {
+  margin-bottom: 0 !important;
+}
+
 .sans {
   font-family: $font-family-sans-serif;
 }

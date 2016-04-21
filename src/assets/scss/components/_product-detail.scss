@@ -159,17 +159,18 @@
 
 //Thumbnails for the medium screen and up (clicakble carousel)
 .pdp-thumbs {
-  padding-top: 1.2rem;
+  padding-top: 3rem;
   margin-left: 0.05rem;
   display: none;
   @media #{$medium-up} {
     display: block;
     img { 
-      width: 75px; 
+      width: 60px; 
     }
   }
   .active {
     border: 3px solid $primary-color;
+    // TODO: try and add as pseudo to get double border around image
   }
 }
 
