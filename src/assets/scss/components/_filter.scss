@@ -276,7 +276,7 @@
   padding: rem-calc(8px 5px 5px 5px);
   margin: 0;
 
-  h1 {
+  h3 {
     padding: 0px;
     margin: 0;
     text-transform: uppercase;
@@ -504,5 +504,9 @@
   
   .quantity-label {
     margin-top: 16px;
+  }
+
+  .button.primary {
+    background: $brand-color;
   }
 }
