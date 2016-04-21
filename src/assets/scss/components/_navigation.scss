@@ -478,6 +478,8 @@ ul.off-canvas-list {
   }
 }
 
+
+//Desktop style for the single HTML navigation approach
 .main-menu {
   .wrapper {
     max-width: 1100px;
@@ -547,6 +549,7 @@ ul.off-canvas-list {
   }
 }
 
+//Mobile styles for the single html approach
 @media #{$small-only} {
   .off-canvas-wrap.is-active {
     overflow-x: hidden;
