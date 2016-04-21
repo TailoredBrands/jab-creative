@@ -88,8 +88,9 @@ $include-html-global-classes: $include-html-classes;
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to define default font stacks
-$font-family-sans-serif: "Gotham", Helvetica, Roboto, Arial, sans-serif;
-$font-family-serif: Didot, Georgia, Cambria, "Times New Roman", Times, serif;
+
+$font-family-sans-serif: 'Montserrat', Helvetica, Roboto, Arial, sans-serif;
+$font-family-serif: "bookmania", Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
@@ -126,7 +127,7 @@ $success-color: #51f478;
 $warning-color: #fbb147;
 $info-color: #999999;
 $light-gray: #CBCBCB;
-$callout-color: #4A90E2;
+$callout-color: $jab-green;
 $callout-color-dark: $primary-color;
 
 // We use these to control various global styles
@@ -202,8 +203,8 @@ $global-radius: 0px;
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-// $header-font-family: $body-font-family;
-$header-font-weight: 500;
+$header-font-family: $font-family-serif;
+$header-font-weight: 700;
 // $header-font-style: normal;
 // $header-font-color: $jet;
 $header-line-height: 1.1;

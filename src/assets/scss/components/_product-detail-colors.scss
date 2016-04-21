@@ -11,14 +11,15 @@
 
 //the small thumbnails for colors
 .product-color {
-  $color-thumbnail-size: 40px;
+  $color-thumbnail-size: 60px;
+  $color-thumbnail-size-height: 21px;
   width: $color-thumbnail-size;
-  height: $color-thumbnail-size;
+  height: $color-thumbnail-size-height;
 }
 
 .thumbnail {
   //overriding default block grid 
-  padding: 3px;
+  padding: 2px;
   display: inline-block;
 
   &.active {
