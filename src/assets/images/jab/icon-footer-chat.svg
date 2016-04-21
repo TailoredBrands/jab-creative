@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="33px" viewBox="0 0 40 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-footer-chat</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="---FOOTER---" transform="translate(-620.000000, -110.000000)">
+            <g id="contact-us" transform="translate(380.000000, 109.000000)">
+                <g id="Group">
+                    <g id="icon-footer-chat" transform="translate(240.000000, 1.000000)">
+                        <text id="CHAT" font-family="Montserrat-Regular, Montserrat" font-size="12" font-weight="normal" letter-spacing="2" fill="#202528">
+                            <tspan x="0.176" y="32">CHAT</tspan>
+                        </text>
+                        <path d="M25.3030001,-3.01980663e-14 L14.367,-3.01980663e-14 C13.6150406,-3.01980663e-14 13,0.615040643 13,1.36700001 L13,13.6700001 L15.734,10.9360001 L25.3030001,10.9360001 C26.0549594,10.9360001 26.6700001,10.3209594 26.6700001,9.56900005 L26.6700001,1.36700001 C26.6700001,0.615040643 26.0549594,-3.01980663e-14 25.3030001,-3.01980663e-14 L25.3030001,-3.01980663e-14 Z" id="chat" fill="#004638"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

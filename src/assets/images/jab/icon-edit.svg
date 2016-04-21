@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-edit</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(0.000000, -2.000000)" fill="#4E5255">
+            <g id="Group-13">
+                <g id="icon-edit" transform="translate(5.000000, 7.000000) scale(-1, 1) translate(-5.000000, -7.000000) translate(0.000000, 2.000000)">
+                    <path d="M0.474533333,0.599868421 C-0.157866667,1.22381579 -0.157866667,2.23578947 0.474533333,2.85973684 L2.76453333,0.599868421 C2.13226667,-0.0247368421 1.1068,-0.0247368421 0.474533333,0.599868421 L0.474533333,0.599868421 Z" id="Fill-1"></path>
+                    <path d="M6.08906667,8.40052632 L10,10 L8.37973333,6.14052632 L3.39173333,1.21815789 L1.10106667,3.47815789 L6.08906667,8.40052632 Z M6.6104,7.39921053 C6.8188,7.19368421 7.21253333,7.24973684 7.29946667,7.33552632 C7.21253333,7.24973684 7.15573333,6.86065789 7.364,6.655 C7.5724,6.44947368 7.988,6.37644737 7.988,6.37644737 L8.91933333,8.59368421 L8.57453333,8.93394737 L6.3276,8.015 C6.32813333,8.01552632 6.40213333,7.60486842 6.6104,7.39921053 L6.6104,7.39921053 Z" id="Fill-2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

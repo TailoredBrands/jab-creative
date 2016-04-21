@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="9px" height="9px" viewBox="0 0 9 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-remove</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-63.000000, -2.000000)" fill="#4E5255">
+            <g id="Group-11" transform="translate(63.000000, 2.000000)">
+                <polygon id="icon-remove" points="5.0958 4.39098135 8.48952 0.915535466 8.78724 0.61023407 8.19144 1.04805054e-13 7.89372 0.305301396 4.5 3.78074728 1.10628 0.305301396 0.80856 1.04805054e-13 0.21276 0.61023407 0.51048 0.915535466 3.9042 4.39098135 0.2976 8.08446453 0 8.38976593 0.59628 9 0.89388 8.6946986 4.5 5.00121542 8.10612 8.6946986 8.40372 9 9 8.38976593 8.7024 8.08446453"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
