@@ -119,7 +119,7 @@ $jet         : #222222;
 // We use these as default colors throughout
 // $primary-color: #3AB5D3;
 // $secondary-color: #e7e7e7;
-$primary-color: #000;
+$primary-color: $jab-green;
 $secondary-color: #FFF;
 $alert-color: #f1664b;
 $success-color: #51f478;
@@ -127,7 +127,7 @@ $warning-color: #fbb147;
 $info-color: #999999;
 $light-gray: #CBCBCB;
 $callout-color: #4A90E2;
-$callout-color-dark: #002B49;
+$callout-color-dark: $primary-color;
 
 // We use these to control various global styles
 // $body-bg: $white;

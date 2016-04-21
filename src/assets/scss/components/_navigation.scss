@@ -50,11 +50,11 @@ $promo-menu-width: 400;
 }
 
 .logo {
-  height: 20px;
+  // height: 20px;
   @media #{$small-only} {
 
-    max-width: 75%;
-    margin-right: 10px;
+    // max-width: 75%;
+    // margin-right: 10px;
   }
 }
 
@@ -106,37 +106,39 @@ nav.global {
   border-bottom: 1px solid #eee;
   @extend .hide-for-small-only;
   
-  section.global-tabs {
-    @include grid-column(6);
-    padding-left: 0 !important;
-    background: $primary-color;
+  // section.global-tabs {
+  //   @include grid-column(6);
+  //   padding-left: 0 !important;
+  //   background: $white-five;
 
-    ul {
-      @include button-group-container();
-      li {
+  //   ul {
+  //     @include button-group-container();
+  //     li {
 
-        @include button-group-style(false, 1);
-        a {
-          height: 32px;
-          letter-spacing: 0.2em;
-          text-align: left !important;
-          @include button($button-tny, $primary-color, false, true);
-          margin-bottom: 0;
-          border: none;
-        }
-      }
-    }
-  }
+  //       @include button-group-style(false, 1);
+  //       a {
+  //         height: 32px;
+  //         letter-spacing: 0.2em;
+  //         text-align: left !important;
+  //         @include button($button-tny, $white-five, false, true);
+  //         margin-bottom: 0;
+  //         border: none;
+  //         color: $gunmetal;
+  //       }
+  //     }
+  //   }
+  // }
   
   section.links {
     @include grid-column(6);
-    background: $primary-color;
+    background: $white-five;
     ul a {
       height: 32px;
-      @include button($button-tny, $primary-color, false, true);
+      @include button($button-tny, $white-five, false, true);
       margin-bottom: 0;
       border: none;
-      &:hover { background: $primary-color; }
+      color:$gunmetal;
+      &:hover { background: $white-five; }
     }
   }
 }
@@ -190,8 +192,6 @@ nav.global section.links {
   }
 
   ul a {
-    color: #fff;
-    font-weight: bold;
     padding-left: 1rem;
     padding-right: 1rem;
     display: inline-block;
