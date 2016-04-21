@@ -104,8 +104,9 @@ nav.small-only {
 
 nav.global {
   border-bottom: 1px solid #eee;
+  background: $white-five;
   @extend .hide-for-small-only;
-  
+
   // section.global-tabs {
   //   @include grid-column(6);
   //   padding-left: 0 !important;
@@ -130,8 +131,14 @@ nav.global {
   // }
   
   section.links {
-    @include grid-column(6);
-    background: $white-five;
+    @include grid-column(9);
+  }
+  section.links.short {
+    @include grid-column(3);
+  }
+  section.links {
+    // @include grid-column(6);
+    // background: $white-five;
     ul a {
       height: 32px;
       @include button($button-tny, $white-five, false, true);
@@ -179,18 +186,12 @@ nav.global {
 
 nav.global section.links {
   position: relative;
-  
-
   ul {
+    float: left;
     @include inline-list();
-    float: right;
     margin-bottom: 0;
-
-    li {
-      margin-left: 0;
-    }
+    li { margin-left: 0; }
   }
-
   ul a {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -202,6 +203,7 @@ nav.global section.links {
     color: #000;
   }
 }
+nav.global section.links.short ul { float: right; }
 
 .cart-lockup {
   position: relative;
