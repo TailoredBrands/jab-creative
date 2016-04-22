@@ -2,27 +2,6 @@
   padding-bottom: 1rem;
 }
 
-.filter-dropdown {
-  @include button(0, $secondary-color);
-  @include dropdown-button(tiny, $info-color, true);
-  margin: rem-calc(0 0 0 0);
-  border: none !important;
-  color: $primary-color;
-  font-weight: 500;
-  font-size: rem-calc(12);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 10px 15px;
-
-  a {
-    margin-bottom: 0;
-  }
-
-  &:hover {
-    background: $secondary-color;
-  }
-}
-
 .filter-tag {
   padding: rem-calc(5 10);
   border: solid 1px $info-color;
@@ -400,6 +379,19 @@
 
   &.is-active {
     opacity: 0.25;
+  }
+}
+
+.filter-dropdown {
+  width: auto;
+  margin-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  height: 30px;
+
+  .selected-item {
+    font-size: 10px;
+    padding-right: 50px;
   }
 }
 
