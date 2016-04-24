@@ -48,6 +48,15 @@ label {
     width: auto;
     float: left;
     width: 33.33%;
+    border-bottom: 1px solid #979797;
+    border-top: 1px solid #979797;
+
+    &:last-child {
+      border-right: 1px solid #979797;
+    }
+    &:first-child {
+      border-left: 1px solid #979797;
+    }
 
     a {
       text-transform: none;
@@ -59,7 +68,7 @@ label {
   }
 
   .tab-title.active {
-    border: 1px solid white;
+    border: 1px solid #979797;
   }
 }
 
