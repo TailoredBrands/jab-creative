@@ -59,7 +59,6 @@ $promo-menu-width: 400;
 }
 
 .tab-bar-section {
-  width: 90%;
 }
 
 nav.small-only {
@@ -70,16 +69,16 @@ nav.small-only {
 
     li {
       @include button-group-style(false, 3);
-      
+
       a {
         @include button($button-tny, $primary-color, false, true);
         margin-bottom: 0;
         border: none;
-        
+
         &:hover {
           background: $primary-color;
         }
-        
+
         &.active {
           @include button($button-tny, $white, false, true, false);
           margin-bottom: 0;
@@ -94,7 +93,7 @@ nav.small-only {
     padding-top: rem-calc(20);
     padding-left: rem-calc(10);
     width: 90%;
-    
+
     .mobile-promo-image {
       width: 40%;
       padding: 0;
@@ -129,7 +128,7 @@ nav.global {
   //     }
   //   }
   // }
-  
+
   section.links {
     @include grid-column(9);
   }
@@ -160,7 +159,7 @@ nav.global {
     margin: rem-calc(3 0 0 0);
     font-size: $paragraph-font-size;
     border: none !important;
-    
+
     &:hover {
       background: $white;
     }
@@ -238,7 +237,7 @@ ul.off-canvas-list {
         background-color: white;
       }
     }
-    
+
     label {
       font-weight: 500;
       padding: 1rem;
@@ -283,14 +282,14 @@ ul.off-canvas-list {
 .promo-bar {
   @include inline-list();
   margin-bottom: 0;
-  
+
   .emphasize {
     font-weight: 700;
     text-transform: uppercase;
     font-size: rem-calc(18);
     line-height: 1;
   }
-  
+
   .icon {
     margin-top:-5px;
     width: 16px;
@@ -367,7 +366,7 @@ ul.off-canvas-list {
 }
 
 .mobile-tab-bar {
-  background: #000;
+  background: #ffffff;
 }
 
 .left-small{
@@ -621,7 +620,7 @@ ul.off-canvas-list {
     left: 0;
     transition: all 0.3s ease;
   }
-  
+
   .inner-wrap.is-active {
     left: 90%;
     transition: all 0.3s ease;
@@ -642,7 +641,7 @@ ul.off-canvas-list {
       border-bottom: none;
     }
   }
-  
+
   .main-menu {
     .col-1,
     .col-2,
