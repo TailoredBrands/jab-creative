@@ -3,7 +3,7 @@
 .dropdown {
   width: 100%;
   display: block;
-  background: white; 
+  background: white;
   position: relative;
   padding: 5px 10px;
   cursor: pointer;
@@ -19,7 +19,7 @@
 }
 
 .size-dropdown-shipping {
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 //This is what is displayed in the dropdown as the selected item.
@@ -38,8 +38,8 @@
   text-overflow: ellipsis;
 
   &::after {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 5px solid #ADADAD;

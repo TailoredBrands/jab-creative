@@ -18,7 +18,7 @@
 }
 
 .thumbnail {
-  //overriding default block grid 
+  //overriding default block grid
   padding: 2px;
   display: inline-block;
 
@@ -49,7 +49,7 @@
 
 //This is prototyping code to toggle the more and less anchor.
 .more {
-  display: none; 
+  display: none;
 
   &.is-active {
     display: inline;
@@ -61,5 +61,5 @@
   @extend .text-link;
   font-size: rem-calc(10);
   font-weight: 400;
-  opacity: 0.5;
+  opacity: 1;
 }
