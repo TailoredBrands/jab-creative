@@ -10,7 +10,20 @@
   }
 
   &.primary {
-    background: $callout-color;
+    background-color: $jab-green;
+    font-size: rem-calc(15);
+    margin: 30px;
+    padding: 10px ;
+    position: relative;
+  }
+  &.primary:before {
+    border: 5px solid $jab-green;
+    content: "";
+    position: absolute;
+    top: -7px;
+    bottom: -7px;
+    left: -7px;
+    right: -7px;
   }
 
   &.reverse {
