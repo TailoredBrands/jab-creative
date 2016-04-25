@@ -30,7 +30,7 @@ label {
 }
 
 .tabs-content {
-  margin-top: 0.5rem;
+  margin-top: 0;
 }
 
 .tabs.checkout-tabs {
@@ -74,6 +74,7 @@ label {
 
 .tabs.checkout-toggle,
 .tabs.toggle {
+  margin: 20px 0;
   a {
     font-size: 10px;
     background: white;
@@ -130,16 +131,19 @@ label {
   letter-spacing: 2px;
 
   &:not(:first-of-type) {
-    margin-top: 40px;
+    margin-top: 30px;
 
   }
 }
 
 form {
   .checkout-dropdown {
-    margin-top: 3px;
-    margin-bottom: 7px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
+}
+h3.section-label {
+  margin: 20px 0 5px 0;
 }
 
 .review-cta {
@@ -152,7 +156,7 @@ form {
   }
 }
 
-//adjusting padding in shhipping accordions
+//adjusting padding in shipping accordions
 .accordion .product-info-accordion .checkout-content {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -381,6 +385,9 @@ input[type="text"].id-number-input {
 }
 
 .shipping-checkbox {
+  &.first {
+    margin-top: 20px;
+  }
   label {
     position: relative;
     top: 2px;

@@ -1,4 +1,4 @@
-//util 
+//util
 .is-hidden {
   display: none !important;
 }
@@ -55,7 +55,7 @@
 //generic labels for all sections within PDP.
 .section-label {
   margin-right: 4px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 //Custom massaging for the "Size:" label on PDP
@@ -104,7 +104,7 @@
   }
 }
 
-//Sizing chart styles for PDP 
+//Sizing chart styles for PDP
 .sizing-chart {
   width: 100%;
 }
@@ -164,8 +164,8 @@
   display: none;
   @media #{$medium-up} {
     display: block;
-    img { 
-      width: 60px; 
+    img {
+      width: 60px;
     }
   }
   .active {

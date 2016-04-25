@@ -12,6 +12,25 @@ $('#changeAddress, #changeAddress2, #saveAddress').click(function(){
   $('#saveAddress').toggleClass('is-active');
 });
 
+//Add card
+
+$('#addCard, #addCard2, #saveCard').click(function(){
+  $('#dropdown-payment-card-1').toggleClass('is-active');
+  $('#addCardInputs').toggleClass('is-active');
+  $('#addCard').toggleClass('is-hidden');
+  $('#saveCard').toggleClass('is-active');
+});
+
+//Add Billing Address
+
+$('#addBillAddress, #addBillAddress2, #saveBillAddress').click(function(){
+  $('#dropdown-billing-address-1').toggleClass('is-active');
+  $('#addBillAddressInputs').toggleClass('is-active');
+  $('#addBillAddress').toggleClass('is-hidden');
+  $('#saveBillAddress').toggleClass('is-active');
+});
+
+
 //Text me cta for payment section
 $('.text-me-cta').click(function(){
   $('.text-me-checkbox').attr('checked', 'checked');

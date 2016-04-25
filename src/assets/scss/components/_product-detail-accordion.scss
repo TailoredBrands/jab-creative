@@ -1,14 +1,11 @@
 //each accordion related to the pdp needs to have a right margin
 .product-info-accordion {
-  margin-right: 10px;
-  border-bottom: 1px solid #DDDDDD;
+  margin-right: 0;
+  border-bottom: 1px solid #B2B2B2;
   list-style: none;
   padding-top: 20px;
   padding-bottom: 20px;
 
-  &:last-child {
-    border-bottom: none;
-  }
 }
 
 //label for the accordions on the PDP
@@ -20,7 +17,7 @@
   font-weight: 500;
   position: relative;
 
-  //this is the fancy x that follows the accordion labels 
+  //this is the fancy x that follows the accordion labels
   &::after {
     $x-size: 15px;
     content: "";
