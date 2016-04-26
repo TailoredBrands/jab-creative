@@ -1,6 +1,6 @@
 .error-message {
   font-size: 10px;
-  color: red;
+  color: $alert-color;
 
   &.top {
     margin-bottom: 2px;
@@ -15,9 +15,9 @@ input.has-error {
   padding: 20px 10px;
   position: relative;
   margin-top: 10px;
-  border: 1px solid #CBCBCB;
+  border: 1px solid $alert-color;
   .message {
-    color: red;
+    color: $alert-color;
     margin-bottom: 0;
   }
 

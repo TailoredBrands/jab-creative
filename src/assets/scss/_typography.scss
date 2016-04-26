@@ -5,10 +5,11 @@ body {
 }
 
 h1 {
-  font-weight: 300;
+  font-weight: 500;
   padding-bottom: 0.4rem;
   line-height: 1.3;
   margin-bottom: 0;
+  letter-spacing: 1px;
 }
 
 h2, h3, h4, h5, h6 {
@@ -162,7 +163,7 @@ p.lead {
     margin-top: 1.5em;
 
       h1 {
-      font-size: 0.5em;
+      font-size: 1rem;
     }
   }
 }

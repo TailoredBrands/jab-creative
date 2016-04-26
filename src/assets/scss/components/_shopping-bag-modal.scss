@@ -64,7 +64,7 @@
 //name of the edited product
 .edit-item-detail {
   .product-name {
-    font-size: rem-calc(15);
+    font-size: 1rem;
     padding-left: 10px;
   }
 }
@@ -128,7 +128,7 @@
   }
 }
 
-//Because we're sticking the top of the modal, 
+//Because we're sticking the top of the modal,
 //we want to base it off the vh for the edit modal
 .bag-edit-title,
 .edit-close {
