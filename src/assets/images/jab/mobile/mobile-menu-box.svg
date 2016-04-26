@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="13px" height="16px" viewBox="0 0 13 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>mobile-menu-box</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="PROTO---1,2,3-Homepage,-Email,-Menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mobile---3-Main-Nav" transform="translate(-13.000000, -624.000000)" fill="#4E5255">
+            <g id="MAIN-NAV">
+                <g id="ship-to" transform="translate(13.000000, 621.000000)">
+                    <path d="M13,6.69230103 L6.5,3 L0,6.69230103 L0,14.5167256 L6.5,18.2090266 L13,14.5167256 L13,6.69230103 Z M1.3343386,13.7396007 L1.3343386,8.27381448 L5.8328307,10.9812465 L5.8328307,16.2947171 L1.3343386,13.7396007 Z M1.97784942,7.104184 L6.5,4.53487243 L11.0221506,7.10328272 L6.5,9.82558583 L1.97784942,7.104184 Z M7.1671693,16.2947171 L7.1671693,10.9821478 L11.6647601,8.27471575 L11.6647601,13.7396007 L7.1671693,16.2947171 Z" id="mobile-menu-box"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
