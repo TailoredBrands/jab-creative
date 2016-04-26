@@ -136,15 +136,32 @@ nav.global {
     @include grid-column(3);
   }
   section.links {
-    // @include grid-column(6);
-    // background: $white-five;
     ul a {
-      height: 32px;
       @include button($button-tny, $white-five, false, true);
       margin-bottom: 0;
       border: none;
-      color:$gunmetal;
+      opacity: 0.9;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.4;
+      letter-spacing: 0.5px;
+      color: $dark;
+      -webkit-text-stroke: 0 $gunmetal;
+      padding-top: 13px;
       &:hover { background: $white-five; }
+
+
+    }
+  }
+  .number-of-cart-items {
+    position: relative;
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      background:#f00;
     }
   }
 }
@@ -454,20 +471,26 @@ ul.off-canvas-list {
   width: 100%;
   margin-bottom: 0;
   margin-top: 1rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid $greyish;
 
   li {
     display: inline-block;
     padding-left: 10px;
     padding-right: 10px;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 10px;
+    font-size: 11px;
+    letter-spacing: 0.5px;
     font-weight: 500;
     margin-bottom: 0;
+    &.active a {
+      color: $jab-green;
+
+    }
     a {
-      padding-bottom: 1rem;
       display: block;
+      color: #54575b;
+      padding-bottom: rem-calc(12px);
+
     }
 
     a:hover,

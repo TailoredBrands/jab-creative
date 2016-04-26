@@ -10,7 +10,7 @@
 //Content for the pdp
 .product-details-page {
   @media #{$medium-up} {
-    margin-top: 2rem;
+    margin-top: rem-calc(40px);
   }
 }
 

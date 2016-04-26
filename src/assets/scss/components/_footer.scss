@@ -50,17 +50,16 @@ button.secondary.postfix {
 
 .footer-copyright {
   text-align: center;
-  ul {
-    display: inline-block;
-    li {
-      font-size: rem-calc(10);
-      border-right: 1px solid $dark;
-      padding: 0 10px 0 0 ;
-      &:nth-last-child(1) {
-        border: none;
-        padding-right: 0;
-        margin-right: 0;
-      }
+  ul {display: inline-block; }
+  // a { color: $warm-grey-two; }
+  li {
+    font-size: rem-calc(10);
+    border-right: 1px solid $dark;
+    padding: 0 10px 0 0 ;
+    &:nth-last-child(1) {
+      border: none;
+      padding-right: 0;
+      margin-right: 0;
     }
   }
 }

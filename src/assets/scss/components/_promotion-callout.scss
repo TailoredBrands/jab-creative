@@ -29,7 +29,8 @@
 
   p {
     margin: 0;
-    font-size: rem-calc(12px);
+    font-size: rem-calc(16px);
+    // font-size: rem-calc(12px);
     font-weight: normal;
 
     span {
@@ -45,6 +46,7 @@
   background-color: $callout-color-dark;
   color: white;
   padding: rem-calc(8px);
+  padding: rem-calc(14px);
 }
 
 .promotion-callout-dismissible {
