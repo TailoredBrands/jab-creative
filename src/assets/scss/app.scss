@@ -85,3 +85,24 @@
 
 
 
+
+.outer-lines-wrapper {
+  position: relative;
+  text-align: center;
+  &::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 50%;
+    border-bottom: 1px solid $white-two; 
+    z-index: -1000;
+  }
+}
+
+.outer-lines {
+  background:#fff;
+  display: inline-block;
+  border-left: solid 1px $white-two;
+  border-right: solid 1px $white-two;
+}

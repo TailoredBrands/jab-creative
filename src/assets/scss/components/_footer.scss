@@ -1,11 +1,18 @@
 .footer {
-  border-top: 1px solid #eee;
-  margin-top: 2rem;
+  border-top: 1px solid $greyish;
+  // margin-top: 2rem;
+  padding-top: 33px;
+
+  .outer-lines-wrapper {
+    margin-bottom: 40px;
+  }
 }
 
 .contact {
   text-align: center;
   padding: 2rem;
+  padding: 0 18px 0 18px;
+  p {margin-bottom: 0; }
 }
 
 .contact-method {
@@ -18,6 +25,16 @@
   list-style-type: none;
   float: left;
   margin-right: 2rem;
+  a.title {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  a {
+    font-size: 12px;
+    line-height: 2.3;
+    letter-spacing: 2px;
+    color: $dark;
+  }
 
   .category .title {
     font-weight: 500;
