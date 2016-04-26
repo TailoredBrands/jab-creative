@@ -122,9 +122,9 @@ $jet         : #212529;
 // $secondary-color: #e7e7e7;
 $primary-color: $jab-green;
 $secondary-color: #FFF;
-$alert-color: #f1664b;
-$success-color: #51f478;
-$warning-color: #fbb147;
+$alert-color: #C82828;
+$success-color: #42AF27;
+$warning-color: #E8AA1A;
 $info-color: #999999;
 $light-gray: #CBCBCB;
 $callout-color: $jab-green;
@@ -221,9 +221,9 @@ $h5-font-size: rem-calc(14);
 $h6-font-size: rem-calc(13);
 
 // We use these to control header size reduction on small screens
-$h1-font-reduction: rem-calc(4);
+// $h1-font-reduction: rem-calc(4);
 // $h2-font-reduction: rem-calc(10);
-$h3-font-reduction: rem-calc(1);
+// $h3-font-reduction: rem-calc(1);
 // $h4-font-reduction: rem-calc(5);
 // $h5-font-reduction: 0;
 // $h6-font-reduction: 0;

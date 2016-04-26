@@ -10,8 +10,14 @@ $('#dropdown-ship-address-1').on('click', function() {
 $('#dropdown-ship-address-2').on('click', function() {
   $('#dropdown-ship-address-dropdown-2').toggleClass('is-active');
 });
+$('#dropdown-payment-card-1').on('click', function() {
+  $('#dropdown-payment-card-dropdown-1').toggleClass('is-active');
+});
+$('#dropdown-billing-address-1').on('click', function() {
+  $('#dropdown-billing-address-dropdown-1').toggleClass('is-active');
+});
 
-//When clicking an item within the custom PDP dropdown, 
+//When clicking an item within the custom PDP dropdown,
 //replace the placeholder text with what you clicked on.
 $('.dropdown-item').on('click', function() {
   var myvar = $(this).text();

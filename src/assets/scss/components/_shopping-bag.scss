@@ -126,7 +126,7 @@ $bag-detail-padding-left: 10px;
   padding-left: $bag-detail-padding-left;
   width: 60%;
   margin-top: 1rem;
-  
+
   .promotion-callout {
     display: inline;
   }
@@ -166,7 +166,7 @@ $bag-detail-padding-left: 10px;
 //All of the detail information about the bag item, not the thumbnail
 .bag-item-detail {
   .product-name {
-    font-size: rem-calc(15);
+    font-size: 16px;
     padding-left: $bag-detail-padding-left;
   }
 }
@@ -187,7 +187,7 @@ $bag-detail-padding-left: 10px;
   margin-bottom: 0.7rem;
 
   li {
-    padding-left: $bag-detail-padding-left; 
+    padding-left: $bag-detail-padding-left;
     color: #8a8a8a;
     font-size: 12px;
   }
@@ -205,7 +205,7 @@ $bag-detail-padding-left: 10px;
   font-size: 0.75rem !important;
   letter-spacing: 0;
   text-transform: none;
-  
+
   &:hover {
     color: darken($callout-color, 35%);
   }
@@ -227,7 +227,7 @@ $bag-detail-padding-left: 10px;
       top: 15px;
     }
   }
-  
+
   //no padding needed!
   .content.active {
     padding: 0;
@@ -298,7 +298,7 @@ $bag-detail-padding-left: 10px;
 
   .bag-item-detail {
     .product-name {
-      font-size: rem-calc(13);
+      font-size: 1rem;
       padding-right: 100px;
     }
   }
@@ -306,7 +306,7 @@ $bag-detail-padding-left: 10px;
   .bag-item-meta-data {
     margin-bottom: 4px;
     li {
-      font-size: rem-calc(11);
+      font-size: rem-calc(12);
     }
   }
 
@@ -319,15 +319,17 @@ $bag-detail-padding-left: 10px;
     }
 
     .product-price {
-      font-size: rem-calc(12);
+      font-size: rem-calc(14);
     }
 
     .quantity,
     .clearance {
-      font-size: rem-calc(11);
+      font-size: rem-calc(10);
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
   }
-  
+
   .bag-edit-links {
     float: none;
 
@@ -348,7 +350,7 @@ $bag-detail-padding-left: 10px;
       font-size: rem-calc(10);
     }
   }
-  
+
   .shopping-bag .order-summary {
     border: none;
     width: 100%;
@@ -368,7 +370,7 @@ $bag-detail-padding-left: 10px;
       margin-bottom: 0;
       transition: $global-transition;
     }
-    
+
     .checkout-cta {
       &:hover {
         opacity: 1;
@@ -397,7 +399,7 @@ $bag-detail-padding-left: 10px;
 .shipping-dropdown,
 .change-address-area{
   display: none;
-  
+
   &.is-active {
     display: block;
   }
@@ -430,7 +432,7 @@ $bag-detail-padding-left: 10px;
 }
 
 .espot {
-  padding-top: 50px; 
+  padding-top: 50px;
   padding-bottom: 50px;
   background: #F1F1F1;
   margin-top: 10px;
@@ -444,7 +446,7 @@ $bag-detail-padding-left: 10px;
 }
 
 .espot-top {
-  padding-top: 50px; 
+  padding-top: 50px;
   padding-bottom: 50px;
   background: #F1F1F1;
   margin-top: 10px;
@@ -502,4 +504,3 @@ $bag-detail-padding-left: 10px;
     margin-top:0;
   }
 }
-
