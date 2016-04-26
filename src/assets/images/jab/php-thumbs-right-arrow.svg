@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>php-thumbs-right-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="4.-PDP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4.1-PDP" transform="translate(-587.000000, -1192.000000)" fill="#8A8A8A">
+            <g id="---page-content---" transform="translate(177.000000, 334.000000)">
+                <g id="\\-image-slider" transform="translate(0.000000, 39.000000)">
+                    <g id="image-thumbs" transform="translate(70.000000, 796.000000)">
+                        <path d="M341.175688,23.1918527 C340.941189,22.9654111 340.520861,22.9349671 340.240181,23.124298 C339.958119,23.3134066 339.919404,23.6494023 340.154733,23.8758438 L345.469397,29 L340.153627,34.1232673 C339.919404,34.3505977 339.957013,34.6865934 340.239075,34.875702 C340.520861,35.0650329 340.940083,35.0345889 341.174582,34.8081473 L346.844589,29.3428845 C346.948012,29.243108 347,29.121554 347,29 C347,28.878446 346.948012,28.756892 346.845419,28.6580044 L341.175688,23.1918527 Z" id="php-thumbs-right-arrow"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

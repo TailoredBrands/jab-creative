@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>back-to-top</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="40" height="40"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="40" height="40" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="---FOOTER---" transform="translate(-965.000000, 0.000000)">
+            <g id="back-to-top" transform="translate(965.000000, 0.000000)">
+                <use id="Rectangle-123" stroke="#B2B2B2" mask="url(#mask-2)" stroke-width="2" fill-opacity="0.8" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <path d="M16.1257739,10.3197544 C15.7017739,9.94235188 14.9417739,9.89161179 14.4342739,10.2071633 C13.9242739,10.5223444 13.8542739,11.0823372 14.2797739,11.4597397 L23.8892739,20 L14.2777739,28.5387788 C13.8542739,28.9176628 13.9222739,29.4776556 14.4322739,29.7928367 C14.9417739,30.1083882 15.6997739,30.0576481 16.1237739,29.6802456 L26.3757739,20.5714741 C26.5627739,20.40518 26.6567739,20.20259 26.6567739,20 C26.6567739,19.79741 26.5627739,19.59482 26.3772739,19.4300073 L16.1257739,10.3197544 Z" id="Fill-19" fill="#101820" transform="translate(20.328387, 20.000000) rotate(-90.000000) translate(-20.328387, -20.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

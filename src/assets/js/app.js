@@ -123,3 +123,7 @@ $('#pdpSeeMore').on('click', function() {
   $('.less').toggleClass('is-hidden');
   $('.more').toggleClass('is-active');
 });
+
+
+// pdp thumbs interaction
+

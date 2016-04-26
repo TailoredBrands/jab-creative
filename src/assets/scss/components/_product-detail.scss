@@ -3,8 +3,39 @@
   display: none !important;
 }
 
+.product-images {
+  position: relative;
+}
+
+.pdp-image-prev, .pdp-image-next {
+  background:#f00;
+  text-indent: -9999px;
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 300px;
+  
+}
+.pdp-image-prev {
+  left: 0;
+  background:url('/assets/images/jab/pdp-main-left-arrow.svg');
+  background-position: 15px 0;
+  background-size: 10px 17px;
+  background-repeat: no-repeat;
+}
+.pdp-image-next {
+  right: 0;
+  background:url('/assets/images/jab/pdp-main-right-arrow.svg');
+  background-position: 15px 0;
+  background-size: 10px 17px;
+  background-repeat: no-repeat;
+
+}
 .pdp-large-image {
   padding-right: 50px;
+  min-height: rem-calc(100px);
+  max-height: rem-calc(619px);
 }
 
 //Content for the pdp
@@ -159,9 +190,14 @@
 
 //Thumbnails for the medium screen and up (clicakble carousel)
 .pdp-thumbs {
-  padding-top: 3rem;
+  padding-top: rem-calc(30px);
   margin-left: 0.05rem;
   display: none;
+  li {
+    border: solid 1px $thumb-border;
+    margin-right: 40px;
+    &:nth-last-child(2) { margin-right: 6px; }
+  }
   @media #{$medium-up} {
     display: block;
     img {
@@ -169,8 +205,35 @@
     }
   }
   .active {
-    border: 3px solid $primary-color;
-    // TODO: try and add as pseudo to get double border around image
+    border: solid 2px $thumb-border-active;
+  }
+  .more-images {
+    margin-top: 14px;
+    overflow: hidden;
+    text-indent: -9999px;
+    border: none;
+    height: 34px;
+    width: 30px;
+    background: url('/assets/images/jab/php-thumbs-right-arrow.svg');
+    background-size: 7px 12px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+  }
+  .movie {
+    position: relative;
+    &:after {
+      pointer-events: none;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background:url('/assets/images/jab/movie-overlay.svg');
+      background-position: 11px 10px;
+      background-size: 39px 38px;
+      background-repeat: no-repeat;
+    }
   }
 }
 

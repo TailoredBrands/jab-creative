@@ -15,14 +15,18 @@
   $color-thumbnail-size-height: 21px;
   width: $color-thumbnail-size;
   height: $color-thumbnail-size-height;
+  padding: 2px;
+  padding-top: 1px;
+  margin-right: 11px;
+  margin-bottom: 11px;
 }
 
 .thumbnail {
   //overriding default block grid
-  padding: 2px;
   display: inline-block;
 
-  &.active {
+  &.active .product-color {
+    padding: 1px;
     border: 1px solid black;
   }
 }
