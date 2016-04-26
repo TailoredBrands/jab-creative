@@ -26,9 +26,10 @@
   float: left;
   margin-right: 2rem;
   a.title {
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
   }
+
   a {
     font-size: 12px;
     line-height: 2.3;
@@ -36,9 +37,9 @@
     color: $dark;
   }
 
-  .category .title {
-    font-weight: 500;
-  }
+  // .category .title {
+  //   font-weight: 400;
+  // }
 }
 
 button.secondary.postfix {
@@ -68,9 +69,13 @@ button.secondary.postfix {
 .footer-copyright {
   text-align: center;
   ul {display: inline-block; }
-  // a { color: $warm-grey-two; }
-  li {
+  a { 
+    color: $warm-grey-two;
+    letter-spacing: 1px;
     font-size: rem-calc(10);
+    line-height: 1.4;
+  }
+  li {
     border-right: 1px solid $dark;
     padding: 0 10px 0 0 ;
     &:nth-last-child(1) {

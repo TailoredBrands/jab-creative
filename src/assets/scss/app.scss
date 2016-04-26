@@ -90,13 +90,13 @@
   position: relative;
   text-align: center;
   &::after {
+    z-index: -1;
     position: absolute;
     content: '';
     left: 0;
     right: 0;
     top: 50%;
     border-bottom: 1px solid $white-two; 
-    z-index: -1000;
   }
 }
 
