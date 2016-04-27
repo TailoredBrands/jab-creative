@@ -6,11 +6,11 @@
   font-size: rem-calc(13);
 
 
-  &.primary {    
+  &.primary {
     background-color: $jab-green;
     font-size: rem-calc(15);
     margin: .4rem 0;
-    padding: 10px ;
+    padding: 14px ;
     position: relative;
   }
   &.primary:before {

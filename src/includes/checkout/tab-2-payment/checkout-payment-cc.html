@@ -50,13 +50,13 @@ title: Checkout - Payment - Credit Card
                     </div>
                   </div>
                   <div id="saveCard" class="address-save-address-area">
-                    <div class="shipping-checkbox">
+                    <div class="checkbox">
                     <input type="checkbox" class="checkbox-style" checked><label class="checkbox-label" >Save Card</label></input>
                     </div>
                   </div>
                 </form>
 
-                <h3 class="section-label">Billing Address <div class="shipping-checkbox right">
+                <h3 class="section-label">Billing Address <div class="checkbox shipping-checkbox right">
                   <input type="checkbox" class="checkbox-style" checked><label class="checkbox-label">Use same as shipping</label></input>
                 </div></h3>
                 <form>
@@ -84,17 +84,26 @@ title: Checkout - Payment - Credit Card
                   </div>
                   <a href="#" id="addBillAddress" class="small-text-link">+ Add New Address</a>
                   <div id="saveBillAddress" class="address-save-address-area">
-                    <div class="shipping-checkbox">
+                    <div class="checkbox">
                     <input type="checkbox" class="checkbox-style" checked><label class="checkbox-label" >Save Address</label></input>
                     </div>
                   </div>
                 </form>
-
-                <div class="shipping-checkbox first">
-                  <input type="checkbox" class="checkbox-style"><label class="checkbox-label" >Email me about exclusive sales and promotions</label></input>
-                </div>
-
-                <ul class="accordion shipping-checkbox " data-accordion>
+                <ul class="accordion checkbox " data-accordion>
+                  <li class="accordion-navigation">
+                    <a class="email-me-cta" href="#emailMe"><input class="email-me-checkbox checkbox-style" type="checkbox"><label class="text-label checkbox-label">Email me about exclusive sales and promotions</label></input></a>
+                    <div id="emailMe" class="content text-me-content">
+                    <div class="row collapse">
+                      <div class="columns small-8">
+                        <label>Enter email address<input type="text" placeholder=""></label>
+                      </div>
+                    </div>
+                      <p class="legal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia qui deserunt consectetur, earum repellat. Ipsa nam tempore tenetur magni vero sint ipsum repudiandae vitae, vel beatae cumque quibusdam est. Illo.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="accordion checkbox " data-accordion>
                   <li class="accordion-navigation">
                     <a class="text-me-cta" href="#textMe"><input class="text-me-checkbox checkbox-style" type="checkbox"><label class="text-label checkbox-label">Text me about exclusive sales and promotions</label></input></a>
                     <div id="textMe" class="content text-me-content">
@@ -108,8 +117,6 @@ title: Checkout - Payment - Credit Card
                     </div>
                   </li>
                 </ul>
-
-              </form>
             </section>
           </div>
         </div>
