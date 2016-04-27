@@ -31,8 +31,11 @@
 }
 
 .rating-number {
-  font-size: rem-calc(10);
-  letter-spacing: 0;
-  text-transform: none;
-  opacity: 0.5;
+  position: relative;
+  top: 2px;
+  @media #{$small-only} { top: 3px; }
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: #0c342c;
 }
+

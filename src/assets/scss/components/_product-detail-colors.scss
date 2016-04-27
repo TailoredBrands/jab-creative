@@ -3,6 +3,12 @@
   @extend .section-label;
   display: inline-block;
 }
+.color-label, .color-name {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: $dark-grey;
+  margin-bottom: 0 !important;
+}
 
 //the name of the color that appears inline
 .color-name {
