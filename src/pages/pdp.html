@@ -132,22 +132,24 @@
             <img class="rating-star" src="{{assets}}images/icons/rating-star.svg" alt="star">
             <img class="rating-star-dimmed" src="{{assets}}images/icons/rating-star.svg" alt="star">
           </span>
-          <span class="rating-number">(3)</span>
+          <!-- <span class="rating-number">(3)</span> -->
+          4.2
+          <span class="whitespace">(85 REVIEWS)</span>
         </a>
         <div id="reviews" class="content">
-          {{> pdp-reviews}}
-        </div>
-      </li>
-      <li class="accordion-navigation product-info-accordion">
-        <a class="product-info-label" href="#reviews">
-          <span class="label-rating">PRODUCT Q &amp; A</span>
-        </a>
-        <div id="reviews" class="content">
-          {{> pdp-reviews}}
-        </div>
-      </li>
-    </ul>
-  </div>
+         {{> pdp-reviews }}
+       </div>
+     </li>
+     <li class="accordion-navigation product-info-accordion">
+      <a class="product-info-label" href="#q-and-a">
+        <span class="label-rating">PRODUCT Q &amp; A</span>
+      </a>
+      <div id="q-and-a" class="content">
+        <h1>Q &amp; A</h1>
+      </div>
+    </li>
+  </ul>
+</div>
 </div>
 
 <br>
