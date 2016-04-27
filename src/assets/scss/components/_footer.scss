@@ -1,5 +1,7 @@
 .footer {
   border-top: 1px solid $greyish;
+
+
   // margin-top: 2rem;
   padding-top: 33px;
 
@@ -76,7 +78,7 @@ button.secondary.postfix {
     line-height: 1.4;
   }
   li {
-    border-right: 1px solid $dark;
+    border-right: 1px solid $warm-grey-two;
     padding: 0 10px 0 0 ;
     &:nth-last-child(1) {
       border: none;
