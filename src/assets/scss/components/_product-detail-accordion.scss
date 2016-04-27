@@ -2,10 +2,15 @@
 .product-info-accordion {
   margin-right: 0;
   border-bottom: 1px solid $greyish;
+  border-top: 1px solid $greyish;
   list-style: none;
-  padding-top: 38px;
-  padding-bottom: 3px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
+  &:not(:first-of-type) {
+    border-top: none;
+
+  }
 }
 
 //label for the accordions on the PDP
