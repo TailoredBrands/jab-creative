@@ -1,0 +1,25 @@
+$font-path: '/assets/fonts/';
+
+@mixin font-face-gen($font-face-size-name, $font-face-weight, $font-face-file, $font-face-svg) {
+    font-family: $font-face-size-name;
+    src: url(#{$font-path}#{font-face-file}-webfont.eot);
+    src: url(#{$font-path}#{font-face-file}-webfont.eot?#iefix) format('embedded-opentype'),
+         url(#{$font-path}#{font-face-file}-webfont.woff2) format('woff2'),
+         url(#{$font-path}#{font-face-file}-webfont.woff) format('woff'),
+         url(#{$font-path}#{font-face-file}-webfont.ttf) format('truetype'),
+         url(#{$font-path}#{font-face-file}-webfont.svg#{font-face-svg}) format('svg');
+    font-weight: $font-face-weight;
+    font-style: normal;
+}
+
+@font-face { @include font-face-gen('Montserrat', 900, 'montserrat-black', '#montserratblack'); }
+@font-face { @include font-face-gen('Montserrat', 800, 'montserrat-extrabold', '#montserratextra_bold'); }
+@font-face { @include font-face-gen('Montserrat', 700, 'montserrat-bold', '#montserratbold'); }
+@font-face { @include font-face-gen('Montserrat', 600, 'montserrat-semibold', '#montserratsemi_bold'); }
+
+@font-face { @include font-face-gen('Montserrat', 400, 'montserrat-regular', '#montserratregular'); }
+@font-face { @include font-face-gen('Montserrat', 300, 'montserrat-light', '#montserratlight'); }
+@font-face { @include font-face-gen('Montserrat', 200, 'montserrat-ultralight', '#montserratultra_light'); }
+@font-face { @include font-face-gen('Montserrat', 100, 'montserrat-hairline', '#montserrathairline'); }
+
+
