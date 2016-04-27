@@ -93,7 +93,7 @@
 .outer-lines-wrapper {
   position: relative;
   text-align: center;
-  &::after {
+  &:after {
     z-index: -1;
     position: absolute;
     content: '';
@@ -122,7 +122,7 @@
   padding: 0;
   border-left: solid 1px $warm-grey-three;
   border-right: solid 1px $warm-grey-three;
-  background: none;
+  background-color: transparent;
   &:before {
     content: '';
     position: absolute;
@@ -131,8 +131,6 @@
     right: 0;
     left: 0;
     background: $warm-grey-three;
-    // z-index: -1;
-    // TODO: z-index issue with accordion
   }
   &:after {
     content: '';
@@ -142,14 +140,13 @@
     left: 50%;
     width: 1px;
     background: $warm-grey-three;
-    // z-index: -1;
-    // TODO: z-index issue with accordion
   }
   & > span {
     @include progress-meter;
-    background:none;
+    position: relative;
+      background-color: transparent;
     border-right: solid 9px #013a2c;
-    // z-index: -1;
+    z-index: 1000;
   }
 }
 
