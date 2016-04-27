@@ -91,20 +91,16 @@
 
 
 .outer-lines-wrapper {
+  transition: all 1s;
   position: relative;
   text-align: center;
-  &:after {
-    z-index: -1;
-    position: absolute;
-    content: '';
-    left: 0;
-    right: 0;
-    top: 50%;
-    border-bottom: 1px solid $white-two; 
-  }
+  margin-top: 15px;
+  border-top: 1px solid $white-two;
 }
 
 .outer-lines {
+  position: absolute;
+  transform: translate(-50%,-50%);
   background:#fff;
   display: inline-block;
   border-left: solid 1px $white-two;
@@ -144,7 +140,7 @@
   & > span {
     @include progress-meter;
     position: relative;
-      background-color: transparent;
+    background-color: transparent;
     border-right: solid 9px #013a2c;
     z-index: 1000;
   }
