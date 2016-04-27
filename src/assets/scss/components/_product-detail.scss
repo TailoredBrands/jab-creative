@@ -183,6 +183,13 @@ $add-on-group-width: 94%;
 //Sizing chart styles for PDP
 .sizing-chart {
   width: 100%;
+  th, td { text-align: center; }
+  th { vertical-align: bottom; }
+  td { vertical-align: middle; }
+  td span {
+    font-size: rem-calc(32px);
+    line-height: 0.4;
+  }
 }
 
 .sizing-intro {
