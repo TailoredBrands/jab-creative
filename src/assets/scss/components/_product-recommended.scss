@@ -1,3 +1,7 @@
+.product-recommendations {
+  padding-top: 35px;
+}
+
 .recommended-item-link {
   outline: none;
 }
@@ -5,8 +9,12 @@
 .recommended-title {
   @extend .product-info-label;
   margin-top: 0;
-  margin-bottom: 10px;
-  
+  margin-bottom: 0;
+  padding: 10px 15px;
+  font-weight: 300;
+  font-size: rem-calc(15px);
+  letter-spacing: 2px;
+  color: $dark;
   &:after {
     display:none;
   }

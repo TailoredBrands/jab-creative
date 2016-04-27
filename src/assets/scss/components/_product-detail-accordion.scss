@@ -2,6 +2,7 @@
 .product-info-accordion {
   margin-right: 0;
   border-bottom: 1px solid $greyish;
+  // border-bottom: 1px solid #f00;
   list-style: none;
   padding-top: 38px;
   padding-bottom: 3px;
@@ -21,7 +22,7 @@
 
   //this is the fancy x that follows the accordion labels
   &::after {
-    $x-size: 15px;
+    $x-size: 11px;
     content: "";
     position: absolute;
     right: 0;
