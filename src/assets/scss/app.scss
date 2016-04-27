@@ -112,3 +112,102 @@
 }
 
 
+
+
+.progress.fit-chart {
+  @include progress-container;
+  position: relative;
+  height: 22px;
+  margin-bottom: 4px;
+  padding: 0;
+  border-left: solid 1px $warm-grey-three;
+  border-right: solid 1px $warm-grey-three;
+  background: none;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    height: 4px;
+    right: 0;
+    left: 0;
+    background: $warm-grey-three;
+    // z-index: -1;
+    // TODO: z-index issue with accordion
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background: $warm-grey-three;
+    // z-index: -1;
+    // TODO: z-index issue with accordion
+  }
+  & > span {
+    @include progress-meter;
+    background:none;
+    border-right: solid 9px #013a2c;
+    // z-index: -1;
+  }
+}
+
+.fit-chart-label {
+  font-size: rem-calc(10px);
+  letter-spacing: 1.7px;
+  color: $greyish-brown;
+  text-transform: uppercase;
+}
+
+.star-chart {
+  @extend .clearfix;
+  .star-chart-heading {
+    float: left;
+    background:#fff;
+    padding-right: 6px;
+    font-size: rem-calc(12px);
+    line-height: 2.2;
+    color: $dark-two;
+  }
+  .progress.review {
+    position: relative;
+    overflow: hidden;
+    top: 7px;
+  }
+  .star-chart-number {
+    float: right;
+    margin-top: 5px;
+    padding-left: 6px;
+    font-size: rem-calc(10px);
+    color: $dark-two;
+  }
+}
+
+.progress.review {
+  @include progress-container;
+  height: 12px;
+  background-color: #d8d8d8 !important;
+  padding: 0;
+  background: none;
+  & > span {
+    @include progress-meter(#8a8a8a);
+  }
+}
+
+.whitespace {
+  margin: 0 16px;
+}
+
+
+.button.load-more {
+  font-size: rem-calc(10px);
+  line-height: 1.8;
+  letter-spacing: 1.2px;
+  color: #013a2c;
+  text-transform: uppercase;
+  // background: none !important;
+  background:none;
+  border: solid 1px #025b49;
+  padding: 7px 90px;
+}

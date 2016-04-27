@@ -1,11 +1,22 @@
 .reviews {
   list-style: none;
+  margin-left: 0;
 }
 
 .review {
-  border: 1px solid #DDDDDD;
-  padding: 10px;
-  margin-bottom: 10px;
+}
+
+.review {
+  color: #333333;
+  margin-bottom: 50px;
+
+  li { font-size: rem-calc(11px); }
+
+  .recommendation {
+    font-size: 13px;
+    line-height: 1.5;
+
+  }
 
   .title {
     margin-bottom: 5px;
@@ -25,17 +36,6 @@
   .author {
     margin-bottom: 15px;
     margin-top: 5px;
-  }
-
-  .fit {
-    width: 60%;
-    position: relative;
-    margin-bottom: 30px;
-  }
-
-  .fit-chart {
-    position: relative;
-    display: inline-block;
   }
 
   .attributes {
