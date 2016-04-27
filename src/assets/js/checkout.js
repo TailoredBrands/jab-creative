@@ -36,6 +36,11 @@ $('.text-me-cta').click(function(){
   $('.text-me-checkbox').attr('checked', 'checked');
 });
 
+//Email me cta
+$('.email-me-cta').click(function(){
+  $('.email-me-checkbox').attr('checked', 'checked');
+});
+
 //shoppin bag
 $('#signInLarge').click(function(){
   $('#signInCheckoutCTALarge').toggleClass("sign-in-emphasis");
