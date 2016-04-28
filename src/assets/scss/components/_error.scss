@@ -14,7 +14,7 @@ input.has-error {
 .page-error-message {
   padding: 20px 10px;
   position: relative;
-  margin-top: 10px;
+  margin-top: 10px !important;
   border: 1px solid $alert-color;
   .message {
     color: $alert-color;
@@ -24,7 +24,8 @@ input.has-error {
   .close {
     position: absolute;
     right: 0;
-    top: -14px;
+    top: -18px;
+    color: $alert-color;
   }
 }
 
