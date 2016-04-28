@@ -390,6 +390,10 @@ ul.off-canvas-list {
   border-right: none;
 }
 
+.right-small{
+  border-left: none;
+}
+
 .left-off-canvas-menu {
   border: 1px solid #efefef;
 }
@@ -469,7 +473,8 @@ ul.off-canvas-list {
   list-style-type: none;
   text-align: center;
   // width: 100%;
-  width: 90%;
+  @media #{$small-only} { width: 90%; }
+  @media #{$medium-up} { width: 100%; }
   margin-bottom: 0;
   margin-top: 1rem;
   border-bottom: 1px solid $greyish;
@@ -585,6 +590,7 @@ ul.off-canvas-list {
     height: 100vh;
     position: absolute;
     background-color: white;
+    // left: 100%;
     left: -90%;
     z-index: 1000;
     padding-left: 10%;
