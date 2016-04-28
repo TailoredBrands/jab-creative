@@ -108,13 +108,11 @@ label {
 
 
 .checkout-continue-cta {
-  margin-right: 10px;
   min-width: 40%;
   float: right !important;
 
   @media #{$small-only} {
     min-width: 100%;
-    margin: 0 10px;
     float: none;
   }
 }
