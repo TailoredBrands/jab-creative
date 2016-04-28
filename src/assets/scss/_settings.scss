@@ -79,7 +79,7 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
-// $row-width: rem-calc(1000);
+$row-width: rem-calc(1000);
 // $total-columns: 12;
 
 // $last-child-float: $opposite-direction;
@@ -404,26 +404,31 @@ $alert-close-top: 55%;
 
 // We use these to set the padding around the breadcrumbs.
 // $crumb-padding: rem-calc(9 14 9);
-// $crumb-side-padding: rem-calc(12);
+$crumb-side-padding: rem-calc(4);
+
+  // font-size: 10px;
+  // letter-spacing: 0.5px;
+  // color: $warm-grey-two;
+
 
 // We use these to control border styles.
 // $crumb-function-factor: -10%;
 // $crumb-border-size: 1px;
-// $crumb-border-style: solid;
+$crumb-border-style: none;
 // $crumb-border-color: scale-color($crumb-bg, $lightness: $crumb-function-factor);
 // $crumb-radius: $global-radius;
 
 // We use these to set various text styles for breadcrumbs.
-// $crumb-font-size: rem-calc(11);
-// $crumb-font-color: $primary-color;
-// $crumb-font-color-current: $oil;
+$crumb-font-size: rem-calc(10);
+$crumb-font-color: $warm-grey-two;
+$crumb-font-color-current: $warm-grey-two;
 // $crumb-font-color-unavailable: $aluminum;
-// $crumb-font-transform: uppercase;
-// $crumb-link-decor: underline;
+$crumb-font-transform: uppercase;
+$crumb-link-decor: none;
 
 // We use these to control the slash between breadcrumbs
 // $crumb-slash-color: $base;
-// $crumb-slash: "/";
+$crumb-slash: ">";
 
 // 05. Buttons
 // - - - - - - - - - - - - - - - - - - - - - - - - -

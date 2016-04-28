@@ -1,14 +1,34 @@
 .footer {
   border-top: 1px solid $greyish;
+  margin-top: 40px;
+  padding-top: 33px;
+  .outer-lines-wrapper {
+    margin-bottom: 40px;
+  }
+  .back-to-top-wrapper {
+    position: relative;
+    display:block;
+    max-width: $row-width;
+    width: 100%;
+    margin: 0 auto;
+    .back-to-top {
+      content: '';
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      top: -114px;
+      right: -70px;
+      background:url('/assets/images/jab/back-to-top.svg');
+      background-position: top left;
+      background-size: 40px 40px;
+      background-repeat: no-repeat;
 
+      // pointer-events:none;
 
-// margin-top: 2rem;
-padding-top: 33px;
-
-.outer-lines-wrapper {
-  margin-bottom: 40px;
+    }
+  }
 }
-}
+
 
 .contact {
   text-align: center;

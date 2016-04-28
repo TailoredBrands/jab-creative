@@ -2,12 +2,12 @@ $font-path: '/assets/fonts/';
 
 @mixin font-face-gen($font-face-size-name, $font-face-weight, $font-face-file, $font-face-svg) {
     font-family: $font-face-size-name;
-    src: url(#{$font-path}#{font-face-file}-webfont.eot);
-    src: url(#{$font-path}#{font-face-file}-webfont.eot?#iefix) format('embedded-opentype'),
-         url(#{$font-path}#{font-face-file}-webfont.woff2) format('woff2'),
-         url(#{$font-path}#{font-face-file}-webfont.woff) format('woff'),
-         url(#{$font-path}#{font-face-file}-webfont.ttf) format('truetype'),
-         url(#{$font-path}#{font-face-file}-webfont.svg#{font-face-svg}) format('svg');
+    src: url(#{$font-path}#{$font-face-file}-webfont.eot);
+    src: url(#{$font-path}#{$font-face-file}-webfont.eot?#iefix) format('embedded-opentype'),
+         url(#{$font-path}#{$font-face-file}-webfont.woff2) format('woff2'),
+         url(#{$font-path}#{$font-face-file}-webfont.woff) format('woff'),
+         url(#{$font-path}#{$font-face-file}-webfont.ttf) format('truetype'),
+         url(#{$font-path}#{$font-face-file}-webfont.svg#{font-face-svg}) format('svg');
     font-weight: $font-face-weight;
     font-style: normal;
 }
