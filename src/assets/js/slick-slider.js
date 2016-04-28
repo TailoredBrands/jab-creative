@@ -85,8 +85,8 @@ $('.carouselInterchange').on('replace', function(){
     dots: false,
     infinite: false,
     speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 6,
+    slidesToScroll: 6,
     useTransform: true,
     responsive: [
     {
