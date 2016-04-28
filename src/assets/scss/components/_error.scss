@@ -1,5 +1,6 @@
 .error-message {
-  font-size: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
   color: $alert-color;
 
   &.top {
@@ -8,7 +9,9 @@
 }
 
 input.has-error {
-  margin-bottom: 0;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  border-color: $alert-color;
 }
 
 .page-error-message {

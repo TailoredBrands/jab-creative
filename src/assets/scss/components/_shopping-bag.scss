@@ -165,9 +165,12 @@ $bag-detail-padding-left: 10px;
 
 //All of the detail information about the bag item, not the thumbnail
 .bag-item-detail {
-  .product-name {
-    font-size: 18px;
+  .product-name h1 {
+    font-size: 1rem;
     padding-left: $bag-detail-padding-left;
+    width: 70%;
+    margin: 8px 0 0 0;
+    padding-bottom: 0;
   }
 }
 
@@ -300,6 +303,7 @@ $bag-detail-padding-left: 10px;
     .product-name {
       font-size: 1rem;
       padding-right: 100px;
+      width: 80%;
     }
   }
 

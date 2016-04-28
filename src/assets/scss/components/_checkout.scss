@@ -364,7 +364,8 @@ input[type="text"].id-number-input {
 
   .primary,
   .secondary  {
-    width: 60%;
+    width: 48%;
+    margin-top: 0;
   }
 
   .primary {
@@ -375,6 +376,7 @@ input[type="text"].id-number-input {
     float: left;
     border-color: $callout-color;
     color: $callout-color;
+    padding: 1.3rem 0;
 
     &:hover {
       color: $callout-color;
