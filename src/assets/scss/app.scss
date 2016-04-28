@@ -307,7 +307,16 @@ section.filter {
 }
 
 .filter-grid {
-  @include block-grid(3, rem-calc(30px), true);
+
+  @media #{$small-only} {
+    @include block-grid(1, rem-calc(30px), true);
+  }
+  @media #{$medium-only} {
+    @include block-grid(2, rem-calc(30px), true);
+  }
+  @media #{$large-up} {
+    @include block-grid(3, rem-calc(30px), true);
+  }
 
   .product-name {
     font-weight: 400;
@@ -323,10 +332,10 @@ section.filter {
   }
 
   .see-more-colors a {
-      position: relative;
-      top: -2px;
-      font-size: rem-calc(8px);
-      color: $greyish-brown !important;
+    position: relative;
+    top: -2px;
+    font-size: rem-calc(8px);
+    color: $greyish-brown !important;
   }
 
   .product-colors-grid {
