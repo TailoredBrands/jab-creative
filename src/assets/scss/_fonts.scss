@@ -1,4 +1,4 @@
-$font-path: '/assets/fonts/';
+$font-path: '../fonts/';
 
 @mixin font-face-gen($font-face-size-name, $font-face-weight, $font-face-file, $font-face-svg) {
     font-family: $font-face-size-name;
