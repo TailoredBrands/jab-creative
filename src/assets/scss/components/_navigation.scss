@@ -688,3 +688,21 @@ ul.off-canvas-list {
     }
   }
 }
+
+.mobile-checkout-header {
+  margin: 1rem;
+}
+
+.checkout-header {
+  background: #EFEFEF;
+  padding: 10px 0;
+  &.contact {
+    text-align: center;
+  }
+  .contact-method {
+    display: inline;
+  }
+  .section-label {
+    color: $charcoal !important;
+  }
+}

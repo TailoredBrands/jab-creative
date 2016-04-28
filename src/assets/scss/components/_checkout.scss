@@ -108,13 +108,11 @@ label {
 
 
 .checkout-continue-cta {
-  margin-right: 10px;
-  min-width: 30%;
+  min-width: 40%;
   float: right !important;
 
   @media #{$small-only} {
     min-width: 100%;
-    margin: 0 10px;
     float: none;
   }
 }
@@ -367,6 +365,7 @@ input[type="text"].id-number-input {
   .primary,
   .secondary  {
     width: 48%;
+    margin-top: 0;
   }
 
   .primary {
@@ -377,6 +376,7 @@ input[type="text"].id-number-input {
     float: left;
     border-color: $callout-color;
     color: $callout-color;
+    padding: 1.3rem 0;
 
     &:hover {
       color: $callout-color;
@@ -384,7 +384,7 @@ input[type="text"].id-number-input {
   }
 }
 
-.shipping-checkbox {
+.checkbox {
   &.first {
     margin-top: 20px;
   }
@@ -403,6 +403,12 @@ input[type="text"].id-number-input {
   input {
     margin-bottom: 0.5rem;
   }
+}
+
+.shipping-checkbox {
+  margin-bottom: 0;
+  padding: 0 !important;
+
 }
 
 .checkout-review {
@@ -463,6 +469,9 @@ input[type="text"].id-number-input {
 .accordion .accordion-navigation > .text-me-cta {
   padding: 0;
 }
+.accordion .accordion-navigation > .email-me-cta {
+  padding: 0;
+}
 
 .accordion .accordion-navigation > .text-me-content.active{
   padding: 1rem;
@@ -495,6 +504,10 @@ input[type="text"].id-number-input {
   padding: 50px;
 }
 
-.shipping-checkbox {
+.checkbox {
   padding-bottom: 10px;
+}
+
+.address {
+  margin: 20px 0;
 }

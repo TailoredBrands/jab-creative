@@ -1,25 +1,25 @@
 <section id="forms">
   <h2>Forms</h2>
   <p>Forms are used for user input fields. They include text inputs, number inputs, text areas, dropdowns,  and checkboxes.</p>
-  
+
   <hr>
 
   <h3>Text Input</h3>
   <p>Text inputs are simple input field that let user input one line of text. Basic HTML will do!</p>
 
   <pre><code class="html">
-  <input type="text" placeholder="Please fill this out">  
+  <label>Please fill this out <input type="text" placeholder=""> </label>
   </code></pre>
 
-  <input type="text" placeholder="Please fill this out">
-
+  <label>Please fill this out <input type="text" placeholder=""> </label>
+<br>
   <pre><code class="html">
-  <input class="has-error" type="text" placeholder="This has an error!">
+    <label>This has an error!   <p class="error-message">You need to select a size first</p><input class="has-error" type="text" placeholder=""> </label>
   </code></pre>
 
-  <input class="has-error" type="text" placeholder="This has an error!">
+  <label>This has an error!  <p class="error-message top">You need to select a size first</p> <input class="has-error" type="text" placeholder=""> </label>
 
-  <p class="error-message">You need to select a size first</p>
+
 
 
   <p>You can add errors by adding the class “has-error” to reduce the bottom margin of the text field.</p>
@@ -27,20 +27,20 @@
   <pre><code class="html">
     <div class="row collapse">
     <div class="small-8 columns">
-        <input type="text" placeholder="Please fill this out">
+      <label>Please fill this out <input type="text" placeholder=""> </label>
     </div>
     <div class="small-4 columns">
-      <a href="#" class="primary button postfix">Apply</a>
+      <a href="#" class="button postfix">Apply</a>
     </div>
   </div>
   </code></pre>
 
   <div class="row collapse">
     <div class="small-8 columns">
-        <input type="text" placeholder="Please fill this out">
+      <label>Please fill this out <input type="text" placeholder=""> </label>
     </div>
     <div class="small-4 columns">
-      <a href="#" class="primary button postfix">Apply</a>
+      <a href="#" class="button postfix">Apply</a>
     </div>
   </div>
 
@@ -102,7 +102,7 @@
           <li class="dropdown-item out-of-stock">22 Regular</li>
           <li class="dropdown-item out-of-stock">11 Long</li>
         </ul>
-      </div>      
+      </div>
     </form>
 
   </div>
@@ -114,8 +114,8 @@
 
   <pre><code class="html">
     <div class="size-dropdown-wrapper size-dropdown-shipping two-line">
-      <span class="selected-item">Free Ground Shipping: 3-5 bus. days</span>
-      <span class="selected-item dropdown-placeholder">Get it by Fri. March 4th</span>
+      <span class="selected-item">Line Item One</span>
+      <span class="selected-item dropdown-placeholder">Line item two</span>
       <ul class="custom-dropdown">
         <li class="dropdown-item">United States</li>
         <li class="dropdown-item">United States</li>
@@ -126,8 +126,8 @@
   </code></pre>
 
   <div class="size-dropdown-wrapper size-dropdown-shipping two-line">
-    <span class="selected-item">Free Ground Shipping: 3-5 bus. days</span>
-    <span class="selected-item dropdown-placeholder">Get it by Fri. March 4th</span>
+    <span class="selected-item">Line Item One</span>
+    <span class="selected-item dropdown-placeholder">Line item two</span>
     <ul class="custom-dropdown">
       <li class="dropdown-item">United States</li>
       <li class="dropdown-item">United States</li>

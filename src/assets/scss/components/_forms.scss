@@ -7,6 +7,7 @@ input[type='text'] {
   padding-bottom: 0.75rem;
   height: auto;
   font-weight: 300;
+  margin: 5px 0 0 0;
 }
 
 input[type='text']:-ms-input-placeholder {
@@ -37,6 +38,7 @@ input[type='text']:-ms-input-placeholder {
  height: 43px;
  padding-top: 3px;
  left: -1px;
+ margin-top:33px;
 }
 
 
@@ -53,3 +55,6 @@ input[type="text"]:focus {
   box-shadow: none;
 }
 
+.info-icon {
+  margin-top:40px;
+}

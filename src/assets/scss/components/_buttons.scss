@@ -6,21 +6,53 @@
   font-size: rem-calc(13);
 
 
-  &.primary {    
-    background-color: $jab-green;
-    font-size: rem-calc(15);
-    margin: .4rem 0;
-    padding: 10px ;
+  &.primary {
+    -webkit-transition: background 0.3s ease;
+    -webkit-transition: border 0.3s ease;
     position: relative;
-  }
-  &.primary:before {
-    border: 5px solid $jab-green;
-    content: "";
-    position: absolute;
-    top: -7px;
-    bottom: -7px;
-    left: -7px;
-    right: -7px;
+    max-width: 100%;
+    transition: background 0.3s ease;
+    // position: fixed;
+    bottom: 0;
+    display: block;
+    // padding: 8px 12px 7px 12px;
+    padding: 17px 12px;
+    background: $callout-color;
+    color: white;
+    text-align: center;
+    z-index: 9999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: rem-calc(14);
+    margin-left: -0.9375rem;
+    border: 5px solid $callout-color;
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 1px solid white;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      -webkit-transition: background 0.3s ease;
+      color: white;
+      background: darken($callout-color, 3%);
+      border: 5px solid darken($callout-color, 3%);
+    }
+
+    //On larger screens snap the add to bag cta back into the normal flow of the page
+    @media #{$medium-up} {
+      position: relative;
+      margin-top: rem-calc(30px);
+      margin-bottom: rem-calc(10px);
+      margin-left: 0;
+    }
   }
 
   &.reverse {
@@ -33,7 +65,7 @@
 
 .secondary.button {
   display: inline-block;
-  padding: 1.1rem 0;
+  // padding: 1.1rem 0;
 }
 
 .button-sticky {

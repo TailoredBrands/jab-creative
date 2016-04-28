@@ -2,11 +2,18 @@
 .product-info-accordion {
   margin-right: 0;
   border-bottom: 1px solid $greyish;
-  // border-bottom: 1px solid #f00;
   list-style: none;
-  padding-top: 38px;
-  padding-bottom: 3px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
+  // &:nth-child(1) {
+  //   padding-top: 5px;
+  //   border-top: 1px solid $greyish;
+  // }
+  &:not(:first-of-type) {
+    border-top: none;
+
+  }
 }
 
 //label for the accordions on the PDP
@@ -48,14 +55,14 @@
 //Accordion styles for the product info section of PDP
 .accordion .product-info-accordion  > a,
 .accordion dd > a {
-    padding: 0;
-    margin: 0;
-    &:hover {
-      background-color: #fff;
-    }
-    &:active {
-      background-color: #fff;
-    }
+  padding: 0;
+  margin: 0;
+  &:hover {
+    background-color: #fff;
+  }
+  &:active {
+    background-color: #fff;
+  }
 }
 
 .accordion .product-info-accordion  > .content,
@@ -79,36 +86,36 @@
       &.active {
         height: auto;
         padding: 0.9375rem;}
+      }
     }
   }
-}
 
-.accordion .product-info-accordion > .product-info-label {
-  border-bottom: none;
-}
-
-.share-icon {
-  .icon {
-    width: 17px;
-    height: 17px;
-    margin-right: 5px;
-    display: inline-block;
-  }
-}
-
-.product-info-accordion {
-  .save-icon {
-    width: 17px;
-    height: 17px;
-    margin-right: 5px;
-    display: inline-block;
+  .accordion .product-info-accordion > .product-info-label {
+    border-bottom: none;
   }
 
-  .text-link.save-look {
-    display: inline-block;
-    font-size: 12px !important;
+  .share-icon {
+    .icon {
+      width: 17px;
+      height: 17px;
+      margin-right: 5px;
+      display: inline-block;
+    }
   }
-}
+
+  .product-info-accordion {
+    .save-icon {
+      width: 17px;
+      height: 17px;
+      margin-right: 5px;
+      display: inline-block;
+    }
+
+    .text-link.save-look {
+      display: inline-block;
+      font-size: 12px !important;
+    }
+  }
 //End PDP accordion styles
 
 .reserve-content {
@@ -133,11 +140,11 @@
     transition: all 0.1s ease-out;
 
 
-     &:hover {
+    &:hover {
       background: white !important;
       opacity: 1;
       transition: all 0.1s ease-out;
-     }
+    }
 
     &:after {
       top: 15px;

@@ -165,9 +165,12 @@ $bag-detail-padding-left: 10px;
 
 //All of the detail information about the bag item, not the thumbnail
 .bag-item-detail {
-  .product-name {
-    font-size: 16px;
+  .product-name h1 {
+    font-size: 1rem;
     padding-left: $bag-detail-padding-left;
+    width: 70%;
+    margin: 8px 0 0 0;
+    padding-bottom: 0;
   }
 }
 
@@ -188,8 +191,8 @@ $bag-detail-padding-left: 10px;
 
   li {
     padding-left: $bag-detail-padding-left;
-    color: #8a8a8a;
-    font-size: 12px;
+    opacity: 0.6;
+    font-size: rem-calc(14);
   }
 }
 
@@ -256,7 +259,7 @@ $bag-detail-padding-left: 10px;
   text-align: center;
 
   .paypal-button {
-    margin-top: 10px;
+    margin: 20px 10px;
     width: 40%;
   }
 }
@@ -300,13 +303,14 @@ $bag-detail-padding-left: 10px;
     .product-name {
       font-size: 1rem;
       padding-right: 100px;
+      width: 80%;
     }
   }
 
   .bag-item-meta-data {
     margin-bottom: 4px;
     li {
-      font-size: rem-calc(12);
+      font-size: rem-calc(14);
     }
   }
 
@@ -319,12 +323,12 @@ $bag-detail-padding-left: 10px;
     }
 
     .product-price {
-      font-size: rem-calc(14);
+      font-size: rem-calc(15);
     }
 
     .quantity,
     .clearance {
-      font-size: rem-calc(10);
+      font-size: rem-calc(15);
       text-transform: uppercase;
       letter-spacing: 1px;
     }
@@ -425,7 +429,7 @@ $bag-detail-padding-left: 10px;
 .espot-placeholder {
   background: #f3f3f3;
   padding: 10px;
-
+  margin: 20px 0 ;
   p {
     opacity: 0.5;
   }

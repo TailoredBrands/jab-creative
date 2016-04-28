@@ -12,7 +12,7 @@
 
 .saved-thumbnail-title {
   font-weight: 400;
-  font-size: rem-calc(12);
+  font-size: rem-calc(14);
   letter-spacing: 0;
   line-height: 1.5;
   margin-top: rem-calc(10);
@@ -25,7 +25,8 @@
 
   .product-price-orig,
   .product-price-discount {
-    font-size: rem-calc(11);
+    font-size: rem-calc(14);
+    color: $dark;
   }
 }
 
@@ -66,9 +67,6 @@
 }
 
 .remove-cta {
-  font-size: 14px;
-  opacity: 0.5;
-  margin-left: 4px;
+  font-size: 20px;
+  margin-left: 10px;
 }
-
-

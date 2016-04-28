@@ -15,7 +15,7 @@
       text-align: right;
       padding-top: 10px;
       padding-bottom: 10px;
-      font-size: 11px;
+      font-size: rem-calc(14);
     }
 
     .total {
@@ -30,7 +30,7 @@
 
     .value {
       margin-left: 50px;
-      font-size: 11px;
+      font-size: rem-calc(14);
     }
   }
 
@@ -69,7 +69,7 @@
   }
 
   a {
-    font-size: 10px;  
+    font-size: 10px;
   }
 }
 
@@ -114,7 +114,7 @@
 }
 
 .order-summary {
-  margin-top: 25px; 
+  margin-top: 25px;
 
   .paypal-button {
     transform: translateX(-50%);

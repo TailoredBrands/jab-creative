@@ -45,7 +45,7 @@ section: rent
     <!-- shopping-bag-item -->
     <div class="bag-item">
         <div class="bag-item-image">
-          <img src="{{assets}}images/browse/product-thumbnail-suit-2.jpg">
+          <img src="../assets/images/jab/recent-item-2.png">
         </div>
         <div class="bag-item-detail">
         <div class="price-and-qty">
@@ -53,7 +53,9 @@ section: rent
           <span class="product-price">$699.<sup>99</sup></span>
           <p class="clearance">Clearance</p>
          </div>
-          <h2 class="product-name">Tommy Hilfigure Slim Fit Suit</h2>
+         <div class="product-name">
+           <h1>Executive 2-Button Wool Suit with Plain Front Trousers</h1>
+         </div>
           <ul class="bag-item-meta-data">
             <li>Color: Charcoal</li>
             <li>Size: 38 Regular</li>
@@ -84,13 +86,19 @@ section: rent
     <div class="bag-item">
 
         <div class="bag-item-image">
-          <img src="{{assets}}images/retail/product-thumbnail-shirt.jpg">
+          <img src="../assets/images/jab/recent-item-1.png">
         </div>
         <div class="bag-item-detail">
         <div class="price-and-qty">
           <span class="product-price">$699.<sup>99</sup></span>
          </div>
+<<<<<<< HEAD
           <h2 class="product-name">Tommy Hilfigure Slim Fit Suit</h2>
+=======
+          <div class="product-name">
+            <h1>Executive 2-Button Wool Suit with Plain Front Trousers</h1>
+          </div>
+>>>>>>> jab-checkout
           <ul class="bag-item-meta-data">
             <li>Color: Charcoal</li>
             <li>Size: 38 Regular</li>
@@ -125,11 +133,6 @@ section: rent
         </div>
       </li>
     </ul>
-
-    <div class="paypal-small show-for-small-only">
-      <img class="paypal-button" src="{{assets}}images/paypal-ph.png">
-    </div>
-
   </div>
 
   <div class="small-12 medium-4 columns">
@@ -175,12 +178,10 @@ section: rent
       <div class="sub-checkout-ctas">
 
         <div id="signInCheckoutCTALarge" class="sign-in-emphasis">
-          <input class="email hide-for-small-only is-hidden" type="text" placeholder="Email">
+          <label> Email <input class="email hide-for-small-only is-hidden" type="text" placeholder=""></label>
 
-          <p class="error-message top is-hidden">This is an error message</p>
-          <input class="error hide-for-small-only forgot-password-large is-hidden" type="text" placeholder="Password">
+          <label>Password (case sensitive)<p class="error-message top is-hidden">This is an error message</p><input class="error hide-for-small-only forgot-password-large is-hidden" type="text" placeholder=""></label>
           <a href="#" class="forgot-password-link small-text-link is-hidden">Forgot Password?</a>
-
 
           <a href="#" id="signIn"  class="button checkout-cta show-for-small-only">
             <span class="cta-title">Sign In</span>
@@ -195,7 +196,7 @@ section: rent
         <p class="or">or</p>
           <div id="guestCheckoutCTALarge">
             <div id="guestInputs" class="checkout-cta-inputs">
-              <input class="hide-for-small-only" type="text" placeholder="Email">
+              <label> Email <input class="email hide-for-small-only is-hidden" type="text" placeholder=""></label>
             </div>
 
             <a id="checkoutGuest" class="button guest-cta">
@@ -206,13 +207,28 @@ section: rent
         </div>
         <div class="hide-for-small-only text-center">
           <img class="paypal-button" src="{{assets}}images/paypal-ph.png">
+          <br />
+          <img alt="Visa Checkout" class="paypal-button" role="button" width="170px"
+         src="https://sandbox.secure.checkout.visa.com/wallet-services-web/xo/button.png"/>
         </div>
       </div>
     <!-- /ctas -->
     </div>
   </div>
 </div>
-
+<div class="show-for-small-only">
+  <div class="paypal-small show-for-small-only">
+    <img class="paypal-button" src="{{assets}}images/paypal-ph.png">
+    <img alt="Visa Checkout" class="paypal-button" role="button"
+   src="https://sandbox.secure.checkout.visa.com/wallet-services-web/xo/button.png"/>
+  </div>
+  <div class="row">
+    <div class="columns">
+      <a href="#" id="" class="button primary checkout-continue-cta">Sign In to checkout</a>
+      <a href="#" id="" class="button checkout-continue-cta">Checkout as guest</a>
+    </div>
+  </div>
+</div>
 <div class="row shopping-bag-recommendations">
   <div class="medium-8 columns">
     <h3 class="saved-items-label">Saved Items</h3>
@@ -306,16 +322,3 @@ section: rent
 
 <a href="#" class="button bag-cta bag-forgot-cta show-for-small-only">Reset Password</a>
 <!-- Sign in CTA Modal -->
-
-
-
-<div class="shopping-bag-cta-small show-for-small-only">
-  <a href="#" id="signIn"  class="button checkout-cta">
-    <span class="cta-title">Sign In</span>
-    <span class="cta-subhead">To Checkout</span>
-  </a>
-  <a id="" class="button guest-cta">
-    <span class="cta-title">Checkout</span>
-    <span class="cta-subhead">As Guest</span>
-  </a>
-</div>
