@@ -100,7 +100,10 @@
     left: 0;
     right: 0;
     top: 50%;
-    border-bottom: 1px solid $white-two; 
+    border-bottom: 1px solid $white-two;
+  }
+  &.checkout-contact {
+    margin-top: 30px;
   }
 }
 

@@ -10,7 +10,7 @@
 
 .contact {
   text-align: center;
-  padding: 2rem;
+//  padding: 2rem;
   padding: 0 18px 0 18px;
   p {margin-bottom: 0; }
 }
@@ -69,7 +69,7 @@ button.secondary.postfix {
 .footer-copyright {
   text-align: center;
   ul {display: inline-block; }
-  a { 
+  a {
     color: $warm-grey-two;
     letter-spacing: 1px;
     font-size: rem-calc(10);
