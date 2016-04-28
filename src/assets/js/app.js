@@ -124,6 +124,6 @@ $('#pdpSeeMore').on('click', function() {
   $('.more').toggleClass('is-active');
 });
 
-
-// pdp thumbs interaction
-
+$('#quickViewThumb').hover(function(){
+  $('#quickViewDemo').toggleClass('is-active');
+});
