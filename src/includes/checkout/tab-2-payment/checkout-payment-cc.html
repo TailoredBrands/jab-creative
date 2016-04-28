@@ -9,44 +9,71 @@ title: Checkout - Payment - Credit Card
           <div class="package about-demo">
             <section class="product-size">
               <div class="clearfix">
-                <h3 class="section-label shipping">Credit Card</h3>
                 <form>
-                  <div class="dropdown shipping-dropdown is-active" id="dropdown-payment-card-1" >
-                    <span class="selected-item">VISA ending 0239, exp 6/17</span>
-                    <ul class="custom-dropdown" id="dropdown-payment-card-dropdown-1" >
-                      <li class="dropdown-item">VISA ending 0239, exp 6/17</li>
-                      <li class="dropdown-item">VISA ending 0239, exp 6/17</li>
-                      <li class="dropdown-item">VISA ending 0239, exp 6/17</li>
-                      <li class="dropdown-item">VISA ending 0239, exp 6/17</li>
-                      <li class="dropdown-item">
-                        <a href="#" id="addCard2" class="small-text-link">+ Add New Card</a>
-                      </li>
-                    </ul>
+                  <div class="shipping-dropdown is-active" id="dropdown-payment-card-1">
+                    <div class="row">
+                      <div class="small-12 medium-9 columns">
+                        <label>Select Your Credit Card</label>
+                        <div class="dropdown" >
+                          <span class="selected-item">VISA ending 0239, exp 6/17</span>
+                          <ul class="custom-dropdown" id="dropdown-payment-card-dropdown-1" >
+                            <li class="dropdown-item">VISA ending 0239, exp 6/17</li>
+                            <li class="dropdown-item">VISA ending 0239, exp 6/17</li>
+                            <li class="dropdown-item">VISA ending 0239, exp 6/17</li>
+                            <li class="dropdown-item">VISA ending 0239, exp 6/17</li>
+                            <li class="dropdown-item">
+                              <a href="#" id="addCard2" class="small-text-link">+ Add New Card</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="small-10 medium-2 columns ">
+                        <label>CVv<input type="text" placeholder=""></label>
+                      </div>
+                      <div class="small-2 medium-1 columns info-icon">
+                        <img src="../assets/images/icons/info-black.svg" alt="info">
+                      </div>
+                    </div>
+                    <div class="address">
+                      <p class="section-label">confirm card address</p>
+                      <p>
+                        Bryan Zmijewski </br>
+                        100 W. Rincon Ave </br>
+                        Campbell, CA 95008 </br>
+                        123-456-7890
+                      </p>
+                    </div>
                   </div>
-                  <a href="#" id="addCard" class="small-text-link">+ Add New Card</a>
+                  <a href="#" id="addCard" class="small-text-link">Edit</a>
                   <div id="addCardInputs" class="change-address-area">
-                    <div class="row">
-                      <div class="small-12 columns">
-                        <label>First Name <input type="text" placeholder=""></label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="small-12 columns">
-                        <label>Last Name <input type="text" placeholder=""></label>
-                      </div>
-                    </div>
                     <div class="row">
                       <div class="small-12 columns">
                         <label>Credit Card Number <input type="text" placeholder=""></label>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="small-12 medium-6 columns">
+                      <div class="small-12 medium-9 columns">
                         <label>Exp. Date <input type="text" placeholder=""></label>
                       </div>
-                      <div class="small-12 medium-6 columns">
-                        <label>CVC<input type="text" placeholder=""></label>
+                      <div class="small-10 medium-2 columns ">
+                        <label>CVv<input type="text" placeholder=""></label>
                       </div>
+                      <div class="small-2 medium-1 columns info-icon">
+                        <img src="../assets/images/icons/info-black.svg" alt="info">
+                      </div>
+                    </div>
+                    <br />
+                    <h3 class="section-label">Billing Address <div class="checkbox shipping-checkbox right"><input type="checkbox" class="checkbox-style"><label class="checkbox-label">Use same as shipping</label></input></div></h3>
+                    <div class="">
+                      <label>First Name <input type="text" placeholder=""></label>
+                      <label>Last Name <input type="text" placeholder=""></label>
+                      <label>Street Address <input type="text" placeholder=""></label>
+                      <label>Street Address 2 (optional) <input type="text" placeholder=""></label>
+                      <label>City<input type="text" placeholder=""></label>
+                      <label>State<input type="text" placeholder=""></label>
+                      <label>Zip Code<input type="text" placeholder=""></label>
+                      <label>Country<input type="text" placeholder=""></label>
+                      <label>Telephone<input type="text" placeholder=""></label>
                     </div>
                   </div>
                   <div id="saveCard" class="address-save-address-area">
@@ -55,40 +82,7 @@ title: Checkout - Payment - Credit Card
                     </div>
                   </div>
                 </form>
-
-                <h3 class="section-label">Billing Address <div class="checkbox shipping-checkbox right">
-                  <input type="checkbox" class="checkbox-style" checked><label class="checkbox-label">Use same as shipping</label></input>
-                </div></h3>
-                <form>
-                  <div class="dropdown shipping-dropdown is-active" id="dropdown-billing-address-1" >
-                    <span class="selected-item">Bryan Zmijewski, 100 W. Rincon Ave, Campbell, CA 95008</span>
-                    <ul class="custom-dropdown" id="dropdown-billing-address-dropdown-1" >
-                      <li class="dropdown-item">Bryan Zmijewski, 100 W. Rincon Ave, Campbell, CA 95008</li>
-                      <li class="dropdown-item">Bryan Zmijewski, 100 W. Rincon Ave, Campbell, CA 95008</li>
-                      <li class="dropdown-item">Bryan Zmijewski, 100 W. Rincon Ave, Campbell, CA 95008</li>
-                      <li class="dropdown-item">Bryan Zmijewski, 100 W. Rincon Ave, Campbell, CA 95008</li>
-                      <li class="dropdown-item">
-                        <a href="#" id="addBillAddress2" class="small-text-link">Change Address</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div id="addBillAddressInputs" class="change-address-area">
-                    <label>First Name <input type="text" placeholder=""></label>
-                    <label>Last Name <input type="text" placeholder=""></label>
-                    <label>Street Address <input type="text" placeholder=""></label>
-                    <label>Street Address 2 (optional) <input type="text" placeholder=""></label>
-                    <label>City<input type="text" placeholder=""></label>
-                    <label>State<input type="text" placeholder=""></label>
-                    <label>Zip Code<input type="text" placeholder=""></label>
-                    <label>Telephone<input type="text" placeholder=""></label>
-                  </div>
-                  <a href="#" id="addBillAddress" class="small-text-link">+ Add New Address</a>
-                  <div id="saveBillAddress" class="address-save-address-area">
-                    <div class="checkbox">
-                    <input type="checkbox" class="checkbox-style" checked><label class="checkbox-label" >Save Address</label></input>
-                    </div>
-                  </div>
-                </form>
+                <hr />
                 <ul class="accordion checkbox " data-accordion>
                   <li class="accordion-navigation">
                     <a class="email-me-cta" href="#emailMe"><input class="email-me-checkbox checkbox-style" type="checkbox"><label class="text-label checkbox-label">Email me about exclusive sales and promotions</label></input></a>
