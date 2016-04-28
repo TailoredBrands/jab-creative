@@ -45,9 +45,12 @@
 }
 
 //The product name/title on pdp
-.product-name {
-  margin: 0;
-  padding-bottom: 0;
+
+.product-details-page {
+  .product-name {
+    margin: 0;
+    padding-bottom: 0;
+  }
 }
 
 //Container for all details proceding the image and title
