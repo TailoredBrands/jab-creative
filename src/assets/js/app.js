@@ -127,3 +127,14 @@ $('#pdpSeeMore').on('click', function() {
 $('#quickViewThumb').hover(function(){
   $('#quickViewDemo').toggleClass('is-active');
 });
+
+
+// pdp add fun
+
+$('#add-pants-trigger').on('click', function() {
+  $('#add-pants-check').prop("checked", !$('#add-pants-check').prop("checked"));
+});
+
+$('#add-traveler-trigger').on('click', function() {
+  $('#add-traveler-check').prop("checked", !$('#add-traveler-check').prop("checked"));
+});
