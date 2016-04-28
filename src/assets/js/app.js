@@ -139,10 +139,11 @@ $('#add-traveler-trigger').on('click', function() {
   $('#add-traveler-check').prop("checked", !$('#add-traveler-check').prop("checked"));
 });
 
-$('.back-to-top').on('click', function(){
-  console.log('click');
-  $('html, body').animate({
-    scrollTop: $( $.attr(this, 'href') ).offset().top
-  }, 500);
-  return false;
-});
+$(document).ready(function() {
+
+  $('.back-to-top').on('click', function(){
+    $('html, body').animate({
+      scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 800);
+  });
+})
