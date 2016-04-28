@@ -166,7 +166,7 @@ $bag-detail-padding-left: 10px;
 //All of the detail information about the bag item, not the thumbnail
 .bag-item-detail {
   .product-name h1 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-left: $bag-detail-padding-left;
     width: 70%;
     margin: 8px 0 0 0;
@@ -328,7 +328,7 @@ $bag-detail-padding-left: 10px;
 
     .quantity,
     .clearance {
-      font-size: rem-calc(15);
+      font-size: rem-calc(12);
       text-transform: uppercase;
       letter-spacing: 1px;
     }
