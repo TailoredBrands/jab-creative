@@ -124,10 +124,6 @@ $('#pdpSeeMore').on('click', function() {
   $('.more').toggleClass('is-active');
 });
 
-$('#quickViewThumb').hover(function(){
-  $('#quickViewDemo').toggleClass('is-active');
-});
-
 
 // pdp add fun
 
@@ -147,3 +143,8 @@ $(document).ready(function() {
     }, 800);
   });
 })
+
+
+// for testing modal
+
+$(document).ready(function(){$('#qvModal').foundation('reveal', 'open')});
