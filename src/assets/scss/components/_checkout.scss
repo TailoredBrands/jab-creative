@@ -234,14 +234,6 @@ input[type="text"].id-number-input {
   display: block;
 }
 
-@media #{$small-only} {
-  .norton-logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
 .bag-edit-links.review-edit {
   opacity: 1;
   margin-right: 0;
@@ -355,7 +347,10 @@ input[type="text"].id-number-input {
 
 
 .norton-checkout {
-  margin: 1rem 0;
+  margin: 8rem 0 0 0;
+  @media #{$small-only} {
+    margin: 1rem 0 0 0;
+  }
 }
 
 .checkout-sub-ctas {
