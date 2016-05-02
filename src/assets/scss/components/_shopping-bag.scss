@@ -81,6 +81,7 @@ $global-transition: all 0.3s ease;
 }
 
 .bag-item-image {
+  margin-top: 15px;
   @include grid-column(
     $columns:2,
     $last-column:false,
