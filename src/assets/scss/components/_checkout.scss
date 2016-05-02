@@ -337,10 +337,10 @@ input[type="text"].id-number-input {
 .checkout-review {
   .product-price-orig {
     font-size: rem-calc(14);
-    top: -6px;
     position: relative;
   }
   .product-price {
+    font-size: rem-calc(14);
     right: 0 !important;
   }
 }
