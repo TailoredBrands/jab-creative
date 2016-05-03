@@ -132,11 +132,20 @@ button.secondary.postfix {
   li {
     border-right: 1px solid $warm-grey-two;
     padding: 0 10px 0 0 ;
+    &:after { 
+      content: '|';
+      padding-left: 5px;
+      font-size: rem-calc(5);
+    }
     @media #{$small-only} {
+      border: none;
       display: inline-block;
       > * { display: inline-block; }
     }
     &:nth-last-child(1) {
+      &:after {
+        content: '';
+      }
       border: none;
       padding-right: 0;
       margin-right: 0;
