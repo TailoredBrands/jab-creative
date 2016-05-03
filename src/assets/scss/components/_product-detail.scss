@@ -1,12 +1,8 @@
+$add-on-group-width: 94%;
+
 //util
-.is-hidden {
-  display: none !important;
-}
-
-.product-images {
-  position: relative;
-}
-
+.is-hidden { display: none !important; }
+.product-images { position: relative; }
 .pdp-image-prev, .pdp-image-next {
   text-indent: -9999px;
   overflow: hidden;
@@ -14,187 +10,164 @@
   height: 30px;
   position: absolute;
   top: 300px;
-
-}
-.pdp-image-prev {
-  left: 0;
-  background:url('/assets/images/jab/pdp-main-left-arrow.svg');
-  background-position: 15px 0;
-  background-size: 10px 17px;
-  background-repeat: no-repeat;
-}
-.pdp-image-next {
-  right: 0;
-  background:url('/assets/images/jab/pdp-main-right-arrow.svg');
-  background-position: 15px 0;
-  background-size: 10px 17px;
-  background-repeat: no-repeat;
-
-}
-.pdp-large-image {
-  padding-right: 50px;
-  min-height: rem-calc(100px);
-  max-height: rem-calc(619px);
-}
-
-//Content for the pdp
-.product-details-page {
-  @media #{$medium-up} {
-    margin-top: rem-calc(40px);
-  }
-}
-
-//The product name/title on pdp
-
-.product-details-page {
-  .product-name {
-    margin: 0;
-    padding-bottom: 0;
-  }
-}
-
-//Container for all details proceding the image and title
-.product-container {
-  padding: 10px 0;
-}
-
-//All information relating to the product
-.product-info {
-  //Sets the base font-size
-  p,
-  li {
-    font-size: 13px;
-  }
-
-  ul {
-    margin: 0;
-  }
-
-  //initial price with the strikethrough
-  .price-starting {
-    font-size: 1.25rem;
-    font-weight: 500;
-    margin: -7px 0 0 0;
-  }
-
-  //new price of the product
-  .price-shown {
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: #999;
-  }
-}
-
-//generic labels for all sections within PDP.
-.section-label {
-  margin-right: 4px;
-  margin-bottom: 10px;
-  color: $dark-grey;
-  font-size: rem-calc(12px);
-  letter-spacing: 0.5px;
-}
-
-//Custom massaging for the "Size:" label on PDP
-.size-label {
-  margin-top: 2px;
-}
-
-$add-on-group-width: 94%;
-
-.add-on-group {
-  margin-bottom: 40px;
-  .center-line {
-    display: inline-block;
-    width: $add-on-group-width;
-    position: relative;
-    float: right;
-    &:before {
-      z-index: -1;
-      content: '';
-      position: absolute;
-      top: 9px;
-      left: 0;
-      right: 0;
-      border-bottom: 1px solid $white-two;
-    }
-    span { background: #FFF; }
-    span:nth-child(1) {padding-right: 7px; }
-    span:nth-last-child(1) {
-      float: right;
-      border-left: solid 1px $white-two;
-      padding-left: 7px;
-    }
-  }
-  input, label { margin-bottom: 0; }
-}
-
-.whats-this-link {
-  width: $add-on-group-width;
-  float: right;
-  font-size: rem-calc(10px);
-  letter-spacing: 1px;
-  color: $jab-green;
-}
-
-//Link for big and tall on pdp
-.big-and-tall-link {
-  margin-bottom: 5px;
-  font-weight: 300;
-  position: relative;
-  top: 0;
-  // font-family: Helvetica;
-  font-size: rem-calc(10px);
-  line-height: 1.8;
-  letter-spacing: 1.2px;
-  color: $jab-green;
-
-}
-
-//Total price for the product. Should be shown only if B&T is selected
-.product-total {
-  padding-top: 5px;
-}
-
-.quantity-label {
-  margin-bottom: 10px;
-  margin-top: 6px;
-}
-
-.product-quantity {
-  //overriding the crazy specific quantitiy input rule of f5
-  width: 70px !important;
-  height: 30px;
-}
-
-//Label for the accordion in PDP
-.share-label {
-  list-style: none;
-  display: inline-block !important;
-
-  &::after {
-    background: none !important;
-  }
-}
-
-//Needs some specific styling to override f5 styles
-.accordion .product-info-accordion {
-  .share-icon {
-    display: inline-block;
-  }
-}
-
-//Sizing chart styles for PDP
-.sizing-chart {
-  width: 100%;
-  th, td { text-align: center; }
-  th { vertical-align: bottom; }
-  td { vertical-align: middle; }
-  td span {
-    font-size: rem-calc(32px);
-    line-height: 0.4;
-  }
-}
-
+// <<<<<<< HEAD
+//
+// =======
+// >>>>>>> origin/jab-checkout
+// }
+// .pdp-image-prev {
+//   left: 0;
+//   background:url('/assets/images/jab/pdp-main-left-arrow.svg');
+//   background-position: 15px 0;
+//   background-size: 10px 17px;
+//   background-repeat: no-repeat;
+// }
+// .pdp-image-next {
+//   right: 0;
+//   background:url('/assets/images/jab/pdp-main-right-arrow.svg');
+//   background-position: 15px 0;
+//   background-size: 10px 17px;
+//   background-repeat: no-repeat;
+//
+// }
+// .pdp-large-image {
+//   padding-right: 50px;
+//   min-height: rem-calc(100px);
+//   max-height: rem-calc(619px);
+// }
+// //Content for the pdp
+// .product-details-page {
+//   @media #{$medium-up} {
+//     margin-top: rem-calc(40px);
+//   }
+// }
+//
+// //The product name/title on pdp
+// .product-details-page {
+//   .product-name {
+//     margin: 0;
+//     padding-bottom: 0;
+//   }
+// }
+//
+// //Container for all details proceding the image and title
+// .product-container { padding: 10px 0; }
+//
+// // All information relating to the product
+// .product-info {
+//   p, li {font-size: 13px; }
+//   ul {margin: 0; }
+//   //initial price with the strikethrough
+//   .price-starting {
+//     font-size: 1.25rem;
+//     font-weight: 500;
+//     margin: -7px 0 0 0;
+//   }
+//   //new price of the product
+//   .price-shown {
+//     font-size: 0.875rem;
+//     font-weight: 500;
+//     color: #999;
+//   }
+// }
+// //generic labels for all sections within PDP.
+// .section-label {
+//   margin-right: 4px;
+//   margin-bottom: 10px;
+//   color: $dark-grey;
+//   font-size: rem-calc(12px);
+//   letter-spacing: 0.5px;
+// }
+// //Custom massaging for the "Size:" label on PDP
+// .size-label { margin-top: 2px; }
+//
+// .add-on-group {
+//   margin-bottom: 40px;
+//   .center-line {
+//     display: inline-block;
+//     width: $add-on-group-width;
+//     position: relative;
+//     float: right;
+//     &:before {
+//       z-index: -1;
+//       content: '';
+//       position: absolute;
+//       top: 9px;
+//       left: 0;
+//       right: 0;
+//       border-bottom: 1px solid $white-two;
+//     }
+//     span { background: #FFF; }
+//     span:nth-child(1) {padding-right: 7px; }
+//     span:nth-last-child(1) {
+//       float: right;
+//       border-left: solid 1px $white-two;
+//       padding-left: 7px;
+//     }
+//   }
+//   input, label { margin-bottom: 0; }
+// }
+//
+// .whats-this-link {
+//   width: $add-on-group-width;
+//   float: right;
+//   font-size: rem-calc(10px);
+//   letter-spacing: 1px;
+//   color: $jab-green;
+// }
+//
+// //Link for big and tall on pdp
+// .big-and-tall-link {
+//   margin-bottom: 5px;
+//   font-weight: 300;
+//   position: relative;
+//   top: 0;
+//   font-size: rem-calc(10px);
+//   line-height: 1.8;
+//   letter-spacing: 1.2px;
+//   color: $jab-green;
+// }
+//
+// //Total price for the product. Should be shown only if B&T is selected
+// .product-total { padding-top: 5px; }
+// .quantity-label {
+//   margin-bottom: 10px;
+//   margin-top: 6px;
+// }
+// .product-quantity {
+// //overriding the crazy specific quantity input rule of f5
+// width: 70px !important;
+// height: 30px;
+// }
+// //Label for the accordion in PDP
+// .share-label {
+//   list-style: none;
+//   display: inline-block !important;
+//   &::after {
+//     background: none !important;
+//   }
+// }
+//
+// //Needs some specific styling to override f5 styles
+// .accordion .product-info-accordion {
+//   .share-icon {
+//     display: inline-block;
+//   }
+// }
+//
+// //Sizing chart styles for PDP
+// .sizing-chart {
+//   width: 100%;
+//   th, td { text-align: center; }
+//   th { vertical-align: bottom; }
+//   td { vertical-align: middle; }
+//   td span {
+//     font-size: rem-calc(32px);
+//     line-height: 0.4;
+//   }
+// }
+//
+// <<<<<<< HEAD
 .sizing-intro {
   font-weight: 500;
 }
@@ -254,18 +227,22 @@ $add-on-group-width: 94%;
     margin-left: 0;
   }
 }
+=======
+.sizing-intro { font-weight: 500; }
+.product-description-content ul { margin-left: 16px; }
+>>>>>>> origin/jab-checkout
 
 .save-to-wishlist {
-  // background:#f00;
-  font-size: rem-calc(12px);
-  line-height: 2.8;
-  letter-spacing: 1.5px;
-  color: $warm-grey-two;
-  text-align: center;
-  width: 100%;
-  float: left;
-  padding: 0;
-  margin-bottom: 20px;
+// background:#f00;
+font-size: rem-calc(12px);
+line-height: 2.8;
+letter-spacing: 1.5px;
+color: $warm-grey-two;
+text-align: center;
+width: 100%;
+float: left;
+padding: 0;
+margin-bottom: 20px;
 }
 
 
@@ -346,5 +323,30 @@ $add-on-group-width: 94%;
 
   .description {
     font-size: 12px;
+  }
+}
+
+
+
+.addon-option-panel {
+  display: none;
+  &.active {
+    display: block;
+  }
+  p.leadin {
+    font-size: rem-calc(12px);
+    letter-spacing: 0.5px;
+    color: #333333;
+    text-transform: uppercase;
+  }
+  .button {
+    font-size: rem-calc(12px);
+    line-height: 1.1;
+    letter-spacing: 1.4px;
+    color: #013a2c;
+    border: solid 1px #013a2c;
+    background:$white;
+    margin-bottom: 0;
+
   }
 }

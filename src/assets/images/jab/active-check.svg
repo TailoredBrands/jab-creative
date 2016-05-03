@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="11px" height="12px" viewBox="0 0 11 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>active-check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="7.-Refine-Results" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="7.3-Sort-Open" transform="translate(-173.000000, -433.000000)" fill="#046F48">
+            <g id="Group-13" transform="translate(162.000000, 318.000000)">
+                <path d="M15.0817911,126.501417 C14.7236071,126.501417 14.3851201,126.334167 14.1682201,126.047287 L11.2320081,122.170247 C10.8508191,121.665827 10.9494011,120.947957 11.4538421,120.565927 C11.9582641,120.183757 12.6762961,120.283817 13.0591301,120.787757 L14.9897681,123.337497 L19.8467651,115.539567 C20.1803151,115.003277 20.8868351,114.839107 21.4241351,115.172817 C21.9614351,115.507027 22.1240951,116.213567 21.7905451,116.750357 L16.0528641,125.961497 C15.8540371,126.281757 15.5106361,126.483187 15.1327161,126.500277 C15.1162891,126.501097 15.0982181,126.501417 15.0817911,126.501417" id="active-check"></path>
+            </g>
+        </g>
+    </g>
+</svg>

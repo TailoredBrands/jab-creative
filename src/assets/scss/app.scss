@@ -58,6 +58,7 @@
 // Components
 @import "components/util";
 
+@import "components/add-to-bag-cta";
 @import "components/alerts";
 @import "components/buttons";
 @import "components/checkout";
@@ -96,18 +97,6 @@
   text-align: center;
   margin-top: 15px;
   border-top: 1px solid $white-two;
-  // &::after {
-  //   z-index: -1;
-  //   position: absolute;
-  //   content: '';
-  //   left: 0;
-  //   right: 0;
-  //   top: 50%;
-  //   border-bottom: 1px solid $white-two;
-  // }
-  // &.checkout-contact {
-  //   margin-top: 30px;
-  // }
 }
 
 .outer-lines {
@@ -365,7 +354,6 @@ section.filter {
       margin-right: 0px !important;
       margin-bottom: 0px !important;
     }
-
   }
 
 }
