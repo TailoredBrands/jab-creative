@@ -8,9 +8,37 @@ section: rent
     <div class="medium-4 large-3 columns filter-sidebar">
 
 
+      <h1>SUITS &amp; SPORTCOATS</h1>
+
+      <!-- begin new filter mobile fun -->
+
+
+      <ul class="tabs show-for-small-only" data-tab>
+        <li class="tab-title active"><a href="#filter-filter-by-tab">Filter by</a></li>
+        <li class="tab-title"><a href="#filter-sort-by-tab">Sort by</a></li>
+      </ul>
+      <div class="tabs-content show-for-small-only">
+        <div class="content active" id="filter-filter-by-tab">
+          {{> filter-accordion}}
+        </div>
+        <div class="content" id="filter-sort-by-tab">
+          <ul class="filter-check-list">
+            <li><a>Default</a></li>
+            <li class="active"><a>Best sellers</a></li>
+            <li><a>Price low to high</a></li>
+            <li><a>Price high to low</a></li>
+            <li><a>Highest rating</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <!-- end mobile filter fun -->
+
+
+
       <div class="hide-for-small-only">
-        <h1>SUITS &amp; SPORTCOATS</h1>
-        
+
         <ul class="simple-menu">
           <li class="active"><a href="#">Suits</a></li>
           <li><a href="#">Suit Separates</a></li>
@@ -19,59 +47,12 @@ section: rent
           <li><a href="#">Vests </a></li>
           <li><a href="#">Tuxedos</a></li>
         </ul>
+        <!-- accordion -->
+
+        {{> filter-accordion}}
+
       </div>
-      <!-- accordion -->
 
-      <ul class="accordion" data-accordion>
-
-
-        <li class="accordion-navigation product-info-accordion filter-accordion">
-          <a class="product-info-label" href="filter-color-pattern">color/pattern</a>
-          <div id="filter-color-pattern" class="content product-description-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veniam, est, natus deserunt iusto hic dolorum quod. Eius dolore, amet odio. Numquam quaerat alias hic, error quibusdam explicabo, veniam architecto.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veniam, est, natus deserunt iusto hic dolorum quod. Eius dolore, amet odio. Numquam quaerat alias hic, error quibusdam explicabo, veniam architecto.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veniam, est, natus deserunt iusto hic dolorum quod. Eius dolore, amet odio. Numquam quaerat alias hic, error quibusdam explicabo, veniam architecto.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veniam, est, natus deserunt iusto hic dolorum quod. Eius dolore, amet odio. Numquam quaerat alias hic, error quibusdam explicabo, veniam architecto.</p>
-          </div>
-        </li>
-
-        <li class="accordion-navigation product-info-accordion filter-accordion">
-          <a class="product-info-label" href="filter-size">size</a>
-          <div id="filter-size" class="content product-description-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veniam, est, natus deserunt iusto hic dolorum quod. Eius dolore, amet odio. Numquam quaerat alias hic, error quibusdam explicabo, veniam architecto.</p>
-          </div>
-        </li>
-
-        <li class="accordion-navigation product-info-accordion filter-accordion">
-          <a class="product-info-label" href="filter-fit">fit</a>
-          <div id="filter-fit" class="content product-description-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veniam, est, natus deserunt iusto hic dolorum quod. Eius dolore, amet odio. Numquam quaerat alias hic, error quibusdam explicabo, veniam architecto.</p>
-          </div>
-        </li>
-
-        <li class="accordion-navigation product-info-accordion filter-accordion">
-          <a class="product-info-label" href="filter-style">style</a>
-          <div id="filter-style" class="content product-description-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veniam, est, natus deserunt iusto hic dolorum quod. Eius dolore, amet odio. Numquam quaerat alias hic, error quibusdam explicabo, veniam architecto.</p>
-          </div>
-        </li>
-
-        <li class="accordion-navigation product-info-accordion filter-accordion">
-          <a class="product-info-label" href="filter-material">material</a>
-          <div id="filter-material" class="content product-description-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veniam, est, natus deserunt iusto hic dolorum quod. Eius dolore, amet odio. Numquam quaerat alias hic, error quibusdam explicabo, veniam architecto.</p>
-          </div>
-        </li>
-
-        <li class="accordion-navigation product-info-accordion filter-accordion">
-          <a class="product-info-label" href="filter-collection">collection</a>
-          <div id="filter-collection" class="content product-description-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veniam, est, natus deserunt iusto hic dolorum quod. Eius dolore, amet odio. Numquam quaerat alias hic, error quibusdam explicabo, veniam architecto.</p>
-          </div>
-        </li>
-
-
-      </ul>
 
     </div>
     <div class="medium-8 large-9 columns">

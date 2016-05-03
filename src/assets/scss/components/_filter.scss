@@ -551,3 +551,37 @@
   background: $primary-color;
 }
 }
+
+
+.filter-check-list {
+  list-style-type: none;
+  a {
+    font-size: rem-calc(12px);
+    letter-spacing: 0.5px;
+    line-height: 38px;
+    color: #0D1720;
+    
+  }
+  li {
+    margin-left: 20px;
+    position: relative;
+  }
+  li.active {
+    a {
+      color: $jab-green;
+    }
+    &:before {
+      content:'';
+      position: absolute;
+      background:#f00;
+      background:url(../images/jab/active-check.svg);
+      background-size: 11px 12px;
+      background-repeat: no-repeat;
+      background-position: top left;
+      width: 11px;
+      height: 12px;
+      left: -20px;
+      top: 13px;
+    }
+  }
+}
