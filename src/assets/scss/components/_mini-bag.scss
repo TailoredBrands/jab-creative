@@ -1,49 +1,68 @@
 .mini-bag {
   position: absolute;
   background: white;
-  border: 1px solid gray;
   width: 400px;
   max-height: 800px;
   z-index: 100;
-  top: 31px;
-  right: 10px;
+  top: 34px;
+  right: 32px;
   padding: 1rem;
   display: none;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
+
+  .checkout-continue-cta {
+    position: relative;
+    width: 100%;
+  }
+
+  .subtotal {
+    position: relative;
+    margin: 1rem;
+  }
 
   .bag-items {
     position: relative;
     width: 100%;
     overflow: auto;
+    margin-bottom: 10px;
   }
 
   .bag-item {
-    padding-left: 90px;
 
     .thumbnail {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 80px;
-      padding: 10px;
+      padding: 0 !important;
     }
 
     .title {
-      margin-top: 0;
-      margin-bottom: 0;
-      font-size: 12px;
+      font-size: rem-calc(14);
       letter-spacing: 0;
       text-transform: none;
       margin-top: 2px;
-    }
-
-    .quantity {
       margin-bottom: 0;
     }
-
+    .product-info {
+      padding: 0 1rem;
+    }
+    .meta {
+      margin: 0 !important;
+      opacity: 0.6;
+      font-size: rem-calc(14);
+    }
     .total {
-      position: absolute;
-      top: 10px;
-      right: 0;
+      text-align: right;
+      font-size: rem-calc(14);
+      .product-price-orig {
+        font-size: rem-calc(14);
+      }
+    }
+    .clearance {
+      color: $callout-color;
+      text-transform: uppercase;
+      font-size: rem-calc(10);
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-align: right;
+      margin-bottom: 0;
     }
   }
 }
@@ -62,7 +81,7 @@
     padding-top: 20px;
     text-align: center;
   }
-  
+
   .sub-total-title,
   .sub-total {
     padding-top: 1rem;
@@ -79,7 +98,8 @@
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid white;
+    border-bottom: 5px solid white;
+
   }
 }
 
@@ -100,7 +120,7 @@ nav.global section.links .mini-bag .text-link {
   background: transparent;
   color: black;
   position: absolute;
-  left: 0; 
+  left: 0;
   bottom: 0;
   width: auto;
   padding-left: 0;
@@ -108,7 +128,7 @@ nav.global section.links .mini-bag .text-link {
 }
 
 nav.global section.links .mini-bag .checkout {
-  right: 0; 
+  right: 0;
   bottom: 0;
   width: auto;
   background: $callout-color;
