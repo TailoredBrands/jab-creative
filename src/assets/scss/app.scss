@@ -58,6 +58,7 @@
 // Components
 @import "components/util";
 
+@import "components/add-to-bag-cta";
 @import "components/alerts";
 @import "components/buttons";
 @import "components/checkout";
@@ -365,7 +366,6 @@ section.filter {
       margin-right: 0px !important;
       margin-bottom: 0px !important;
     }
-
   }
 
 }

@@ -1,12 +1,8 @@
+$add-on-group-width: 94%;
+
 //util
-.is-hidden {
-  display: none !important;
-}
-
-.product-images {
-  position: relative;
-}
-
+.is-hidden { display: none !important; }
+.product-images { position: relative; }
 .pdp-image-prev, .pdp-image-next {
   text-indent: -9999px;
   overflow: hidden;
@@ -14,7 +10,6 @@
   height: 30px;
   position: absolute;
   top: 300px;
-  
 }
 .pdp-image-prev {
   left: 0;
@@ -36,7 +31,6 @@
   min-height: rem-calc(100px);
   max-height: rem-calc(619px);
 }
-
 //Content for the pdp
 .product-details-page {
   @media #{$medium-up} {
@@ -45,7 +39,6 @@
 }
 
 //The product name/title on pdp
-
 .product-details-page {
   .product-name {
     margin: 0;
@@ -54,29 +47,18 @@
 }
 
 //Container for all details proceding the image and title
-.product-container {
-  padding: 10px 0;
-}
+.product-container { padding: 10px 0; }
 
-//All information relating to the product
+// All information relating to the product
 .product-info {
-  //Sets the base font-size
-  p,
-  li {
-    font-size: 13px;
-  }
-
-  ul {
-    margin: 0;
-  }
-
+  p, li {font-size: 13px; }
+  ul {margin: 0; }
   //initial price with the strikethrough
   .price-starting {
     font-size: 1.25rem;
     font-weight: 500;
     margin: -7px 0 0 0;
   }
-
   //new price of the product
   .price-shown {
     font-size: 0.875rem;
@@ -84,7 +66,6 @@
     color: #999;
   }
 }
-
 //generic labels for all sections within PDP.
 .section-label {
   margin-right: 4px;
@@ -93,13 +74,8 @@
   font-size: rem-calc(12px);
   letter-spacing: 0.5px;
 }
-
 //Custom massaging for the "Size:" label on PDP
-.size-label {
-  margin-top: 2px;
-}
-
-$add-on-group-width: 94%;
+.size-label { margin-top: 2px; }
 
 .add-on-group {
   margin-bottom: 40px;
@@ -142,35 +118,27 @@ $add-on-group-width: 94%;
   font-weight: 300;
   position: relative;
   top: 0;
-  // font-family: Helvetica;
   font-size: rem-calc(10px);
   line-height: 1.8;
   letter-spacing: 1.2px;
   color: $jab-green;
-
 }
 
 //Total price for the product. Should be shown only if B&T is selected
-.product-total {
-  padding-top: 5px;
-}
-
+.product-total { padding-top: 5px; }
 .quantity-label {
   margin-bottom: 10px;
   margin-top: 6px;
 }
-
 .product-quantity {
-  //overriding the crazy specific quantitiy input rule of f5
-  width: 70px !important;
-  height: 30px;
+//overriding the crazy specific quantity input rule of f5
+width: 70px !important;
+height: 30px;
 }
-
 //Label for the accordion in PDP
 .share-label {
   list-style: none;
   display: inline-block !important;
-
   &::after {
     background: none !important;
   }
@@ -195,77 +163,20 @@ $add-on-group-width: 94%;
   }
 }
 
-.sizing-intro {
-  font-weight: 500;
-}
-
-.product-description-content {
-  ul {
-    margin-left: 16px;
-  }
-}
-
-.product-container .add-to-bag-cta {
-  -webkit-transition: background 0.3s ease;
-  -webkit-transition: border 0.3s ease;
-  position: relative;
-  max-width: 100%;
-  transition: background 0.3s ease;
-  width: 100%;
-  // position: fixed;
-  bottom: 0;
-  display: block;
-  // padding: 8px 12px 7px 12px;
-  padding: 17px 12px;
-  background: $callout-color;
-  color: white;
-  text-align: center;
-  z-index: 9999;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 500;
-  font-size: rem-calc(14);
-  margin-left: -0.9375rem;
-  border: 5px solid $callout-color;
-  &:before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 1px solid white;
-  }
-  &:hover,
-  &:active,
-  &:focus {
-    -webkit-transition: background 0.3s ease;
-    color: white;
-    background: darken($callout-color, 10%);
-    border: 5px solid darken($callout-color, 10%);
-  }
-
-  //On larger screens snap the add to bag cta back into the normal flow of the page
-  @media #{$medium-up} {
-    position: relative;
-    margin-top: rem-calc(30px);
-    margin-bottom: rem-calc(10px);
-    margin-left: 0;
-  }
-}
+.sizing-intro { font-weight: 500; }
+.product-description-content ul { margin-left: 16px; }
 
 .save-to-wishlist {
-  // background:#f00;
-  font-size: rem-calc(12px);
-  line-height: 2.8;
-  letter-spacing: 1.5px;
-  color: $warm-grey-two;
-  text-align: center;
-  width: 100%;
-  float: left;
-  padding: 0;
-  margin-bottom: 20px;
+// background:#f00;
+font-size: rem-calc(12px);
+line-height: 2.8;
+letter-spacing: 1.5px;
+color: $warm-grey-two;
+text-align: center;
+width: 100%;
+float: left;
+padding: 0;
+margin-bottom: 20px;
 }
 
 
