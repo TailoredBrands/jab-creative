@@ -2,16 +2,16 @@
 
 
 <div id="editModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-  
+
   <div class="row">
-    <h3 class="section-label title">Edit</h3>
+    <h3 class="section-label title">Edit Shopping Bag Item</h3>
   </div>
   <div class="row">
   <a class="close close-reveal-modal" aria-label="Close">&times;</a>
 
     <div class="small-5 columns">
       <div class="product-images">
-        <img src="assets/images/pdp/suit-1.jpeg">
+        <img src="../assets/images/jab/recent-item-2.png">
       </div>
     </div>
 
@@ -19,75 +19,18 @@
 
     <!-- Colors -->
     <div class="small-7 columns">
-      <a class="product-name" href="#">Calvin Klein Slim Fit Suit</a>
+      <h1 class="product-name" href="#">Calvin Klein Slim Fit Suit</h1>
       <p class="product-price"><span class="product-price-orig">$849.<sup>59</sup></span> <span class="product-price-discount">$699.<sup>99</sup> </span></p>
-      <h3 class="color-label">Color: </h3><p class="color-name">Charcoal Gray</p>
-      <ul class="product-colors-grid">
-        <li class="thumbnail active">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-charcoal.jpg" alt="">
-          </a>
-        </li>
-        <li class="thumbnail">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt="">
-          </a>
-        </li>
-        <li class="thumbnail secondary-colors">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt="">
-          </a>
-        </li>
-        <li class="thumbnail secondary-colors">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt="">
-          </a>
-        </li>
-        <li class="thumbnail secondary-colors is-hidden">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt="">
-          </a>
-        </li>
-        <li class="thumbnail secondary-colors is-hidden">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt="">
-          </a>
-        </li>
-        <li class="thumbnail secondary-colors is-hidden">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt="">
-          </a>
-        </li>
-        <li class="thumbnail secondary-colors is-hidden">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt="">
-          </a>
-        </li>
-        <li class="thumbnail secondary-colors is-hidden">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt="">
-          </a>
-        </li>
-        <li class="thumbnail secondary-colors is-hidden">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt="">
-          </a>
-        </li>
-        <li class="thumbnail secondary-colors is-hidden">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt="">
-          </a>
-        </li>
-        <li class="thumbnail secondary-colors is-hidden">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt="">
-          </a>
-        </li>
-        <li class="see-more-colors" >
-        <a id="pdpSeeMore" class="small-text-link">See <span class="more is-active">20 More</span> <span class="less is-hidden">Less</span></a>
-        </li>
-      </ul>
-      <!-- /Colors -->
+
+      <!-- Colors -->
+      <section class="product-colors">
+        {{> pdp-colors}}
+      </section>
+
+      <!-- Product Size -->
+      <section class="product-size">
+        {{> pdp-sizing-dropdown}}
+      </section>
 
 
       <!-- Sizing Dropdown -->
@@ -136,7 +79,7 @@
           <div class="clearfix">
             <input type="number" class="left product-quantity" name="quantity" min="1" max="5" placeholder="1">
             <p class="right product-total is-hidden">
-              <span class="product-price-orig">$849.<sup>59</sup></span> 
+              <span class="product-price-orig">$849.<sup>59</sup></span>
               <span class="product-price">$699.<sup>99</sup></span>
             </p>
           </div>

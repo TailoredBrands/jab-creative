@@ -114,7 +114,6 @@ nav.global section.links .mini-bag .text-link {
   letter-spacing: 1px;
   font-size: 0.75rem;
   font-weight: 500;
-  border-bottom: 1px dashed black;
   display: inline;
   padding-bottom: 3px;
   background: transparent;
@@ -130,8 +129,6 @@ nav.global section.links .mini-bag .text-link {
 nav.global section.links .mini-bag .checkout {
   right: 0;
   bottom: 0;
-  width: auto;
-  background: $callout-color;
   width: 60%;
 }
 

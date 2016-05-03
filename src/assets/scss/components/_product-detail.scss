@@ -14,7 +14,7 @@
   height: 30px;
   position: absolute;
   top: 300px;
-  
+
 }
 .pdp-image-prev {
   left: 0;
@@ -115,7 +115,7 @@ $add-on-group-width: 94%;
       top: 9px;
       left: 0;
       right: 0;
-      border-bottom: 1px solid $white-two; 
+      border-bottom: 1px solid $white-two;
     }
     span { background: #FFF; }
     span:nth-child(1) {padding-right: 7px; }
@@ -242,8 +242,8 @@ $add-on-group-width: 94%;
   &:focus {
     -webkit-transition: background 0.3s ease;
     color: white;
-    background: darken($callout-color, 10%);
-    border: 5px solid darken($callout-color, 10%);
+    background: darken($callout-color, 3%);
+    border: 5px solid darken($callout-color, 3%);
   }
 
   //On larger screens snap the add to bag cta back into the normal flow of the page
