@@ -2,6 +2,19 @@
   border-top: 1px solid $greyish;
   margin-top: 40px;
   padding-top: 33px;
+
+  .accordion > li > a {
+    padding-left: 10px;
+    &:after { right: 10px; }
+  }
+  .accordion ul {
+    list-style-type: none;
+  }
+  .accordion {
+    border-top: solid 1px $greyish;
+    margin-bottom: 30px;
+  }
+
   .outer-lines-wrapper {
     margin-bottom: 40px;
   }
@@ -30,9 +43,14 @@
   .share {
     list-style-type: none;
     margin-bottom: 40px;
+    @media #{$small-only} {
+      text-align: center;
+    }
+
     li {
       display: inline-block;
       margin-right: 30px;
+      &:nth-last-child(1) { margin-right: 0; }
     }
   }
 }
