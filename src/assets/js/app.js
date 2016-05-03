@@ -148,3 +148,16 @@ $(document).ready(function() {
 // for testing modal
 
 $(document).ready(function(){$('#qvModal').foundation('reveal', 'open')});
+
+
+// sticky menu activation
+
+$(window).scroll(function () {
+  if (window.pageYOffset > 150)  {
+    console.log('active');
+    $('.sticky-header').addClass('active');
+  } else if ($('.sticky-header').hasClass('active')) {
+    console.log('in-activate');
+    $('.sticky-header').removeClass('active');
+  }
+}); 
