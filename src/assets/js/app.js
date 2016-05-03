@@ -127,12 +127,34 @@ $('#pdpSeeMore').on('click', function() {
 
 // pdp add fun
 
+var toggleTraveler = function() {
+  if ($('#add-traveler-check').is(':checked')) {
+    $('#add-on-panel-traveler').addClass('active');
+  } else {
+    $('#add-on-panel-traveler').removeClass('active');
+  }
+}
+
+var togglePants = function() {
+  if ($('#add-pants-check').is(':checked')) {
+    $('#add-on-panel-pants').addClass('active');
+  } else {
+    $('#add-on-panel-pants').removeClass('active');
+  }
+}
+
 $('#add-pants-trigger').on('click', function() {
   $('#add-pants-check').prop("checked", !$('#add-pants-check').prop("checked"));
+  togglePants();
 });
 
 $('#add-traveler-trigger').on('click', function() {
   $('#add-traveler-check').prop("checked", !$('#add-traveler-check').prop("checked"));
+  toggleTraveler();
+});
+
+$('#add-traveler-check').on('change', function() {
+  toggleTraveler();
 });
 
 $(document).ready(function() {
@@ -154,10 +176,8 @@ $(document).ready(function() {
 
 $(window).scroll(function () {
   if (window.pageYOffset > 150)  {
-    console.log('active');
     $('.sticky-header').addClass('active');
   } else if ($('.sticky-header').hasClass('active')) {
-    console.log('in-activate');
     $('.sticky-header').removeClass('active');
   }
 }); 

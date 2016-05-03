@@ -259,3 +259,28 @@ margin-bottom: 20px;
     font-size: 12px;
   }
 }
+
+
+
+.addon-option-panel {
+  display: none;
+  &.active {
+    display: block;
+  }
+  p.leadin {
+    font-size: rem-calc(12px);
+    letter-spacing: 0.5px;
+    color: #333333;
+    text-transform: uppercase;
+  }
+  .button {
+    font-size: rem-calc(12px);
+    line-height: 1.1;
+    letter-spacing: 1.4px;
+    color: #013a2c;
+    border: solid 1px #013a2c;
+    background:$white;
+    margin-bottom: 0;
+
+  }
+}
