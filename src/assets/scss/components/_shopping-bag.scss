@@ -81,6 +81,7 @@ $global-transition: all 0.3s ease;
 }
 
 .bag-item-image {
+  margin-top: 15px;
   @include grid-column(
     $columns:2,
     $last-column:false,
@@ -124,7 +125,7 @@ $bag-detail-padding-left: 10px;
 //In the shopping bag we align the promo to the right
 .bag-promo {
   padding-left: $bag-detail-padding-left;
-  width: 60%;
+  // width: 60%;
   margin-top: 1rem;
 
   .promotion-callout {
@@ -151,7 +152,10 @@ $bag-detail-padding-left: 10px;
   //clearance and quantity labels are aligned right.
   .clearance {
     color: $callout-color;
-    font-size: 12px;
+    text-transform: uppercase;
+    font-size: rem-calc(10);
+    font-weight: 400;
+    letter-spacing: 1px;
     text-align: right;
     margin-bottom: 0;
   }
@@ -165,10 +169,11 @@ $bag-detail-padding-left: 10px;
 
 //All of the detail information about the bag item, not the thumbnail
 .bag-item-detail {
+  padding-right: 150px !important;
   .product-name h1 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-left: $bag-detail-padding-left;
-    width: 70%;
+    padding-right: $bag-detail-padding-left;
     margin: 8px 0 0 0;
     padding-bottom: 0;
   }
@@ -271,7 +276,7 @@ $bag-detail-padding-left: 10px;
     padding-top: 0;
 
     .product-price-orig {
-      font-size: 0.7rem;
+      font-size: 1rem;
       top: -6px;
 
       position: relative;
@@ -300,10 +305,8 @@ $bag-detail-padding-left: 10px;
   }
 
   .bag-item-detail {
-    .product-name {
+    .product-name h1 {
       font-size: 1rem;
-      padding-right: 100px;
-      width: 80%;
     }
   }
 
@@ -323,12 +326,12 @@ $bag-detail-padding-left: 10px;
     }
 
     .product-price {
-      font-size: rem-calc(15);
+      font-size: rem-calc(14) !important;
     }
 
     .quantity,
     .clearance {
-      font-size: rem-calc(15);
+      font-size: rem-calc(12);
       text-transform: uppercase;
       letter-spacing: 1px;
     }

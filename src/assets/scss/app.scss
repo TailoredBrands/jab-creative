@@ -322,7 +322,7 @@ section.filter {
 .filter-grid {
 
   @media #{$small-only} {
-    @include block-grid(1, rem-calc(30px), true);
+    @include block-grid(2, rem-calc(30px), true);
   }
   @media #{$medium-only} {
     @include block-grid(2, rem-calc(30px), true);

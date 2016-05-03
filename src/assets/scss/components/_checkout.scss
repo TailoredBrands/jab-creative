@@ -150,7 +150,7 @@ h3.section-label {
 
   &.is-active {
     display: inline-block !important;
-    width: auto;
+    width: 100%;
   }
 }
 
@@ -232,14 +232,6 @@ input[type="text"].id-number-input {
 
 .paypal-image {
   display: block;
-}
-
-@media #{$small-only} {
-  .norton-logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 }
 
 .bag-edit-links.review-edit {
@@ -345,17 +337,20 @@ input[type="text"].id-number-input {
 .checkout-review {
   .product-price-orig {
     font-size: rem-calc(14);
-    top: -6px;
     position: relative;
   }
   .product-price {
+    font-size: rem-calc(14);
     right: 0 !important;
   }
 }
 
 
 .norton-checkout {
-  margin: 1rem 0;
+  margin: 8rem 0 0 0;
+  @media #{$small-only} {
+    margin: 1rem 0 0 0;
+  }
 }
 
 .checkout-sub-ctas {
