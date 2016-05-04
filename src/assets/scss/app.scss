@@ -320,9 +320,41 @@ section.filter {
         transition: all 0.3s ease-out;
         transform: rotate(45deg);
       }
+      &:nth-last-child(1) a {
+        border-left: solid 1px $greyish;
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          background:url(../images/jab/mobile-filter-drop-triangle.svg);
+          background-repeat: no-repeat;
+          background-position: top left;
+          background-size: 9px 6px;
+          right: rem-calc(20px);
+          top: rem-calc(20px);
+          width: 9px;
+          height: 6px;
+          opacity: 1;
+        }
+      }
+
     }
     &:nth-last-child(1) a {
       border-left: solid 1px $greyish;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        background:url(../images/jab/mobile-filter-drop-triangle.svg);
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: 9px 6px;
+        right: rem-calc(20px);
+        top: rem-calc(20px);
+        width: 9px;
+        height: 6px;
+        opacity: 0.25;
+      }
     }
   }
 
