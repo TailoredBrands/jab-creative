@@ -166,12 +166,14 @@ $(document).ready(function() {
   });
 
   $('#list-mode-on').on('click', function() {
-    console.log("on");
     $('.filter-grid').addClass('list-mode');
+    $('#list-mode-on').removeClass('icon-disabled');
+    $('#list-mode-off').addClass('icon-disabled');
   });
   $('#list-mode-off').on('click', function() {
-    console.log("off");
     $('.filter-grid').removeClass('list-mode');
+    $('#list-mode-off').removeClass('icon-disabled');
+    $('#list-mode-on').addClass('icon-disabled');
   });
 })
 
