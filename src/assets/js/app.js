@@ -175,7 +175,13 @@ $(document).ready(function() {
     $('#list-mode-off').removeClass('icon-disabled');
     $('#list-mode-on').addClass('icon-disabled');
   });
-})
+
+  $('#promotion-callout-bottom-close').on('click', function() {
+    // alert('trigger');
+    $(this).parent().hide();
+  });
+
+});
 
 
 // for testing modal
