@@ -181,7 +181,7 @@ $(document).ready(function() {
   });
 
 
-  // simulate multi-select checks
+  // simulate multiselect checks
   $('.filter-check-list a').on('click', function() {
     $(this).parent().toggleClass('active')
   });

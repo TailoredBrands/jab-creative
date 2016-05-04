@@ -6,6 +6,7 @@ $('#menuIcon').on('click', function(){
 
 $('#suitMenu').on('click', function(){
   $('#suitSubMenu').toggleClass('is-active');
+  $('#suitMenu').toggleClass('is-active');
 });
 
 

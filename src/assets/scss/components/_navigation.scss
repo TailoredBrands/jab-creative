@@ -498,9 +498,11 @@ ul.off-canvas-list {
   text-align: center;
   // width: 100%;
   @media #{$small-only} { width: 90%; }
-  @media #{$medium-up} { width: 100%; }
+  @media #{$medium-up} { 
+    width: 100%;
+    margin-top: 1rem;
+  }
   margin-bottom: 0;
-  margin-top: 1rem;
   border-bottom: 1px solid $greyish;
 
   li {
@@ -555,16 +557,13 @@ ul.off-canvas-list {
     margin-left: 0;
     text-align: left;
     max-width: 1100px;
-    padding: 20px;
     @media #{$medium-up} {
+      padding: 20px;
       border: 1px solid #eee;
     }
     border-top: none;
     @include clearfix;
-
-    &.is-active {
-      display: block;
-    }
+    &.is-active { display: block; }
   }
 
   .col-1,
@@ -580,7 +579,9 @@ ul.off-canvas-list {
   .sub-menu-section {
     position: relative;
     top: 0;
-    padding-bottom: 25px;
+    @media #{$medium-up} {
+      padding-bottom: 25px;
+    }
 
     li {
       display: block;
@@ -660,6 +661,24 @@ ul.off-canvas-list {
       text-transform: uppercase;
       letter-spacing: 2px;
       font-weight: 500;
+
+      position: relative;
+      &:nth-child(1)::after {
+        $x-size: 11px;
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 23px;
+        background: url(../images/icons/plus-black.svg);
+        width: $x-size;
+        height: $x-size;
+        transition: all 0.3s ease-out;
+        transform: rotate(0deg);
+      }
+      &.is-active::after {
+        transition: all 0.3s ease-out;
+        transform: rotate(45deg);
+      }
     }
 
     .sub-menu {
