@@ -10,16 +10,25 @@ section: rent
 
       <h1>SUITS &amp; SPORTCOATS</h1>
 
+      <a href="" class="banner show-for-small-only"><img src="../assets/images/jab/mobile-espot-filter.png" alt=""></a>
+
+
       <!-- begin new filter mobile fun -->
 
 
       <ul class="tabs show-for-small-only" data-tab>
-        <li class="tab-title active"><a href="#filter-filter-by-tab">Filter by</a></li>
-        <li class="tab-title"><a href="#filter-sort-by-tab">Sort by</a></li>
+        <li class="tab-title"><a href="#filter-filter-by-tab">Filter by</a></li>
+        <li class="tab-title"><a href="#filter-sort-by-tab">
+        <span>Sort by:</span>
+        best sellers
+        </a></li>
       </ul>
       <div class="tabs-content show-for-small-only">
-        <div class="content active" id="filter-filter-by-tab">
+        <div class="content" id="filter-filter-by-tab">
           {{> filter-accordion}}
+          <div class="apply-filters-wrapper">
+            <a href="" class="button apply-filters">apply filters</a>
+          </div>
         </div>
         <div class="content" id="filter-sort-by-tab">
           <ul class="filter-check-list">
@@ -58,16 +67,16 @@ section: rent
     <div class="medium-8 large-9 columns">
 
 
-      <nav class="breadcrumbs" role="menubar" aria-label="breadcrumbs">
+      <nav class="breadcrumbs hide-for-small-only" role="menubar" aria-label="breadcrumbs">
         <li role="menuitem"><a href="#">Home</a></li>
         <li role="menuitem"><a href="#">Suits &amp; Sportcoats</a></li>
         <li role="menuitem" class="current"><a href="#">Suits</a></li>
       </nav>
 
-      <a href="" class="banner"><img src="{{assets}}images/jab/filter-banner-example.png" alt=""></a>
+      <a href="" class="banner hide-for-small-only"><img src="{{assets}}images/jab/filter-banner-example.png" alt=""></a>
 
       <div class="filter-header">
-        <select name="">
+        <select name="" class="hide-for-small-only">
           <option value="">Best Sellers</option>
           <option value="">Lorem</option>
           <option value="">Nisi</option>
@@ -78,6 +87,13 @@ section: rent
           <option value="">Ipsam</option>
           <option value="">Tempore</option>
         </select>
+
+        <ul class="inline-list show-for-">
+          <li><a id="list-mode-off"><img src="../assets/images/jab/filter-icon-grid.svg" alt=""></a></li>
+          <li><a id="list-mode-on" href="#"><img src="../assets/images/jab/filter-icon-list.svg" alt=""></a></li>
+        </ul>
+
+
 
         <span>393 Items</span>
       </div>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="19px" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>filter-icon-grid</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="-" transform="translate(-297.000000, 0.000000)" fill="#4E5255">
+            <path d="M297,0 L305,0 L305,8 L297,8 L297,0 Z M297,11 L305,11 L305,19 L297,19 L297,11 Z M309,0 L317,0 L317,8 L309,8 L309,0 Z M309,11 L317,11 L317,19 L309,19 L309,11 Z" id="filter-icon-grid"></path>
+        </g>
+    </g>
+</svg>

@@ -164,6 +164,15 @@ $(document).ready(function() {
       scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 800);
   });
+
+  $('#list-mode-on').on('click', function() {
+    console.log("on");
+    $('.filter-grid').addClass('list-mode');
+  });
+  $('#list-mode-off').on('click', function() {
+    console.log("off");
+    $('.filter-grid').removeClass('list-mode');
+  });
 })
 
 

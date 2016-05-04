@@ -228,19 +228,117 @@
 // filter below
 
 section.filter {
-  margin-top: 35px;
+  @media #{$medium-up} { margin-top: 35px; }
+  .apply-filters-wrapper {
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .apply-filters {
+    position: absolute;
+    top: 0;
+    right: -15px;
+    left: -15px;
+    height: 50px;
+    font-size: rem-calc(12px);
+    letter-spacing: 1.5px;
+    padding: 18px 0;
+  }
   h1 {
-    margin-top: 0;
-    font-size: rem-calc(14px);
-    letter-spacing: 2px;
     color: $dark-grey;
-    border-bottom: solid 0.5px #0c342c;
-    padding-bottom: 7px;
-    margin-bottom: 12px;
+    @media #{$small-only} { 
+      text-align: center;
+      font-family: $font-family-sans-serif;
+      font-weight: 300;
+      font-size: rem-calc(18px);
+      line-height: 1;
+      letter-spacing: 0.6px;
+      -webkit-text-stroke: 0 #cecece;
+      margin-top: 20px;
+      margin-bottom: 13px;
+
+    }
+    @media #{$medium-up} {
+      margin-top: 0;
+      font-size: rem-calc(14px);
+      letter-spacing: 2px;
+      border-bottom: solid 0.5px #0c342c;
+      padding-bottom: 7px;
+      margin-bottom: 12px;
+    }
   }
   .banner img {
-    margin-bottom: 30px;
+    @media #{$small-only} { margin-bottom: 15px; }
+    @media #{$medium-up} { margin-bottom: 30px; }
+
   }
+  .tabs {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .content:nth-child(1) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .tab-title {
+    width: 50%;
+    position: relative;
+    //this is the fancy x that follows the accordion labels
+    &:nth-child(1)::after {
+      $x-size: 11px;
+      content: "";
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background: url(../images/icons/plus-black.svg);
+      width: $x-size;
+      height: $x-size;
+      transition: all 0.3s ease-out;
+      transform: rotate(0deg);
+    }
+    a {
+      height: 50px;
+      padding: 14px 0 0 15px;
+      color: $greyish;
+      border-top: solid 1px $greyish;
+      border-bottom: solid 1px $greyish;
+      text-transform: uppercase;
+      span {
+        font-size: rem-calc(10px);
+        font-weight: 600;
+        display: block;
+        margin-top: 5px;
+        line-height: 1px;
+      }
+    }
+    &.active {
+      a {
+        border-top: solid 1px $dark-grey;
+        border-right: solid 1px $dark-grey;
+        color: $dark-grey;
+      }
+      &:nth-child(1)::after {
+        transition: all 0.3s ease-out;
+        transform: rotate(45deg);
+      }
+    }
+    &:nth-last-child(1) a {
+      border-left: solid 1px $greyish;
+    }
+  }
+
+  .accordion {
+    margin-left: -15px;
+    margin-right: -15px;
+    li a {
+      padding-left: 15px;
+      &::after {
+        right: 15px;
+      }
+    }
+    padding-top: 0;
+    
+  }
+
 
 }  
 
@@ -280,11 +378,20 @@ section.filter {
   margin-bottom: 25px;
 
   span {
-    padding-top: 12px;
-    font-size: rem-calc(10px);
-    line-height: 1.8;
-    letter-spacing: 0.7px;
     color: $steel-grey;
+    @media #{$medium-up} {
+      padding-top: 12px;
+      font-size: rem-calc(10px);
+      line-height: 1.8;
+      letter-spacing: 0.7px;
+    }
+    @media #{$small-only} {
+      font-weight: 400;
+      font-size: 12px;
+      letter-spacing: 1px;
+      line-height: 18px;
+    }
+
   }
 
   select {
@@ -293,6 +400,9 @@ section.filter {
     letter-spacing: 1px;
     color: $dark-grey;
     width: 200px;
+    float: right;
+  }
+  .inline-list {
     float: right;
   }
 }
@@ -311,6 +421,11 @@ section.filter {
 
   @media #{$small-only} {
     @include block-grid(2, rem-calc(30px), true);
+    &.list-mode {
+      @include block-grid(1, rem-calc(30px), true);
+      text-align: center;
+      .promotion-callout { text-align: center; }
+    }
   }
   @media #{$medium-only} {
     @include block-grid(2, rem-calc(30px), true);
