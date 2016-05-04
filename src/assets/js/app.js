@@ -177,8 +177,13 @@ $(document).ready(function() {
   });
 
   $('#promotion-callout-bottom-close').on('click', function() {
-    // alert('trigger');
     $(this).parent().hide();
+  });
+
+
+  // simulate multi-select checks
+  $('.filter-check-list a').on('click', function() {
+    $(this).parent().toggleClass('active')
   });
 
 });

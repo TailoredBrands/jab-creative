@@ -3,8 +3,6 @@
   margin-right: 0;
   border-bottom: 1px solid $greyish;
   list-style: none;
-  padding-top: 15px;
-  padding-bottom: 15px;
 
   // &:nth-child(1) {
   //   padding-top: 5px;
@@ -27,13 +25,17 @@
   letter-spacing: 1.2px;
   color: #333333 !important;
 
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+
+
   //this is the fancy x that follows the accordion labels
   &::after {
     $x-size: 11px;
     content: "";
     position: absolute;
     right: 0;
-    top: 0;
+    top: 15px;
     background: url(../images/icons/plus-black.svg);
     width: $x-size;
     height: $x-size;
