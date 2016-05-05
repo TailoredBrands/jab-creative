@@ -137,7 +137,6 @@ $bag-detail-padding-left: 10px;
     display: inline-block;
   }
 }
-
 //Price and quantity section of the shopping bag
 .bag-item .price-and-qty {
   top: 0;
@@ -169,15 +168,25 @@ $bag-detail-padding-left: 10px;
 
 //All of the detail information about the bag item, not the thumbnail
 .bag-item-detail {
-  padding-right: 150px !important;
+  padding-right: 80px !important;
+
   .product-name h1 {
     font-size: 1.2rem;
     padding-left: $bag-detail-padding-left;
-    padding-right: $bag-detail-padding-left;
+    padding-right: 80px !important;
     margin: 8px 0 0 0;
     padding-bottom: 0;
+    @media #{$small-only} {
+    padding-right: 120px !important;
+    }
   }
 }
+@media #{$small-only} {
+  .bag-item-detail {
+    padding-right: 0 !important;
+  }
+}
+
 
 //Callout label for low stock
 .low-stock {
@@ -272,11 +281,16 @@ $bag-detail-padding-left: 10px;
 
 //Mobile
 @media #{$small-only} {
+  .price-and-qty {
+    top: 8px !important;
+  }
+
+
   .shopping-bag {
     padding-top: 0;
 
     .product-price-orig {
-      font-size: 1rem;
+      font-size: rem-calc(14);
       top: -6px;
 
       position: relative;
@@ -299,6 +313,7 @@ $bag-detail-padding-left: 10px;
 
   .shopping-bag-subtotal-price {
     letter-spacing: 0;
+    margin-top: 14px;
     font-weight: 400;
     text-align: center;
     margin-bottom: 4px;
@@ -319,6 +334,7 @@ $bag-detail-padding-left: 10px;
 
   .bag-item .price-and-qty {
     .product-price,
+    .product-price-orig,
     .quantity,
     .clearance {
       top: -6px;
@@ -503,11 +519,4 @@ $bag-detail-padding-left: 10px;
 .button.guest-cta {
   background: white;
   color: $callout-color;
-}
-
-.order-summary {
-  .button.postfix {
-    height: 43px;
-    margin-top:0;
-  }
 }

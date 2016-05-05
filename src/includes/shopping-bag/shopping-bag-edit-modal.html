@@ -23,80 +23,72 @@
       <p class="product-price"><span class="product-price-orig">$849.<sup>59</sup></span> <span class="product-price-discount">$699.<sup>99</sup> </span></p>
 
       <!-- Colors -->
-      <h3 class="color-label">Color: </h3><p class="color-name">Charcoal Gray</p>
-      <ul class="product-colors-grid">
-        <li class="thumbnail active">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-charcoal.jpg" alt="">
-          </a>
-        </li>
-        <li class="thumbnail">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt="">
-          </a>
-        </li>
-        <li class="thumbnail secondary-colors">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt="">
-          </a>
-        </li>
-        <li class="thumbnail secondary-colors">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt="">
-          </a>
-        </li>
-        <li class="thumbnail secondary-colors is-hidden">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt="">
-          </a>
-        </li>
-        <li class="thumbnail secondary-colors is-hidden">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt="">
-          </a>
-        </li>
-        <li class="thumbnail secondary-colors is-hidden">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt="">
-          </a>
-        </li>
-        <li class="thumbnail secondary-colors is-hidden">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt="">
-          </a>
-        </li>
-        <li class="thumbnail secondary-colors is-hidden">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt="">
-          </a>
-        </li>
-        <li class="thumbnail secondary-colors is-hidden">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt="">
-          </a>
-        </li>
-        <li class="thumbnail secondary-colors is-hidden">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt="">
-          </a>
-        </li>
-        <li class="thumbnail secondary-colors is-hidden">
-          <a href="#">
-            <img class="product-color" src="{{assets}}images/pdp/color-black.jpg" alt="">
-          </a>
-        </li>
-        <li class="see-more-colors" >
-        <a id="pdpSeeMore" class="small-text-link">See <span class="more is-active">20 More</span> <span class="less is-hidden">Less</span></a>
-        </li>
-      </ul>
-      <!-- /Colors -->
+      <section class="product-colors">
+        {{> pdp-colors}}
+      </section>
 
-      {{> pdp-sizing-dropdown}}
-      
-      {{> pdp-add-on-options}}
+      <!-- Product Size -->
+      <div class="clearfix">
+        <h3 class="section-label">Size</h3>
+
+        <form>
+          <div id="sizeDropdown" class="size-dropdown-wrapper">
+            <span class="selected-item dropdown-placeholder">Regular Sizes</span>
+
+            <ul id="sizeDropdownList" class="custom-dropdown">
+              <li class="dropdown-item">36 Short</li>
+              <li class="dropdown-item">36 Regular</li>
+
+              <li class="dropdown-item">38 Short</li>
+              <li class="dropdown-item">38 Regular</li>
+              <li class="dropdown-item">38 Long</li>
+
+              <li class="dropdown-item">40 Short</li>
+              <li class="dropdown-item">40 Regular</li>
+              <li class="dropdown-item">40 Long</li>
 
 
-      <a class="button primary quick-view-cta" href="#">Update</a>
+              <li class="dropdown-item">42 Short</li>
+              <li class="dropdown-item">42 Regular</li>
+              <li class="dropdown-item">42 Long</li>
+
+              <li class="dropdown-item">44 Short</li>
+              <li class="dropdown-item">44 Regular</li>
+              <li class="dropdown-item">44 Long</li>
+
+              <li class="dropdown-item">46 Short</li>
+              <li class="dropdown-item">46 Regular</li>
+              <li class="dropdown-item">46 Long</li>
+
+              <li class="dropdown-item out-of-stock">59 Short</li>
+              <li class="dropdown-item out-of-stock">22 Regular</li>
+              <li class="dropdown-item out-of-stock">11 Long</li>
+            </ul>
+          </div>
+        </form>
+        <a class="text-link big-and-tall-link" href="#">Switch to Big &amp; Tall Sizes &raquo;</a>
+      </div>
+
+        {{> pdp-add-on-options}}
+
+      <div class="row">
+        <div class="small-3 columns">
+          <h3 class="section-label quantity-label">QTY:</h3>
+          <form>
+            <div class="clearfix">
+              <input type="number" class="left product-quantity" name="quantity" min="1" max="5" placeholder="1">
+              <p class="right product-total is-hidden">
+                <span class="product-price-orig">$849.<sup>59</sup></span>
+                <span class="product-price">$699.<sup>99</sup></span>
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="small-9 columns">
+          <a class="add-to-bag-cta" href="#">update</a>
+        </div>
+      </div>
+
 
     </div>
   </div>

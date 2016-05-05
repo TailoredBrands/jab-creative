@@ -1,4 +1,5 @@
 //fades the background
+
 .is-faded {
   opacity: 0.4;
 }
@@ -171,12 +172,15 @@
 }
 
 .reveal-modal {
-  .section-label.title {
-    margin-top: 0;
-    margin-left: 16px;
+  .section-label {
+    margin-top: 0 !important;
   }
 
   .product-price {
     margin-bottom: 0.5rem;
   }
+  .product-images {
+    margin-top: 20px !important;
+  }
+
 }

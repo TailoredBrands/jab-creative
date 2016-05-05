@@ -501,7 +501,7 @@ ul.off-canvas-list {
 
 
   @media #{$small-only} { width: 90%; }
-  @media #{$medium-up} { 
+  @media #{$medium-up} {
     width: 100%;
     margin-top: 1rem;
   }
@@ -775,7 +775,7 @@ ul.off-canvas-list {
     transition: padding $sticky-header-timing;
     svg {
       transition: all $sticky-header-timing;
-      width: 100%; 
+      width: 100%;
     }
     svg #logotype {
       transition: fill $sticky-header-timing;
@@ -820,11 +820,8 @@ ul.off-canvas-list {
 
 
 .mobile-menu-bottom-panel {
-  // @extend .show-for-mobile-only;
+  @extend .show-for-small-only;
   padding: 28px 19px 28px 14px;
-
-
-
   text-align: left;
   & > a {
     float: right;
