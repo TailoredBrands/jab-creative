@@ -5,7 +5,11 @@
     display: none;
   }
 }
-
+.add-saved-to-bag {
+  width: 78%;
+  padding: 10px;
+  font-size: rem-calc(10);
+}
 .saved-item-link {
   outline: none;
 }
@@ -57,5 +61,6 @@
 
 .remove-cta {
   font-size: 20px;
+  padding: 10px 0 0 0;
   margin-left: 10px;
 }

@@ -323,7 +323,7 @@
 }
 
 .product-price-orig {
-  font-size: 1rem;
+  font-size: rem-calc(14);
 }
 
 .browse-page-title {
@@ -480,7 +480,7 @@
   .quick-view-cta {
     display: none;
   }
-  
+
 }
 .filter-content .quick-view-cta, .filter-grid .quick-view-cta {
 
@@ -522,7 +522,7 @@
      padding: 0;
    }
 
-   img { 
+   img {
     width: 78px;
     height: 27px;
     padding: 0 !important;
@@ -566,7 +566,7 @@
     letter-spacing: 0.5px;
     line-height: 38px;
     color: #0D1720;
-    
+
   }
   li {
     margin-left: 20px;
