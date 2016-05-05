@@ -541,3 +541,7 @@ section.filter {
 .icon-disabled {
   opacity: 0.3;
 }
+
+
+// ios switch to fixed position lag fix
+*:not(html) { -webkit-transform: translate3d(0, 0, 0); }
