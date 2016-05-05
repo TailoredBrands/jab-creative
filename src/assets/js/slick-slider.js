@@ -14,7 +14,7 @@ var carousel = $('#quickViewProductImages').slick({
   slidesToShow: 1,
   arrows: false,
   centerMode: true,
-  // slidesToScroll: 6,
+  slidesToScroll: 1,
   useTransform: true,
   // responsive: [
   // {
