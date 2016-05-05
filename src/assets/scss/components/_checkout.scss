@@ -432,19 +432,6 @@ input[type="text"].id-number-input {
   }
 }
 
-.checkout-review {
-  .bag-item-detail {
-    padding-right: 150px !important;
-  }
-}
-
-@media #{$small-only} {
-  .checkout-review {
-    .bag-item-detail {
-      padding-right: 100px !important;
-    }
-  }
-}
 
 .forgot-password-large {
   margin-bottom: 0 !important;

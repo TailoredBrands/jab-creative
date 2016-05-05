@@ -820,15 +820,8 @@ ul.off-canvas-list {
 
 
 .mobile-menu-bottom-panel {
-<<<<<<< Updated upstream
-  // @extend .show-for-mobile-only;
-=======
   @extend .show-for-small-only;
->>>>>>> Stashed changes
   padding: 28px 19px 28px 14px;
-
-
-
   text-align: left;
   & > a {
     float: right;

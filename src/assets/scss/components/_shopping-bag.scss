@@ -168,15 +168,25 @@ $bag-detail-padding-left: 10px;
 
 //All of the detail information about the bag item, not the thumbnail
 .bag-item-detail {
+  padding-right: 80px !important;
+
   .product-name h1 {
     font-size: 1.2rem;
     padding-left: $bag-detail-padding-left;
-    padding-right: 60px !important;
+    padding-right: 80px !important;
     margin: 8px 0 0 0;
     padding-bottom: 0;
-
+    @media #{$small-only} {
+    padding-right: 120px !important;
+    }
   }
 }
+@media #{$small-only} {
+  .bag-item-detail {
+    padding-right: 0 !important;
+  }
+}
+
 
 //Callout label for low stock
 .low-stock {
