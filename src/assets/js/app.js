@@ -194,6 +194,12 @@ $(document).ready(function() {
     $('.off-canvas-wrap').toggleClass('is-active');
   });
 
+  // re-instantiate slick on modal opened
+  $(document).on('opened.fndtn.reveal', '[data-reveal]', function () {
+    $("#quickViewProductImages").slick("setPosition", 0);
+  });
+
+
 });
 
 
