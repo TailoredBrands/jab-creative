@@ -400,10 +400,14 @@
 .search-tool {
   display: none;
   background-color: #000000;
-  padding: 10px 0px 0px 0px;
+  // padding: 10px 0px 0px 0px;
 
   input {
+    margin-top: 0 !important;
     font-size: rem-calc(12px);
+    border-top: none;
+    border-left: none;
+    border-right: none;
 
     &:focus {
       background-color: #ffffff !important;
