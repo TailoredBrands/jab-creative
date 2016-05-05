@@ -186,6 +186,14 @@ $(document).ready(function() {
     $(this).parent().toggleClass('active')
   });
 
+  $('.off-canvas-wrap.move-right').on('click', function(e) {
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    console.log('trigger');
+    $('.inner-wrap').toggleClass('is-active');
+    $('.off-canvas-wrap').toggleClass('is-active');
+  });
+
 });
 
 
@@ -203,3 +211,5 @@ $(window).scroll(function () {
     $('.sticky-header').removeClass('active');
   }
 }); 
+
+

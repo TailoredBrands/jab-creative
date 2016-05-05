@@ -497,6 +497,9 @@ ul.off-canvas-list {
   list-style-type: none;
   text-align: center;
   // width: 100%;
+
+
+
   @media #{$small-only} { width: 90%; }
   @media #{$medium-up} { 
     width: 100%;
@@ -616,7 +619,7 @@ ul.off-canvas-list {
   .main-menu {
     height: 100vh;
     position: absolute;
-    background-color: white;
+    @media #{$medium-up} { background-color: white; }
     // left: 100%;
     left: -90%;
     z-index: 1000;
@@ -697,6 +700,11 @@ ul.off-canvas-list {
   .inner-wrap {
     left: 0;
     transition: all 0.3s ease;
+  }
+
+  .off-canvas-wrap.move-right .inner-wrap {
+    box-shadow: -1px -1px 10px rgba(#000, 0.3);
+    z-index: 99999;
   }
 
   .inner-wrap.is-active {
@@ -808,3 +816,41 @@ ul.off-canvas-list {
   box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
 }
 
+
+
+
+.mobile-menu-bottom-panel {
+  @extend .show-for-mobile-only;
+  padding: 28px 19px 28px 14px;
+
+
+
+  text-align: left;
+  & > a {
+    float: right;
+    font-weight: 400;
+    font-size: rem-calc(10px);
+    line-height: 1.6;
+    letter-spacing: 0.8px;
+    color: $jab-green;
+    text-transform: uppercase;
+    margin-top: 5px;
+
+  }
+  & > p > a {
+    margin-left: 10px;
+    font-size: rem-calc(12px);
+    line-height: 1.4;
+    letter-spacing: 1px;
+    color: $dark-two;
+  }
+  & span {
+    display: block;
+    margin-left: 25px;
+    font-size: rem-calc(14px);
+    line-height: 1.2;
+    color: $greyish-brown;
+
+  }
+
+}

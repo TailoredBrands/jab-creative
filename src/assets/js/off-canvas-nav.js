@@ -9,6 +9,14 @@ $('#suitMenu').on('click', function(){
   $('#suitMenu').toggleClass('is-active');
 });
 
+$('.left-off-canvas-toggle').on('click', function() {
+  if( $('.off-canvas-wrap').hasClass('move-right')) {
+    $('.left-off-canvas-toggle img').attr('src', 'assets/images/jab/mobile/mobile-bar-menu.svg');
+  } else {
+    $('.left-off-canvas-toggle img').attr('src', 'assets/images/jab/mobile/mobile-menu-close-x.svg');
+  }
+});
+
 
 $(function() {   
  $(window).resize(function() {
