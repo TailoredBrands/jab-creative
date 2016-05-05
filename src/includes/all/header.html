@@ -1,7 +1,11 @@
 <div class="off-canvas-wrap" data-offcanvas>
   <div class="inner-wrap">
     <!-- wrap for off-canvas above -->
+    
+    {{>promotion-callout-top-closable}}
+
     {{>promotion-callout-top}}
+
     <nav class="tab-bar show-for-small-only mobile-tab-bar">
       <section class="left-small">
         <a class="left-off-canvas-toggle" aria-controls="menu">
@@ -23,7 +27,7 @@
         </span>
       </section>
       <section class="right-small">
-        <a class="right-off-canvas-toggle" href="#shopping-bag" aria-controls="shopping-bag">
+        <a href="shopping-bag.html" aria-controls="shopping-bag">
           <img src="{{assets}}images/jab/mobile/mobile-bar-bag.svg" alt="">
         </a>
       </section>

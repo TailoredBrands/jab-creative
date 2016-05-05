@@ -205,7 +205,9 @@ $(document).ready(function() {
 // sticky menu activation
 
 $(window).scroll(function () {
-  if (window.pageYOffset > 150)  {
+  // var triggerMenu = 150; // w/o closable top espot
+  var triggerMenu = 246; // w closable top espot
+  if (window.pageYOffset > triggerMenu)  {
     $('.sticky-header').addClass('active');
   } else if ($('.sticky-header').hasClass('active')) {
     $('.sticky-header').removeClass('active');

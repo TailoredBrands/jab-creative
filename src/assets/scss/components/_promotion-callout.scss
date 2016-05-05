@@ -8,6 +8,15 @@
 }
 
 .promotion-callout-top, .promotion-callout-dismissible {
+
+  &.closable {
+    background: #F1F1F1;
+    margin-bottom: 0;
+    h1, p {
+    color: #222222;
+    }
+
+  }
   text-align: center;
   color: white;
 
