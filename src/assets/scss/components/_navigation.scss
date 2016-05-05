@@ -14,9 +14,9 @@ $promo-menu-width: 400;
   border-bottom: $tmw-border-bottom-size solid white;
   transition: border 300ms ease-out;
 
-  &.active, &:hover {
-    border-bottom: $tmw-border-bottom-size solid $primary-color;
-  }
+  // &.active, &:hover {
+  //   border-bottom: $tmw-border-bottom-size solid $primary-color;
+  // }
 
   &:hover, &:focus { background: $white; }
   &::after {
@@ -528,12 +528,12 @@ ul.off-canvas-list {
 
     }
 
-    a:hover,
-    a.is-active {
-      -webkit-box-shadow: inset 0px -2px 0px 0px rgba(0,0,0,0.75);
-      -moz-box-shadow: inset 0px -2px 0px 0px rgba(0,0,0,0.75);
-      box-shadow: inset 0px -2px 0px 0px rgba(0,0,0,0.75);
-    }
+    // a:hover,
+    // a.is-active {
+    //   -webkit-box-shadow: inset 0px -2px 0px 0px rgba(0,0,0,0.75);
+    //   -moz-box-shadow: inset 0px -2px 0px 0px rgba(0,0,0,0.75);
+    //   box-shadow: inset 0px -2px 0px 0px rgba(0,0,0,0.75);
+    // }
   }
 }
 
