@@ -38,7 +38,11 @@
     {{#is page.title "checkout"}}
       {{>checkout-footer}}
     {{else}}
-      {{>footer}}
+      {{#is page.title "filter"}}
+        {{>filter-footer}}
+      {{else}}
+        {{>footer}}
+      {{/is}}
     {{/is}}
 
 </body>
