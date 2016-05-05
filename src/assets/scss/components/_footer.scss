@@ -55,12 +55,12 @@
   }
 }
 
-
 .contact {
   text-align: center;
-  padding: 2rem;
+  // padding: 2rem;
   padding: 0 18px 0 18px;
   p {margin-bottom: 0; }
+  // margin-bottom: 10px;
 }
 
 .contact-method {
@@ -70,6 +70,7 @@
 }
 
 .footer-categories {
+  margin-top: 10px;
   list-style-type: none;
   float: left;
   margin-right: 2rem;
