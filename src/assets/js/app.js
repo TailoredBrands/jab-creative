@@ -203,35 +203,28 @@ $(document).ready(function() {
     $("#quickViewProductImages").slick("setPosition", 0);
   });
 
-  // $('#mobile-filter-tabs').on('toggled', function (event, tab) {
-  //   console.log(event.currentTarget);
-  //   console.log(tab.id());
-  //   // $(tab).
-  // });
-
-  $('.tab-title').on('click', function() {
-    console.log($(this).children().attr('href'));
-    var tabContentId = $(this).children().attr('href');
-    if ($(tabContentId).hasClass('active')) {
-      console.log('active');
-      $(this).removeClass('active');
-      console.log($(this));
-      $(tabContentId).removeClass('active');
-      console.log($(tabContentId));
+  // mobile filter tab / toggle interaction
+  $('.filter .tab-title a').on('click', function() {
+    var currentButton = $(this);
+    var isActive = $('#' + currentButton.data('tab-content')).hasClass('active');
+    var currentTab = $('#' + currentButton.data('tab-content'));
+    $('.filter .tab-title a').each(function(i, tab) {
+      $('#' + $(tab).data('tab-content')).removeClass('active');
+      $(tab).parent().removeClass('active');
+    });
+    if (!isActive) { 
+      $(currentButton).parent().addClass('active');
+      $(currentTab).addClass('active');
     }
   });
 
-
-});
+}); // end - doc ready
 
 
 // for testing modal
-
 // $(document).ready(function(){$('#qvModal').foundation('reveal', 'open')});
 
-
 // sticky menu activation
-
 $(window).scroll(function () {
   // var triggerMenu = 150; // w/o closable top espot
   var triggerMenu = 246; // w closable top espot

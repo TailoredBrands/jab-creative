@@ -907,3 +907,11 @@ ul.off-canvas-list {
 .icon-disabled {
   opacity: 0.3;
 }
+
+.search-icon {
+  opacity: 1.0;
+
+  &.is-active {
+    opacity: 0.25;
+  }
+}
