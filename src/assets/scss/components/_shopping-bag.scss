@@ -1,5 +1,4 @@
 //Generic seciton label typograpy
-//TODO: move to typography
 .section-label {
   font-size: 12px !important;
   text-transform: uppercase;
@@ -9,7 +8,6 @@
 }
 
 //Generic alternate label
-//TODO: move
 .section-label-alt {
   text-transform: uppercase;
   color: #8a8a8a;
@@ -17,7 +15,6 @@
   letter-spacing: 0;
 }
 
-//TODO: move this
 $global-transition: all 0.3s ease;
 
 //Entire shopping bag section

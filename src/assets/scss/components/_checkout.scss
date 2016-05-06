@@ -1,15 +1,13 @@
 //Tabs for the checkout section
-//TODO: make more generic.
 .checkout-tabs-content {
   border-top: 1px solid $light-gray;
   padding-top: 30px;
 }
 
 @media #{$small-only} {
-  .checkout-tabs-content {
-    padding-top: 10px;
-  }
+  .checkout-tabs-content { padding-top: 10px; }
 }
+
 label {
   text-transform: uppercase;
   font-weight: 500;
@@ -19,23 +17,19 @@ label {
   margin-bottom: 5px;
   color: $dark;
 }
+
 .ship-date {
   font-size: rem-calc(12);
   text-transform: uppercase;
   margin: 0 0 20px 10px;
 }
 
-.slick-arrow {
-  top: 43%;
-}
+.slick-arrow { top: 43%; }
 
-.tabs-content {
-  margin-top: 0;
-}
+.tabs-content { margin-top: 0; }
 
 .tabs.checkout-tabs {
   position: relative;
-
   a {
     font-size: 14px;
     font-weight: 300;
@@ -43,21 +37,14 @@ label {
     padding: 5px 0;
     outline: none;
   }
-
   .tab-title {
     width: auto;
     float: left;
     width: 33.33%;
     border-bottom: 1px solid #979797;
     border-top: 1px solid #979797;
-
-    &:last-child {
-      border-right: 1px solid #979797;
-    }
-    &:first-child {
-      border-left: 1px solid #979797;
-    }
-
+    &:last-child { border-right: 1px solid #979797; }
+    &:first-child { border-left: 1px solid #979797; }
     a {
       text-transform: none;
       text-align: center;
@@ -67,9 +54,7 @@ label {
     }
   }
 
-  .tab-title.active {
-    border: 1px solid #979797;
-  }
+  .tab-title.active { border: 1px solid #979797; }
 }
 
 .tabs.checkout-toggle,
@@ -90,13 +75,10 @@ label {
   .tab-title {
     width: 50%;
     text-align: center;
-
-    &.active {
-      a {
-        background: $jab-green;
-        color: white;
-        outline: none;
-      }
+    &.active a {
+      background: $jab-green;
+      color: white;
+      outline: none;
     }
   }
 }
@@ -110,28 +92,21 @@ label {
 .checkout-continue-cta {
   min-width: 40%;
   float: right !important;
-
   @media #{$small-only} {
     min-width: 100%;
     float: none;
   }
 }
 
-.off-canvas-wrap {
-  .is-faded {
-    opacity: 0.1;
-  }
-}
+.off-canvas-wrap .is-faded { opacity: 0.1; }
 
 .section-label.shipping {
   font-size: rem-calc(14);
   margin-top: 20;
   letter-spacing: 2px;
-
-  &:not(:first-of-type) {
-    margin-top: 30px;
-
+  &:not(:first-of-type) { margin-top: 30px;
   }
+
 }
 
 form {
@@ -293,19 +268,13 @@ input[type="text"].id-number-input {
   position: relative;
 }
 
-.product-size {
-  p {
-    margin-bottom: 5px;
-  }
-}
+.product-size p { margin-bottom: 5px; }
 
 //Bag items in the review section fixing the meta data.
-//TODO: combine with meta class in shopping bag
 .bag-item-selections {
   list-style: none;
   margin-bottom: 5px;
   padding-left: 10px;
-
   li {
     font-size: 11px;
     opacity: 0.5;
@@ -329,14 +298,8 @@ input[type="text"].id-number-input {
   }
 }
 
-.paypal-image {
-  position: relative;
-}
-
-.checkout-paypal-section {
-  margin-top: 20px;
-}
-
+.paypal-image { position: relative; }
+.checkout-paypal-section { margin-top: 20px; }
 .checkout-review {
   .product-price-orig {
     font-size: rem-calc(14);
@@ -348,7 +311,6 @@ input[type="text"].id-number-input {
   }
 }
 
-
 .norton-checkout {
   margin: 8rem 0 0 0;
   @media #{$small-only} {
@@ -359,7 +321,6 @@ input[type="text"].id-number-input {
 .checkout-sub-ctas {
   @include clearfix;
   margin-top: 1rem;
-
   .button  {
     width: 48%;
     margin-top: 0;
@@ -370,45 +331,31 @@ input[type="text"].id-number-input {
     color: $callout-color;
     padding: 0.8rem 1.6rem 0.7rem;
     margin-right: 20px;
-
-    &:hover {
-      color: $callout-color;
-    }
+    &:hover { color: $callout-color; }
   }
 }
 
 .checkbox {
-  &.first {
-    margin-top: 20px;
-  }
+  &.first { margin-top: 20px; }
   label {
     position: relative;
     top: 2px;
     margin-right: 0 !important;
     font-size: 12px;
   }
-
   label,
   input {
     display: inline !important;
   }
-
-  input {
-    margin-bottom: 0.5rem;
-  }
+  input { margin-bottom: 0.5rem; }
 }
 
 .shipping-checkbox {
   margin-bottom: 0;
   padding: 0 !important;
-
 }
 
-.checkout-review {
-  ul.order-summary-list {
-    margin-bottom: 1rem;
-  }
-}
+.checkout-review ul.order-summary-list { margin-bottom: 1rem; }
 
 .review-section-header {
   .left.section-label {
@@ -417,77 +364,41 @@ input[type="text"].id-number-input {
   }
 }
 
-.checkout-review-promo {
-  margin-bottom: 1rem !important;
-}
+.checkout-review-promo { margin-bottom: 1rem !important; }
 
 .sub-section-label {
   display: block;
   width: 100%;
   margin-top: 30px;
   border-bottom: 1px solid #CBCBCB;
-
-  &.first {
-    margin-top: 3px;
-  }
+  &.first { margin-top: 3px; }
 }
 
-
-.forgot-password-large {
-  margin-bottom: 0 !important;
-}
+.forgot-password-large { margin-bottom: 0 !important; }
 
 .forgot-password-link {
   display: inline-block;
   margin-bottom: 1rem;
 }
 
-.text-label {
-  font-size: 12px;
-}
-
-.accordion .accordion-navigation > .text-me-cta {
-  padding: 0;
-}
-.accordion .accordion-navigation > .email-me-cta {
-  padding: 0;
-}
-
-.accordion .accordion-navigation > .text-me-content.active{
-  padding: 1rem;
-}
-
-.accordion .accordion-navigation.active > a {
-  background: white;
-}
-
-.legal {
-  font-size: 10px;
-}
+.text-label { font-size: 12px; }
+.accordion .accordion-navigation > .text-me-cta { padding: 0; }
+.accordion .accordion-navigation > .email-me-cta { padding: 0; }
+.accordion .accordion-navigation > .text-me-content.active{ padding: 1rem; }
+.accordion .accordion-navigation.active > a { background: white; }
+.legal { font-size: 10px; }
 
 .payment-info,
 .shipping-info,
 .item-summary-info {
   margin-top: 30px;
-
   .section-label,
   .section-label-alt {
     margin-bottom: 0px;
   }
-
-  .review-section-header {
-    border-bottom: 1px solid #CBCBCB;
-  }
+  .review-section-header { border-bottom: 1px solid #CBCBCB; }
 }
 
-.checkout.logo-bar {
-  padding: 50px;
-}
-
-.checkbox {
-  padding-bottom: 10px;
-}
-
-.address {
-  margin: 20px 0;
-}
+.checkout.logo-bar { padding: 50px; }
+.checkbox { padding-bottom: 10px; }
+.address { margin: 20px 0; }
