@@ -11,13 +11,13 @@
   background: $callout-color;
   color: white;
   text-align: center;
-  z-index: 9999;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
   font-size: rem-calc(14);
-  margin-left: -0.9375rem;
+  margin-left: 0 !important;
   border: 5px solid $callout-color;
+  z-index: 1;
   &:before {
     content: '';
     position: absolute;
