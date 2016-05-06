@@ -1,0 +1,42 @@
+.progress.fit-chart {
+  @include progress-container;
+  position: relative;
+  height: 22px;
+  margin-bottom: 4px;
+  padding: 0;
+  border-left: solid 1px $warm-grey-three;
+  border-right: solid 1px $warm-grey-three;
+  background-color: transparent;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    height: 4px;
+    right: 0;
+    left: 0;
+    background: $warm-grey-three;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background: $warm-grey-three;
+  }
+  & > span {
+    @include progress-meter;
+    position: relative;
+    background-color: transparent;
+    border-right: solid 9px #013a2c;
+    z-index: 1000;
+  }
+}
+
+.fit-chart-label {
+  font-size: rem-calc(10px);
+  letter-spacing: 1.7px;
+  color: $greyish-brown;
+  text-transform: uppercase;
+}

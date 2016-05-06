@@ -1,0 +1,23 @@
+.star-chart {
+  @extend .clearfix;
+  .star-chart-heading {
+    float: left;
+    background:#fff;
+    padding-right: 6px;
+    font-size: rem-calc(12px);
+    line-height: 2.2;
+    color: $dark-two;
+  }
+  .progress.review {
+    position: relative;
+    overflow: hidden;
+    top: 7px;
+  }
+  .star-chart-number {
+    float: right;
+    margin-top: 5px;
+    padding-left: 6px;
+    font-size: rem-calc(10px);
+    color: $dark-two;
+  }
+}

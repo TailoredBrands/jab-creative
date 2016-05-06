@@ -78,3 +78,15 @@
     width: 100%;
   }
 }
+
+
+.button.load-more {
+  font-size: rem-calc(10px);
+  line-height: 1.8;
+  letter-spacing: 1.2px;
+  color: #013a2c;
+  text-transform: uppercase;
+  background:none;
+  border: solid 1px #025b49;
+  padding: 7px 90px;
+}

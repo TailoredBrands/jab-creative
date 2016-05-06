@@ -5,3 +5,5 @@
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
+@media #{$medium-up} {.whitespace {margin: 0 16px; } }

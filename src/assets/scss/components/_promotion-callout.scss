@@ -102,3 +102,13 @@
   position: relative;
 }
 
+.promo-seperate-vertical {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.promo-seperate-horizontal {
+  .columns {
+    &:nth-child(1) { padding-right: 10px; }
+    &:nth-last-child(1) { padding-left: 10px; }
+  }
+}

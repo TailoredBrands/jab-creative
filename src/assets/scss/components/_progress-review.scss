@@ -1,0 +1,10 @@
+.progress.review {
+  @include progress-container;
+  height: 12px;
+  background-color: #d8d8d8 !important;
+  padding: 0;
+  background: none;
+  & > span {
+    @include progress-meter(#8a8a8a);
+  }
+}

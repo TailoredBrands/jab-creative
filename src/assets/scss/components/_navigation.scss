@@ -878,3 +878,32 @@ ul.off-canvas-list {
   }
 
 }
+
+
+.tab-bar {
+  border-bottom: solid 1px $greyish;
+  .left-off-canvas-toggle {
+    margin-left: 15px;
+  }
+  .right-small a {
+    float: right;
+    margin-right: 15px;
+    position: relative;
+    top: -3px;
+  }
+}
+
+.search-icon {
+  position: relative;
+  top: -1px;
+  left: 8px;
+}
+.pin-icon {
+  position: relative;
+  top: -2px;
+  left: 0;
+}
+
+.icon-disabled {
+  opacity: 0.3;
+}

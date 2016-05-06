@@ -1,0 +1,18 @@
+.outer-lines-wrapper {
+  transition: all 1s;
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+  border-top: 1px solid $white-two;
+}
+
+.outer-lines {
+  position: absolute;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background:#fff;
+  display: inline-block;
+  border-left: solid 1px $white-two;
+  border-right: solid 1px $white-two;
+}
+
