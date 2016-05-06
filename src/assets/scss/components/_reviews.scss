@@ -1,9 +1,10 @@
+.content.border-top {
+    border-top: solid 1px $warm-grey-three;
+}
+
 .reviews {
   list-style: none;
   margin-left: 0;
-}
-
-.review {
 }
 
 .review {
@@ -19,25 +20,35 @@
   }
 
   .title {
-    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: rem-calc(20px);
+    color: #262626;
+    margin-bottom: 10px !important;
   }
 
   .stars {
-    margin-bottom: 5px;
-    display: block;
+    display: inline-block;
+    white-space: nowrap;
   }
 
-  .time-stamp {
-    display: block;
-    opacity: 0.4;
-    margin-bottom: 10px;
+  .author, .time-stamp {
+    display: inline-block;
+    font-family: $font-family-sans-serif;
+    font-weight: 400;
+    font-size: rem-calc(12px);
+    letter-spacing: 1px;
+    color: #333333;
+    text-transform: none;
+    line-height: 1.0;
   }
-
   .author {
-    margin-bottom: 15px;
-    margin-top: 5px;
+    margin: 0 0 0 10px;
   }
-
+  .author::after {
+    content: '|';
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .attributes {
     list-style: none;
   }
@@ -48,16 +59,27 @@
 }
 
 .filters-area {
-  .page,
-  .sort {
-    opacity: 0.4;
+  background-color: #eeeeee;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  .page {
+    padding: 11px 11px 11px 11px;
+
   }
-
   .sort {
-    padding-right: 15px;
+    float: right;
     position: relative;
-
+    background:#FFF;
+    padding: 15px 36px 13px 13px;
+    border: solid 1px #cacaca;
+    font-weight: 500;
+    font-size: rem-calc(12px);
+    letter-spacing: 2px;
+    color: $greyish-brown;
+    text-transform: uppercase;
     &::after {
+      right: 15px;
+      top: 22px;
       width: 0;
       height: 0;
       border-left: 5px solid transparent;
@@ -65,8 +87,7 @@
       border-top: 5px solid #ADADAD;
       content: "";
       position: absolute;
-      right: 0;
-      top: 4px;
+      transform: rotate(90deg);
     }
   }
 }
