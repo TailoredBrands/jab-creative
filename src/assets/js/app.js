@@ -205,7 +205,7 @@ $(document).ready(function() {
 
 // for testing modal
 
-// $(document).ready(function(){$('#qvModal').foundation('reveal', 'open')});
+$(document).ready(function(){$('#qvModal').foundation('reveal', 'open')});
 
 
 // sticky menu activation
