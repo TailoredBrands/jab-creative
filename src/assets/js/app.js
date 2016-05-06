@@ -222,7 +222,7 @@ $(document).ready(function() {
 
 
 // for testing quickview modal
-$(document).ready(function(){$('#qvModal').foundation('reveal', 'open')});
+// $(document).ready(function(){$('#qvModal').foundation('reveal', 'open')});
 
 // sticky menu activation
 $(window).scroll(function () {
