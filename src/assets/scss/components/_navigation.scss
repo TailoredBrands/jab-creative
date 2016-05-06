@@ -770,6 +770,10 @@ ul.off-canvas-list {
 .sticky-header {
   background:$white;
   transition: all $sticky-header-timing;
+
+  .cart-link-wrapper {
+    display: none;
+  }
   .main-menu { transition: margin $sticky-header-timing; }
   .logo-bar {
     transition: padding $sticky-header-timing;
@@ -794,6 +798,26 @@ ul.off-canvas-list {
   right: 0;
   left: 0;
   z-index: 10000;
+  .cart-link-wrapper {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 6px;
+  }
+  .cart-link {
+    margin: 0 auto;
+    max-width: $row-width;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: right;
+    a {
+      color: #101820;
+      font-size: rem-calc(12px);
+      letter-spacing: 0.5px;
+    }
+  }
+
   .main-menu {margin-top: 10px; }
   .logo-bar  {
     padding-top: 10px;
