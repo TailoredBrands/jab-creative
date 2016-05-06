@@ -542,6 +542,14 @@ section.filter {
   opacity: 0.3;
 }
 
+.share-text {
+  padding-top: rem-calc(4px);
+  font-size: rem-calc(12px);
+  letter-spacing: 1px;
+  color: $warm-grey-two;
+
+}
+
 
 // ios switch to fixed position lag fix
 // *:not(html) { -webkit-transform: translate3d(0, 0, 0); }
