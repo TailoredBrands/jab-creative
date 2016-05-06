@@ -51,6 +51,9 @@ $promo-menu-width: 400;
 }
 
 .logo {
+  @media (max-width: 339px) {
+    width: 120px;
+  }
   // height: 20px;
   @media #{$small-only} {
 
