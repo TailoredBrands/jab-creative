@@ -547,7 +547,7 @@ section.filter {
   font-size: rem-calc(12px);
   letter-spacing: 1px;
   color: $warm-grey-two;
-
+  @media #{$small-only} { padding-left: 15px !important; }
 }
 
 
