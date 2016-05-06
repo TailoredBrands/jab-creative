@@ -249,21 +249,27 @@ $add-on-group-width: 94%;
 .add-on-group {
   margin-bottom: 40px;
   .center-line {
-    display: inline-block;
     width: $add-on-group-width;
-    position: relative;
     float: right;
+    position: relative;
+    margin-top: 15px;
+    border-top: 1px solid $white-two;
+    transform: translate(0, -50%);
     &:before {
-      z-index: -1;
-      content: '';
       position: absolute;
-      top: 9px;
-      left: 0;
-      right: 0;
-      border-bottom: 1px solid $white-two;
+      background:#fff;
+      display: inline-block;
+      border-left: solid 1px $white-two;
+      border-right: solid 1px $white-two;
     }
-    span { background: #FFF; }
-    span:nth-child(1) {padding-right: 7px; }
+    span { 
+      background:#FFF;
+      transform: translate(0 ,-50%);
+    }
+    span:nth-child(1) {
+      padding-right: 7px; 
+      float: left;
+    }
     span:nth-last-child(1) {
       float: right;
       border-left: solid 1px $white-two;
@@ -279,14 +285,15 @@ $add-on-group-width: 94%;
   font-size: rem-calc(10px);
   letter-spacing: 1px;
   color: $jab-green;
+  transform: translate(0, -125%);
 }
 
 //Link for big and tall on pdp
 .big-and-tall-link {
-  margin-bottom: 5px;
+  margin-bottom: 40px;
   font-weight: 300;
-  position: relative;
-  top: 0;
+  // position: relative;
+  // top: 0;
   font-size: rem-calc(10px);
   line-height: 1.8;
   letter-spacing: 1.2px;
