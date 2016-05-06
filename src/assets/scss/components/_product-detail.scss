@@ -199,6 +199,12 @@ $add-on-group-width: 94%;
   }
 }
 
+@media #{$small-only} {
+  .pdp-header .product-name {
+    font-size: rem-calc(18px);
+  }
+}
+
 //The product name/title on pdp
 .product-details-page {
   .product-name {
