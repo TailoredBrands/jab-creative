@@ -101,6 +101,7 @@
 
 .outer-lines {
   position: absolute;
+  left:50%;
   transform: translate(-50%,-50%);
   background:#fff;
   display: inline-block;
@@ -246,7 +247,7 @@ section.filter {
   }
   h1 {
     color: $dark-grey;
-    @media #{$small-only} { 
+    @media #{$small-only} {
       text-align: center;
       font-family: $font-family-sans-serif;
       font-weight: 300;
@@ -369,19 +370,19 @@ section.filter {
       }
     }
     padding-top: 0;
-    
+
   }
 
 
-}  
+}
 
 // .filter-sidebar { }
 
-.simple-menu { 
+.simple-menu {
   list-style-type: none;
   margin-left: 0;
   margin-bottom: 40px;
-  li a { 
+  li a {
     font-weight: 300;
     font-size: rem-calc(14px);
     line-height: 2.3;
@@ -495,7 +496,7 @@ section.filter {
       margin: 0;
       padding: 0;
     }
-    img { 
+    img {
       width: 35px;
       height: 14px;
       padding: 0 !important;
@@ -506,7 +507,7 @@ section.filter {
 
 }
 
-// override 
+// override
 
 .breadcrumbs {
   padding: 0;
