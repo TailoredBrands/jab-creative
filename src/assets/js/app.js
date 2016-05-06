@@ -199,13 +199,35 @@ $(document).ready(function() {
     $("#quickViewProductImages").slick("setPosition", 0);
   });
 
+  $(document).on('opened.fndtn.reveal', '[data-reveal]', function () {
+    $("#quickViewProductImages").slick("setPosition", 0);
+  });
+
+  // $('#mobile-filter-tabs').on('toggled', function (event, tab) {
+  //   console.log(event.currentTarget);
+  //   console.log(tab.id());
+  //   // $(tab).
+  // });
+
+  $('.tab-title').on('click', function() {
+    console.log($(this).children().attr('href'));
+    var tabContentId = $(this).children().attr('href');
+    if ($(tabContentId).hasClass('active')) {
+      console.log('active');
+      $(this).removeClass('active');
+      console.log($(this));
+      $(tabContentId).removeClass('active');
+      console.log($(tabContentId));
+    }
+  });
+
 
 });
 
 
 // for testing modal
 
-$(document).ready(function(){$('#qvModal').foundation('reveal', 'open')});
+// $(document).ready(function(){$('#qvModal').foundation('reveal', 'open')});
 
 
 // sticky menu activation
