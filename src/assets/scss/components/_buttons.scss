@@ -12,15 +12,15 @@
     position: relative;
     max-width: 100%;
     transition: background 0.3s ease;
-    // position: fixed;
+    position: fixed;
     bottom: 0;
     display: block;
-    // padding: 8px 12px 7px 12px;
+    padding: 8px 12px 7px 12px;
     padding: 17px 12px;
     background: $callout-color;
     color: white;
     text-align: center;
-    // z-index: 9999;
+    z-index: 1;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 500;
