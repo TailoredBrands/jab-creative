@@ -473,13 +473,11 @@
 }
 
 .quick-view-wrapper {
-  &:hover .quick-view-cta {
-    display: block;
+  @media #{$medium-up} {
+  &:hover .quick-view-cta { display: block; }
   }
   position: relative;
-  .quick-view-cta {
-    display: none;
-  }
+  .quick-view-cta { display: none; }
 
 }
 .filter-content .quick-view-cta, .filter-grid .quick-view-cta {
