@@ -221,8 +221,8 @@ $(document).ready(function() {
 }); // end - doc ready
 
 
-// for testing modal
-// $(document).ready(function(){$('#qvModal').foundation('reveal', 'open')});
+// for testing quickview modal
+$(document).ready(function(){$('#qvModal').foundation('reveal', 'open')});
 
 // sticky menu activation
 $(window).scroll(function () {

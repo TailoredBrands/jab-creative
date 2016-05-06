@@ -1,119 +1,117 @@
 
 <div id="qvModal" class="reveal-modal qv-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog" style="max-width:780px">
 
-<!--   <div class="row">
-<h3 class="section-label title">Edit</h3>
-</div>
+  <div class="row">
 
---> 
+    <div class="medium-5 columns">
 
-<div class="row">
+      <div class="product-images text-center hide-for-small-only">
+        <a class="pdp-image-prev">Previous Image</a>
+        <img class="pdp-large-image" src="{{assets}}images/jab/pdp-main-image-suit.png">
+        <a class="pdp-image-next"> Next Image</a>
+        <ul class="pdp-thumbs small-pattern inline-list">
+          <li class="active"><a href=""><img src="{{assets}}images/jab/pdp-thumb-1.png"></a></li>
+          <li><a href=""><img src="{{assets}}images/jab/pdp-thumb-2.png"></a></li>
+          <li><a href=""><img src="{{assets}}images/jab/pdp-thumb-3.png"></a></li>
+          <li class="movie"><a href=""><img src="{{assets}}images/jab/pdp-thumb-4.png"></a></li>
+          <li class="more-images"><a>More Images</a></li>
+        </ul>
+      </div>
 
-  <div class="small-5 columns">
+    </div>
 
-    <div class="product-images text-center hide-for-small-only">
-      <ul id="quickViewProductImages">
-        <li> <img class="pdp-large-image" src="{{assets}}images/jab/pdp-main-image-suit.png"> </li>
-        <li> <img class="pdp-large-image" src="{{assets}}images/jab/pdp-main-image-suit.png"> </li>
-        <li> <img class="pdp-large-image" src="{{assets}}images/jab/pdp-main-image-suit.png"> </li>
-        <li> <img class="pdp-large-image" src="{{assets}}images/jab/pdp-main-image-suit.png"> </li>
+
+
+    <!-- Colors -->
+    <div class="medium-7 columns end">
+      <a class="product-name" href="#">Executive 2-Button Wool Suit with Plain Front Trousers</a>
+      <div class="rating">
+        <img class="rating-star" src="{{assets}}images/icons/rating-star.svg" alt="star">
+        <img class="rating-star" src="{{assets}}images/icons/rating-star.svg" alt="star">
+        <img class="rating-star" src="{{assets}}images/icons/rating-star.svg" alt="star">
+        <img class="rating-star" src="{{assets}}images/icons/rating-star.svg" alt="star">
+        <img class="rating-star-dimmed" src="{{assets}}images/icons/rating-star.svg" alt="star">
+      </div>
+      <p class="product-price"><span class="product-price-orig">$849.<sup>59</sup></span> <span class="product-price-discount">$699.<sup>99</sup> </span></p>
+      <p class="promotion-callout">Buy 1 on Sale, Get 2nd Free!</p>
+      <h3 class="color-label">Color: </h3><p class="color-name">Charcoal Gray</p>
+      <ul class="product-colors-grid">
+        <li class="thumbnail active">
+          <a href="#">
+            <img class="product-color" src="{{assets}}images/jab/swatches/7450_043_swatch%20copy.png" alt="">
+          </a>
+        </li>
+        <li class="thumbnail">
+          <a href="#">
+            <img class="product-color" src="{{assets}}images/jab/swatches/7450_024_swatch.png" alt="">
+          </a>
+        </li>
+        <li class="thumbnail secondary-colors">
+          <a href="#">
+            <img class="product-color" src="{{assets}}images/jab/swatches/7450_010_swatch.png" alt="">
+          </a>
+        </li>
+        <li class="thumbnail secondary-colors">
+          <a href="#">
+            <img class="product-color" src="{{assets}}images/jab/swatches/7450_070_swatch.png" alt="">
+          </a>
+        </li>
+        <li class="thumbnail secondary-colors is-hidden">
+          <a href="#">
+            <img class="product-color" src="{{assets}}images/jab/swatches/7450_010_swatch copy.png" alt="">
+          </a>
+        </li>
+        <li class="thumbnail secondary-colors is-hidden">
+          <a href="#">
+            <img class="product-color" src="{{assets}}images/jab/swatches/7450_010_swatch copy.png" alt="">
+          </a>
+        </li>
+        <li class="thumbnail secondary-colors is-hidden">
+          <a href="#">
+            <img class="product-color" src="{{assets}}images/jab/swatches/7450_010_swatch copy.png" alt="">
+          </a>
+        </li>
+        <li class="thumbnail secondary-colors is-hidden">
+          <a href="#">
+            <img class="product-color" src="{{assets}}images/jab/swatches/7450_010_swatch copy.png" alt="">
+          </a>
+        </li>
+        <li class="thumbnail secondary-colors is-hidden">
+          <a href="#">
+            <img class="product-color" src="{{assets}}images/jab/swatches/7450_010_swatch copy.png" alt="">
+          </a>
+        </li>
+        <li class="thumbnail secondary-colors is-hidden">
+          <a href="#">
+            <img class="product-color" src="{{assets}}images/jab/swatches/7450_010_swatch copy.png" alt="">
+          </a>
+        </li>
+        <li class="thumbnail secondary-colors is-hidden">
+          <a href="#">
+            <img class="product-color" src="{{assets}}images/jab/swatches/7450_010_swatch copy.png" alt="">
+          </a>
+        </li>
+        <li class="thumbnail secondary-colors is-hidden">
+          <a href="#">
+            <img class="product-color" src="{{assets}}images/jab/swatches/7450_010_swatch copy.png" alt="">
+          </a>
+        </li>
+        <li class="see-more-colors" >
+          <a id="pdpSeeMore" class="small-text-link">See <span class="more is-active">7 More Colors</span> <span class="less is-hidden">Less</span></a>
+        </li>
       </ul>
+      <!-- /Colors -->
+
+      <!-- Sizing Dropdown -->
+      {{>pdp-sizing-dropdown }}
+      {{> pdp-add-on-options}}
+      <!-- /Sizing Dropdown -->
+
+      <a class="add-to-bag-cta" href="#">Add to Shopping Bag</a>
+
+      <p class="text-center"> <a href="#" class="small-text-link">View Full Product Information &raquo;</a> </p>
+
     </div>
 
+    <a class="close close-reveal-modal" aria-label="Close">&times;</a>
   </div>
-
-
-
-  <!-- Colors -->
-  <div class="small-7 columns end">
-    <a class="product-name" href="#">Executive 2-Button Wool Suit with Plain Front Trousers</a>
-    <div class="rating">
-      <img class="rating-star" src="{{assets}}images/icons/rating-star.svg" alt="star">
-      <img class="rating-star" src="{{assets}}images/icons/rating-star.svg" alt="star">
-      <img class="rating-star" src="{{assets}}images/icons/rating-star.svg" alt="star">
-      <img class="rating-star" src="{{assets}}images/icons/rating-star.svg" alt="star">
-      <img class="rating-star-dimmed" src="{{assets}}images/icons/rating-star.svg" alt="star">
-    </div>
-    <p class="product-price"><span class="product-price-orig">$849.<sup>59</sup></span> <span class="product-price-discount">$699.<sup>99</sup> </span></p>
-    <p class="promotion-callout">Buy 1 on Sale, Get 2nd Free!</p>
-    <h3 class="color-label">Color: </h3><p class="color-name">Charcoal Gray</p>
-    <ul class="product-colors-grid">
-      <li class="thumbnail active">
-        <a href="#">
-          <img class="product-color" src="{{assets}}images/jab/swatches/7450_043_swatch%20copy.png" alt="">
-        </a>
-      </li>
-      <li class="thumbnail">
-        <a href="#">
-          <img class="product-color" src="{{assets}}images/jab/swatches/7450_024_swatch.png" alt="">
-        </a>
-      </li>
-      <li class="thumbnail secondary-colors">
-        <a href="#">
-          <img class="product-color" src="{{assets}}images/jab/swatches/7450_010_swatch.png" alt="">
-        </a>
-      </li>
-      <li class="thumbnail secondary-colors">
-        <a href="#">
-          <img class="product-color" src="{{assets}}images/jab/swatches/7450_070_swatch.png" alt="">
-        </a>
-      </li>
-      <li class="thumbnail secondary-colors is-hidden">
-        <a href="#">
-          <img class="product-color" src="{{assets}}images/jab/swatches/7450_010_swatch copy.png" alt="">
-        </a>
-      </li>
-      <li class="thumbnail secondary-colors is-hidden">
-        <a href="#">
-          <img class="product-color" src="{{assets}}images/jab/swatches/7450_010_swatch copy.png" alt="">
-        </a>
-      </li>
-      <li class="thumbnail secondary-colors is-hidden">
-        <a href="#">
-          <img class="product-color" src="{{assets}}images/jab/swatches/7450_010_swatch copy.png" alt="">
-        </a>
-      </li>
-      <li class="thumbnail secondary-colors is-hidden">
-        <a href="#">
-          <img class="product-color" src="{{assets}}images/jab/swatches/7450_010_swatch copy.png" alt="">
-        </a>
-      </li>
-      <li class="thumbnail secondary-colors is-hidden">
-        <a href="#">
-          <img class="product-color" src="{{assets}}images/jab/swatches/7450_010_swatch copy.png" alt="">
-        </a>
-      </li>
-      <li class="thumbnail secondary-colors is-hidden">
-        <a href="#">
-          <img class="product-color" src="{{assets}}images/jab/swatches/7450_010_swatch copy.png" alt="">
-        </a>
-      </li>
-      <li class="thumbnail secondary-colors is-hidden">
-        <a href="#">
-          <img class="product-color" src="{{assets}}images/jab/swatches/7450_010_swatch copy.png" alt="">
-        </a>
-      </li>
-      <li class="thumbnail secondary-colors is-hidden">
-        <a href="#">
-          <img class="product-color" src="{{assets}}images/jab/swatches/7450_010_swatch copy.png" alt="">
-        </a>
-      </li>
-      <li class="see-more-colors" >
-        <a id="pdpSeeMore" class="small-text-link">See <span class="more is-active">7 More Colors</span> <span class="less is-hidden">Less</span></a>
-      </li>
-    </ul>
-    <!-- /Colors -->
-
-    <!-- Sizing Dropdown -->
-    {{>pdp-sizing-dropdown }}
-    {{> pdp-add-on-options}}
-    <!-- /Sizing Dropdown -->
-
-    <a class="add-to-bag-cta" href="#">Add to Shopping Bag</a>
-
-    <p class="text-center"> <a href="#" class="small-text-link">View Full Product Information &raquo;</a> </p>
-
-  </div>
-
-  <a class="close close-reveal-modal" aria-label="Close">&times;</a>
-</div>
