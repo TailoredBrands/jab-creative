@@ -189,8 +189,10 @@
   }
 }
 
-.whitespace {
-  margin: 0 16px;
+@media #{$medium-up} {
+  .whitespace {
+    margin: 0 16px;
+  }
 }
 
 

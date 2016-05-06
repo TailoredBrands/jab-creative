@@ -208,7 +208,9 @@ $add-on-group-width: 94%;
 }
 
 //Container for all details proceding the image and title
-.product-container { padding: 10px 0; }
+@media #{$medium-up} {
+  .product-container { padding: 10px 0; }
+}
 
 // All information relating to the product
 .product-info {
@@ -290,10 +292,10 @@ $add-on-group-width: 94%;
 .quantity-label {
   margin-bottom: 10px;
   // margin-top: 6px;
-    @media #{$small-only} {
+  @media #{$small-only} {
     margin-top: rem-calc(10px) !important;
   }
-    @media #{$medium-up} {
+  @media #{$medium-up} {
     margin-top: rem-calc(40px) !important;
   }
 
