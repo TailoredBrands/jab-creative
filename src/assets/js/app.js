@@ -218,11 +218,22 @@ $(document).ready(function() {
     }
   });
 
+
+
+
 }); // end - doc ready
 
 
 // for testing quickview modal
 // $(document).ready(function(){$('#qvModal').foundation('reveal', 'open')});
+
+// for testing emailSignup modal
+// $(document).ready(function(){$('#emailSignup').foundation('reveal', 'open'); });
+
+// simulate interstitial with reveal modal
+setTimeout(function() {
+  $('#emailSignup').foundation('reveal', 'open');
+}, 2500);
 
 // sticky menu activation
 $(window).scroll(function () {
