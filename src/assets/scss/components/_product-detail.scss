@@ -289,7 +289,14 @@ $add-on-group-width: 94%;
 .product-total { padding-top: 5px; }
 .quantity-label {
   margin-bottom: 10px;
-  margin-top: 6px;
+  // margin-top: 6px;
+    @media #{$small-only} {
+    margin-top: rem-calc(10px) !important;
+  }
+    @media #{$medium-up} {
+    margin-top: rem-calc(40px) !important;
+  }
+
 }
 .product-quantity {
 //overriding the crazy specific quantity input rule of f5
