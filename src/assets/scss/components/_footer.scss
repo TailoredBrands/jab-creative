@@ -3,6 +3,10 @@
   margin-top: 40px;
   padding-top: 33px;
 
+  @media #{$small-only} {
+    border-top: 1px solid $greyish;
+  }
+
   .accordion > li > a {
     padding-left: 10px;
     &:after { right: 10px; }
@@ -16,7 +20,7 @@
   }
 
   .outer-lines-wrapper {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
   .back-to-top-wrapper {
     position: relative;
@@ -59,8 +63,8 @@
   text-align: center;
   // padding: 2rem;
   padding: 0 18px 0 18px;
+  margin-bottom: 10px;
   p {margin-bottom: 0; }
-  // margin-bottom: 10px;
 }
 
 .contact-method {
@@ -121,7 +125,7 @@ button.secondary.postfix {
     list-style: none;
     @media #{$medium-up} {
       @include inline-list;
-      display: inline-block; 
+      display: inline-block;
     }
   }
   a {
@@ -134,7 +138,7 @@ button.secondary.postfix {
     border-right: 1px solid $warm-grey-two;
     padding: 0 10px 0 0 ;
     @media #{$small-only} {
-      &:after { 
+      &:after {
         content: '|';
         padding-left: 5px;
         font-size: rem-calc(5);
