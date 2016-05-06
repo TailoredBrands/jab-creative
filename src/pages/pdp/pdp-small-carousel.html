@@ -2,17 +2,18 @@
 layout: src/layouts/empty.html
 ---
 <!-- Small carousel -->
-<div class="product-image-small show-for-small-only" id="scrolling">
-  <ul>
-    <li>
-      <img src="{{assets}}/images/pdp/suit-1.jpeg">
-    </li>
-    <li>
-      <img src="{{assets}}/images/pdp/suit-2.jpeg">
-    </li>
-    <li>
-      <img src="{{assets}}/images/pdp/suit-3.jpeg">
-    </li>
+<div class="product-images text-center show-for-small-only">
+  <a class="pdp-image-prev">Previous Image</a>
+  <img class="pdp-large-image" src="{{assets}}images/jab/pdp-main-image-suit.png">
+  <a class="pdp-image-next"> Next Image</a>
+  <ul class="pdp-thumbs inline-list">
+    <li class="active"><a href=""><img src="{{assets}}images/jab/pdp-thumb-1.png"></a></li>
+    <li><a href=""><img src="{{assets}}images/jab/pdp-thumb-2.png"></a></li>
+    <li><a href=""><img src="{{assets}}images/jab/pdp-thumb-3.png"></a></li>
+    <li class="movie"><a href=""><img src="{{assets}}images/jab/pdp-thumb-4.png"></a></li>
+    <li class="more-images"><a>More Images</a></li>
   </ul>
 </div>
 <!-- /Small carousel -->
+
+

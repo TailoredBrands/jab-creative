@@ -421,47 +421,72 @@ margin-bottom: 20px;
 .pdp-thumbs {
   padding-top: rem-calc(30px);
   margin-left: 0.05rem;
-  display: none;
-  li {
-    border: solid 1px $thumb-border;
-    margin-right: 40px;
-    &:nth-last-child(2) { margin-right: 6px; }
+  // display: none;
+  @media #{$small-only} {
+    display: inline-block;
+    li {
+      display: inline-block;
+      margin-right: 5px;
+      border-radius: 9999px;
+      width: 10px;
+      height: 10px;
+      background: #FFF;
+      border: solid 1px #000;
+    }
+    img { display: none; }
+    .active { background:#000; }
+    .more-images {
+      position: relative;
+      top: -11px;
+      overflow: hidden;
+      text-indent: -9999px;
+      border: none;
+      height: 34px;
+      width: 30px;
+      background: url('../images/jab/php-thumbs-right-arrow.svg');
+      background-size: 7px 12px;
+      background-repeat: no-repeat;
+      background-position: 10px 10px;
+    }
+    .movie {
+      position: relative;
+      border: none;
+      &:after {
+        content: '';
+        position: absolute;
+        top: -1px;
+        left: 0;
+        width: 9px;
+        height: 12px;
+        background:#f00;
+        background:url('../images/jab/mobile/mobile-video-icon.svg');
+        background-size: 9px 12px;
+        background-position: top left;
+        background-repeat: no-repeat;
+      }
+    }
+
   }
   @media #{$medium-up} {
     display: block;
-    img {
-      width: 60px;
+    li {
+      border: solid 1px $thumb-border;
+      margin-right: 40px;
+      &:nth-last-child(2) { margin-right: 6px; }
     }
-  }
-  .active {
-    border: solid 2px $thumb-border-active;
-  }
-  .more-images {
-    margin-top: 14px;
-    overflow: hidden;
-    text-indent: -9999px;
-    border: none;
-    height: 34px;
-    width: 30px;
-    background: url('/assets/images/jab/php-thumbs-right-arrow.svg');
-    background-size: 7px 12px;
-    background-repeat: no-repeat;
-    background-position: 10px 10px;
-  }
-  .movie {
-    position: relative;
-    &:after {
-      pointer-events: none;
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      background:url('/assets/images/jab/movie-overlay.svg');
-      background-position: 11px 10px;
-      background-size: 39px 38px;
+    img { width: 60px; }
+    .active { border: solid 2px $thumb-border-active; }
+    .more-images {
+      margin-top: 14px;
+      overflow: hidden;
+      text-indent: -9999px;
+      border: none;
+      height: 34px;
+      width: 30px;
+      background: url('/assets/images/jab/php-thumbs-right-arrow.svg');
+      background-size: 7px 12px;
       background-repeat: no-repeat;
+      background-position: 10px 10px;
     }
   }
 }
